@@ -8,6 +8,8 @@
 # il faut donc un build chaque matin même quand les données n'ont pas bougé.
 # Secret requis : VERCEL_DEPLOY_HOOK (Vercel → Settings → Git → Deploy Hooks).
 # Billetterie : 1 requête/jour, User-Agent honnête, sans cookie ni retry (SCRAPING.md §4).
+# Garde-fou : un relevé suspect (−10 % de sessions encore en vente, ou discipline disparue) est
+# rejeté ; l'ancien tickets.json est gardé, le site est publié normalement, puis le job échoue.
 name: refresh-data
 
 on:
@@ -79,3 +81,10 @@ jobs:
           fi
           curl -fsS -X POST --retry 2 --retry-delay 10 "$HOOK" > /dev/null
           echo "Rebuild Vercel demandé."
+
+      - name: Garde-fou billetterie
+        # en dernier : les données et le site sont déjà publiés avec l'ancien tickets.json
+        if: ${{ !cancelled() && steps.refresh.outputs.tickets_guard == 'rejected' }}
+        run: |
+          echo "::error::Relevé billetterie rejeté par le garde-fou (voir data/validation-report.md). Le site garde les statuts du dernier relevé valide."
+          exit 1

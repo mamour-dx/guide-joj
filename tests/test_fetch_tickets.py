@@ -67,3 +67,59 @@ def test_network_error():
     with pytest.raises(fs.TicketsUnavailable, match="réseau"):
         fs.fetch_tickets(c, API)
     assert len(seen) == 1
+
+
+# ------------------------------------------------------------------ garde-fou
+
+from datetime import datetime, timezone  # noqa: E402
+
+NOW = datetime(2026, 11, 4, 6, 0, tzinfo=timezone.utc)
+
+
+def game(code: str, closing: str = "13.11.2026, 23:00") -> dict:
+    return {"subTitle": f"{code} - x", "closingTime_Senegal": closing, "playDateTime_Senegal": closing}
+
+
+def test_guard_rejects_drop_over_10_percent():
+    old = [game(f"FEN{i:02d}") for i in range(1, 21)]          # 20 sessions encore en vente
+    new = old[:17]                                             # 17 reçues : −15 %
+    reasons = fs.check_tickets(old, new, NOW)
+    assert len(reasons) == 1 and "baisse de 15 %" in reasons[0]
+    assert fs.check_tickets(old, old[:19], NOW) == []          # −5 % : sous le seuil, accepté
+
+
+def test_guard_rejects_vanished_discipline():
+    old = [game(f"FEN{i:02d}") for i in range(1, 20)] + [game("BDM09")]
+    new = [game(f"FEN{i:02d}") for i in range(1, 20)]          # −5 % seulement, mais plus de BDM
+    reasons = fs.check_tickets(old, new, NOW)
+    assert reasons == ["discipline(s) sans aucune session alors qu'encore en vente hier : BDM"]
+
+
+def test_guard_ignores_sessions_whose_sale_has_closed():
+    """Pendant les Jeux, les sessions passées et les disciplines terminées sortent de la liste :
+    ce n'est pas une anomalie."""
+    past = [game(f"SWM{i:02d}", "03.11.2026, 15:00") for i in range(1, 9)]  # vente close avant NOW
+    future = [game(f"FEN{i:02d}") for i in range(1, 11)]
+    assert fs.check_tickets(past + future, future, NOW) == []
+
+
+def test_guard_keeps_previous_file_end_to_end(tmp_path, monkeypatch):
+    raw = tmp_path / "raw"
+    raw.mkdir()
+    previous = {"gameInfo": [game(f"FEN{i:02d}") for i in range(1, 21)] + [game("BDM09")]}
+    (raw / "tickets.json").write_text(json.dumps(previous), encoding="utf-8")
+    for name, value in {"RAW": raw, "MANIFEST": raw / "manifest.json", "META": tmp_path / "meta.json",
+                        "TICKETS_GUARD": raw / "tickets.guard.json", "MIN_INTERVAL_S": 0}.items():
+        monkeypatch.setattr(fs, name, value)
+    shrunk = {"gameInfo": [game(f"FEN{i:02d}") for i in range(1, 11)]}  # −52 %, plus de BDM
+    real_client = httpx.Client
+    monkeypatch.setattr(fs.httpx, "Client", lambda **kw: real_client(
+        transport=httpx.MockTransport(lambda r: httpx.Response(200, json=shrunk)),
+        headers=kw.get("headers")))
+    monkeypatch.setattr(sys, "argv", ["fetch_sources.py", "--only", "S2"])
+
+    assert fs.main() == 0                                      # pas d'échec technique
+    assert json.loads((raw / "tickets.json").read_text()) == previous   # ancien fichier gardé
+    guard = json.loads((raw / "tickets.guard.json").read_text())
+    assert guard["received"] == 10 and guard["previous"] == 21
+    assert any("baisse" in r for r in guard["reasons"]) and any("BDM" in r for r in guard["reasons"])

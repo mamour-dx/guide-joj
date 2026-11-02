@@ -7,6 +7,9 @@ Règles (CLAUDE.md §4, SCRAPING.md) :
   sources.json (`tickets.api`), sans retry, sans en-tête imitant un navigateur, sans cookie.
   Tout échec (HTTP, challenge anti-bot, JSON invalide ou vide) est silencieux : on garde le
   dernier data/raw/tickets.json valide. Voir SCRAPING.md §4.
+- garde-fou billetterie (`check_tickets`) : un JSON valide mais suspect (sessions en chute de
+  plus de 10 %, ou discipline disparue) n'est PAS enregistré ; les raisons vont dans
+  data/raw/tickets.guard.json, que validate.py reporte et qui fait échouer l'Action.
 
 Usage :
     python scripts/fetch_sources.py                 # toutes les sources ci-daily
@@ -36,6 +39,8 @@ SEED = ROOT / "data" / "seed" / "sources.json"
 RAW = ROOT / "data" / "raw"
 META = ROOT / "data" / "meta.json"
 MANIFEST = RAW / "manifest.json"
+TICKETS_GUARD = RAW / "tickets.guard.json"  # raisons d'un relevé rejeté (non versionné)
+MAX_DROP = 0.10
 
 MIN_INTERVAL_S = 1.0
 TIMEOUT = httpx.Timeout(30.0, connect=10.0)
@@ -126,6 +131,43 @@ def fetch_tickets(client: httpx.Client, api: dict) -> bytes:
     return (json.dumps(data, ensure_ascii=False, indent=1) + "\n").encode("utf-8")
 
 
+def _closing(g: dict) -> datetime | None:
+    """Clôture de la vente (heure de Dakar = UTC) : la billetterie retire la session après."""
+    raw = g.get("closingTime_Senegal") or g.get("playDateTime_Senegal")
+    try:
+        return datetime.strptime(raw, "%d.%m.%Y, %H:%M").replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        return None
+
+
+def _prefix(g: dict) -> str:
+    """Discipline = préfixe du code de session (BDM05 → BDM ; SBW regroupe les sports de Saly)."""
+    code = (g.get("subTitle") or "").split(" ")[0]
+    return code[:3]
+
+
+def check_tickets(old: list[dict], new: list[dict], now: datetime) -> list[str]:
+    """Raisons de rejeter un relevé valide mais suspect ; [] si tout va bien.
+
+    On compare au relevé précédent restreint aux sessions qui devraient ENCORE être en vente
+    (clôture pas encore passée) : la disparition normale des sessions passées et des
+    disciplines terminées ne déclenche donc rien.
+    """
+    expected = [g for g in old if (_closing(g) or now) > now]
+    if not expected:
+        return []
+    reasons = []
+    drop = (len(expected) - len(new)) / len(expected)
+    if drop > MAX_DROP:
+        reasons.append(
+            f"sessions en baisse de {round(drop * 100)} % : {len(new)} reçues, {len(expected)} attendues "
+            f"(sessions encore en vente dans le dernier relevé valide), seuil {round(MAX_DROP * 100)} %")
+    gone = sorted({_prefix(g) for g in expected} - {_prefix(g) for g in new})
+    if gone:
+        reasons.append(f"discipline(s) sans aucune session alors qu'encore en vente hier : {', '.join(gone)}")
+    return reasons
+
+
 def previous_hashes() -> dict[str, str]:
     if not META.exists():
         return {}
@@ -149,6 +191,7 @@ def main() -> int:
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
     before = previous_hashes()
     changed: list[str] = []
+    TICKETS_GUARD.unlink(missing_ok=True)  # l'état du garde-fou ne vaut que pour ce relevé
 
     headers = {"User-Agent": user_agent}
     last_request = 0.0
@@ -174,6 +217,19 @@ def main() -> int:
                     kept = "on garde le dernier fichier" if dest.exists() else "aucun fichier précédent"
                     print(f"  ⚠️  billetterie indisponible ({exc}) : {kept}.", file=sys.stderr)
                     continue
+                if dest.exists():
+                    old = json.loads(dest.read_text(encoding="utf-8")).get("gameInfo", [])
+                    new = json.loads(body).get("gameInfo", [])
+                    reasons = check_tickets(old, new, datetime.now(timezone.utc))
+                    if reasons:
+                        TICKETS_GUARD.write_text(json.dumps({
+                            "checkedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                            "received": len(new), "previous": len(old), "reasons": reasons,
+                        }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                        for r in reasons:
+                            print(f"  ⛔ garde-fou billetterie : {r}", file=sys.stderr)
+                        print("  → relevé rejeté, on garde le dernier tickets.json valide.", file=sys.stderr)
+                        continue
                 tmp = dest.with_suffix(dest.suffix + ".part")
                 tmp.write_bytes(body)
                 tmp.replace(dest)

@@ -17,7 +17,15 @@ out() { [ -n "${GITHUB_OUTPUT:-}" ] && echo "$1" >> "$GITHUB_OUTPUT"; return 0; 
 
 "$PY" scripts/fetch_sources.py --unchanged
 rc=$?
-if [ "$rc" -eq 0 ] && [ "${FORCE:-0}" != "1" ]; then
+# garde-fou billetterie déclenché : on reconstruit quand même (validation-report.md porte
+# l'avertissement), et la sortie tickets_guard fait échouer l'Action à la fin
+GUARD=0
+if [ -f data/raw/tickets.guard.json ]; then
+  GUARD=1
+  out "tickets_guard=rejected"
+  echo "⛔ Relevé billetterie rejeté par le garde-fou : ancien tickets.json conservé."
+fi
+if [ "$rc" -eq 0 ] && [ "${FORCE:-0}" != "1" ] && [ "$GUARD" -eq 0 ]; then
   echo "→ Sources inchangées : rien à publier."
   out "changed=false"
   exit 0

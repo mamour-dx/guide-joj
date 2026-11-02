@@ -205,6 +205,12 @@ def main() -> int:
     no_access = [v["id"] for v in venues if not v["accessNote"]]
     no_gps = [v["id"] for v in venues if v["lat"] is None or v["lng"] is None]
     warnings.extend(meta.get("warnings", []))
+    # garde-fou billetterie (fetch_sources.py) : relevé rejeté, ancien tickets.json conservé
+    guard_file = RAW / "tickets.guard.json"
+    guard = load(guard_file) if guard_file.exists() else None
+    if guard:
+        warnings.insert(0, "garde-fou billetterie : relevé du " + guard["checkedAt"] +
+                        " rejeté, dernier tickets.json valide conservé — " + " ; ".join(guard["reasons"]))
 
     # ---------------- tirage
     rng_seed = args.seed if args.seed is not None else random.randrange(10**6)
@@ -225,6 +231,12 @@ def main() -> int:
           "| Jour | PDF (texte brut) | sessions.json |", "|---|---|---|"]
     for d in sorted(per_day_json):
         L.append(f"| {d} | {per_day_pdf.get(d, '—') if per_day_pdf else '—'} | {per_day_json[d]} |")
+    if guard:
+        L += ["", "## ⛔ Garde-fou billetterie", "",
+              f"Relevé du {guard['checkedAt']} **rejeté** : {guard['received']} sessions reçues "
+              f"(dernier relevé valide : {guard['previous']}). Le site garde les statuts du dernier "
+              "relevé valide ; l'Action est marquée en échec pour qu'on regarde.", ""]
+        L += [f"- {r}" for r in guard["reasons"]]
     L += ["", "## Erreurs", ""] + ([f"- {e}" for e in errors] or ["Aucune."])
     L += ["", "## Avertissements", ""] + ([f"- {w}" for w in warnings] or ["Aucun."])
     L += ["", "## Anomalies de la source (S1)", "",
