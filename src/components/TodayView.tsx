@@ -1,5 +1,9 @@
 "use client";
 
+// Accueil. Les sessions du jour du build sont pré-rendues en HTML (`initial`) : sans JS, ou
+// avant l'hydratation, elles s'affichent en une seule liste « Au programme ». Une fois l'heure
+// connue dans le navigateur, on les répartit en « En ce moment / Plus tard / Terminé ».
+// Le fichier /data/day-….json n'est chargé que si le jour affiché n'est pas celui du build.
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import type { CardData } from "@/lib/cards";
@@ -11,6 +15,7 @@ import { SessionCard } from "./SessionCard";
 
 type SportChip = { id: string; label: string; emoji: string };
 type Load = { day: string; cards: CardData[] | null; error: boolean };
+export type TodayInitial = { day: string | null; isToday: boolean; cards: CardData[] };
 
 /** Jour à afficher pour « Aujourd'hui » : le jour même s'il a des sessions,
  *  sinon le prochain jour qui en a (avant ou pendant les Jeux), sinon null (Jeux terminés). */
@@ -20,37 +25,81 @@ function pickDay(today: string, days: string[]): { day: string | null; isToday: 
   return { day: next ?? null, isToday: false };
 }
 
-function Section({ title, tone, cards, live = false }: { title: string; tone?: "live"; cards: CardData[]; live?: boolean }) {
+function Section({ title, tone, cards, live = false, sec, hidden = false, tagged = false }: {
+  title: string; tone?: "live"; cards: CardData[]; live?: boolean;
+  sec?: string; hidden?: boolean; tagged?: boolean;
+}) {
   if (!cards.length) return null;
   return (
-    <section className="mt-5">
+    <section className={`mt-5 ${hidden ? "hidden" : ""}`} data-sec={sec}>
       <h2 className={`mb-2 flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide ${tone === "live" ? "text-red" : "text-muted"}`}>
         {tone === "live" && <span className="size-2.5 rounded-full bg-red motion-safe:animate-pulse" aria-hidden="true" />}
-        {title} <span className="font-semibold">({cards.length})</span>
+        {title}
       </h2>
       <ul className="space-y-2.5">
         {cards.map((c) => (
-          <li key={c.id}><SessionCard c={c} live={live} /></li>
+          <li key={c.id} data-id={c.id} data-start={tagged ? c.start : undefined} data-end={tagged ? c.end ?? "" : undefined}>
+            <SessionCard c={c} live={live} />
+          </li>
         ))}
       </ul>
     </section>
   );
 }
 
-export function TodayView({ days, sports }: { days: string[]; sports: SportChip[] }) {
+function DoneSection({ cards, sec, hidden = false }: { cards: CardData[]; sec?: string; hidden?: boolean }) {
+  if (!cards.length) return null;
+  return (
+    <details className={`mt-5 ${hidden ? "hidden" : ""}`} data-sec={sec}>
+      <summary className="min-h-11 cursor-pointer py-2 text-sm font-extrabold uppercase tracking-wide text-muted">Déjà terminé</summary>
+      <ul className="space-y-2.5">
+        {cards.map((c) => (
+          <li key={c.id} data-id={c.id} className="opacity-70"><SessionCard c={c} /></li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+
+/** Script exécuté avant le premier affichage (HTML pré-rendu, jour du build = aujourd'hui) :
+ *  remplit les sections « En ce moment / Plus tard / Terminé » par CSS selon l'heure, pour que
+ *  la répartition faite ensuite par React ne fasse pas sauter la page. Sans JS : liste complète. */
+const PREPAINT = `(function(){try{var r=document.getElementById("today-sections");if(!r)return;
+var t=new Intl.DateTimeFormat("en-CA",{timeZone:"Africa/Dakar",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+if(t!==r.getAttribute("data-day"))return;var n=Date.now(),g={live:[],open:[],later:[],done:[]};
+r.querySelectorAll('[data-sec="all"] li[data-id]').forEach(function(li){var s=Date.parse(li.getAttribute("data-start")),e=li.getAttribute("data-end");
+e=e?Date.parse(e):null;g[s<=n?(e===null?"open":(n<e?"live":"done")):"later"].push(li.getAttribute("data-id"));});
+var p="#today-sections ",c=p+'[data-sec="all"]{display:none}';
+Object.keys(g).forEach(function(k){var q=p+'[data-sec="'+k+'"]';if(!g[k].length){c+=q+"{display:none}";return;}
+c+=q+"{display:block}"+q+" li:not("+g[k].map(function(i){return'[data-id="'+i+'"]';}).join(",")+"){display:none}";});
+var st=document.createElement("style");st.id="today-initial";st.textContent=c;document.head.appendChild(st);}catch(x){}})();`;
+
+function Ended() {
+  return (
+    <div className="mt-6 rounded-xl bg-surface p-4">
+      <h1 className="text-2xl font-extrabold">Les Jeux sont terminés</h1>
+      <p className="mt-2 text-muted">Les JOJ Dakar 2026 se sont déroulés du 30 octobre au 13 novembre 2026.</p>
+      <Link href="/programme" className="mt-3 inline-block font-bold text-green-ink underline">Revoir le programme</Link>
+    </div>
+  );
+}
+
+export function TodayView({ days, sports, initial }: { days: string[]; sports: SportChip[]; initial: TodayInitial }) {
   const now = useNow();
   const [tab, setTab] = useState<"today" | "tomorrow">("today");
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
   const [load, setLoad] = useState<Load | null>(null);
 
+  // Avant de connaître l'heure (HTML pré-rendu, sans JS, hydratation) : le jour du build.
   const today = now === null ? null : dayKey(new Date(now));
-  const base = today === null ? null : pickDay(today, days);
-  const tomorrow = base?.day ? (base.isToday ? addDays(base.day, 1) : days.find((d) => d > base.day!) ?? null) : null;
-  const shown = tab === "today" ? base?.day ?? null : tomorrow;
+  const base = today === null ? { day: initial.day, isToday: initial.isToday } : pickDay(today, days);
+  const tomorrow = base.day ? (base.isToday ? addDays(base.day, 1) : days.find((d) => d > base.day!) ?? null) : null;
+  const shown = tab === "today" ? base.day : tomorrow;
   const shownHasData = shown !== null && days.includes(shown);
+  const needsFetch = shownHasData && shown !== initial.day;
 
   useEffect(() => {
-    if (!shown || !shownHasData) return;
+    if (!needsFetch || !shown) return;
     let cancelled = false;
     fetch(`/data/day-${shown}.json`)
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
@@ -59,31 +108,24 @@ export function TodayView({ days, sports }: { days: string[]; sports: SportChip[
     return () => {
       cancelled = true;
     };
-  }, [shown, shownHasData]);
+  }, [shown, needsFetch]);
 
-  const cards = load?.day === shown ? load.cards : null;
+  useEffect(() => {
+    if (now !== null) document.getElementById("today-initial")?.remove();
+  }, [now]);
+
+  const cards = shown === initial.day ? initial.cards : load?.day === shown ? load.cards : null;
   const filtered = useMemo(() => (cards ? applyFilters(cards, filters) : []), [cards, filters]);
   const daySports = useMemo(
     () => (cards ? sports.filter((s) => cards.some((c) => c.sportId === s.id)) : []),
     [cards, sports],
   );
 
-  if (now === null) {
-    return <p className="mt-6 text-muted">Chargement du programme du jour…</p>;
-  }
+  if (base.day === null) return <Ended />;
 
-  if (base?.day === null) {
-    return (
-      <div className="mt-6 rounded-xl bg-surface p-4">
-        <h1 className="text-2xl font-extrabold">Les Jeux sont terminés</h1>
-        <p className="mt-2 text-muted">Les JOJ Dakar 2026 se sont déroulés du 30 octobre au 13 novembre 2026.</p>
-        <Link href="/programme" className="mt-3 inline-block font-bold text-green-ink underline">Revoir le programme</Link>
-      </div>
-    );
-  }
-
-  const isLiveDay = tab === "today" && base?.isToday;
-  const t = now;
+  // Répartition selon l'heure : seulement dans le navigateur, et seulement pour le jour même.
+  const isLiveDay = now !== null && tab === "today" && base.isToday;
+  const t = now ?? 0;
   const live = isLiveDay ? filtered.filter((c) => Date.parse(c.start) <= t && c.end !== null && t < Date.parse(c.end)) : [];
   const startedOpen = isLiveDay ? filtered.filter((c) => Date.parse(c.start) <= t && c.end === null) : [];
   const later = isLiveDay ? filtered.filter((c) => Date.parse(c.start) > t) : filtered;
@@ -91,13 +133,11 @@ export function TodayView({ days, sports }: { days: string[]; sports: SportChip[
 
   return (
     <div>
-      <div className="mt-2 flex items-end justify-between gap-3">
-        <div>
-          <p className="text-sm font-semibold text-muted">
-            {tab === "today" && !base?.isToday ? "Prochain jour de compétition" : tab === "today" ? "Aujourd'hui" : "Demain"}
-          </p>
-          <h1 className="text-2xl font-extrabold first-letter:uppercase">{shown ? longDay(shown) : "—"}</h1>
-        </div>
+      <div className="mt-2">
+        <p className="text-sm font-semibold text-muted">
+          {tab === "tomorrow" ? "Demain" : base.isToday ? "Aujourd'hui" : "Prochain jour de compétition"}
+        </p>
+        <h1 className="text-2xl font-extrabold first-letter:uppercase">{shown ? longDay(shown) : "—"}</h1>
       </div>
 
       <div role="tablist" aria-label="Jour" className="mt-3 grid grid-cols-2 rounded-xl bg-surface p-1 border border-line">
@@ -110,7 +150,7 @@ export function TodayView({ days, sports }: { days: string[]; sports: SportChip[
             onClick={() => setTab(k)}
             className={`min-h-11 rounded-lg text-base font-bold ${tab === k ? "bg-green text-on-accent" : "text-ink"}`}
           >
-            {k === "today" ? (base?.isToday ? "Aujourd'hui" : "Prochain jour") : "Demain"}
+            {k === "today" ? (base.isToday ? "Aujourd'hui" : "Prochain jour") : "Demain"}
           </button>
         ))}
       </div>
@@ -135,20 +175,24 @@ export function TodayView({ days, sports }: { days: string[]; sports: SportChip[
               </button>
             </p>
           )}
-          <Section title="En ce moment" tone="live" cards={live} live />
-          <Section title="Commencé · fin non communiquée" cards={startedOpen} />
-          <Section title={isLiveDay ? "Plus tard aujourd'hui" : "Au programme"} cards={later} />
-          {done.length > 0 && (
-            <details className="mt-5">
-              <summary className="min-h-11 cursor-pointer py-2 text-sm font-extrabold uppercase tracking-wide text-muted">
-                Déjà terminé ({done.length})
-              </summary>
-              <ul className="space-y-2.5">
-                {done.map((c) => (
-                  <li key={c.id} className="opacity-70"><SessionCard c={c} /></li>
-                ))}
-              </ul>
-            </details>
+          {now === null && initial.isToday && shown === initial.day ? (
+            // HTML pré-rendu : la liste complète (visible sans JS) + les sections masquées que
+            // PREPAINT remplit avant l'affichage. Même rendu que le mode navigateur ci-dessous.
+            <div id="today-sections" data-day={initial.day ?? ""}>
+              <Section title="Au programme" cards={filtered} sec="all" tagged />
+              <Section title="En ce moment" tone="live" cards={filtered} live sec="live" hidden />
+              <Section title="Commencé · fin non communiquée" cards={filtered} sec="open" hidden />
+              <Section title="Plus tard aujourd'hui" cards={filtered} sec="later" hidden />
+              <DoneSection cards={filtered} sec="done" hidden />
+              <script dangerouslySetInnerHTML={{ __html: PREPAINT }} />
+            </div>
+          ) : (
+            <div>
+              <Section title="En ce moment" tone="live" cards={live} live />
+              <Section title="Commencé · fin non communiquée" cards={startedOpen} />
+              <Section title={isLiveDay ? "Plus tard aujourd'hui" : "Au programme"} cards={later} />
+              <DoneSection cards={done} />
+            </div>
           )}
         </>
       )}

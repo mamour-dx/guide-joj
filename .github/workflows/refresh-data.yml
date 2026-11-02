@@ -2,6 +2,10 @@
 # 06:00 à Dakar (= 06:00 UTC). Re-télécharge S1 + S3 ; si rien n'a changé, s'arrête.
 # Sinon parse → build → validate → tests, puis commit de data/ → Vercel redéploie.
 # Si validate.py ou les tests échouent, le job échoue et RIEN n'est publié.
+# Dans tous les cas où rien n'est poussé, on appelle le Deploy Hook Vercel : l'accueil, les
+# métadonnées et l'image de partage sont figés au build sur la date du jour (Africa/Dakar),
+# il faut donc un build chaque matin même quand les données n'ont pas bougé.
+# Secret requis : VERCEL_DEPLOY_HOOK (Vercel → Settings → Git → Deploy Hooks).
 # La billetterie n'est jamais appelée depuis la CI (data/raw/tickets.json est manuel).
 name: refresh-data
 
@@ -45,6 +49,7 @@ jobs:
         run: bash scripts/refresh.sh
 
       - name: Publier les données
+        id: publish
         if: steps.refresh.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
@@ -57,3 +62,19 @@ jobs:
           fi
           git commit -m "data: rafraîchissement du $(date -u +%Y-%m-%d)"
           git push
+          # le push déclenche déjà un déploiement Vercel
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild quotidien du site (Deploy Hook Vercel)
+        # même si les sources n'ont pas changé ou si la validation a échoué (le site est alors
+        # reconstruit avec les dernières données valides) ; pas besoin si un commit vient d'être poussé
+        if: ${{ !cancelled() && steps.publish.outputs.pushed != 'true' }}
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::error::Secret VERCEL_DEPLOY_HOOK absent : le site ne sera pas reconstruit aujourd'hui."
+            exit 1
+          fi
+          curl -fsS -X POST --retry 2 --retry-delay 10 "$HOOK" > /dev/null
+          echo "Rebuild Vercel demandé."

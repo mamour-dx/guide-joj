@@ -103,3 +103,20 @@ export const sportChips = sports
   .filter((sp) => sessions.some((s) => s.sportId === sp.id))
   .map((sp) => ({ id: sp.id, label: sp.nameFr, emoji: sp.emoji }))
   .sort((a, b) => a.label.localeCompare(b.label, "fr"));
+
+/** Jour du build à Dakar (next.config.ts). */
+export const buildDay: string = process.env.JOJ_BUILD_DAY!;
+
+/** Jour mis en avant sur l'accueil pré-rendu : le jour du build s'il a des sessions, sinon
+ *  le prochain jour de compétition, sinon null (Jeux terminés). */
+export const homeDay: { day: string | null; isToday: boolean } = days.includes(buildDay)
+  ? { day: buildDay, isToday: true }
+  : { day: days.find((d) => d > buildDay) ?? null, isToday: false };
+
+/** Image de partage du jour (route /og/[file]) : URL datée, change à chaque rebuild quotidien. */
+export const homeOgImage = {
+  url: homeDay.day ? `/og/jour-${homeDay.day}.png` : "/og/fin.png",
+  width: 1200,
+  height: 630,
+  alt: "JOJ Guide — ce qu'on peut voir aux JOJ Dakar 2026 ce jour-là (guide non officiel)",
+};

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
-import { meta } from "@/lib/data";
+import { homeOgImage, meta } from "@/lib/data";
 import { site, siteUrl } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
 
@@ -12,7 +12,8 @@ const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "sw
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   applicationName: site.name,
-  openGraph: { type: "website", locale: "fr_FR", siteName: `${site.name} (non officiel)` },
+  openGraph: { type: "website", locale: "fr_FR", siteName: `${site.name} (non officiel)`, images: [homeOgImage] },
+  twitter: { card: "summary_large_image", images: [homeOgImage.url] },
   title: { default: `${site.name} — JOJ Dakar 2026 (non officiel)`, template: `%s · ${site.name}` },
   description:
     "Qu'est-ce que je peux voir aux JOJ Dakar 2026 aujourd'hui, où, à quelle heure, et comment y aller ? Guide non officiel.",
