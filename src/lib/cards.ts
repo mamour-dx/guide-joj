@@ -19,6 +19,7 @@ export type CardData = {
   moreEvents: number;     // « +14 »
   hasFinal: boolean;
   isFree: boolean | null;
+  soldOut: boolean;       // « COMPLET » sur la billetterie
   scheduleChanged: boolean;
   search: string;         // texte normalisé pour la recherche locale
 };

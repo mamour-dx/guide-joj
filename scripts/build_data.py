@@ -313,8 +313,8 @@ def main() -> int:
     if orphan_tickets:
         warnings.append("billets sans session dans le PDF : " + " ; ".join(orphan_tickets))
     if tickets["plan"] != "C" and not any(t.get("url") for t in tickets["items"]):
-        warnings.append("billetterie : aucun lien d'achat (tickets.purchaseUrlTemplate non renseigné) "
-                        "— l'UI renvoie vers la page programme avec le code")
+        warnings.append("billetterie : aucun lien d'achat profond (connexion obligatoire sur la billetterie, "
+                        "voir tickets._purchaseUrlTemplate) — l'UI renvoie vers la page programme avec le code")
     if tickets["plan"] != "C" and all(t.get("status") == "unknown" for t in tickets["items"]):
         warnings.append("billetterie : statuts non interprétés (tickets.statusMap non renseigné)")
     if tickets["plan"] == "C":

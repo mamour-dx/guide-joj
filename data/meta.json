@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T19:23:14+00:00",
+  "generatedAt": "2026-11-02T20:56:17+00:00",
   "sources": [
     {
       "id": "S1",
@@ -17,7 +17,7 @@
       "id": "S2",
       "url": "https://tickets.dakar2026.org/fr/ticketing",
       "sha256": "d36fda0037de96f18360f03c2def6fc9886645c59de80591bddf080a0bb55220",
-      "fetchedAt": "2026-11-02T19:22:58+00:00"
+      "fetchedAt": "2026-11-02T18:35:09+00:00"
     }
   ],
   "counts": {
@@ -26,12 +26,9 @@
     "sports": 25
   },
   "warnings": [
-    "gratuité TRI* non appliquée : source non vérifiée ('A_VERIFIER: URL du guide officiel du spectateur (annonce sur tickets.dakar2026.org)') dans overrides.json",
     "GAR101 : Épreuve 'Men's Street - Finals' sous Gymnastique artistique (copier-coller probable dans la source) (non corrigé, à vérifier)",
-    "gratuité CRD* non appliquée : source non vérifiée ('A_VERIFIER: URL du guide officiel du spectateur (annonce sur tickets.dakar2026.org)') dans overrides.json",
     "8 horaire(s) de la billetterie affiché(s) à la place du PDF (fin inconnue, mention dans l'UI) : SWM05 : 11:00 dans le PDF, 10:00 sur la billetterie ; RU705 : 13:08 dans le PDF, 13:00 sur la billetterie ; SWM07 : 11:00 dans le PDF, 10:00 sur la billetterie ; SWM09 : 11:00 dans le PDF, 10:00 sur la billetterie ; ATH01 : 14:30 dans le PDF, 14:00 sur la billetterie ; ATH02 : 10:00 dans le PDF, 14:00 sur la billetterie ; ATH03 : 10:00 dans le PDF, 14:00 sur la billetterie ; BOX12 : 17:00 dans le PDF, 18:20 sur la billetterie",
     "billets sans session dans le PDF : FEN11 (Escrime (Fencing), 2026-11-13 09:00, Centre des Expositions de Dakar(Pavillon A))",
-    "billetterie : aucun lien d'achat (tickets.purchaseUrlTemplate non renseigné) — l'UI renvoie vers la page programme avec le code",
-    "billetterie : statuts non interprétés (tickets.statusMap non renseigné)"
+    "billetterie : aucun lien d'achat profond (connexion obligatoire sur la billetterie, voir tickets._purchaseUrlTemplate) — l'UI renvoie vers la page programme avec le code"
   ]
 }

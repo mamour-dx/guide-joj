@@ -81,6 +81,7 @@ export function toCard(s: Session): CardData {
     moreEvents: Math.max(0, s.events.length - 2),
     hasFinal: s.hasFinal,
     isFree: s.isFree,
+    soldOut: s.ticketStatus === "soldout",
     scheduleChanged: s.scheduleConflict !== null,
     search: normalize(
       [s.id, label, sp?.nameEn ?? "", v.name, ...v.aliases, s.hall ?? "", ...s.events, ...s.eventsRaw].join(" "),

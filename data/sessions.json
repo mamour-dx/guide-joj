@@ -709,7 +709,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -734,7 +734,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -846,7 +846,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -985,7 +985,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1203,7 +1203,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1224,7 +1224,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -1245,7 +1245,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -1270,7 +1270,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1295,7 +1295,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1326,7 +1326,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1351,7 +1351,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1378,7 +1378,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1405,7 +1405,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1432,7 +1432,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1467,7 +1467,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-03T11:00:00+00:00",
@@ -1498,7 +1498,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1525,7 +1525,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1554,7 +1554,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-03T13:08:00+00:00",
@@ -1587,7 +1587,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1612,7 +1612,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1643,7 +1643,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1670,7 +1670,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1705,7 +1705,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1732,7 +1732,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1759,7 +1759,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1784,7 +1784,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1805,7 +1805,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -1826,7 +1826,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -1853,7 +1853,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1888,7 +1888,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-04T11:00:00+00:00",
@@ -1919,7 +1919,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1944,7 +1944,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1969,7 +1969,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1994,7 +1994,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2029,7 +2029,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2056,7 +2056,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2083,7 +2083,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2108,7 +2108,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2129,7 +2129,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2150,7 +2150,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2175,7 +2175,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2196,8 +2196,8 @@
       "Men's Individual"
     ],
     "hasFinal": false,
-    "isFree": null,
-    "freeSource": null,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "venue-day",
     "ticketStatus": "unknown",
@@ -2227,7 +2227,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2283,7 +2283,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-05T11:00:00+00:00",
@@ -2314,7 +2314,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2339,7 +2339,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2389,7 +2389,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2420,7 +2420,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2447,7 +2447,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2472,7 +2472,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2499,7 +2499,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2520,7 +2520,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2541,7 +2541,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2566,7 +2566,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2587,7 +2587,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2608,8 +2608,8 @@
       "Women's Individual"
     ],
     "hasFinal": false,
-    "isFree": null,
-    "freeSource": null,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "venue-day",
     "ticketStatus": "unknown",
@@ -2637,7 +2637,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2662,7 +2662,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2718,7 +2718,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2793,7 +2793,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2824,7 +2824,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2849,7 +2849,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2870,7 +2870,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2891,7 +2891,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2912,7 +2912,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -2937,7 +2937,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2964,7 +2964,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -2989,7 +2989,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3020,7 +3020,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3053,7 +3053,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3078,7 +3078,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3103,7 +3103,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3128,7 +3128,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3159,7 +3159,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3186,7 +3186,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3219,7 +3219,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3242,8 +3242,8 @@
       "Men's Road Race - Final"
     ],
     "hasFinal": true,
-    "isFree": null,
-    "freeSource": null,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
     "ticketStatus": "unknown",
@@ -3267,7 +3267,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -3292,7 +3292,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3313,7 +3313,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -3338,7 +3338,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3363,7 +3363,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3394,7 +3394,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3419,7 +3419,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3446,7 +3446,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3471,7 +3471,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3504,7 +3504,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3529,7 +3529,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3558,7 +3558,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3607,7 +3607,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-08T14:30:00+00:00",
@@ -3636,7 +3636,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3657,7 +3657,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -3682,7 +3682,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3707,7 +3707,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3738,7 +3738,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3763,7 +3763,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3790,7 +3790,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3823,7 +3823,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3844,7 +3844,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -3865,7 +3865,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -3890,7 +3890,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3911,7 +3911,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -3940,7 +3940,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3965,7 +3965,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3990,7 +3990,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4015,7 +4015,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4042,7 +4042,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4067,7 +4067,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4094,7 +4094,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4119,7 +4119,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4148,7 +4148,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4202,7 +4202,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-09T10:00:00+00:00",
@@ -4231,7 +4231,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4256,7 +4256,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4281,7 +4281,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4310,7 +4310,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4337,7 +4337,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4364,7 +4364,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4389,7 +4389,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4412,8 +4412,8 @@
       "Men's Individual Time Trial - Final"
     ],
     "hasFinal": true,
-    "isFree": null,
-    "freeSource": null,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
     "ticketStatus": "unknown",
@@ -4441,7 +4441,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4462,7 +4462,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -4487,7 +4487,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4518,7 +4518,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4547,7 +4547,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4572,7 +4572,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4601,7 +4601,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4626,7 +4626,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4655,7 +4655,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4706,7 +4706,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-10T10:00:00+00:00",
@@ -4735,7 +4735,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4756,7 +4756,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -4785,7 +4785,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4810,7 +4810,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4839,7 +4839,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4860,7 +4860,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -4885,7 +4885,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4910,7 +4910,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4935,7 +4935,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4964,7 +4964,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -4997,7 +4997,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5022,7 +5022,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5047,7 +5047,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5072,7 +5072,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5097,7 +5097,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5126,7 +5126,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5159,7 +5159,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5184,7 +5184,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5205,7 +5205,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -5226,7 +5226,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -5251,7 +5251,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5276,7 +5276,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5301,7 +5301,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5326,7 +5326,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5351,7 +5351,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5384,7 +5384,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5409,7 +5409,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5434,7 +5434,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5459,7 +5459,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5484,7 +5484,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5509,7 +5509,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5534,7 +5534,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5567,7 +5567,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-12T17:00:00+00:00",
@@ -5592,7 +5592,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -5613,7 +5613,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -5638,7 +5638,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "venue-day",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5665,7 +5665,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -5686,7 +5686,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "unknown",
+    "ticketStatus": "limited",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   }

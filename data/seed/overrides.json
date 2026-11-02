@@ -2,11 +2,11 @@
   "_readme": "Corrections et ajouts manuels. Chaque entrée DOIT avoir 'reason' et 'source'. Jamais de valeur sans source.",
   "free": [
     {"match": {"codePrefix": "CRD"}, "isFree": true,
-     "reason": "Cyclisme sur route annoncé en accès gratuit par le guide de billetterie",
-     "source": "A_VERIFIER: URL du guide officiel du spectateur (annonce sur tickets.dakar2026.org)"},
+     "reason": "Cyclisme sur route : la billetterie officielle affiche « Accès gratuit pour cet évènement, aucun billet nécessaire. » (bouton VOIR LES INFORMATIONS, vérifié le 2026-11-02 sur CRD01)",
+     "source": "https://tickets.dakar2026.org/fr/ticketing"},
     {"match": {"codePrefix": "TRI"}, "isFree": true,
-     "reason": "Triathlon annoncé en accès gratuit par le guide de billetterie",
-     "source": "A_VERIFIER: URL du guide officiel du spectateur (annonce sur tickets.dakar2026.org)"}
+     "reason": "Triathlon : la billetterie officielle affiche « Accès gratuit pour cet évènement, aucun billet nécessaire. » (bouton VOIR LES INFORMATIONS, vérifié le 2026-11-02 sur SBW06)",
+     "source": "https://tickets.dakar2026.org/fr/ticketing"}
   ],
   "fanEvents": [
     {"_comment": "Pass Fan Zone (codes CTOxx) et Festival Corniche (codes CORxx) : à importer depuis la billetterie (plan A/B). Gratuits selon les organisateurs.",

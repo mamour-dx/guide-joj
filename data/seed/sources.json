@@ -15,9 +15,9 @@
     "refresh": "manual-only",
     "apiNotes": "Plan A : réponse de la requête 'ticketing' (bouton RECHERCHER, toutes dates, tous sites) copiée à la main depuis DevTools le 2026-11-02 → data/raw/tickets.json. 156 entrées, uniquement les sessions à venir. Pas d'appel automatisé.",
     "purchaseUrlTemplate": null,
-    "_purchaseUrlTemplate": "Gabarit du lien d'achat, à remplir après avoir observé l'URL d'un bouton ACHETER (champs disponibles : {scheduleId}, {productId}). null = pas de lien profond.",
-    "statusMap": null,
-    "_statusMap": "Codes 'seat_tkl_ticketStatus/seat_percent_ticketStatus' (ex. '02/02', '03/02') → available|limited|soldout|cancelled, à remplir après vérification visuelle sur la billetterie. null = statut 'unknown'."
+    "_purchaseUrlTemplate": "Pas de lien profond possible (observé le 2026-11-02) : ACHETER DES BILLETS est un bouton JavaScript sans URL, qui affiche « Veuillez vous connecter » puis renvoie vers /fr/login. L'UI renvoie vers la page programme avec le code session.",
+    "statusMap": {"03/02": "soldout", "02/02": "limited"},
+    "_statusMap": "Codes 'seat_tkl_ticketStatus/seat_percent_ticketStatus' comparés à l'affichage de la billetterie le 2026-11-02 : 03/02 = « COMPLET » sans bouton (SWM05, SWM06, SWM08, SWM10) ; 02/02 = « Places limitées » (SWM07, SWM09, SWM11, SWM12, EQU01-03, quel que soit le taux de remplissage) ; 02/03 = « VOIR LES INFORMATIONS » → « Accès gratuit pour cet évènement, aucun billet nécessaire. » (CRD01, CRD02, SBW06) : pas de vente, statut laissé 'unknown'."
   },
   "mobilityGuide": {
     "id": "S3",

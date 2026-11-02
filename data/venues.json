@@ -12,8 +12,8 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Complexe Tour de l'Oeuf, Dakar, Sénégal",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "BRT, toutes lignes (B1, B2, B3) : descendre à la station Dial Diop, puis suivre le cheminement piéton balisé. Navettes JOJ depuis le Monument de la Renaissance (Ouakam), Grand Médine, Pikine (Arène nationale), Guédiawaye (stade Amadou Barry) et Keur Massar, de 6h30 à 22h. Le pourtour du complexe est piéton : circulation interdite, sauf véhicules accrédités.",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=6"
   },
   {
     "id": "iba-mar-diop",
@@ -27,8 +27,8 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Stade Iba Mar Diop, Dakar, Sénégal",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "BRT, toutes lignes (B1, B2, B3) : descendre à la station Grande Mosquée ou Papa Gueye Fall, puis suivre les cheminements piétons balisés. Navettes JOJ de 6h30 à 22h. Rue 11 réservée aux JOJ ; deux-roues et camions de plus de 3,5 t interdits aux abords ; stationnement interdit rues 13, 15 et 25.",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=8"
   },
   {
     "id": "corniche-ouest",
@@ -43,8 +43,8 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Place du Souvenir Africain, Corniche Ouest, Dakar",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "Minibus dédiés aux spectateurs en rotation continue (un départ toutes les 5 à 10 min, de 6h30 à 22h) et navettes JOJ. La route de la Corniche Ouest est réservée au dispositif JOJ, et fermée dans les deux sens de 6h à 16h les 7, 8 et 10 novembre : déviations par l'avenue Cheikh Anta Diop (Fann, Mamelles).",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=10"
   },
   {
     "id": "dakar-arena",
@@ -56,8 +56,8 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Dakar Arena, Diamniadio, Sénégal",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "TER jusqu'à la gare de Diamniadio (un train toutes les 8 min depuis Dakar), puis ligne Dem Dikk 504A, qui dessert les quatre sites du pôle ; depuis Thiès : GTS puis 504A. Navettes JOJ depuis Grand Médine, Pikine (Arène nationale), Thiès (Place de France), la gare TER de Rufisque et le stade de Mbour, de 6h30 à 22h. Circulation interdite dans les périmètres de sécurité ; parkings spectateurs à l'écart des sites.",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=15"
   },
   {
     "id": "dakar-expo-centre",
@@ -73,8 +73,8 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Centre des Expositions de Diamniadio, Sénégal",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "TER jusqu'à la gare de Diamniadio (un train toutes les 8 min depuis Dakar), puis ligne Dem Dikk 504A, qui dessert les quatre sites du pôle ; depuis Thiès : GTS puis 504A. Navettes JOJ depuis Grand Médine, Pikine (Arène nationale), Thiès (Place de France), la gare TER de Rufisque et le stade de Mbour, de 6h30 à 22h. Circulation interdite dans les périmètres de sécurité ; parkings spectateurs à l'écart des sites.",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=17"
   },
   {
     "id": "centre-equestre",
@@ -88,8 +88,8 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Centre équestre, Diamniadio, Sénégal",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "TER jusqu'à la gare de Diamniadio (un train toutes les 8 min depuis Dakar), puis ligne Dem Dikk 504A, qui dessert les quatre sites du pôle ; depuis Thiès : GTS puis 504A. Navettes JOJ depuis Grand Médine, Pikine (Arène nationale), Thiès (Place de France), la gare TER de Rufisque et le stade de Mbour, de 6h30 à 22h. Circulation interdite dans les périmètres de sécurité ; parkings spectateurs à l'écart des sites.",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=14"
   },
   {
     "id": "stade-abdoulaye-wade",
@@ -103,8 +103,8 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Stade Abdoulaye Wade, Diamniadio, Sénégal",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "TER jusqu'à la gare de Diamniadio (un train toutes les 8 min depuis Dakar), puis ligne Dem Dikk 504A, qui dessert les quatre sites du pôle ; depuis Thiès : GTS puis 504A. Navettes JOJ depuis Grand Médine, Pikine (Arène nationale), Thiès (Place de France), la gare TER de Rufisque et le stade de Mbour, de 6h30 à 22h. Circulation interdite dans les périmètres de sécurité ; parkings spectateurs à l'écart des sites. Depuis la gare TER, compter 30 à 40 min à pied par un itinéraire sécurisé.",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=16"
   },
   {
     "id": "saly-plage-ouest",
@@ -118,7 +118,7 @@
     "lat": null,
     "lng": null,
     "mapsQuery": "Saly Portudal plage, Sénégal",
-    "accessNote": null,
-    "accessSourceUrl": null
+    "accessNote": "Accès uniquement par les navettes JOJ, de 6h30 à 22h : Grand Médine – Saly (direct par l'autoroute, toutes les 45 min) et stade de Mbour – Saly (toutes les 15 min). Routes d'accès à Saly Plage Ouest réservées aux piétons ; parkings-relais à Saly Tapé, Bougainvillées et Karting ; dépose-minute au Saly Center.",
+    "accessSourceUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=20"
   }
 ]

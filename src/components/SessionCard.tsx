@@ -11,12 +11,13 @@ export const CLUSTER_STYLE: Record<Cluster, { border: string; dot: string; text:
   saly: { border: "border-l-ocean", dot: "bg-ocean", text: "text-ocean" },
 };
 
-export function Badge({ tone, children }: { tone: "free" | "final" | "live" | "warn"; children: React.ReactNode }) {
+export function Badge({ tone, children }: { tone: "free" | "final" | "live" | "warn" | "soldout"; children: React.ReactNode }) {
   const cls = {
     free: "bg-yellow text-[#14161A]",
     final: "bg-green-soft text-green-ink",
     live: "bg-red text-on-red",
     warn: "border border-current text-sun-ink",
+    soldout: "border border-current text-red",
   }[tone];
   return <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold ${cls}`}>{children}</span>;
 }
@@ -49,11 +50,12 @@ export function SessionCard({ c, live = false }: { c: CardData; live?: boolean }
           {CLUSTER_LABEL[c.cluster]}
         </span>
       </div>
-      {(live || c.hasFinal || c.isFree || c.scheduleChanged) && (
+      {(live || c.hasFinal || c.isFree || c.soldOut || c.scheduleChanged) && (
         <div className="mt-2 flex flex-wrap gap-1.5">
           {live && <Badge tone="live">En ce moment</Badge>}
           {c.hasFinal && <Badge tone="final">Finale</Badge>}
           {c.isFree === true && <Badge tone="free">Gratuit</Badge>}
+          {c.soldOut && <Badge tone="soldout">Complet</Badge>}
           {c.scheduleChanged && <Badge tone="warn">Horaire modifié</Badge>}
         </div>
       )}
