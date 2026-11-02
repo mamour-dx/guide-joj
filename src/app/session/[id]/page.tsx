@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, TriangleAlert } from "lucide-react";
 import { BackLink } from "@/components/BackLink";
-import { Badge, CLUSTER_STYLE } from "@/components/SessionCard";
+import { SportPicto } from "@/components/Brand";
+import { Badge, ClusterTag } from "@/components/SessionCard";
 import { SessionActions } from "@/components/SessionActions";
 import { CLUSTER_LABEL } from "@/lib/cards";
 import { officialLinks, sessionById, sessionLabel, sessions, ticketsFetchedAt, venueById } from "@/lib/data";
@@ -37,12 +38,12 @@ const STATUS_LABEL: Record<Session["ticketStatus"], string | null> = {
 
 function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
   const primary =
-    "flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-green px-4 py-3 text-lg font-extrabold text-on-accent";
+    "display flex min-h-13 w-full items-center justify-center gap-2 bg-blue px-4 py-3 text-center text-2xl text-on-blue";
   const status = STATUS_LABEL[s.ticketStatus];
 
   if (s.isFree === true) {
     return (
-      <div className="rounded-xl bg-surface p-4 border border-line">
+      <div className="bg-surface p-4 border border-line">
         <div className="flex items-center gap-2">
           <Badge tone="free">Gratuit</Badge>
           <span className="text-sm text-muted">
@@ -63,14 +64,14 @@ function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
 
   const href = s.ticketUrl ?? officialLinks.ticketing;
   return (
-    <div className="rounded-xl bg-surface p-4 border border-line">
+    <div className="bg-surface p-4 border border-line">
       {/* isFree null = gratuité non annoncée : jamais « Payant » par défaut */}
       <p className="mb-2 flex items-center gap-2 text-sm">
-        <span className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full border border-line px-2 py-0.5 text-xs font-bold">Prix : à vérifier</span>
+        <span className="inline-flex shrink-0 items-center whitespace-nowrap border border-line px-2 py-0.5 text-xs font-bold">Prix : à vérifier</span>
         <span className="text-muted">Tarifs sur la billetterie officielle</span>
       </p>
       {status && (
-        <p className={`mb-2 font-bold ${s.ticketStatus === "soldout" || s.ticketStatus === "cancelled" ? "text-red" : "text-green-ink"}`}>
+        <p className={`mb-2 font-bold ${s.ticketStatus === "soldout" || s.ticketStatus === "cancelled" ? "text-red-ink" : "text-blue-ink"}`}>
           {status}
           {ticketsFetchedAt && (
             <span className="ml-1 text-xs font-normal text-muted">· relevé le {updatedAt(ticketsFetchedAt)}</span>
@@ -105,7 +106,6 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
   if (!s) notFound();
   const v = venueById.get(s.venueId)!;
   const { label, emoji } = sessionLabel(s);
-  const style = CLUSTER_STYLE[v.cluster];
   const day = dayKey(s.start);
   const mapsHref = mapsUrl(v);
   const place = `${v.name}${s.hall ? ` (${s.hall})` : ""}`;
@@ -114,24 +114,24 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
     <article className="pt-2">
       <BackLink href="/" />
 
-      <div>
-        <p className="tabular mt-1 inline-block rounded-md bg-ink px-2 py-0.5 text-sm font-bold tracking-wider text-sand">{s.id}</p>
+      <div className="mt-1 flex items-start gap-4">
+        <SportPicto sportId={s.sportId} emoji={emoji} size={72} />
+        <div className="min-w-0">
+          <p className="tabular inline-block bg-ink px-2 py-0.5 text-sm font-bold tracking-wider text-page">{s.id}</p>
+          <h1 className="display mt-2 text-5xl text-heading">{label}</h1>
+        </div>
       </div>
-      <h1 className="mt-2 flex items-center gap-2 text-3xl font-extrabold leading-tight">
-        {label} <span aria-hidden="true">{emoji}</span>
-      </h1>
 
-      <div className="mt-3 rounded-xl border border-line bg-surface p-4">
-        <p className="first-letter:uppercase font-semibold">{longDay(day)}</p>
-        <p className="tabular text-2xl font-extrabold">
+      <div className="chamfer mt-4 bg-tint p-4">
+        <p className="text-sm font-bold uppercase tracking-wider text-blue-ink">{longDay(day)}</p>
+        <p className="tabular display mt-1 text-5xl">
           {timeRange(s.start, s.end)}
-          {s.end === null && <span className="text-base font-semibold text-muted"> · fin non communiquée</span>}
         </p>
-        <p className="mt-2">
+        <div className="dotted-x my-3" aria-hidden="true" />
+        <p>
           <Link href={`/sites/${v.id}`} className="font-bold underline underline-offset-2">{place}</Link>
-          <span className={`ml-2 text-sm font-semibold ${style.text}`}>
-            <span className={`mr-1 inline-block size-2 rounded-full align-middle ${style.dot}`} aria-hidden="true" />
-            {CLUSTER_LABEL[v.cluster]}
+          <span className="ml-2 text-sm">
+            <ClusterTag cluster={v.cluster} />
           </span>
         </p>
         {/* « Gratuit » est déjà dans le bloc d'action juste en dessous */}
@@ -143,7 +143,7 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
       </div>
 
       {s.scheduleConflict && (
-        <div role="note" className="mt-3 flex gap-2 rounded-xl border border-current p-3 text-sm text-sun-ink">
+        <div role="note" className="mt-3 flex gap-2 border border-current p-3 text-sm text-ink">
           <TriangleAlert aria-hidden="true" size={20} className="shrink-0" />
           <p className="text-ink">
             <strong>Horaire modifié.</strong> La billetterie indique un début à{" "}
@@ -173,10 +173,10 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
 
       {s.events.length > 0 && (
         <section className="mt-6">
-          <h2 className="mb-2 text-sm font-extrabold uppercase tracking-wide text-muted">
+          <h2 className="display mb-2 text-3xl">
             Épreuves ({s.events.length})
           </h2>
-          <ul className="divide-y divide-line rounded-xl border border-line bg-surface">
+          <ul className="divide-y divide-line border border-line bg-surface">
             {s.events.map((e, i) => (
               <li key={i} className="px-4 py-2.5">{e}</li>
             ))}

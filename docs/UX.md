@@ -54,48 +54,39 @@
 
 ### 5. `/a-propos`
 - Ce qu'est le site, d'où viennent les données (liste des sources avec liens), date de
-  mise à jour, mention « non officiel », contact. Lien vers la chaîne MXR CODES.
+  mise à jour, Ayo (si `officialBranding`), contact. Lien vers la chaîne MXR CODES.
 
 ## Design tokens
 
-Palette **inspirée des couleurs du Sénégal et de l'habillage de la ville pendant les Jeux**.
-Pas de logo, pas d'emblème, pas de mascotte, pas de reprise des formes graphiques
-officielles. Pour coller encore plus à l'ambiance : prendre en photo l'habillage de la ville
-(city look) et ajuster les valeurs au compte-gouttes — les couleurs ne sont pas la marque,
-le logo oui.
+Identité **Dakar 2026**, relevée dans le guide médias du COJOJ (oct. 2026) et la charte
+olympique (résumé dans le kit de marque) : aplats de bleu, beaucoup de blanc, titres condensés
+en capitales, texte courant noir. Valeurs exactes dans `src/app/globals.css`.
 
-```css
-:root {
-  --green-600: #00853F;   /* vert drapeau — actions principales */
-  --green-50:  #E6F4EC;
-  --yellow-400:#FDEF42;   /* jaune drapeau — badge "Gratuit", surlignage */
-  --red-600:   #E31B23;   /* rouge drapeau — "En ce moment", alertes */
-  --sand-50:   #FBF7EF;   /* fond clair, évoque la plage de Saly */
-  --ink-900:   #14161A;   /* texte */
-  --ink-500:   #5B616B;   /* texte secondaire */
-  --ocean-600: #0B6E99;   /* secteur Saly */
-  --sun-500:   #F28C28;   /* secteur Diamniadio */
-  /* secteur Dakar = --green-600 */
-}
-@media (prefers-color-scheme: dark) {
-  :root { --sand-50: #0F1113; --ink-900: #F2F2F2; --ink-500: #A3A9B3; }
-}
-```
+| Rôle | Valeur |
+|---|---|
+| Bleu Dakar 2026 (en-tête, boutons, onglet actif) | `#0078D0`, texte blanc 4,57:1 |
+| Bleu texte / liens | `#005FA8` |
+| Encart (cartes, panneaux) | `#E6F1FA`, coin bas-droit coupé (`.chamfer`) |
+| Secteurs (carré de repère, texte noir) | Dakar `#EE334E`, Diamniadio `#00A651`, Saly `#FCB131` (plan directeur) |
+| Badges | Gratuit = jaune olympique + noir ; Finale = noir ; En ce moment = `#C8102E` + blanc |
 
-- Le jaune **ne sert jamais** de couleur de texte sur fond clair (contraste insuffisant) :
-  uniquement en fond de badge avec texte `--ink-900`.
-- Chaque secteur a sa couleur (pastille + bordure gauche de la carte) : repère visuel
-  immédiat sur le lieu.
-- Typo : une seule famille, système ou `Inter`/`Manrope` via `next/font` (auto-hébergée).
-  Chiffres tabulaires pour les horaires (`font-variant-numeric: tabular-nums`).
-- Motif décoratif optionnel : bande fine en haut de page vert/jaune/rouge (3 px). Sobre.
+- **Marques** (`src/components/Brand.tsx`, fichiers dans `public/brand/`) : emblème horizontal
+  blanc sur bleu dans l'en-tête, emblème vertical couleurs sur blanc dans le pied de page,
+  25 pictogrammes officiels sur les cartes, Ayo sur « À propos » et « Jeux terminés », motif
+  du « look des Jeux » en bande sous l'en-tête. Jamais modifiés. Emblème couleurs = fond blanc.
+- La couleur n'est jamais celle du texte courant. Le jaune ne sert jamais de texte.
+- Typo : titres en **Bebas Neue** (substitut public de l'« Olympic Headline », capitales,
+  ≤ 6 mots), tout le reste en **Inter**. Chiffres tabulaires pour les horaires.
+- Angles droits partout (pas de coins arrondis), filets fins, pointillés bleus du guide médias.
+- Mode sombre : fond noir (recommandé par la charte en numérique), emblème et pictogrammes
+  restent sur blanc.
 
 ## Performance
 
 - Pages statiques, une page par session (`generateStaticParams`), une par site.
 - `sessions.json` découpé par jour pour le client (`/data/day-2026-11-09.json`) afin de ne
   pas charger les ~250 sessions sur l'accueil.
-- Images : aucune image lourde. OG image générée (`next/og`) avec titre + date, sans logo.
+- Images : aucune image lourde. OG image générée (`next/og`) avec titre + date, emblème et motif.
 
 ## Accessibilité
 

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { buildIcs, type IcsEvent } from "@/lib/ics";
 
 const btn =
-  "flex min-h-12 flex-1 flex-col items-center justify-center gap-1 rounded-xl border border-line bg-surface px-2 py-2 text-sm font-semibold";
+  "flex min-h-12 flex-1 flex-col items-center justify-center gap-1 border border-line bg-surface px-2 py-2 text-sm font-semibold";
 
 export function SessionActions({ ics, mapsHref, shareTitle }: { ics: Omit<IcsEvent, "url">; mapsHref: string; shareTitle: string }) {
   const [copied, setCopied] = useState(false);

@@ -118,7 +118,7 @@ export const homeOgImage = {
   url: homeDay.day ? `/og/jour-${homeDay.day}.png` : "/og/fin.png",
   width: 1200,
   height: 630,
-  alt: "JOJ Guide — ce qu'on peut voir aux JOJ Dakar 2026 ce jour-là (guide non officiel)",
+  alt: "Ce qu'on peut voir aux JOJ Dakar 2026 ce jour-là : sessions, sites et horaires",
 };
 
 /** Dernier relevé des statuts billetterie (S2), distinct de la date du programme. */

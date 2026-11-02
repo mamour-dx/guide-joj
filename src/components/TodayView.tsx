@@ -10,6 +10,7 @@ import type { CardData } from "@/lib/cards";
 import { applyFilters, EMPTY_FILTERS, type Filters } from "@/lib/filters";
 import { addDays, dayKey, longDay } from "@/lib/time";
 import { useNow } from "@/lib/useNow";
+import { Mascot } from "./Brand";
 import { FilterChips } from "./FilterChips";
 import { SessionCard } from "./SessionCard";
 
@@ -32,11 +33,12 @@ function Section({ title, tone, cards, live = false, sec, hidden = false, tagged
   if (!cards.length) return null;
   return (
     <section className={`mt-5 ${hidden ? "hidden" : ""}`} data-sec={sec}>
-      <h2 className={`mb-2 flex items-center gap-2 text-sm font-extrabold uppercase tracking-wide ${tone === "live" ? "text-red" : "text-muted"}`}>
-        {tone === "live" && <span className="size-2.5 rounded-full bg-red motion-safe:animate-pulse" aria-hidden="true" />}
+      <h2 className={`display mb-3 flex items-center gap-2 text-2xl ${tone === "live" ? "text-red-ink" : ""}`}>
+        {tone === "live" && <span className="size-2.5 rounded-full bg-red-ink motion-safe:animate-pulse" aria-hidden="true" />}
         {title}
+        <span className="h-px flex-1 bg-line" aria-hidden="true" />
       </h2>
-      <ul className="space-y-2.5">
+      <ul className="space-y-3">
         {cards.map((c) => (
           <li key={c.id} data-id={c.id} data-start={tagged ? c.start : undefined} data-end={tagged ? c.end ?? "" : undefined}>
             <SessionCard c={c} live={live} />
@@ -51,8 +53,8 @@ function DoneSection({ cards, sec, hidden = false }: { cards: CardData[]; sec?: 
   if (!cards.length) return null;
   return (
     <details className={`mt-5 ${hidden ? "hidden" : ""}`} data-sec={sec}>
-      <summary className="min-h-11 cursor-pointer py-2 text-sm font-extrabold uppercase tracking-wide text-muted">Déjà terminé</summary>
-      <ul className="space-y-2.5">
+      <summary className="display min-h-11 cursor-pointer py-2 text-2xl text-muted">Déjà terminé</summary>
+      <ul className="space-y-3">
         {cards.map((c) => (
           <li key={c.id} data-id={c.id} className="opacity-70"><SessionCard c={c} /></li>
         ))}
@@ -76,10 +78,13 @@ var st=document.createElement("style");st.id="today-initial";st.textContent=c;do
 
 function Ended() {
   return (
-    <div className="mt-6 rounded-xl bg-surface p-4">
-      <h1 className="text-2xl font-extrabold">Les Jeux sont terminés</h1>
-      <p className="mt-2 text-muted">Les JOJ Dakar 2026 se sont déroulés du 30 octobre au 13 novembre 2026.</p>
-      <Link href="/programme" className="mt-3 inline-block font-bold text-green-ink underline">Revoir le programme</Link>
+    <div className="mt-6 flex items-end gap-4">
+      <Mascot height={150} />
+      <div>
+        <h1 className="display text-5xl text-heading">Les Jeux sont terminés</h1>
+        <p className="mt-2 text-muted">Les JOJ Dakar 2026 se sont déroulés du 30 octobre au 13 novembre 2026.</p>
+        <Link href="/programme" className="mt-3 inline-flex min-h-11 items-center font-bold text-blue-ink underline">Revoir le programme</Link>
+      </div>
     </div>
   );
 }
@@ -134,13 +139,13 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
   return (
     <div>
       <div className="mt-2">
-        <p className="text-sm font-semibold text-muted">
+        <p className="text-sm font-bold uppercase tracking-wider text-blue-ink">
           {tab === "tomorrow" ? "Demain" : base.isToday ? "Aujourd'hui" : "Prochain jour de compétition"}
         </p>
-        <h1 className="text-2xl font-extrabold first-letter:uppercase">{shown ? longDay(shown) : "—"}</h1>
+        <h1 className="display mt-1 text-5xl text-heading">{shown ? longDay(shown) : "—"}</h1>
       </div>
 
-      <div role="tablist" aria-label="Jour" className="mt-3 grid grid-cols-2 rounded-xl bg-surface p-1 border border-line">
+      <div role="tablist" aria-label="Jour" className="mt-4 grid grid-cols-2 border border-line p-1">
         {(["today", "tomorrow"] as const).map((k) => (
           <button
             key={k}
@@ -148,7 +153,7 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
             type="button"
             aria-selected={tab === k}
             onClick={() => setTab(k)}
-            className={`min-h-11 rounded-lg text-base font-bold ${tab === k ? "bg-green text-on-accent" : "text-ink"}`}
+            className={`min-h-11 text-base font-bold ${tab === k ? "bg-blue text-on-blue" : "text-ink"}`}
           >
             {k === "today" ? (base.isToday ? "Aujourd'hui" : "Prochain jour") : "Demain"}
           </button>
@@ -156,9 +161,9 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
       </div>
 
       {!shownHasData ? (
-        <p className="mt-6 rounded-xl bg-surface p-4">
+        <p className="chamfer mt-6 bg-tint p-4">
           Aucune session prévue ce jour-là.{" "}
-          <Link href="/programme" className="font-bold text-green-ink underline">Voir tout le programme</Link>
+          <Link href="/programme" className="font-bold text-blue-ink underline">Voir tout le programme</Link>
         </p>
       ) : cards === null ? (
         <p className="mt-6 text-muted" role="status">
@@ -168,9 +173,9 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
         <>
           <FilterChips value={filters} onChange={setFilters} sports={daySports} />
           {filtered.length === 0 && (
-            <p className="mt-4 rounded-xl bg-surface p-4">
+            <p className="chamfer mt-4 bg-tint p-4">
               Aucune session ne correspond à ces filtres.{" "}
-              <button type="button" className="font-bold text-green-ink underline" onClick={() => setFilters(EMPTY_FILTERS)}>
+              <button type="button" className="font-bold text-blue-ink underline" onClick={() => setFilters(EMPTY_FILTERS)}>
                 Tout afficher
               </button>
             </p>
@@ -181,7 +186,7 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
             <div id="today-sections" data-day={initial.day ?? ""}>
               <Section title="Au programme" cards={filtered} sec="all" tagged />
               <Section title="En ce moment" tone="live" cards={filtered} live sec="live" hidden />
-              <Section title="Commencé · fin non communiquée" cards={filtered} sec="open" hidden />
+              <Section title="Déjà commencé" cards={filtered} sec="open" hidden />
               <Section title="Plus tard aujourd'hui" cards={filtered} sec="later" hidden />
               <DoneSection cards={filtered} sec="done" hidden />
               <script dangerouslySetInnerHTML={{ __html: PREPAINT }} />
@@ -189,7 +194,7 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
           ) : (
             <div>
               <Section title="En ce moment" tone="live" cards={live} live />
-              <Section title="Commencé · fin non communiquée" cards={startedOpen} />
+              <Section title="Déjà commencé" cards={startedOpen} />
               <Section title={isLiveDay ? "Plus tard aujourd'hui" : "Au programme"} cards={later} />
               <DoneSection cards={done} />
             </div>

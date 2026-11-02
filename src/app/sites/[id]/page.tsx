@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
 import { BackLink } from "@/components/BackLink";
-import { CLUSTER_STYLE, SessionCard } from "@/components/SessionCard";
+import { ClusterTag, SessionCard } from "@/components/SessionCard";
 import { HidePastDays } from "@/components/TimeAware";
 import { CLUSTER_LABEL } from "@/lib/cards";
 import { cards, officialLinks, venueById, venues } from "@/lib/data";
@@ -25,7 +25,6 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
   const { id } = await params;
   const v = venueById.get(id);
   if (!v) notFound();
-  const style = CLUSTER_STYLE[v.cluster];
   const list = cards.filter((c) => c.venueId === v.id);
   const days = [...new Set(list.map((c) => c.day))];
   const scope = `site-${v.id}`;
@@ -33,17 +32,16 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
   return (
     <article className="pt-2">
       <BackLink href="/sites" />
-      <h1 className="mt-1 text-3xl font-extrabold leading-tight">{v.name}</h1>
-      <p className={`mt-1 font-semibold ${style.text}`}>
-        <span className={`mr-1.5 inline-block size-2.5 rounded-full align-middle ${style.dot}`} aria-hidden="true" />
-        Secteur {CLUSTER_LABEL[v.cluster]}
+      <h1 className="mt-1 display text-5xl text-heading">{v.name}</h1>
+      <p className="mt-2">
+        <ClusterTag cluster={v.cluster} prefix="Secteur " />
       </p>
 
       <a
         href={mapsUrl(v)}
         target="_blank"
         rel="noopener"
-        className="mt-4 flex min-h-13 w-full items-center justify-center gap-2 rounded-xl bg-green px-4 py-3 text-lg font-extrabold text-on-accent"
+        className="display mt-4 flex min-h-13 w-full items-center justify-center gap-2 bg-blue px-4 py-3 text-2xl text-on-blue"
       >
         Itinéraire <ArrowUpRight aria-hidden="true" size={20} />
       </a>
@@ -53,8 +51,8 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
         </p>
       )}
 
-      <section className="mt-5 rounded-xl border border-line bg-surface p-4">
-        <h2 className="text-sm font-extrabold uppercase tracking-wide text-muted">Accès</h2>
+      <section className="chamfer mt-5 bg-tint p-4">
+        <h2 className="display text-2xl">Accès</h2>
         {v.accessNote ? (
           <p className="mt-1">
             {v.accessNote}
@@ -76,7 +74,7 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
       </section>
 
       <section id={scope} className="mt-6">
-        <h2 className="text-sm font-extrabold uppercase tracking-wide text-muted">Sessions ({list.length})</h2>
+        <h2 className="display text-2xl">Sessions ({list.length})</h2>
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var dakarToday=${dakarToday.toString()};var t=dakarToday();var s=document.createElement("style");s.id="past-initial";s.textContent=${JSON.stringify(days)}.filter(function(d){return d<t}).map(function(d){return '#${scope} [data-past-day="'+d+'"]{display:none}'}).join("");document.head.appendChild(s);}catch(e){}})();`,
@@ -85,7 +83,7 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
         <HidePastDays scope={scope} days={days} />
         {days.map((d) => (
           <div key={d} data-past-day={d}>
-            <h3 className="mt-4 mb-2 font-extrabold first-letter:uppercase">{longDay(d)}</h3>
+            <h3 className="mt-4 mb-2 display text-2xl">{longDay(d)}</h3>
             <ul className="space-y-2.5">
               {list.filter((c) => c.day === d).map((c) => (
                 <li key={c.id}><SessionCard c={c} /></li>

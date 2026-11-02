@@ -15,7 +15,7 @@ export function BottomNav() {
   return (
     <nav
       aria-label="Navigation principale"
-      className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 backdrop-blur pb-[env(safe-area-inset-bottom)]"
+      className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-page/95 backdrop-blur pb-[env(safe-area-inset-bottom)]"
     >
       <ul className="mx-auto grid max-w-2xl grid-cols-3">
         {TABS.map(({ href, label, Icon, match }) => {
@@ -27,10 +27,11 @@ export function BottomNav() {
                 // pages statiques : pas besoin de précharger leur JS sur l'accueil (budget < 150 Ko)
                 prefetch={false}
                 aria-current={active ? "page" : undefined}
-                className={`flex min-h-14 flex-col items-center justify-center gap-0.5 text-sm font-semibold ${
-                  active ? "text-green-ink" : "text-muted"
+                className={`relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-sm font-semibold ${
+                  active ? "text-blue-ink" : "text-muted"
                 }`}
               >
+                {active && <span className="absolute inset-x-6 top-0 h-[3px] bg-blue" aria-hidden="true" />}
                 <Icon aria-hidden="true" size={22} strokeWidth={active ? 2.5 : 2} />
                 {label}
               </Link>
