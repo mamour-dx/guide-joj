@@ -48,7 +48,9 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
         Itinéraire <ArrowUpRight aria-hidden="true" size={20} />
       </a>
       {(v.lat === null || v.lng === null) && (
-        <p className="mt-1 text-xs text-muted">Position GPS non vérifiée : l&apos;itinéraire cherche « {v.mapsQuery} ».</p>
+        <p className="mt-1 text-xs text-muted">
+          L&apos;itinéraire mène au lieu « {v.mapsQuery} » sur Google Maps ; l&apos;entrée est signalée sur place.
+        </p>
       )}
 
       <section className="mt-5 rounded-xl border border-line bg-surface p-4">

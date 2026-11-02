@@ -1,7 +1,7 @@
 [
   {"id":"tour-de-l-oeuf","name":"Complexe Tour de l'Œuf","cluster":"dakar",
    "aliases":["Complexe Tour de l'Oeuf","Complexe Tour de l'Œuf","Tour de l'Oeuf","Tour de l'œuf Dakar"],
-   "lat":null,"lng":null,"mapsQuery":"Complexe Tour de l'Oeuf, Dakar, Sénégal",
+   "lat":14.69675,"lng":-17.462139,"mapsQuery":"Complexe Tour de l'Oeuf, Dakar, Sénégal",
    "accessNote":"BRT, toutes lignes (B1, B2, B3) : descendre à la station Dial Diop, puis suivre le cheminement piéton balisé. Navettes JOJ depuis le Monument de la Renaissance (Ouakam), Grand Médine, Pikine (Arène nationale), Guédiawaye (stade Amadou Barry) et Keur Massar, de 6h30 à 22h. Le pourtour du complexe est piéton : circulation interdite, sauf véhicules accrédités.","accessSourceUrl":"https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=6",
    "_notes":"Baseball5, natation, skateboard, basket 3x3, breaking + Pass Fan Zone (codes CTO). Coordonnées à vérifier sur Google Maps."},
   {"id":"iba-mar-diop","name":"Complexe Iba Mar Diop","cluster":"dakar",
@@ -36,7 +36,7 @@
    "_notes":"Tir à l'arc. Cérémonie d'ouverture (31 oct, passée)."},
   {"id":"saly-plage-ouest","name":"Saly Plage Ouest","cluster":"saly",
    "aliases":["Saly Beach West","Saly Plage Ouest","Saly plage ouest"],
-   "lat":null,"lng":null,"mapsQuery":"Saly Portudal plage, Sénégal",
+   "lat":14.448528,"lng":-17.038083,"mapsQuery":"Saly Portudal plage, Sénégal",
    "accessNote":"Accès uniquement par les navettes JOJ, de 6h30 à 22h : Grand Médine – Saly (direct par l'autoroute, toutes les 45 min) et stade de Mbour – Saly (toutes les 15 min). Routes d'accès à Saly Plage Ouest réservées aux piétons ; parkings-relais à Saly Tapé, Bougainvillées et Karting ; dépose-minute au Saly Center.","accessSourceUrl":"https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf#page=20",
    "_notes":"Beach-volley, aviron beach sprints, triathlon, lutte de plage, voile, handball de plage. Billets groupés sous codes SBW."}
 ]

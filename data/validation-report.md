@@ -1,6 +1,6 @@
-# Rapport de validation — 2026-11-02T20:56+00:00
+# Rapport de validation — 2026-11-02T21:39+00:00
 
-**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-02T20:56:17+00:00.
+**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-02T21:39:36+00:00.
 
 ## Compteurs
 
@@ -89,7 +89,7 @@ Aucune.
 ## Sites
 
 - Sans note d'accès (0) : —
-- Sans coordonnées GPS vérifiées (8) : tour-de-l-oeuf, iba-mar-diop, corniche-ouest, dakar-arena, dakar-expo-centre, centre-equestre, stade-abdoulaye-wade, saly-plage-ouest
+- Sans coordonnées GPS vérifiées (6) : iba-mar-diop, corniche-ouest, dakar-arena, dakar-expo-centre, centre-equestre, stade-abdoulaye-wade
 
 ## Contrôle humain — 10 sessions tirées au hasard (graine 2026)
 
