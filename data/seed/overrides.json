@@ -1,0 +1,36 @@
+{
+  "_readme": "Corrections et ajouts manuels. Chaque entrée DOIT avoir 'reason' et 'source'. Jamais de valeur sans source.",
+  "free": [
+    {"match": {"codePrefix": "CRD"}, "isFree": true,
+     "reason": "Cyclisme sur route annoncé en accès gratuit par le guide de billetterie",
+     "source": "A_VERIFIER: URL du guide officiel du spectateur (annonce sur tickets.dakar2026.org)"},
+    {"match": {"codePrefix": "TRI"}, "isFree": true,
+     "reason": "Triathlon annoncé en accès gratuit par le guide de billetterie",
+     "source": "A_VERIFIER: URL du guide officiel du spectateur (annonce sur tickets.dakar2026.org)"}
+  ],
+  "fanEvents": [
+    {"_comment": "Pass Fan Zone (codes CTOxx) et Festival Corniche (codes CORxx) : à importer depuis la billetterie (plan A/B). Gratuits selon les organisateurs.",
+     "codePrefix": "CTO", "title": "Pass Fan Zone", "venueId": "tour-de-l-oeuf", "isFree": true,
+     "source": "https://tickets.dakar2026.org/fr"},
+    {"codePrefix": "COR", "title": "Festival de la Corniche", "venueId": "corniche-ouest", "isFree": true,
+     "source": "https://tickets.dakar2026.org/fr"},
+    {"_comment": "Pass Fan Zone du Stade Abdoulaye Wade (SAW01-05), vu dans la billetterie le 2026-11-02. Gratuité non annoncée : isFree inconnu.",
+     "codePrefix": "SAW", "title": "Pass Fan Zone", "venueId": "stade-abdoulaye-wade",
+     "source": "https://tickets.dakar2026.org/fr/ticketing"},
+    {"_comment": "Concert de clôture (SBW15), vu dans la billetterie le 2026-11-02. Gratuité non annoncée : isFree inconnu.",
+     "code": "SBW15", "title": "Concert de clôture", "venueId": "saly-plage-ouest",
+     "source": "https://tickets.dakar2026.org/fr/ticketing"}
+  ],
+  "eventFixes": [
+    {"sessionId": "GAR101", "issue": "Épreuve 'Men's Street - Finals' sous Gymnastique artistique (copier-coller probable dans la source)",
+     "action": "flag-only", "source": "S1"},
+    {"sessionId": "ATH02", "issue": "'Women's 400m Hurdles - semi & final' apparaît deux fois",
+     "action": "dedupe", "source": "S1"},
+    {"sessionIdPrefix": "BK3", "issue": "'Women's and Men's singles' pour le basket 3x3 (libellé générique de la source)",
+     "action": "display-as: 'Femmes et hommes'", "source": "S1"},
+    {"sessionIdPrefix": "HBB", "issue": "'Women's and Men's singles' pour le handball de plage",
+     "action": "display-as: 'Femmes et hommes'", "source": "S1"},
+    {"sessionId": "BOX11", "issue": "'M's 50kg - Final' : abréviation isolée (toutes les autres lignes disent 'Men's')",
+     "action": "replace: M's => Men's", "source": "S1"}
+  ]
+}

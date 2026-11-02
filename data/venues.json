@@ -1,0 +1,124 @@
+[
+  {
+    "id": "tour-de-l-oeuf",
+    "name": "Complexe Tour de l'Œuf",
+    "cluster": "dakar",
+    "aliases": [
+      "Complexe Tour de l'Oeuf",
+      "Complexe Tour de l'Œuf",
+      "Tour de l'Oeuf",
+      "Tour de l'œuf Dakar"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Complexe Tour de l'Oeuf, Dakar, Sénégal",
+    "accessNote": null,
+    "accessSourceUrl": null
+  },
+  {
+    "id": "iba-mar-diop",
+    "name": "Complexe Iba Mar Diop",
+    "cluster": "dakar",
+    "aliases": [
+      "Complexe Iba Mar Diop",
+      "Stade Iba Mar Diop",
+      "Complexe Iba Mar Diop(Stade Iba Mar Diop)"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Stade Iba Mar Diop, Dakar, Sénégal",
+    "accessNote": null,
+    "accessSourceUrl": null
+  },
+  {
+    "id": "corniche-ouest",
+    "name": "Corniche Ouest (Place du Souvenir africain)",
+    "cluster": "dakar",
+    "aliases": [
+      "Corniche West",
+      "Corniche Ouest",
+      "Corniche Ouest(Place du Souvenir)",
+      "Corniche"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Place du Souvenir Africain, Corniche Ouest, Dakar",
+    "accessNote": null,
+    "accessSourceUrl": null
+  },
+  {
+    "id": "dakar-arena",
+    "name": "Dakar Arena",
+    "cluster": "diamniadio",
+    "aliases": [
+      "Dakar Arena"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Dakar Arena, Diamniadio, Sénégal",
+    "accessNote": null,
+    "accessSourceUrl": null
+  },
+  {
+    "id": "dakar-expo-centre",
+    "name": "Centre des Expositions de Dakar",
+    "cluster": "diamniadio",
+    "aliases": [
+      "Dakar Expo Centre",
+      "Dakar Expo Center",
+      "Centre des Expositions de Dakar",
+      "Centre des Expositions de Dakar(Pavillon C)",
+      "Centre des expositions"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Centre des Expositions de Diamniadio, Sénégal",
+    "accessNote": null,
+    "accessSourceUrl": null
+  },
+  {
+    "id": "centre-equestre",
+    "name": "Centre équestre de Diamniadio",
+    "cluster": "diamniadio",
+    "aliases": [
+      "Equestrian Centre",
+      "Centre Equestre",
+      "Centre équestre"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Centre équestre, Diamniadio, Sénégal",
+    "accessNote": null,
+    "accessSourceUrl": null
+  },
+  {
+    "id": "stade-abdoulaye-wade",
+    "name": "Stade Abdoulaye Wade",
+    "cluster": "diamniadio",
+    "aliases": [
+      "Stade Abdoulaye Wade",
+      "Stade olympique Abdoulaye-Wade",
+      "Stade du Sénégal"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Stade Abdoulaye Wade, Diamniadio, Sénégal",
+    "accessNote": null,
+    "accessSourceUrl": null
+  },
+  {
+    "id": "saly-plage-ouest",
+    "name": "Saly Plage Ouest",
+    "cluster": "saly",
+    "aliases": [
+      "Saly Beach West",
+      "Saly Plage Ouest",
+      "Saly plage ouest"
+    ],
+    "lat": null,
+    "lng": null,
+    "mapsQuery": "Saly Portudal plage, Sénégal",
+    "accessNote": null,
+    "accessSourceUrl": null
+  }
+]

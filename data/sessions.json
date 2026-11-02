@@ -1,0 +1,5693 @@
+[
+  {
+    "id": "BS501",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-10-30T10:00:00+00:00",
+    "end": "2026-10-30T12:45:00+00:00",
+    "day": -1,
+    "events": [
+      "🇨🇺 CUB – TUR 🇹🇷",
+      "TPE – SEN 🇸🇳"
+    ],
+    "eventsRaw": [
+      "CUB vs TUR",
+      "TPE vs SEN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS502",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-10-30T15:00:00+00:00",
+    "end": "2026-10-30T17:45:00+00:00",
+    "day": -1,
+    "events": [
+      "🇲🇽 MEX – SYR 🇸🇾",
+      "🇫🇷 FRA – KEN 🇰🇪"
+    ],
+    "eventsRaw": [
+      "MEX vs SYR",
+      "FRA vs KEN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS503",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-10-31T08:30:00+00:00",
+    "end": "2026-10-31T14:15:00+00:00",
+    "day": 0,
+    "events": [
+      "TPE – TUR 🇹🇷",
+      "🇸🇾 SYR – FRA 🇫🇷",
+      "🇲🇽 MEX – KEN 🇰🇪",
+      "🇸🇳 SEN – CUB 🇨🇺"
+    ],
+    "eventsRaw": [
+      "TPE vs TUR",
+      "SYR vs FRA",
+      "MEX vs KEN",
+      "SEN vs CUB"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "VBV01",
+    "kind": "sport",
+    "sportId": "beach-volleyball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-10-31T08:30:00+00:00",
+    "end": "2026-10-31T15:10:00+00:00",
+    "day": 0,
+    "events": [
+      "Femmes et hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Women and Men - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RCB01",
+    "kind": "sport",
+    "sportId": "rowing-beach",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-10-31T10:00:00+00:00",
+    "end": "2026-10-31T12:10:00+00:00",
+    "day": 0,
+    "events": [
+      "Deux de couple mixte — contre-la-montre 1",
+      "Solo hommes — contre-la-montre 1",
+      "Solo femmes — contre-la-montre 1"
+    ],
+    "eventsRaw": [
+      "Mixed Double Sculls - Time Trial 1",
+      "Men's Solo - Time Trial 1",
+      "Women's Solo - Time Trial 1"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TTE01",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-10-31T10:00:00+00:00",
+    "end": "2026-10-31T13:00:00+00:00",
+    "day": 0,
+    "events": [
+      "Double mixte — seizièmes de finale",
+      "Double mixte — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Mixed Doubles - Round of 32",
+      "Mixed Doubles - Round of 16"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "VBV02",
+    "kind": "sport",
+    "sportId": "beach-volleyball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-01T08:30:00+00:00",
+    "end": "2026-11-01T16:50:00+00:00",
+    "day": 1,
+    "events": [
+      "Femmes et hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Women and Men - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM01",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-01T09:00:00+00:00",
+    "end": "2026-11-01T12:40:00+00:00",
+    "day": 1,
+    "events": [
+      "Simple femmes et hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - group stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TTE02",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-01T09:30:00+00:00",
+    "end": "2026-11-01T13:00:00+00:00",
+    "day": 1,
+    "events": [
+      "Simple femmes — phase préliminaire",
+      "Simple hommes — phase préliminaire"
+    ],
+    "eventsRaw": [
+      "Women's Single - Preliminary Stage",
+      "Men's Single - Preliminary Stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WST01",
+    "kind": "sport",
+    "sportId": "wushu",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-01T09:30:00+00:00",
+    "end": "2026-11-01T11:30:00+00:00",
+    "day": 1,
+    "events": [
+      "Changquan hommes — tour préliminaire",
+      "Taijishan femmes — tour préliminaire"
+    ],
+    "eventsRaw": [
+      "Men's Changquan - Preliminary Round",
+      "Women's Taijishan - Preliminary Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS01",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": null,
+    "start": "2026-11-01T10:00:00+00:00",
+    "end": "2026-11-01T14:00:00+00:00",
+    "day": 1,
+    "events": [
+      "Femmes : 🇨🇷 CRC – IRN 🇮🇷",
+      "Femmes : 🇮🇹 ITA – CMR 🇨🇲"
+    ],
+    "eventsRaw": [
+      "Women's CRC vs IRN",
+      "Women's ITA vs CMR"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "JUD01",
+    "kind": "sport",
+    "sportId": "judo",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-01T10:00:00+00:00",
+    "end": "2026-11-01T12:30:00+00:00",
+    "day": 1,
+    "events": [
+      "55 kg hommes — tours préliminaires",
+      "-44 kg femmes — tours préliminaires",
+      "-66 kg hommes — tours préliminaires"
+    ],
+    "eventsRaw": [
+      "Men - 55kg - Preliminary Rounds",
+      "Women -44kg - Preliminary Rounds",
+      "Men -66kg - Preliminary Rounds"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RCB02",
+    "kind": "sport",
+    "sportId": "rowing-beach",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-01T10:00:00+00:00",
+    "end": "2026-11-01T13:30:00+00:00",
+    "day": 1,
+    "events": [
+      "Deux de couple mixte — contre-la-montre 2",
+      "Solo hommes — contre-la-montre 2",
+      "Solo femmes — contre-la-montre 2",
+      "Deux de couple mixte — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Mixed Double Sculls - Time Trial 2",
+      "Men's Solo - Time Trial 2",
+      "Women's Solo - Time Trial 2",
+      "Mixed Double Sculls - Last 16"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS504",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-01T10:30:00+00:00",
+    "end": "2026-11-01T13:15:00+00:00",
+    "day": 1,
+    "events": [
+      "🇰🇪 KEN – SYR 🇸🇾",
+      "🇫🇷 FRA – MEX 🇲🇽"
+    ],
+    "eventsRaw": [
+      "KEN vs SYR",
+      "FRA vs MEX"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RU701",
+    "kind": "sport",
+    "sportId": "rugby-sevens",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": null,
+    "start": "2026-11-01T10:30:00+00:00",
+    "end": "2026-11-01T11:58:00+00:00",
+    "day": 1,
+    "events": [
+      "Hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Men - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM01",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-01T11:00:00+00:00",
+    "end": "2026-11-01T13:00:00+00:00",
+    "day": 1,
+    "events": [
+      "200 m dos femmes — séries",
+      "200 m dos hommes — séries",
+      "100 m papillon femmes — séries",
+      "100 m papillon hommes — séries",
+      "400 m nage libre femmes — séries lentes",
+      "800 m nage libre hommes — séries lentes"
+    ],
+    "eventsRaw": [
+      "Women's 200m Backstroke - Heats",
+      "Men's 200m Backstroke - Heats",
+      "Women's 100m Butterfly - Heats",
+      "Men's 100m Butterfly - Heats",
+      "Women's 400m Freestyle - Slowest Heats",
+      "Men's 800m Freestyle - Slowest Heats"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RU702",
+    "kind": "sport",
+    "sportId": "rugby-sevens",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": null,
+    "start": "2026-11-01T13:14:00+00:00",
+    "end": "2026-11-01T17:26:00+00:00",
+    "day": 1,
+    "events": [
+      "Hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Men - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM02",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-01T14:30:00+00:00",
+    "end": "2026-11-01T18:55:00+00:00",
+    "day": 1,
+    "events": [
+      "Simple femmes et hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - group stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TTE03",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-01T14:30:00+00:00",
+    "end": "2026-11-01T19:30:00+00:00",
+    "day": 1,
+    "events": [
+      "Simple femmes — phase préliminaire",
+      "Simple hommes — phase préliminaire",
+      "Double mixte — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's Single - Preliminary Stage",
+      "Men's Single - Preliminary Stage",
+      "Mixed Doubles - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WST02",
+    "kind": "sport",
+    "sportId": "wushu",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-01T14:30:00+00:00",
+    "end": "2026-11-01T16:30:00+00:00",
+    "day": 1,
+    "events": [
+      "Gunshu femmes — tour préliminaire",
+      "Taijiquan hommes — tour préliminaire"
+    ],
+    "eventsRaw": [
+      "Women's Gunshu - Preliminary Round",
+      "Men's Taijiquan - Preliminary Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS505",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-01T15:00:00+00:00",
+    "end": "2026-11-01T17:45:00+00:00",
+    "day": 1,
+    "events": [
+      "🇹🇷 TUR – SEN 🇸🇳",
+      "🇨🇺 CUB – TPE"
+    ],
+    "eventsRaw": [
+      "TUR vs SEN",
+      "CUB vs TPE"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM02",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-01T15:00:00+00:00",
+    "end": "2026-11-01T17:00:00+00:00",
+    "day": 1,
+    "events": [
+      "400 m nage libre femmes — séries rapides",
+      "800 m nage libre hommes — séries rapides",
+      "200 m dos femmes — finale",
+      "200 m dos hommes — finale",
+      "100 m papillon femmes — finale",
+      "100 m papillon hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 400m Freestyle - Fastest Heats",
+      "Men's 800m Freestyle - Fastest Heats",
+      "Women's 200m Backstroke - Final",
+      "Men's 200m Backstroke - Final",
+      "Women's 100m Butterfly - Final",
+      "Men's 100m Butterfly - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS02",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": null,
+    "start": "2026-11-01T15:30:00+00:00",
+    "end": "2026-11-01T19:30:00+00:00",
+    "day": 1,
+    "events": [
+      "Femmes : 🇻🇪 VEN – UKR 🇺🇦",
+      "Femmes : 🇸🇳 SEN – FIJ 🇫🇯"
+    ],
+    "eventsRaw": [
+      "Women's VEN vs UKR",
+      "Women's SEN vs FIJ"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "JUD02",
+    "kind": "sport",
+    "sportId": "judo",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-01T16:00:00+00:00",
+    "end": "2026-11-01T17:39:00+00:00",
+    "day": 1,
+    "events": [
+      "55 kg hommes — bloc final",
+      "-44 kg femmes — bloc final",
+      "-66 kg hommes — bloc final"
+    ],
+    "eventsRaw": [
+      "Men - 55kg - Final Block",
+      "Women -44kg - Final Block",
+      "Men -66kg - Final Block"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM03",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-02T09:00:00+00:00",
+    "end": "2026-11-02T12:40:00+00:00",
+    "day": 2,
+    "events": [
+      "Simple femmes et hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - group stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR03",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-02T09:00:00+00:00",
+    "end": null,
+    "day": 2,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "VBV03",
+    "kind": "sport",
+    "sportId": "beach-volleyball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-02T09:00:00+00:00",
+    "end": "2026-11-02T11:00:00+00:00",
+    "day": 2,
+    "events": [
+      "Femmes et hommes — repêchages"
+    ],
+    "eventsRaw": [
+      "Women and Men - Lucky Loser Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WST03",
+    "kind": "sport",
+    "sportId": "wushu",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-02T09:30:00+00:00",
+    "end": "2026-11-02T11:30:00+00:00",
+    "day": 2,
+    "events": [
+      "Gunshu hommes — tour préliminaire",
+      "Taijiquan femmes — tour préliminaire"
+    ],
+    "eventsRaw": [
+      "Men's Gunshu - Preliminary Round",
+      "Women's Taijiquan - Preliminary Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS03",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": null,
+    "start": "2026-11-02T10:00:00+00:00",
+    "end": "2026-11-02T14:00:00+00:00",
+    "day": 2,
+    "events": [
+      "Hommes : 🇸🇧 SOL – PAR 🇵🇾",
+      "Hommes : 🇵🇹 POR – MAR 🇲🇦"
+    ],
+    "eventsRaw": [
+      "Men's SOL vs PAR",
+      "Men's POR vs MAR"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "JUD03",
+    "kind": "sport",
+    "sportId": "judo",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-02T10:00:00+00:00",
+    "end": "2026-11-02T12:30:00+00:00",
+    "day": 2,
+    "events": [
+      "-52 kg femmes — tours préliminaires",
+      "-81 kg hommes — tours préliminaires",
+      "-63 kg femmes — tours préliminaires"
+    ],
+    "eventsRaw": [
+      "Women -52kg - Preliminary Rounds",
+      "Men -81kg - Preliminary Rounds",
+      "Women -63kg - Preliminary Rounds"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RCB03",
+    "kind": "sport",
+    "sportId": "rowing-beach",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-02T10:00:00+00:00",
+    "end": "2026-11-02T13:10:00+00:00",
+    "day": 2,
+    "events": [
+      "Solo hommes — huitièmes de finale",
+      "Solo femmes — huitièmes de finale",
+      "Deux de couple mixte — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Men's Solo - Last 16",
+      "Women's Solo - Last 16",
+      "Mixed Double Sculls - Last 8"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TTE04",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-02T10:00:00+00:00",
+    "end": "2026-11-02T12:20:00+00:00",
+    "day": 2,
+    "events": [
+      "Simple femmes — phase préliminaire",
+      "Simple hommes — phase préliminaire"
+    ],
+    "eventsRaw": [
+      "Women's Single - Preliminary Stage",
+      "Men's Single - Preliminary Stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS506",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-02T10:30:00+00:00",
+    "end": "2026-11-02T13:15:00+00:00",
+    "day": 2,
+    "events": [
+      "Quarts de finale"
+    ],
+    "eventsRaw": [
+      "Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM03",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-02T11:00:00+00:00",
+    "end": "2026-11-02T13:00:00+00:00",
+    "day": 2,
+    "events": [
+      "100 m nage libre femmes — séries",
+      "100 m nage libre hommes — séries",
+      "200 m brasse femmes — séries",
+      "200 m brasse hommes — séries"
+    ],
+    "eventsRaw": [
+      "Women's 100m Freestyle - Heats",
+      "Men's 100m Freestyle - Heats",
+      "Women's 200m Breaststroke - Heats",
+      "Men's 200m Breaststroke - Heats"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RU703",
+    "kind": "sport",
+    "sportId": "rugby-sevens",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": null,
+    "start": "2026-11-02T11:30:00+00:00",
+    "end": "2026-11-02T17:49:00+00:00",
+    "day": 2,
+    "events": [
+      "Femmes — phase de poules",
+      "Hommes — places 5-8",
+      "Hommes — demi-finales",
+      "Hommes — finales"
+    ],
+    "eventsRaw": [
+      "Women - Pool Round",
+      "Men - Placing 5-8",
+      "Men - Semifinals",
+      "Men - Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "VBV04",
+    "kind": "sport",
+    "sportId": "beach-volleyball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-02T13:00:00+00:00",
+    "end": "2026-11-02T17:00:00+00:00",
+    "day": 2,
+    "events": [
+      "Femmes et hommes — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Women and Men - Round of 16"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM04",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-02T14:30:00+00:00",
+    "end": "2026-11-02T18:55:00+00:00",
+    "day": 2,
+    "events": [
+      "Simple femmes et hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - group stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TTE05",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-02T14:30:00+00:00",
+    "end": "2026-11-02T18:30:00+00:00",
+    "day": 2,
+    "events": [
+      "Simple femmes — phase préliminaire",
+      "Simple hommes — phase préliminaire",
+      "Double mixte — demi-finales"
+    ],
+    "eventsRaw": [
+      "Women's Single - Preliminary Stage",
+      "Men's Single - Preliminary Stage",
+      "Mixed Doubles - Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WST04",
+    "kind": "sport",
+    "sportId": "wushu",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-02T14:30:00+00:00",
+    "end": "2026-11-02T16:30:00+00:00",
+    "day": 2,
+    "events": [
+      "Changquan femmes — tour préliminaire",
+      "Taijishan hommes — tour préliminaire"
+    ],
+    "eventsRaw": [
+      "Women's Changquan - Preliminary Round",
+      "Men's Taijishan - Preliminary Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS507",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-02T15:00:00+00:00",
+    "end": "2026-11-02T17:45:00+00:00",
+    "day": 2,
+    "events": [
+      "Demi-finales"
+    ],
+    "eventsRaw": [
+      "Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM04",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-02T15:00:00+00:00",
+    "end": "2026-11-02T17:00:00+00:00",
+    "day": 2,
+    "events": [
+      "100 m nage libre femmes — finale",
+      "100 m nage libre hommes — finale",
+      "200 m brasse femmes — finale",
+      "200 m brasse hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 100m Freestyle - Final",
+      "Men's 100m Freestyle - Final",
+      "Women's 200m Breaststroke - Final",
+      "Men's 200m Breaststroke - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS04",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": null,
+    "start": "2026-11-02T15:30:00+00:00",
+    "end": "2026-11-02T19:30:00+00:00",
+    "day": 2,
+    "events": [
+      "Hommes : 🇵🇦 PAN – AFG 🇦🇫",
+      "Hommes : 🇸🇳 SEN – ARG 🇦🇷"
+    ],
+    "eventsRaw": [
+      "Men's PAN vs AFG",
+      "Men's SEN vs ARG"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "JUD04",
+    "kind": "sport",
+    "sportId": "judo",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-02T16:00:00+00:00",
+    "end": "2026-11-02T17:40:00+00:00",
+    "day": 2,
+    "events": [
+      "-52 kg femmes — bloc final",
+      "-81 kg hommes — bloc final",
+      "-63 kg femmes — bloc final"
+    ],
+    "eventsRaw": [
+      "Women -52kg - Final Block",
+      "Men -81kg - Final Block",
+      "Women -63kg - Final Block"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM05",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-03T09:00:00+00:00",
+    "end": "2026-11-03T12:40:00+00:00",
+    "day": 3,
+    "events": [
+      "Simple femmes et hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - group stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR04",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-03T09:00:00+00:00",
+    "end": null,
+    "day": 3,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO05",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-03T09:00:00+00:00",
+    "end": null,
+    "day": 3,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "EQU01",
+    "kind": "sport",
+    "sportId": "equestrian",
+    "title": null,
+    "venueId": "centre-equestre",
+    "hall": null,
+    "start": "2026-11-03T09:00:00+00:00",
+    "end": "2026-11-03T10:30:00+00:00",
+    "day": 3,
+    "events": [
+      "Saut d'obstacles individuel — manche qualificative A"
+    ],
+    "eventsRaw": [
+      "Jumping Individual - Qualifier Round A"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "VBV05",
+    "kind": "sport",
+    "sportId": "beach-volleyball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-03T09:00:00+00:00",
+    "end": "2026-11-03T17:00:00+00:00",
+    "day": 3,
+    "events": [
+      "Femmes et hommes — quarts et demi-finales"
+    ],
+    "eventsRaw": [
+      "Women and Men - Quarter and Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WST05",
+    "kind": "sport",
+    "sportId": "wushu",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-03T09:00:00+00:00",
+    "end": "2026-11-03T12:00:00+00:00",
+    "day": 3,
+    "events": [
+      "Changquan hommes — finale",
+      "Gunshu femmes — finale",
+      "Taijiquan hommes — finale",
+      "Taijishan femmes — finale"
+    ],
+    "eventsRaw": [
+      "Men's Changquan - Final",
+      "Women's Gunshu - Final",
+      "Men's Taijiquan - Final",
+      "Women's Taijishan - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RU704",
+    "kind": "sport",
+    "sportId": "rugby-sevens",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Stade Iba Mar Diop",
+    "start": "2026-11-03T09:40:00+00:00",
+    "end": "2026-11-03T11:08:00+00:00",
+    "day": 3,
+    "events": [
+      "Femmes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Women - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS05",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-03T10:00:00+00:00",
+    "end": "2026-11-03T14:00:00+00:00",
+    "day": 3,
+    "events": [
+      "Femmes : 🇮🇹 ITA – CRC 🇨🇷",
+      "Femmes : 🇮🇷 IRN – CMR 🇨🇲"
+    ],
+    "eventsRaw": [
+      "Women's ITA vs CRC",
+      "Women's IRN vs CMR"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "JUD05",
+    "kind": "sport",
+    "sportId": "judo",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-03T10:00:00+00:00",
+    "end": "2026-11-03T12:00:00+00:00",
+    "day": 3,
+    "events": [
+      "-100 kg hommes — tours préliminaires",
+      "-78 kg femmes — tours préliminaires"
+    ],
+    "eventsRaw": [
+      "Men -100kg - Preliminary Rounds",
+      "Women -78kg - Preliminary Rounds"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RCB04",
+    "kind": "sport",
+    "sportId": "rowing-beach",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-03T10:00:00+00:00",
+    "end": "2026-11-03T12:11:00+00:00",
+    "day": 3,
+    "events": [
+      "Solo hommes — quarts de finale",
+      "Solo femmes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Men's Solo - Last 8",
+      "Women's Solo - Last 8"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM05",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-03T10:00:00+00:00",
+    "end": null,
+    "day": 3,
+    "events": [
+      "100 m dos femmes — séries",
+      "100 m dos hommes — séries",
+      "100 m brasse femmes — séries",
+      "100 m brasse hommes — séries",
+      "800 m nage libre femmes — séries lentes",
+      "400 m nage libre hommes — séries lentes"
+    ],
+    "eventsRaw": [
+      "Women's 100m Backstroke - Heats",
+      "Men's 100m Backstroke - Heats",
+      "Women's 100m Breaststroke - Heats",
+      "Men's 100m Breaststroke - Heats",
+      "Women's 800m Freestyle - Slowest Heats",
+      "Men's 400m Freestyle - Slowest Heats"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-03T11:00:00+00:00",
+      "pdfEnd": "2026-11-03T13:00:00+00:00",
+      "ticketStart": "2026-11-03T10:00:00+00:00"
+    }
+  },
+  {
+    "id": "TTE06",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-03T10:00:00+00:00",
+    "end": "2026-11-03T12:45:00+00:00",
+    "day": 3,
+    "events": [
+      "Simple femmes — huitièmes de finale",
+      "Simple hommes — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Women's Single - Round of 16",
+      "Men's Single - Round of 16"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS508",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-03T10:30:00+00:00",
+    "end": "2026-11-03T13:15:00+00:00",
+    "day": 3,
+    "events": [
+      "Match pour la 7e place",
+      "Match pour la 5e place"
+    ],
+    "eventsRaw": [
+      "7th place",
+      "5th place"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "RU705",
+    "kind": "sport",
+    "sportId": "rugby-sevens",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Stade Iba Mar Diop",
+    "start": "2026-11-03T13:00:00+00:00",
+    "end": null,
+    "day": 3,
+    "events": [
+      "Femmes — places 5-8",
+      "Femmes — demi-finales",
+      "Femmes — finales"
+    ],
+    "eventsRaw": [
+      "Women - Placing 5-8",
+      "Women - Semifinals",
+      "Women - Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-03T13:08:00+00:00",
+      "pdfEnd": "2026-11-03T17:50:00+00:00",
+      "ticketStart": "2026-11-03T13:00:00+00:00"
+    }
+  },
+  {
+    "id": "TTE07",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-03T14:15:00+00:00",
+    "end": "2026-11-03T19:10:00+00:00",
+    "day": 3,
+    "events": [
+      "Simple femmes — huitièmes de finale",
+      "Simple hommes — huitièmes de finale",
+      "Double mixte — finales"
+    ],
+    "eventsRaw": [
+      "Women's Single - Round of 16",
+      "Men's Single - Round of 16",
+      "Mixed Doubles - Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM06",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-03T14:30:00+00:00",
+    "end": "2026-11-03T18:55:00+00:00",
+    "day": 3,
+    "events": [
+      "Simple femmes et hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - group stage"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WST06",
+    "kind": "sport",
+    "sportId": "wushu",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-03T14:30:00+00:00",
+    "end": "2026-11-03T17:47:00+00:00",
+    "day": 3,
+    "events": [
+      "Gunshu hommes — finale",
+      "Changquan femmes — finale",
+      "Taijishan hommes — finale",
+      "Taijiquan femmes — finale"
+    ],
+    "eventsRaw": [
+      "Men's Gunshu - Final",
+      "Women's Changquan - Final",
+      "Men's Taijishan - Final",
+      "Women's Taijiquan - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS509",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-03T15:00:00+00:00",
+    "end": "2026-11-03T18:05:00+00:00",
+    "day": 3,
+    "events": [
+      "Match pour le bronze",
+      "Match pour l'or"
+    ],
+    "eventsRaw": [
+      "Bronze Medal Game",
+      "Gold Medal Game"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM06",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-03T15:00:00+00:00",
+    "end": "2026-11-03T17:00:00+00:00",
+    "day": 3,
+    "events": [
+      "800 m nage libre femmes — série rapide",
+      "400 m nage libre hommes — série rapide",
+      "100 m dos femmes — finale",
+      "100 m dos hommes — finale",
+      "100 m brasse femmes — finale",
+      "100 m brasse hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 800m Freestyle - Fastest Heat",
+      "Men's 400m Freestyle - Fastest Heat",
+      "Women's 100m Backstroke - Final",
+      "Men's 100m Backstroke - Final",
+      "Women's 100m Breaststroke - Final",
+      "Men's 100m Breaststroke - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS06",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-03T15:30:00+00:00",
+    "end": "2026-11-03T19:30:00+00:00",
+    "day": 3,
+    "events": [
+      "Femmes : 🇺🇦 UKR – FIJ 🇫🇯",
+      "Femmes : 🇸🇳 SEN – VEN 🇻🇪"
+    ],
+    "eventsRaw": [
+      "Women's UKR vs FIJ",
+      "Women's SEN vs VEN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "JUD06",
+    "kind": "sport",
+    "sportId": "judo",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-03T16:00:00+00:00",
+    "end": "2026-11-03T17:11:00+00:00",
+    "day": 3,
+    "events": [
+      "-100 kg hommes — bloc final",
+      "-78 kg femmes — bloc final"
+    ],
+    "eventsRaw": [
+      "Men -100kg - Final Block",
+      "Women -78kg - Final Block"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM07",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-04T09:00:00+00:00",
+    "end": "2026-11-04T12:35:00+00:00",
+    "day": 4,
+    "events": [
+      "Simple femmes et hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - quaterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR05",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-04T09:00:00+00:00",
+    "end": null,
+    "day": 4,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO06",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-04T09:00:00+00:00",
+    "end": null,
+    "day": 4,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS07",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-04T10:00:00+00:00",
+    "end": "2026-11-04T14:00:00+00:00",
+    "day": 4,
+    "events": [
+      "Hommes : 🇵🇹 POR – SOL 🇸🇧",
+      "Hommes : 🇵🇾 PAR – MAR 🇲🇦"
+    ],
+    "eventsRaw": [
+      "Men's POR vs SOL",
+      "Men's PAR vs MAR"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM07",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-04T10:00:00+00:00",
+    "end": null,
+    "day": 4,
+    "events": [
+      "50 m nage libre femmes — séries",
+      "50 m nage libre hommes — séries",
+      "200 m 4 nages femmes — séries",
+      "200 m 4 nages hommes — séries",
+      "50 m papillon femmes — séries",
+      "50 m papillon hommes — séries"
+    ],
+    "eventsRaw": [
+      "Women's 50m Freestyle - Heats",
+      "Men's 50m Freestyle - Heats",
+      "Women's 200m Individual Medley - Heats",
+      "Men's 200m Individual Medley - Heats",
+      "Women's 50m Butterfly - Heats",
+      "Men's 50m Butterfly - Heats"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-04T11:00:00+00:00",
+      "pdfEnd": "2026-11-04T13:00:00+00:00",
+      "ticketStart": "2026-11-04T10:00:00+00:00"
+    }
+  },
+  {
+    "id": "TTE08",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-04T10:00:00+00:00",
+    "end": "2026-11-04T13:15:00+00:00",
+    "day": 4,
+    "events": [
+      "Simple femmes — quarts de finale",
+      "Simple hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's Single - Quarterfinals",
+      "Men's Single - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "VBV06",
+    "kind": "sport",
+    "sportId": "beach-volleyball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-04T11:00:00+00:00",
+    "end": "2026-11-04T16:18:00+00:00",
+    "day": 4,
+    "events": [
+      "Femmes et hommes — finales (matchs pour le bronze et l'or)"
+    ],
+    "eventsRaw": [
+      "Women and Men - Finals (Bronze and Gold Medal Matches)"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SKB01",
+    "kind": "sport",
+    "sportId": "skateboarding",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Skatepark",
+    "start": "2026-11-04T12:45:00+00:00",
+    "end": "2026-11-04T14:22:00+00:00",
+    "day": 4,
+    "events": [
+      "Street hommes — préliminaires"
+    ],
+    "eventsRaw": [
+      "Men's Street - Prelims"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM08",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-04T14:30:00+00:00",
+    "end": "2026-11-04T18:45:00+00:00",
+    "day": 4,
+    "events": [
+      "Simple femmes et hommes — demi-finales"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM08",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-04T15:00:00+00:00",
+    "end": "2026-11-04T17:00:00+00:00",
+    "day": 4,
+    "events": [
+      "50 m nage libre femmes — finale",
+      "50 m nage libre hommes — finale",
+      "200 m 4 nages femmes — finale",
+      "200 m 4 nages hommes — finale",
+      "50 m papillon femmes — finale",
+      "50 m papillon hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 50m Freestyle - Final",
+      "Men's 50m Freestyle - Final",
+      "Women's 200m Individual Medley - Final",
+      "Men's 200m Individual Medley - Final",
+      "Women's 50m Butterfly - Final",
+      "Men's 50m Butterfly - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TTE09",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-04T15:00:00+00:00",
+    "end": "2026-11-04T18:00:00+00:00",
+    "day": 4,
+    "events": [
+      "Simple femmes — quarts de finale",
+      "Simple hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's Single - Quarterfinals",
+      "Men's Single - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS08",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-04T15:30:00+00:00",
+    "end": "2026-11-04T19:30:00+00:00",
+    "day": 4,
+    "events": [
+      "Hommes : 🇦🇫 AFG – ARG 🇦🇷",
+      "Hommes : 🇸🇳 SEN – PAN 🇵🇦"
+    ],
+    "eventsRaw": [
+      "Men's AFG vs ARG",
+      "Men's SEN vs PAN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SKB02",
+    "kind": "sport",
+    "sportId": "skateboarding",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Skatepark",
+    "start": "2026-11-04T16:00:00+00:00",
+    "end": "2026-11-04T17:00:00+00:00",
+    "day": 4,
+    "events": [
+      "Street hommes — finales"
+    ],
+    "eventsRaw": [
+      "Men's Street - Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR06",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-05T09:00:00+00:00",
+    "end": null,
+    "day": 5,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO07",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-05T09:00:00+00:00",
+    "end": null,
+    "day": 5,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "EQU02",
+    "kind": "sport",
+    "sportId": "equestrian",
+    "title": null,
+    "venueId": "centre-equestre",
+    "hall": null,
+    "start": "2026-11-05T09:00:00+00:00",
+    "end": "2026-11-05T11:00:00+00:00",
+    "day": 5,
+    "events": [
+      "Saut d'obstacles individuel — manche qualificative B"
+    ],
+    "eventsRaw": [
+      "Jumping Individual - Qualifier Round B"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TRI01",
+    "kind": "sport",
+    "sportId": "triathlon",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-05T09:00:00+00:00",
+    "end": "2026-11-05T10:35:00+00:00",
+    "day": 5,
+    "events": [
+      "Individuel hommes"
+    ],
+    "eventsRaw": [
+      "Men's Individual"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS09",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-05T10:00:00+00:00",
+    "end": "2026-11-05T14:00:00+00:00",
+    "day": 5,
+    "events": [
+      "Femmes : 🇮🇷 IRN – ITA 🇮🇹",
+      "Femmes : 🇨🇲 CMR – CRC 🇨🇷"
+    ],
+    "eventsRaw": [
+      "Women's IRN vs ITA",
+      "Women's CMR vs CRC"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR100",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-05T10:00:00+00:00",
+    "end": "2026-11-05T12:30:00+00:00",
+    "day": 5,
+    "events": [
+      "Hommes — entraînement sur le podium"
+    ],
+    "eventsRaw": [
+      "Men's Podium Training"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM09",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-05T10:00:00+00:00",
+    "end": null,
+    "day": 5,
+    "events": [
+      "50 m dos femmes — séries",
+      "50 m dos hommes — séries",
+      "50 m brasse femmes — séries",
+      "50 m brasse hommes — séries"
+    ],
+    "eventsRaw": [
+      "Women's 50m Backstroke - Heats",
+      "Men's 50m Backstroke - Heats",
+      "Women's 50m Breaststroke - Heats",
+      "Men's 50m Breaststroke - Heats"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-05T11:00:00+00:00",
+      "pdfEnd": "2026-11-05T13:00:00+00:00",
+      "ticketStart": "2026-11-05T10:00:00+00:00"
+    }
+  },
+  {
+    "id": "TTE10",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-05T10:00:00+00:00",
+    "end": "2026-11-05T13:00:00+00:00",
+    "day": 5,
+    "events": [
+      "Simple femmes — demi-finales",
+      "Simple hommes — demi-finales"
+    ],
+    "eventsRaw": [
+      "Women's Single - Semifinals",
+      "Men's Single - Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SKB03",
+    "kind": "sport",
+    "sportId": "skateboarding",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Skatepark",
+    "start": "2026-11-05T12:45:00+00:00",
+    "end": "2026-11-05T14:22:00+00:00",
+    "day": 5,
+    "events": [
+      "Street femmes — préliminaires"
+    ],
+    "eventsRaw": [
+      "Women's Street - Prelims"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR101",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-05T13:00:00+00:00",
+    "end": "2026-11-05T15:30:00+00:00",
+    "day": 5,
+    "events": [
+      "Street hommes — finales"
+    ],
+    "eventsRaw": [
+      "Men's Street - Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BDM09",
+    "kind": "sport",
+    "sportId": "badminton",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-05T14:00:00+00:00",
+    "end": "2026-11-05T19:00:00+00:00",
+    "day": 5,
+    "events": [
+      "Simple femmes et hommes — finales (matchs pour le bronze et l'or)"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - finals (Bronze and Gold Matches)"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM10",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-05T15:00:00+00:00",
+    "end": "2026-11-05T17:00:00+00:00",
+    "day": 5,
+    "events": [
+      "50 m dos femmes — finale",
+      "50 m dos hommes — finale",
+      "50 m brasse femmes — finale",
+      "50 m brasse hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 50m Backstroke - Final",
+      "Men's 50m Backstroke - Final",
+      "Women's 50m Breaststroke - Final",
+      "Men's 50m Breaststroke - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS10",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-05T15:30:00+00:00",
+    "end": "2026-11-05T19:30:00+00:00",
+    "day": 5,
+    "events": [
+      "Femmes : 🇫🇯 FIJ – VEN 🇻🇪",
+      "Femmes : 🇺🇦 UKR – SEN 🇸🇳"
+    ],
+    "eventsRaw": [
+      "Women's FIJ vs VEN",
+      "Women's UKR vs SEN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SKB04",
+    "kind": "sport",
+    "sportId": "skateboarding",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Skatepark",
+    "start": "2026-11-05T16:00:00+00:00",
+    "end": "2026-11-05T17:00:00+00:00",
+    "day": 5,
+    "events": [
+      "Street femmes — finales"
+    ],
+    "eventsRaw": [
+      "Women's Street - Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TTE11",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-05T16:00:00+00:00",
+    "end": "2026-11-05T19:16:00+00:00",
+    "day": 5,
+    "events": [
+      "Simple femmes — finales",
+      "Simple hommes — finales"
+    ],
+    "eventsRaw": [
+      "Women's Single - Finals",
+      "Men's Single - Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR07",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-06T09:00:00+00:00",
+    "end": null,
+    "day": 6,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO08",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-06T09:00:00+00:00",
+    "end": null,
+    "day": 6,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "EQU03",
+    "kind": "sport",
+    "sportId": "equestrian",
+    "title": null,
+    "venueId": "centre-equestre",
+    "hall": null,
+    "start": "2026-11-06T09:00:00+00:00",
+    "end": "2026-11-06T12:00:00+00:00",
+    "day": 6,
+    "events": [
+      "Saut d'obstacles individuel — finale"
+    ],
+    "eventsRaw": [
+      "Jumping Individual - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAW01",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-06T09:00:00+00:00",
+    "end": null,
+    "day": 6,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TRI02",
+    "kind": "sport",
+    "sportId": "triathlon",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-06T09:00:00+00:00",
+    "end": "2026-11-06T10:35:00+00:00",
+    "day": 6,
+    "events": [
+      "Individuel femmes"
+    ],
+    "eventsRaw": [
+      "Women's Individual"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC01",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-06T09:30:00+00:00",
+    "end": "2026-11-06T12:00:00+00:00",
+    "day": 6,
+    "events": [
+      "Simple femmes et hommes — tour de classement"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Ranking round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK301",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-06T10:00:00+00:00",
+    "end": "2026-11-06T12:40:00+00:00",
+    "day": 6,
+    "events": [
+      "Femmes et hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR102",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-06T10:00:00+00:00",
+    "end": "2026-11-06T11:45:00+00:00",
+    "day": 6,
+    "events": [
+      "Femmes — entraînement sur le podium"
+    ],
+    "eventsRaw": [
+      "Women's Podium Training"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM11",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-06T10:00:00+00:00",
+    "end": "2026-11-06T12:30:00+00:00",
+    "day": 6,
+    "events": [
+      "200 m nage libre femmes — séries",
+      "200 m nage libre hommes — séries",
+      "200 m papillon femmes — séries",
+      "200 m papillon hommes — séries"
+    ],
+    "eventsRaw": [
+      "Women's 200m Freestyle - Heats",
+      "Men's 200m Freestyle - Heats",
+      "Women's 200m Butterfly - Heats",
+      "Men's 200m Butterfly - Heats"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR103",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-06T12:00:00+00:00",
+    "end": "2026-11-06T13:45:00+00:00",
+    "day": 6,
+    "events": [
+      "Femmes — entraînement sur le podium"
+    ],
+    "eventsRaw": [
+      "Women's Podium Training"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR104",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-06T14:45:00+00:00",
+    "end": "2026-11-06T16:30:00+00:00",
+    "day": 6,
+    "events": [
+      "Femmes — entraînement sur le podium"
+    ],
+    "eventsRaw": [
+      "Women's Podium Training"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK302",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-06T15:00:00+00:00",
+    "end": "2026-11-06T17:40:00+00:00",
+    "day": 6,
+    "events": [
+      "Femmes et hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SWM12",
+    "kind": "sport",
+    "sportId": "swimming",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Centre Aquatique de Dakar",
+    "start": "2026-11-06T15:30:00+00:00",
+    "end": "2026-11-06T17:30:00+00:00",
+    "day": 6,
+    "events": [
+      "200 m nage libre femmes — finale",
+      "200 m nage libre hommes — finale",
+      "200 m papillon femmes — finale",
+      "200 m papillon hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 200m Freestyle - Final",
+      "Men's 200m Freestyle - Final",
+      "Women's 200m Butterfly - Final",
+      "Men's 200m Butterfly - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC02",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-07T09:00:00+00:00",
+    "end": "2026-11-07T12:44:00+00:00",
+    "day": 7,
+    "events": [
+      "Simple femmes et hommes — seizièmes de finale"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - 1/16 Elimination Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR08",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-07T09:00:00+00:00",
+    "end": null,
+    "day": 7,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO09",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-07T09:00:00+00:00",
+    "end": null,
+    "day": 7,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAW02",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-07T09:00:00+00:00",
+    "end": null,
+    "day": 7,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK303",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-07T10:00:00+00:00",
+    "end": "2026-11-07T12:40:00+00:00",
+    "day": 7,
+    "events": [
+      "Femmes et hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS11",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-07T10:00:00+00:00",
+    "end": "2026-11-07T14:00:00+00:00",
+    "day": 7,
+    "events": [
+      "Hommes : 🇵🇾 PAR – POR 🇵🇹",
+      "Hommes : 🇲🇦 MAR – SOL 🇸🇧"
+    ],
+    "eventsRaw": [
+      "Men's PAR vs POR",
+      "Men's MAR vs SOL"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR01",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-07T10:00:00+00:00",
+    "end": "2026-11-07T12:30:00+00:00",
+    "day": 7,
+    "events": [
+      "Hommes — qualifications"
+    ],
+    "eventsRaw": [
+      "Men's Qualification"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WRB01",
+    "kind": "sport",
+    "sportId": "beach-wrestling",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-07T10:30:00+00:00",
+    "end": "2026-11-07T12:30:00+00:00",
+    "day": 7,
+    "events": [
+      "55 kg femmes — phase de groupes",
+      "75 kg femmes — phase de groupes",
+      "60 kg hommes — phase de groupes",
+      "80 kg hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women 55kg - Group Stage Rounds",
+      "Women 75kg - Group Stage Rounds",
+      "Men 60kg - Group Stage Rounds",
+      "Men 80kg - Group Stage Rounds"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX01",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-07T12:00:00+00:00",
+    "end": "2026-11-07T14:30:00+00:00",
+    "day": 7,
+    "events": [
+      "51 kg femmes — préliminaires",
+      "57 kg femmes — préliminaires",
+      "55 kg hommes — préliminaires",
+      "65 kg hommes — préliminaires",
+      "70 kg hommes — préliminaires"
+    ],
+    "eventsRaw": [
+      "Women's 51kg - Preliminaries",
+      "Women's 57kg - Preliminaries",
+      "Men's 55kg - Preliminaries",
+      "Men's 65kg - Preliminaries",
+      "Men's 70kg - Preliminaries"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC03",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-07T14:00:00+00:00",
+    "end": "2026-11-07T17:44:00+00:00",
+    "day": 7,
+    "events": [
+      "Simple femmes et hommes — seizièmes de finale"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - 1/16 Elimination Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR02",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-07T14:00:00+00:00",
+    "end": "2026-11-07T16:30:00+00:00",
+    "day": 7,
+    "events": [
+      "Hommes — qualifications"
+    ],
+    "eventsRaw": [
+      "Men's Qualification"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK304",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-07T15:00:00+00:00",
+    "end": "2026-11-07T17:40:00+00:00",
+    "day": 7,
+    "events": [
+      "Femmes et hommes — phase de poules"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Pool Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WRB02",
+    "kind": "sport",
+    "sportId": "beach-wrestling",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-07T15:00:00+00:00",
+    "end": "2026-11-07T18:22:00+00:00",
+    "day": 7,
+    "events": [
+      "55 kg femmes — phase de groupes et finales",
+      "75 kg femmes — phase de groupes et finales",
+      "60 kg hommes — phase de groupes et finales",
+      "80 kg hommes — phase de groupes et finales"
+    ],
+    "eventsRaw": [
+      "Women 55kg - Group Stage & Final Rounds",
+      "Women 75kg - Group Stage & Final Rounds",
+      "Men 60kg - Group Stage & Final Rounds",
+      "Men 80kg - Group Stage & Final Rounds"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS12",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-07T15:30:00+00:00",
+    "end": "2026-11-07T19:30:00+00:00",
+    "day": 7,
+    "events": [
+      "Hommes : 🇦🇷 ARG – PAN 🇵🇦",
+      "Hommes : 🇦🇫 AFG – SEN 🇸🇳"
+    ],
+    "eventsRaw": [
+      "Men's ARG vs PAN",
+      "Men's AFG vs SEN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX02",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-07T17:00:00+00:00",
+    "end": "2026-11-07T19:30:00+00:00",
+    "day": 7,
+    "events": [
+      "51 kg femmes — préliminaires",
+      "57 kg femmes — préliminaires",
+      "55 kg hommes — préliminaires",
+      "65 kg hommes — préliminaires",
+      "70 kg hommes — préliminaires"
+    ],
+    "eventsRaw": [
+      "Women's 51kg - Preliminaries",
+      "Women's 57kg - Preliminaries",
+      "Men's 55kg - Preliminaries",
+      "Men's 65kg - Preliminaries",
+      "Men's 70kg - Preliminaries"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CRD01",
+    "kind": "sport",
+    "sportId": "cycling-road",
+    "title": null,
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-08T09:00:00+00:00",
+    "end": "2026-11-08T13:29:00+00:00",
+    "day": 8,
+    "events": [
+      "Course sur route femmes — finale",
+      "Course sur route hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's Road Race - Final",
+      "Men's Road Race - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO10",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-08T09:00:00+00:00",
+    "end": null,
+    "day": 8,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FEN01",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-08T09:00:00+00:00",
+    "end": "2026-11-08T12:35:00+00:00",
+    "day": 8,
+    "events": [
+      "Fleuret individuel femmes — phase de poules, tableau de 16, tableau de 8"
+    ],
+    "eventsRaw": [
+      "Women's Foil Individual - Pool Round, Table of 16, Table of 8"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAW03",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-08T09:00:00+00:00",
+    "end": null,
+    "day": 8,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC04",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-08T10:00:00+00:00",
+    "end": "2026-11-08T11:52:00+00:00",
+    "day": 8,
+    "events": [
+      "Hommes — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Men's 1/8 Elimination Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR03",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-08T10:00:00+00:00",
+    "end": "2026-11-08T13:45:00+00:00",
+    "day": 8,
+    "events": [
+      "Femmes — qualifications"
+    ],
+    "eventsRaw": [
+      "Women's Qualification"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WRB03",
+    "kind": "sport",
+    "sportId": "beach-wrestling",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-08T10:30:00+00:00",
+    "end": "2026-11-08T12:30:00+00:00",
+    "day": 8,
+    "events": [
+      "45 kg femmes — phase de groupes",
+      "65 kg femmes — phase de groupes",
+      "70 kg hommes — phase de groupes",
+      "90 kg hommes — phase de groupes"
+    ],
+    "eventsRaw": [
+      "Women 45kg - Group Stage Rounds",
+      "Women 65kg - Group Stage Rounds",
+      "Men 70kg - Group Stage Rounds",
+      "Men 90kg - Group Stage Rounds"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS13",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-08T11:00:00+00:00",
+    "end": "2026-11-08T13:30:00+00:00",
+    "day": 8,
+    "events": [
+      "Femmes — 1er B – 2e A"
+    ],
+    "eventsRaw": [
+      "Women's Winner B vs Runner-up A"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW01",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-08T11:00:00+00:00",
+    "end": "2026-11-08T13:24:00+00:00",
+    "day": 8,
+    "events": [
+      "-44 kg femmes — huitièmes de finale, quarts de finale",
+      "-48 kg hommes — huitièmes de finale, quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women -44kg - Elimination Round of 16, Quarterfinals",
+      "Men -48kg - Elimination Round of 16, Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK305",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-08T11:30:00+00:00",
+    "end": "2026-11-08T13:10:00+00:00",
+    "day": 8,
+    "events": [
+      "Femmes et hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX03",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-08T12:00:00+00:00",
+    "end": "2026-11-08T14:30:00+00:00",
+    "day": 8,
+    "events": [
+      "48 kg femmes — préliminaires",
+      "54 kg femmes — préliminaires",
+      "60 kg femmes — préliminaires",
+      "50 kg hommes — préliminaires",
+      "60 kg hommes — préliminaires"
+    ],
+    "eventsRaw": [
+      "Women's 48kg - Preliminaries",
+      "Women's 54kg - Preliminaries",
+      "Women's 60kg - Preliminaries",
+      "Men's 50kg - Preliminaries",
+      "Men's 60kg - Preliminaries"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAL01",
+    "kind": "sport",
+    "sportId": "sailing",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-08T12:00:00+00:00",
+    "end": "2026-11-08T17:30:00+00:00",
+    "day": 8,
+    "events": [
+      "Femmes et hommes — manches 1, 2 et 3"
+    ],
+    "eventsRaw": [
+      "Women's and Men's R1, R2 and R3"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC05",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-08T14:00:00+00:00",
+    "end": "2026-11-08T16:30:00+00:00",
+    "day": 8,
+    "events": [
+      "Hommes — quarts de finale",
+      "Hommes — demi-finales",
+      "Hommes — finales (bronze et or)"
+    ],
+    "eventsRaw": [
+      "Men's Quarterfinals",
+      "Men's Semifinals",
+      "Men's Finals (Bronze and Gold)"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ATH01",
+    "kind": "sport",
+    "sportId": "athletics",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Stade Iba Mar Diop",
+    "start": "2026-11-08T14:00:00+00:00",
+    "end": null,
+    "day": 8,
+    "events": [
+      "Lancer du marteau hommes — finale",
+      "100 m haies femmes — demi-finale et finale",
+      "Triple saut femmes — finale",
+      "800 m femmes — demi-finale",
+      "100 m femmes — demi-finale et finale",
+      "100 m hommes — demi-finale et finale",
+      "Saut à la perche femmes — finale",
+      "400 m femmes — demi-finale",
+      "400 m hommes — demi-finale",
+      "Lancer du disque femmes",
+      "Saut en longueur hommes — finale",
+      "3000 m hommes — finale",
+      "2000 m steeple femmes — finale"
+    ],
+    "eventsRaw": [
+      "Men's Hammer Throw - final",
+      "Women's 100m Hurdle - semi & final",
+      "Women's Triple Jump - final",
+      "Women's 800m - semi-final",
+      "Women's 100m - semi & final",
+      "Men's 100m - semi & final",
+      "Women's Pole Vault - final",
+      "Women's 400m - semi-final",
+      "Men's 400m - semi-final",
+      "Women's Discus Throw",
+      "Men's Long Jump - final",
+      "Men's 3000m - final",
+      "Women's 2000m Steeplechase - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-08T14:30:00+00:00",
+      "pdfEnd": "2026-11-08T17:59:00+00:00",
+      "ticketStart": "2026-11-08T14:00:00+00:00"
+    }
+  },
+  {
+    "id": "FEN02",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-08T14:00:00+00:00",
+    "end": "2026-11-08T16:05:00+00:00",
+    "day": 8,
+    "events": [
+      "Fleuret individuel femmes — demi-finales, finales"
+    ],
+    "eventsRaw": [
+      "Women's Foil Individual - Semifinals, Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR09",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-08T14:30:00+00:00",
+    "end": null,
+    "day": 8,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK306",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-08T15:00:00+00:00",
+    "end": "2026-11-08T16:40:00+00:00",
+    "day": 8,
+    "events": [
+      "Femmes et hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS14",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-08T15:00:00+00:00",
+    "end": "2026-11-08T17:30:00+00:00",
+    "day": 8,
+    "events": [
+      "Femmes — 1er A – 2e B"
+    ],
+    "eventsRaw": [
+      "Women's Winner A vs Runner-up B"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "WRB04",
+    "kind": "sport",
+    "sportId": "beach-wrestling",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-08T15:00:00+00:00",
+    "end": "2026-11-08T18:22:00+00:00",
+    "day": 8,
+    "events": [
+      "45 kg femmes — phase de groupes et finales",
+      "65 kg femmes — phase de groupes et finales",
+      "70 kg hommes — phase de groupes et finales",
+      "90 kg hommes — phase de groupes et finales"
+    ],
+    "eventsRaw": [
+      "Women 45kg - Group Stage & Final Rounds",
+      "Women 65kg - Group Stage & Final Rounds",
+      "Men 70kg - Group Stage & Final Rounds",
+      "Men 90kg - Group Stage & Final Rounds"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR04",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-08T15:15:00+00:00",
+    "end": "2026-11-08T17:00:00+00:00",
+    "day": 8,
+    "events": [
+      "Femmes — qualifications"
+    ],
+    "eventsRaw": [
+      "Women's Qualification"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW02",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-08T16:00:00+00:00",
+    "end": "2026-11-08T17:43:00+00:00",
+    "day": 8,
+    "events": [
+      "-44 kg femmes — demi-finales, finale",
+      "-48 kg hommes — demi-finales, finale"
+    ],
+    "eventsRaw": [
+      "Women -44kg - Semifinals, Final",
+      "Men -48kg - Semifinals, Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX04",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-08T17:00:00+00:00",
+    "end": "2026-11-08T19:30:00+00:00",
+    "day": 8,
+    "events": [
+      "48 kg femmes — préliminaires",
+      "54 kg femmes — préliminaires",
+      "60 kg femmes — préliminaires",
+      "50 kg hommes — préliminaires",
+      "60 kg hommes — préliminaires"
+    ],
+    "eventsRaw": [
+      "Women's 48kg - Preliminaries",
+      "Women's 54kg - Preliminaries",
+      "Women's 60kg - Preliminaries",
+      "Men's 50kg - Preliminaries",
+      "Men's 60kg - Preliminaries"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR10",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-09T09:00:00+00:00",
+    "end": null,
+    "day": 9,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO11",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-09T09:00:00+00:00",
+    "end": null,
+    "day": 9,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FEN03",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-09T09:00:00+00:00",
+    "end": "2026-11-09T12:35:00+00:00",
+    "day": 9,
+    "events": [
+      "Fleuret individuel hommes — phase de poules, tableau de 16, tableau de 8"
+    ],
+    "eventsRaw": [
+      "Men's Foil Individual - Pool Round, Table of 16, Table of 8"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAW04",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-09T09:00:00+00:00",
+    "end": null,
+    "day": 9,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB01",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-09T09:30:00+00:00",
+    "end": "2026-11-09T12:50:00+00:00",
+    "day": 9,
+    "events": [
+      "Femmes : 🇫🇷 FRA – SEN 🇸🇳 ; Femmes : 🇺🇾 URU – KEN 🇰🇪",
+      "Hommes : 🇹🇳 TUN – COK 🇨🇰 ; Hommes : 🇩🇪 GER – THA 🇹🇭",
+      "Femmes : 🇭🇷 CRO – MEX 🇲🇽 ; Femmes : 🇪🇸 ESP – CHN 🇨🇳"
+    ],
+    "eventsRaw": [
+      "W FRA vs SEN ; W URU vs KEN",
+      "M TUN vs COK ; M GER vs THA",
+      "W CRO vs MEX ; W ESP vs CHN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC06",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-09T10:00:00+00:00",
+    "end": "2026-11-09T11:52:00+00:00",
+    "day": 9,
+    "events": [
+      "Femmes — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Women's 1/8 Elimination Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR05",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-09T10:30:00+00:00",
+    "end": "2026-11-09T12:50:00+00:00",
+    "day": 9,
+    "events": [
+      "Concours par équipes hommes — finale"
+    ],
+    "eventsRaw": [
+      "Men's Team - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS15",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-09T11:00:00+00:00",
+    "end": "2026-11-09T13:30:00+00:00",
+    "day": 9,
+    "events": [
+      "Hommes — 1er B – 2e A"
+    ],
+    "eventsRaw": [
+      "Men's Winner B vs Runner-up A"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW03",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-09T11:00:00+00:00",
+    "end": "2026-11-09T13:24:00+00:00",
+    "day": 9,
+    "events": [
+      "-49 kg femmes — huitièmes de finale, quarts de finale",
+      "-55 kg hommes — huitièmes de finale, quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women -49kg - Elimination Round of 16, Quarterfinals",
+      "Men -55kg - Elimination Round of 16, Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK307",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-09T11:30:00+00:00",
+    "end": "2026-11-09T13:10:00+00:00",
+    "day": 9,
+    "events": [
+      "Femmes et hommes — demi-finales"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX05",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-09T12:00:00+00:00",
+    "end": "2026-11-09T14:00:00+00:00",
+    "day": 9,
+    "events": [
+      "55 kg hommes — quarts de finale",
+      "65 kg hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Men's 55kg - Quarterfinals",
+      "Men's 65kg - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAL02",
+    "kind": "sport",
+    "sportId": "sailing",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-09T12:00:00+00:00",
+    "end": "2026-11-09T17:30:00+00:00",
+    "day": 9,
+    "events": [
+      "Femmes et hommes — manches 4, 5 et 6"
+    ],
+    "eventsRaw": [
+      "Women's and Men's R4, R5 and R6"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC07",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-09T14:00:00+00:00",
+    "end": "2026-11-09T16:30:00+00:00",
+    "day": 9,
+    "events": [
+      "Femmes — quarts de finale",
+      "Femmes — demi-finales",
+      "Femmes — finales (bronze et or)"
+    ],
+    "eventsRaw": [
+      "Women's Quarterfinals",
+      "Women's Semifinals",
+      "Women's Finals (Bronze and Gold)"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ATH02",
+    "kind": "sport",
+    "sportId": "athletics",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Stade Iba Mar Diop",
+    "start": "2026-11-09T14:00:00+00:00",
+    "end": null,
+    "day": 9,
+    "events": [
+      "Lancer du javelot femmes — finale",
+      "2000 m steeple hommes — finale",
+      "3000 m femmes — finale",
+      "Lancer du poids hommes — finale",
+      "800 m hommes — demi-finale",
+      "400 m haies hommes — demi-finale et finale",
+      "Saut en hauteur hommes — finale",
+      "400 m haies femmes — demi-finale et finale",
+      "Lancer du disque hommes — finale",
+      "Saut en longueur femmes — finale",
+      "1500 m hommes — finale",
+      "110 m haies hommes — demi-finale et finale",
+      "400 m femmes — finale",
+      "400 m hommes — finale",
+      "800 m femmes — finale"
+    ],
+    "eventsRaw": [
+      "Women's Javelin Throw - final",
+      "Men's 2000m Steeplechase - final",
+      "Women's 3000m - final",
+      "Men's Shot Put - final",
+      "Men's 800m - semi-final",
+      "Men's 400m Hurdles - semi & final",
+      "Men's High Jump - final",
+      "Women's 400m Hurdles - semi & final",
+      "Men's Discus Throw - final",
+      "Women's 400m Hurdles - semi & final",
+      "Women's Long Jump - final",
+      "Men's 1500m - final",
+      "Men's 110m Hurdles - semi & final",
+      "Women's 400m - final",
+      "Men's 400m - final",
+      "Women's 800m - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-09T10:00:00+00:00",
+      "pdfEnd": "2026-11-09T14:37:00+00:00",
+      "ticketStart": "2026-11-09T14:00:00+00:00"
+    }
+  },
+  {
+    "id": "FEN04",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-09T14:00:00+00:00",
+    "end": "2026-11-09T16:05:00+00:00",
+    "day": 9,
+    "events": [
+      "Fleuret individuel hommes — demi-finales, finales"
+    ],
+    "eventsRaw": [
+      "Men's Foil Individual - Semifinals, Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BK308",
+    "kind": "sport",
+    "sportId": "basketball-3x3",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-09T15:00:00+00:00",
+    "end": "2026-11-09T17:05:00+00:00",
+    "day": 9,
+    "events": [
+      "Femmes et hommes — finales (matchs pour le bronze et l'or)"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Finals (Bronze and Gold Games)"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS16",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-09T15:00:00+00:00",
+    "end": "2026-11-09T17:30:00+00:00",
+    "day": 9,
+    "events": [
+      "Hommes — 1er A – 2e B"
+    ],
+    "eventsRaw": [
+      "Men's Winner A vs Runner-up B"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB02",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-09T15:00:00+00:00",
+    "end": "2026-11-09T17:30:00+00:00",
+    "day": 9,
+    "events": [
+      "Hommes : 🇹🇳 TUN – THA 🇹🇭 ; Femmes : 🇫🇷 FRA – KEN 🇰🇪 ; Femmes : 🇸🇳 SEN – URU 🇺🇾",
+      "Hommes : 🇨🇰 COK – GER 🇩🇪 ; Femmes : 🇭🇷 CRO – CHN 🇨🇳 ; Femmes : 🇲🇽 MEX – ESP 🇪🇸",
+      "Hommes : 🇭🇺 HUN – PUR 🇵🇷 ; Hommes : 🇸🇳 SEN – BRA 🇧🇷"
+    ],
+    "eventsRaw": [
+      "M TUN vs THA ; W FRA vs KEN ; W SEN vs URU",
+      "M COK vs GER ; W CRO vs CHN ; W MEX vs ESP",
+      "M HUN vs PUR ; M SEN vs BRA"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW04",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-09T16:00:00+00:00",
+    "end": "2026-11-09T17:43:00+00:00",
+    "day": 9,
+    "events": [
+      "-49 kg femmes — demi-finales, finale",
+      "-55 kg hommes — demi-finales, finale"
+    ],
+    "eventsRaw": [
+      "Women -49kg - Semifinals, Final",
+      "Men -55kg - Semifinals, Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX06",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-09T17:00:00+00:00",
+    "end": "2026-11-09T19:00:00+00:00",
+    "day": 9,
+    "events": [
+      "51 kg femmes — quarts de finale",
+      "57 kg femmes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's 51kg - Quarterfinals",
+      "Women's 57kg - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR06",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-09T17:00:00+00:00",
+    "end": "2026-11-09T18:45:00+00:00",
+    "day": 9,
+    "events": [
+      "Concours par équipes femmes — finale"
+    ],
+    "eventsRaw": [
+      "Women's Team - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CRD02",
+    "kind": "sport",
+    "sportId": "cycling-road",
+    "title": null,
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-10T09:00:00+00:00",
+    "end": "2026-11-10T12:04:00+00:00",
+    "day": 10,
+    "events": [
+      "Contre-la-montre individuel femmes — finale",
+      "Contre-la-montre individuel hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's Individual Time Trial - Final",
+      "Men's Individual Time Trial - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FEN05",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-10T09:00:00+00:00",
+    "end": "2026-11-10T12:35:00+00:00",
+    "day": 10,
+    "events": [
+      "Épée individuelle femmes — phase de poules, tableau de 16, tableau de 8"
+    ],
+    "eventsRaw": [
+      "Women's Épée Individual - Pool Round, Table of 16, Table of 8"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAW05",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-10T09:00:00+00:00",
+    "end": null,
+    "day": 10,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC08",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-10T09:30:00+00:00",
+    "end": "2026-11-10T12:00:00+00:00",
+    "day": 10,
+    "events": [
+      "Équipe mixte — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Mixed Team 1/8 Elimination Round"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB03",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-10T10:00:00+00:00",
+    "end": "2026-11-10T13:20:00+00:00",
+    "day": 10,
+    "events": [
+      "Hommes : 🇧🇷 BRA – HUN 🇭🇺 ; Hommes : 🇵🇷 PUR – SEN 🇸🇳",
+      "Femmes : 🇪🇸 ESP – CRO 🇭🇷 ; Femmes : 🇨🇳 CHN – MEX 🇲🇽",
+      "Hommes : 🇩🇪 GER – TUN 🇹🇳 ; Hommes : 🇹🇭 THA – COK 🇨🇰",
+      "Femmes : 🇺🇾 URU – FRA 🇫🇷 ; Femmes : 🇰🇪 KEN – SEN 🇸🇳"
+    ],
+    "eventsRaw": [
+      "M BRA vs HUN ; M PUR vs SEN",
+      "W ESP vs CRO ; W CHN vs MEX",
+      "M GER vs TUN ; M THA vs COK",
+      "W URU vs FRA ; W KEN vs SEN"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW05",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-10T11:00:00+00:00",
+    "end": "2026-11-10T14:36:00+00:00",
+    "day": 10,
+    "events": [
+      "-55 kg femmes — huitièmes de finale, quarts de finale",
+      "-63 kg hommes — huitièmes de finale, quarts de finale",
+      "-63 kg femmes — huitièmes de finale, quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women -55kg - Elimination Round of 16, Quarterfinals",
+      "Men -63kg - Elimination Round of 16, Quarterfinals",
+      "Women -63kg - Elimination Round of 16, Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR07",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-10T11:30:00+00:00",
+    "end": "2026-11-10T14:00:00+00:00",
+    "day": 10,
+    "events": [
+      "Concours général hommes — finale"
+    ],
+    "eventsRaw": [
+      "Men's All-Around - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX07",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-10T12:00:00+00:00",
+    "end": "2026-11-10T15:00:00+00:00",
+    "day": 10,
+    "events": [
+      "50 kg hommes — quarts de finale",
+      "60 kg hommes — quarts de finale",
+      "70 kg hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Men's 50kg - Quarterfinals",
+      "Men's 60kg - Quarterfinals",
+      "Men's 70kg - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAL03",
+    "kind": "sport",
+    "sportId": "sailing",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-10T12:00:00+00:00",
+    "end": "2026-11-10T17:30:00+00:00",
+    "day": 10,
+    "events": [
+      "Femmes et hommes — manches 7, 8 et 9"
+    ],
+    "eventsRaw": [
+      "Women's and Men's R7, R8 and R9"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ARC09",
+    "kind": "sport",
+    "sportId": "archery",
+    "title": null,
+    "venueId": "stade-abdoulaye-wade",
+    "hall": null,
+    "start": "2026-11-10T14:00:00+00:00",
+    "end": "2026-11-10T17:30:00+00:00",
+    "day": 10,
+    "events": [
+      "Équipe mixte — quarts de finale",
+      "Équipe mixte — demi-finales",
+      "Équipe mixte — finales (bronze et or)"
+    ],
+    "eventsRaw": [
+      "Mixed Team Quarterfinals",
+      "Mixed Team Semifinals",
+      "Mixed Team Finals (Bronze and Gold)"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "ATH03",
+    "kind": "sport",
+    "sportId": "athletics",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Stade Iba Mar Diop",
+    "start": "2026-11-10T14:00:00+00:00",
+    "end": null,
+    "day": 10,
+    "events": [
+      "Lancer du marteau femmes — finale",
+      "5000 m marche hommes — finale",
+      "Lancer du poids femmes — finale",
+      "Saut à la perche hommes — finale",
+      "5000 m marche femmes — finale",
+      "200 m hommes — demi-finale et finale",
+      "Saut en hauteur femmes — finale",
+      "200 m femmes — demi-finale et finale",
+      "Triple saut hommes — finale",
+      "Lancer du javelot hommes — finale",
+      "400 m haies hommes — finale",
+      "400 m haies femmes — finale",
+      "800 m hommes — finale",
+      "1500 m femmes — finale"
+    ],
+    "eventsRaw": [
+      "Women's Hammer Throw - final",
+      "Men's 5000m Race Walk - final",
+      "Women's Shot Put - final",
+      "Men's Pole Vault - final",
+      "Women's 5000m Race Walk - final",
+      "Men's 200m - semi & final",
+      "Women's High Jump - final",
+      "Women's 200m - semi & final",
+      "Men's Triple Jump - final",
+      "Men's Javelin Throw - final",
+      "Men's 400m Hurdles - final",
+      "Women's 400m Hurdles - final",
+      "Men's 800m - final",
+      "Women's 1500m - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-10T10:00:00+00:00",
+      "pdfEnd": "2026-11-10T14:18:00+00:00",
+      "ticketStart": "2026-11-10T14:00:00+00:00"
+    }
+  },
+  {
+    "id": "FEN06",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-10T14:00:00+00:00",
+    "end": "2026-11-10T16:05:00+00:00",
+    "day": 10,
+    "events": [
+      "Épée individuelle femmes — demi-finales, finales"
+    ],
+    "eventsRaw": [
+      "Women's Épée Individual - Semifinals, Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR11",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-10T14:30:00+00:00",
+    "end": null,
+    "day": 10,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW06",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-10T16:00:00+00:00",
+    "end": "2026-11-10T18:34:00+00:00",
+    "day": 10,
+    "events": [
+      "-55 kg femmes — demi-finales, finale",
+      "-63 kg hommes — demi-finales, finale",
+      "-63 kg femmes — demi-finales, finale"
+    ],
+    "eventsRaw": [
+      "Women -55kg - Semifinals, Final",
+      "Men -63kg - Semifinals, Final",
+      "Women -63kg - Semifinals, Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR08",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-10T16:15:00+00:00",
+    "end": "2026-11-10T18:45:00+00:00",
+    "day": 10,
+    "events": [
+      "Concours général femmes — finale"
+    ],
+    "eventsRaw": [
+      "Women's All Around - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX08",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-10T17:00:00+00:00",
+    "end": "2026-11-10T20:00:00+00:00",
+    "day": 10,
+    "events": [
+      "48 kg femmes — préliminaires",
+      "54 kg femmes — préliminaires",
+      "60 kg femmes — préliminaires"
+    ],
+    "eventsRaw": [
+      "Women's 48kg - Preliminaries",
+      "Women's 54kg - Preliminaries",
+      "Women's 60kg - Preliminaries"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR12",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-11T09:00:00+00:00",
+    "end": null,
+    "day": 11,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FEN07",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-11T09:00:00+00:00",
+    "end": "2026-11-11T12:35:00+00:00",
+    "day": 11,
+    "events": [
+      "Épée individuelle hommes — phase de poules, tableau de 16, tableau de 8"
+    ],
+    "eventsRaw": [
+      "Men's Épée Individual - Pool Round, Table of 16, Table of 8"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB04",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-11T10:00:00+00:00",
+    "end": "2026-11-11T12:30:00+00:00",
+    "day": 11,
+    "events": [
+      "Femmes et hommes — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS17",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-11T11:00:00+00:00",
+    "end": "2026-11-11T13:30:00+00:00",
+    "day": 11,
+    "events": [
+      "Femmes — match pour le bronze"
+    ],
+    "eventsRaw": [
+      "Women's Bronze Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW07",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-11T11:00:00+00:00",
+    "end": "2026-11-11T14:36:00+00:00",
+    "day": 11,
+    "events": [
+      "+63 kg femmes — huitièmes de finale, quarts de finale",
+      "-73 kg hommes — huitièmes de finale, quarts de finale",
+      "+73 kg hommes — huitièmes de finale, quarts de finale"
+    ],
+    "eventsRaw": [
+      "Women +63kg - Elimination Round of 16, Quarterfinals",
+      "Men -73kg - Elimination Round of 16, Quarterfinals",
+      "Men +73kg - Elimination Round of 16, Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX09",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-11T12:00:00+00:00",
+    "end": "2026-11-11T14:30:00+00:00",
+    "day": 11,
+    "events": [
+      "51 kg femmes — demi-finales",
+      "57 kg femmes — demi-finales",
+      "50 kg hommes — demi-finales",
+      "60 kg hommes — demi-finales",
+      "70 kg hommes — demi-finales"
+    ],
+    "eventsRaw": [
+      "Women's 51kg - Semifinals",
+      "Women's 57kg - Semifinals",
+      "Men's 50kg - Semifinals",
+      "Men's 60kg - Semifinals",
+      "Men's 70kg - Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAL04",
+    "kind": "sport",
+    "sportId": "sailing",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-11T12:00:00+00:00",
+    "end": "2026-11-11T17:30:00+00:00",
+    "day": 11,
+    "events": [
+      "Femmes et hommes — manches 10, 11 et 12"
+    ],
+    "eventsRaw": [
+      "Women's and Men's R10, R11 and R12"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FEN08",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-11T14:00:00+00:00",
+    "end": "2026-11-11T16:05:00+00:00",
+    "day": 11,
+    "events": [
+      "Épée individuelle hommes — demi-finales, finales"
+    ],
+    "eventsRaw": [
+      "Men's Épée Individual - Semifinals, Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS18",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-11T15:00:00+00:00",
+    "end": "2026-11-11T17:50:00+00:00",
+    "day": 11,
+    "events": [
+      "Femmes — finale"
+    ],
+    "eventsRaw": [
+      "Women's Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB05",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-11T15:30:00+00:00",
+    "end": "2026-11-11T17:10:00+00:00",
+    "day": 11,
+    "events": [
+      "Femmes et hommes — matchs de classement (5-8)"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Placement Matches (5-8)"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW08",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-11T16:00:00+00:00",
+    "end": "2026-11-11T18:34:00+00:00",
+    "day": 11,
+    "events": [
+      "+63 kg femmes — demi-finales, finale",
+      "-73 kg hommes — demi-finales, finale",
+      "+73 kg hommes — demi-finales, finale"
+    ],
+    "eventsRaw": [
+      "Women +63kg - Semifinals, Final",
+      "Men -73kg - Semifinals, Final",
+      "Men +73kg - Semifinals, Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX10",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-11T17:00:00+00:00",
+    "end": "2026-11-11T19:30:00+00:00",
+    "day": 11,
+    "events": [
+      "48 kg femmes — demi-finales",
+      "54 kg femmes — demi-finales",
+      "60 kg femmes — demi-finales",
+      "55 kg hommes — demi-finales",
+      "65 kg hommes — demi-finales"
+    ],
+    "eventsRaw": [
+      "Women's 48kg - Semifinals",
+      "Women's 54kg - Semifinals",
+      "Women's 60kg - Semifinals",
+      "Men's 55kg - Semifinals",
+      "Men's 65kg - Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "GAR09",
+    "kind": "sport",
+    "sportId": "artistic-gymnastics",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon E",
+    "start": "2026-11-11T17:00:00+00:00",
+    "end": "2026-11-11T19:05:00+00:00",
+    "day": 11,
+    "events": [
+      "Équipe mixte — finale"
+    ],
+    "eventsRaw": [
+      "Mixed Team - final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "COR13",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-12T09:00:00+00:00",
+    "end": null,
+    "day": 12,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO12",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-12T09:00:00+00:00",
+    "end": null,
+    "day": 12,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB06",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-12T10:00:00+00:00",
+    "end": "2026-11-12T13:20:00+00:00",
+    "day": 12,
+    "events": [
+      "Femmes et hommes — demi-finales"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Semifinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FEN09",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-12T10:30:00+00:00",
+    "end": "2026-11-12T12:35:00+00:00",
+    "day": 12,
+    "events": [
+      "Sabre individuel femmes — phase de poules, tableau de 16, tableau de 8"
+    ],
+    "eventsRaw": [
+      "Women's Sabre Individual - Pool Round, Table of 16, Table of 8"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BKG01",
+    "kind": "sport",
+    "sportId": "breaking",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-12T11:00:00+00:00",
+    "end": "2026-11-12T13:30:00+00:00",
+    "day": 12,
+    "events": [
+      "B-Girls — présélection et poules"
+    ],
+    "eventsRaw": [
+      "B-Girls - Preselection and Round Robin"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS19",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-12T11:00:00+00:00",
+    "end": "2026-11-12T13:30:00+00:00",
+    "day": 12,
+    "events": [
+      "Hommes — match pour le bronze"
+    ],
+    "eventsRaw": [
+      "Men's Bronze Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW09",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-12T11:00:00+00:00",
+    "end": "2026-11-12T12:40:00+00:00",
+    "day": 12,
+    "events": [
+      "Équipe mixte — quarts de finale"
+    ],
+    "eventsRaw": [
+      "Mixed Team - Quarterfinals"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX11",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-12T12:00:00+00:00",
+    "end": "2026-11-12T13:49:00+00:00",
+    "day": 12,
+    "events": [
+      "51 kg femmes — finale",
+      "57 kg femmes — finale",
+      "50 kg hommes — finale",
+      "60 kg hommes — finale",
+      "70 kg hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 51kg - Final",
+      "Women's 57kg - Final",
+      "M's 50kg - Final",
+      "Men's 60kg - Final",
+      "Men's 70kg - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SAL05",
+    "kind": "sport",
+    "sportId": "sailing",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-12T12:00:00+00:00",
+    "end": "2026-11-12T16:25:00+00:00",
+    "day": 12,
+    "events": [
+      "Femmes et hommes — manches 13, 14 et 15"
+    ],
+    "eventsRaw": [
+      "Women's and Men's R13, R14 and R15"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FEN10",
+    "kind": "sport",
+    "sportId": "fencing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon A",
+    "start": "2026-11-12T14:00:00+00:00",
+    "end": "2026-11-12T16:05:00+00:00",
+    "day": 12,
+    "events": [
+      "Sabre individuel femmes — demi-finales, finales"
+    ],
+    "eventsRaw": [
+      "Women's Sabre Individual - Semifinals, Finals"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BKG02",
+    "kind": "sport",
+    "sportId": "breaking",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-12T15:00:00+00:00",
+    "end": "2026-11-12T17:30:00+00:00",
+    "day": 12,
+    "events": [
+      "B-Boys — présélection et poules"
+    ],
+    "eventsRaw": [
+      "B-Boys - Preselection and Round Robin"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "FBS20",
+    "kind": "sport",
+    "sportId": "futsal",
+    "title": null,
+    "venueId": "dakar-arena",
+    "hall": null,
+    "start": "2026-11-12T15:00:00+00:00",
+    "end": "2026-11-12T17:50:00+00:00",
+    "day": 12,
+    "events": [
+      "Hommes — finale"
+    ],
+    "eventsRaw": [
+      "Men's Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "TKW10",
+    "kind": "sport",
+    "sportId": "taekwondo",
+    "title": null,
+    "venueId": "iba-mar-diop",
+    "hall": "Iba Mar Diop Arena",
+    "start": "2026-11-12T15:00:00+00:00",
+    "end": "2026-11-12T17:28:00+00:00",
+    "day": 12,
+    "events": [
+      "Équipe mixte — demi-finales, finale"
+    ],
+    "eventsRaw": [
+      "Mixed Team - Semifinals, Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB07",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-12T15:30:00+00:00",
+    "end": "2026-11-12T17:10:00+00:00",
+    "day": 12,
+    "events": [
+      "Femmes et hommes — matchs de classement (5-6)"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Placement Matches (5-6)"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BOX12",
+    "kind": "sport",
+    "sportId": "boxing",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": "Pavillon C",
+    "start": "2026-11-12T18:20:00+00:00",
+    "end": null,
+    "day": 12,
+    "events": [
+      "48 kg femmes — finale",
+      "54 kg femmes — finale",
+      "60 kg femmes — finale",
+      "55 kg hommes — finale",
+      "65 kg hommes — finale"
+    ],
+    "eventsRaw": [
+      "Women's 48kg - Final",
+      "Women's 54kg - Final",
+      "Women's 60kg - Final",
+      "Men's 55kg - Final",
+      "Men's 65kg - Final"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": {
+      "pdfStart": "2026-11-12T17:00:00+00:00",
+      "pdfEnd": "2026-11-12T18:49:00+00:00",
+      "ticketStart": "2026-11-12T18:20:00+00:00"
+    }
+  },
+  {
+    "id": "COR14",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Festival de la Corniche",
+    "venueId": "corniche-ouest",
+    "hall": null,
+    "start": "2026-11-13T09:00:00+00:00",
+    "end": null,
+    "day": 13,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "CTO13",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Pass Fan Zone",
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-13T09:00:00+00:00",
+    "end": null,
+    "day": 13,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": true,
+    "freeSource": "https://tickets.dakar2026.org/fr",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  },
+  {
+    "id": "HBB08",
+    "kind": "sport",
+    "sportId": "beach-handball",
+    "title": null,
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-13T09:30:00+00:00",
+    "end": "2026-11-13T13:51:00+00:00",
+    "day": 13,
+    "events": [
+      "Femmes et hommes — finales (bronze et or"
+    ],
+    "eventsRaw": [
+      "Women's and Men's singles - Finals (Bronze and Gold"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BKG03",
+    "kind": "sport",
+    "sportId": "breaking",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": "Terrain Exterieur",
+    "start": "2026-11-13T10:00:00+00:00",
+    "end": "2026-11-13T12:45:00+00:00",
+    "day": 13,
+    "events": [
+      "B-Girls — quarts de finale, demi-finales, finales (battles pour le bronze et l'or)",
+      "B-Boys — quarts de finale, demi-finales, finales (battles pour le bronze et l'or)"
+    ],
+    "eventsRaw": [
+      "B-Girls - Quarterfinals, Semifinals, Finals (Bronze and Gold Medal Battles)",
+      "B-Boys - Quarterfinals, Semifinals, Finals (Bronze and Gold Medal Battles)"
+    ],
+    "hasFinal": true,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "SBW15",
+    "kind": "fan",
+    "sportId": null,
+    "title": "Concert de clôture",
+    "venueId": "saly-plage-ouest",
+    "hall": null,
+    "start": "2026-11-13T20:00:00+00:00",
+    "end": null,
+    "day": 13,
+    "events": [],
+    "eventsRaw": [],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
+    "ticketUrl": null,
+    "ticketMatch": "code",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "scheduleConflict": null
+  }
+]

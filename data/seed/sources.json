@@ -1,0 +1,44 @@
+{
+  "programmePdf": {
+    "id": "S1",
+    "label": "JOJ Dakar 2026 – Programme des compétitions par jour, discipline et site (publié le 30/10/2026)",
+    "pageUrl": "https://www.vie-publique.sn/documents/14574/joj-dakar-2026-programme-competitions",
+    "fileUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "refresh": "ci-daily"
+  },
+  "tickets": {
+    "id": "S2",
+    "label": "Billetterie officielle Dakar 2026",
+    "homeUrl": "https://tickets.dakar2026.org/fr",
+    "programmeUrl": "https://tickets.dakar2026.org/fr/ticketing",
+    "venuesGuideUrl": "https://tickets.dakar2026.org/fr/guide/venues",
+    "refresh": "manual-only",
+    "apiNotes": "Plan A : réponse de la requête 'ticketing' (bouton RECHERCHER, toutes dates, tous sites) copiée à la main depuis DevTools le 2026-11-02 → data/raw/tickets.json. 156 entrées, uniquement les sessions à venir. Pas d'appel automatisé.",
+    "purchaseUrlTemplate": null,
+    "_purchaseUrlTemplate": "Gabarit du lien d'achat, à remplir après avoir observé l'URL d'un bouton ACHETER (champs disponibles : {scheduleId}, {productId}). null = pas de lien profond.",
+    "statusMap": null,
+    "_statusMap": "Codes 'seat_tkl_ticketStatus/seat_percent_ticketStatus' (ex. '02/02', '03/02') → available|limited|soldout|cancelled, à remplir après vérification visuelle sur la billetterie. null = statut 'unknown'."
+  },
+  "mobilityGuide": {
+    "id": "S3",
+    "label": "Guide mobilité Dakar JOJ 2026",
+    "fileUrl": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf",
+    "refresh": "ci-daily"
+  },
+  "officialGuide": {
+    "id": "S4",
+    "label": "Guide des JOJ Dakar 2026 – COJOJ (oct. 2026)",
+    "pageUrl": "https://www.vie-publique.sn/documents/14570/guide-des-jeux-olympiques-de-la-jeunesse-dakar-2026",
+    "fileUrl": "https://www.vie-publique.sn/docs/b2e35baa-c3d6-44c0-af6e-b21d69a951d6/guide-des-jeux-olympiques-de-la-jeunesse-dakar-2026.pdf",
+    "refresh": "once"
+  },
+  "olympicsCom": {
+    "id": "S5",
+    "label": "Dakar 2026 sur olympics.com",
+    "programmeUrl": "https://www.olympics.com/fr/dakar-2026/programme",
+    "venuesUrl": "https://www.olympics.com/fr/dakar-2026/venues",
+    "sportsUrl": "https://www.olympics.com/fr/dakar-2026/sports",
+    "refresh": "link-only"
+  },
+  "userAgent": "JOJGuide-nonofficiel/1.0 (+contact: mxrcodes@gmail.com)"
+}

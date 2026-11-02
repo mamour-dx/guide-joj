@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/manifest.json
+# billetterie : sauvegardée à la main (jamais téléchargée par la CI), donc versionnée
+!data/raw/tickets.json
+!data/raw/tickets.html
+
+# Next.js
+/node_modules
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+.env*
+.vercel
+.DS_Store
+# découpage par jour généré au build (scripts/split_days.mjs)
+/public/data/

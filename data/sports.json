@@ -1,0 +1,177 @@
+[
+  {
+    "id": "baseball5",
+    "codePrefix": "BS5",
+    "nameFr": "Baseball5",
+    "nameEn": "Baseball5",
+    "emoji": "⚾"
+  },
+  {
+    "id": "beach-volleyball",
+    "codePrefix": "VBV",
+    "nameFr": "Beach-volley",
+    "nameEn": "Beach Volleyball",
+    "emoji": "🏐"
+  },
+  {
+    "id": "table-tennis",
+    "codePrefix": "TTE",
+    "nameFr": "Tennis de table",
+    "nameEn": "Table Tennis",
+    "emoji": "🏓"
+  },
+  {
+    "id": "rowing-beach",
+    "codePrefix": "RCB",
+    "nameFr": "Aviron (beach sprints)",
+    "nameEn": "Rowing Coastal Beach Sprints",
+    "emoji": "🚣"
+  },
+  {
+    "id": "badminton",
+    "codePrefix": "BDM",
+    "nameFr": "Badminton",
+    "nameEn": "Badminton",
+    "emoji": "🏸"
+  },
+  {
+    "id": "wushu",
+    "codePrefix": "WST",
+    "nameFr": "Wushu",
+    "nameEn": "Wushu",
+    "emoji": "🥋"
+  },
+  {
+    "id": "futsal",
+    "codePrefix": "FBS",
+    "nameFr": "Futsal",
+    "nameEn": "Futsal",
+    "emoji": "⚽"
+  },
+  {
+    "id": "judo",
+    "codePrefix": "JUD",
+    "nameFr": "Judo",
+    "nameEn": "Judo",
+    "emoji": "🥋"
+  },
+  {
+    "id": "rugby-sevens",
+    "codePrefix": "RU7",
+    "nameFr": "Rugby à 7",
+    "nameEn": "Rugby Sevens",
+    "emoji": "🏉"
+  },
+  {
+    "id": "swimming",
+    "codePrefix": "SWM",
+    "nameFr": "Natation",
+    "nameEn": "Swimming",
+    "emoji": "🏊"
+  },
+  {
+    "id": "equestrian",
+    "codePrefix": "EQU",
+    "nameFr": "Équitation",
+    "nameEn": "Equestrian",
+    "emoji": "🏇"
+  },
+  {
+    "id": "skateboarding",
+    "codePrefix": "SKB",
+    "nameFr": "Skateboard (street)",
+    "nameEn": "Skateboarding (street)",
+    "emoji": "🛹"
+  },
+  {
+    "id": "triathlon",
+    "codePrefix": "TRI",
+    "nameFr": "Triathlon",
+    "nameEn": "Triathlon",
+    "emoji": "🏊"
+  },
+  {
+    "id": "artistic-gymnastics",
+    "codePrefix": "GAR",
+    "nameFr": "Gymnastique artistique",
+    "nameEn": "Artistic Gymnastics",
+    "emoji": "🤸"
+  },
+  {
+    "id": "archery",
+    "codePrefix": "ARC",
+    "nameFr": "Tir à l'arc",
+    "nameEn": "Archery",
+    "emoji": "🏹"
+  },
+  {
+    "id": "basketball-3x3",
+    "codePrefix": "BK3",
+    "nameFr": "Basket 3x3",
+    "nameEn": "3*3 Basketball",
+    "emoji": "🏀"
+  },
+  {
+    "id": "beach-wrestling",
+    "codePrefix": "WRB",
+    "nameFr": "Lutte de plage",
+    "nameEn": "Beach Wrestling",
+    "emoji": "🤼"
+  },
+  {
+    "id": "boxing",
+    "codePrefix": "BOX",
+    "nameFr": "Boxe",
+    "nameEn": "Boxing",
+    "emoji": "🥊"
+  },
+  {
+    "id": "cycling-road",
+    "codePrefix": "CRD",
+    "nameFr": "Cyclisme sur route",
+    "nameEn": "Cycling Road",
+    "emoji": "🚴"
+  },
+  {
+    "id": "fencing",
+    "codePrefix": "FEN",
+    "nameFr": "Escrime",
+    "nameEn": "Fencing",
+    "emoji": "🤺"
+  },
+  {
+    "id": "taekwondo",
+    "codePrefix": "TKW",
+    "nameFr": "Taekwondo",
+    "nameEn": "Taekwondo",
+    "emoji": "🥋"
+  },
+  {
+    "id": "sailing",
+    "codePrefix": "SAL",
+    "nameFr": "Voile (windsurf)",
+    "nameEn": "Sailing (Windsurfing)",
+    "emoji": "⛵"
+  },
+  {
+    "id": "athletics",
+    "codePrefix": "ATH",
+    "nameFr": "Athlétisme",
+    "nameEn": "Athletics",
+    "emoji": "🏃"
+  },
+  {
+    "id": "beach-handball",
+    "codePrefix": "HBB",
+    "nameFr": "Handball de plage",
+    "nameEn": "Beach Handball",
+    "emoji": "🤾"
+  },
+  {
+    "id": "breaking",
+    "codePrefix": "BKG",
+    "nameFr": "Breaking",
+    "nameEn": "Breaking",
+    "emoji": "🕺"
+  }
+]
