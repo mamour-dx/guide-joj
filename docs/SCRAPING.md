@@ -145,10 +145,17 @@ gros + un bouton « Ouvrir la billetterie officielle » vers la page programme. 
 l'UI : « Cherche le code ATH01 ». Ça reste utile et honnête.
 
 Ce qu'on ne fait **pas** : Playwright headless en boucle, plugins stealth, rotation d'IP,
-contournement de captcha, requêtes depuis GitHub Actions vers la billetterie.
+contournement de captcha, en-têtes imitant un navigateur, cookies copiés.
 
-Refresh de la billetterie : manuel, 1×/jour max pendant les Jeux (re-sauvegarder le fichier
-brut, relancer `build_data.py`). Le calendrier (PDF) peut, lui, être rafraîchi en CI.
+**Mise à jour du 2026-11-02 — plan A automatisé.** L'endpoint a été identifié
+(`POST /api/ticketing`, formulaire `startDate`, `endDate`, `productIds` : voir
+`sources.json` → `tickets.api`). Un test unique avec notre User-Agent, sans cookie ni en-tête
+de navigateur, a donné : `robots.txt` absent (404), endpoint 200 `application/json`, pas de
+challenge. Les CGU de la billetterie ne contiennent aucune clause sur l'accès automatisé.
+Décision : `fetch_sources.py` fait **une requête par jour** depuis la GitHub Action, sans
+retry. Si la réponse n'est pas le JSON attendu (erreur HTTP, challenge, JSON vide), on garde
+le dernier `data/raw/tickets.json` valide, sans faire échouer le rafraîchissement. Si la
+billetterie bloque un jour la CI, on revient à la sauvegarde manuelle (plan A d'origine).
 
 ---
 

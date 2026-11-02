@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
-import { homeOgImage, meta } from "@/lib/data";
+import { homeOgImage, meta, ticketsFetchedAt } from "@/lib/data";
 import { site, siteUrl } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
 
@@ -41,7 +41,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="mx-auto w-full max-w-2xl px-4 pb-24 pt-4 text-sm text-muted border-t border-line">
           <p>{site.disclaimer}</p>
           <p className="mt-2">
-            Données mises à jour le {updatedAt(meta.generatedAt)} (heure de Dakar) ·{" "}
+            Programme mis à jour le {updatedAt(meta.generatedAt)}
+            {ticketsFetchedAt && <> · Statuts billetterie relevés le {updatedAt(ticketsFetchedAt)}</>} (heure de Dakar) ·{" "}
             <Link href="/a-propos" className="underline underline-offset-2">Sources et à propos</Link>
           </p>
         </footer>

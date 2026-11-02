@@ -291,6 +291,16 @@ def parse_html(path: Path) -> list[dict]:
 
 # ------------------------------------------------------------------ main
 
+def fetched_at(path: Path) -> str:
+    """Heure du relevé : celle du manifeste si le fichier est bien celui téléchargé par
+    fetch_sources.py (même hash), sinon la date de modification (sauvegarde manuelle)."""
+    manifest = RAW / "manifest.json"
+    if manifest.exists():
+        m = json.loads(manifest.read_text(encoding="utf-8")).get("S2")
+        if m and m.get("sha256") == sha256(path):
+            return m["fetchedAt"]
+    return datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc).isoformat(timespec="seconds")
+
 def main() -> int:
     if JSON_IN.exists():
         plan, path, items = "A", JSON_IN, parse_json(JSON_IN)
@@ -302,8 +312,7 @@ def main() -> int:
         "plan": plan,
         "file": str(path.relative_to(ROOT)) if path else None,
         "sha256": sha256(path) if path else None,
-        "fetchedAt": (datetime.fromtimestamp(path.stat().st_mtime).astimezone()
-                      .isoformat(timespec="seconds") if path else None),
+        "fetchedAt": fetched_at(path) if path else None,
         "items": items,
     }
     OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

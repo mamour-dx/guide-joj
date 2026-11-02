@@ -3,7 +3,10 @@
 Règles (CLAUDE.md §4, SCRAPING.md) :
 - User-Agent honnête lu dans sources.json ;
 - 1 requête par seconde maximum, timeouts, pas de retry agressif ;
-- jamais la billetterie (refresh "manual-only").
+- billetterie (S2) : UNE requête POST vers l'endpoint JSON public décrit dans
+  sources.json (`tickets.api`), sans retry, sans en-tête imitant un navigateur, sans cookie.
+  Tout échec (HTTP, challenge anti-bot, JSON invalide ou vide) est silencieux : on garde le
+  dernier data/raw/tickets.json valide. Voir SCRAPING.md §4.
 
 Usage :
     python scripts/fetch_sources.py                 # toutes les sources ci-daily
@@ -12,7 +15,8 @@ Usage :
                                                     # depuis data/meta.json, exit 10 sinon
                                                     # (exit 1 = erreur de téléchargement)
 
-Sortie : data/raw/<clé>.pdf + data/raw/manifest.json (url, sha256, fetchedAt, taille).
+Sortie : data/raw/<clé>.pdf, data/raw/tickets.json + data/raw/manifest.json
+(url, sha256, fetchedAt, taille).
 """
 
 from __future__ import annotations
@@ -94,6 +98,34 @@ def download(client: httpx.Client, url: str, dest: Path) -> None:
     raise RuntimeError(f"téléchargement impossible : {url} ({last_exc})")
 
 
+class TicketsUnavailable(Exception):
+    """La billetterie n'a pas renvoyé un JSON exploitable (on garde le fichier précédent)."""
+
+
+def fetch_tickets(client: httpx.Client, api: dict) -> bytes:
+    """Une seule requête, pas de retry. Renvoie le JSON (indenté, pour des diffs git lisibles)."""
+    form = api["form"]
+    fields = [(k, (None, str(v))) for k, v in form.items() if not isinstance(v, list)]
+    fields += [(k, (None, str(x))) for k, vs in form.items() if isinstance(vs, list) for x in vs]
+    try:
+        r = client.request(api.get("method", "POST"), api["url"], files=fields)
+    except httpx.HTTPError as exc:
+        raise TicketsUnavailable(f"réseau : {exc}") from exc
+    ctype = r.headers.get("content-type", "")
+    if r.status_code != 200:
+        raise TicketsUnavailable(f"HTTP {r.status_code} ({ctype or 'sans content-type'})")
+    if "json" not in ctype:
+        raise TicketsUnavailable(f"réponse non JSON ({ctype or '?'}) : challenge anti-bot probable")
+    try:
+        data = r.json()
+    except ValueError as exc:
+        raise TicketsUnavailable("JSON illisible") from exc
+    games = data.get("gameInfo") if isinstance(data, dict) else None
+    if not isinstance(games, list) or not games or not all(isinstance(g, dict) and g.get("subTitle") for g in games):
+        raise TicketsUnavailable("JSON sans liste gameInfo exploitable")
+    return (json.dumps(data, ensure_ascii=False, indent=1) + "\n").encode("utf-8")
+
+
 def previous_hashes() -> dict[str, str]:
     if not META.exists():
         return {}
@@ -130,15 +162,27 @@ def main() -> int:
             wait = MIN_INTERVAL_S - (time.monotonic() - last_request)
             if wait > 0:
                 time.sleep(wait)
-            url = src["fileUrl"]
-            dest = target_path(key, url)
+            api = src.get("api")
+            url = api["url"] if api else src["fileUrl"]
+            dest = RAW / api["saveAs"] if api else target_path(key, url)
             print(f"[{src['id']}] {url}")
             last_request = time.monotonic()
-            try:
-                download(client, url, dest)
-            except RuntimeError as exc:
-                print(f"❌ {exc}", file=sys.stderr)
-                return 1
+            if api:
+                try:
+                    body = fetch_tickets(client, api)
+                except TicketsUnavailable as exc:
+                    kept = "on garde le dernier fichier" if dest.exists() else "aucun fichier précédent"
+                    print(f"  ⚠️  billetterie indisponible ({exc}) : {kept}.", file=sys.stderr)
+                    continue
+                tmp = dest.with_suffix(dest.suffix + ".part")
+                tmp.write_bytes(body)
+                tmp.replace(dest)
+            else:
+                try:
+                    download(client, url, dest)
+                except RuntimeError as exc:
+                    print(f"❌ {exc}", file=sys.stderr)
+                    return 1
             digest = sha256(dest)
             manifest[src["id"]] = {
                 "key": key,

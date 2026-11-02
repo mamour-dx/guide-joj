@@ -1,12 +1,13 @@
 # Rafraîchissement quotidien des données (SCRAPING.md §7).
-# 06:00 à Dakar (= 06:00 UTC). Re-télécharge S1 + S3 ; si rien n'a changé, s'arrête.
+# 06:00 à Dakar (= 06:00 UTC). Re-télécharge S1 + S3 et les statuts billetterie (S2 : une
+# requête à l'endpoint JSON public, échec silencieux) ; si rien n'a changé, s'arrête.
 # Sinon parse → build → validate → tests, puis commit de data/ → Vercel redéploie.
 # Si validate.py ou les tests échouent, le job échoue et RIEN n'est publié.
 # Dans tous les cas où rien n'est poussé, on appelle le Deploy Hook Vercel : l'accueil, les
 # métadonnées et l'image de partage sont figés au build sur la date du jour (Africa/Dakar),
 # il faut donc un build chaque matin même quand les données n'ont pas bougé.
 # Secret requis : VERCEL_DEPLOY_HOOK (Vercel → Settings → Git → Deploy Hooks).
-# La billetterie n'est jamais appelée depuis la CI (data/raw/tickets.json est manuel).
+# Billetterie : 1 requête/jour, User-Agent honnête, sans cookie ni retry (SCRAPING.md §4).
 name: refresh-data
 
 on:
@@ -55,7 +56,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/sessions.json data/venues.json data/sports.json data/meta.json \
-                  data/validation-report.md data/raw/manifest.json
+                  data/validation-report.md data/raw/manifest.json data/raw/tickets.json
           if git diff --cached --quiet; then
             echo "Aucune différence dans data/ : rien à commiter."
             exit 0

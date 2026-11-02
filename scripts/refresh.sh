@@ -3,11 +3,12 @@
 # et lançable à la main à l'identique : `bash scripts/refresh.sh` (FORCE=1 pour reconstruire
 # même si les sources n'ont pas changé, ex. après avoir re-sauvegardé data/raw/tickets.json).
 #
-# 1. Re-télécharge S1 (programme) et S3 (guide mobilité), compare les hash à data/meta.json.
+# 1. Re-télécharge S1 (programme), S3 (guide mobilité) et les statuts billetterie (S2, une
+#    requête ; en cas d'échec on garde le dernier tickets.json), compare les hash à data/meta.json.
 # 2. Rien n'a changé (et pas FORCE) → stop, rien n'est publié.
 # 3. Sinon : parse → build → validate → tests. Une seule erreur → exit ≠ 0 → rien n'est publié.
 #
-# La billetterie n'est JAMAIS appelée ici : data/raw/tickets.json est sauvegardé à la main.
+# Billetterie : une seule requête par exécution, sans retry ni cookie (SCRAPING.md §4).
 set -uo pipefail
 cd "$(dirname "$0")/.."
 

@@ -120,3 +120,6 @@ export const homeOgImage = {
   height: 630,
   alt: "JOJ Guide — ce qu'on peut voir aux JOJ Dakar 2026 ce jour-là (guide non officiel)",
 };
+
+/** Dernier relevé des statuts billetterie (S2), distinct de la date du programme. */
+export const ticketsFetchedAt: string | null = meta.sources.find((s) => s.id === "S2")?.fetchedAt ?? null;

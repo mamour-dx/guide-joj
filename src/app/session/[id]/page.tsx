@@ -6,10 +6,10 @@ import { BackLink } from "@/components/BackLink";
 import { Badge, CLUSTER_STYLE } from "@/components/SessionCard";
 import { SessionActions } from "@/components/SessionActions";
 import { CLUSTER_LABEL } from "@/lib/cards";
-import { officialLinks, sessionById, sessionLabel, sessions, venueById } from "@/lib/data";
+import { officialLinks, sessionById, sessionLabel, sessions, ticketsFetchedAt, venueById } from "@/lib/data";
 import type { Session } from "@/lib/schema";
 import { mapsUrl } from "@/lib/site";
-import { dayKey, hhmm, longDay, timeRange } from "@/lib/time";
+import { dayKey, hhmm, longDay, timeRange, updatedAt } from "@/lib/time";
 
 export async function generateStaticParams() {
   return sessions.map((s) => ({ id: s.id }));
@@ -72,6 +72,9 @@ function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
       {status && (
         <p className={`mb-2 font-bold ${s.ticketStatus === "soldout" || s.ticketStatus === "cancelled" ? "text-red" : "text-green-ink"}`}>
           {status}
+          {ticketsFetchedAt && (
+            <span className="ml-1 text-xs font-normal text-muted">· relevé le {updatedAt(ticketsFetchedAt)}</span>
+          )}
         </p>
       )}
       <a href={href} target="_blank" rel="noopener" className={primary}>

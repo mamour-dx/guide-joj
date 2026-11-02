@@ -304,7 +304,7 @@ def main() -> int:
         meta_sources.append({"id": sid, "url": m["url"], "sha256": m["sha256"],
                              "fetchedAt": m["fetchedAt"]})
     if tickets.get("sha256"):
-        meta_sources.append({"id": "S2", "url": sources["tickets"]["programmeUrl"],
+        meta_sources.append({"id": "S2", "url": sources["tickets"].get("api", {}).get("url") or sources["tickets"]["programmeUrl"],
                              "sha256": tickets["sha256"], "fetchedAt": tickets["fetchedAt"]})
     if time_conflicts:
         warnings.append(f"{len(time_conflicts)} horaire(s) de la billetterie affiché(s) à la place "
