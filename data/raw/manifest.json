@@ -5,7 +5,7 @@
     "path": "data/raw/programmePdf.pdf",
     "sha256": "9ee4505bd979f0eba8504ba1913552a9f4cfa5015ba9defabdb8f7419defce59",
     "bytes": 177866,
-    "fetchedAt": "2026-11-02T19:08:45+00:00"
+    "fetchedAt": "2026-11-02T19:23:09+00:00"
   },
   "S3": {
     "key": "mobilityGuide",
@@ -13,6 +13,6 @@
     "path": "data/raw/mobilityGuide.pdf",
     "sha256": "bb06a3cd4755e025ec70fb3e05d08d2e9a22a40cdcb3a6f3ce343a9407195729",
     "bytes": 15795398,
-    "fetchedAt": "2026-11-02T19:08:47+00:00"
+    "fetchedAt": "2026-11-02T19:23:12+00:00"
   }
 }
