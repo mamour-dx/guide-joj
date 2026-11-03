@@ -4,11 +4,13 @@ import { ChevronRight } from "lucide-react";
 import { CLUSTER_DOT } from "@/components/SessionCard";
 import { RemainingCount } from "@/components/TimeAware";
 import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
-import { sessions, venues } from "@/lib/data";
+import { sessions, venues, homeOgImage } from "@/lib/data";
+import { pageSeo } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Sites",
   description: "Les 8 sites des JOJ Dakar 2026 : Dakar, Diamniadio et Saly. Accès, itinéraire et sessions à venir.",
+  ...pageSeo("/sites", [homeOgImage]),
 };
 
 export default function SitesPage() {

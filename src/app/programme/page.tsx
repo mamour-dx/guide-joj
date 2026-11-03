@@ -3,13 +3,15 @@ import { Suspense } from "react";
 import { ProgrammeControls } from "@/components/ProgrammeControls";
 import { CLUSTER_DOT, SessionCard } from "@/components/SessionCard";
 import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
-import { cards, days, sportChips } from "@/lib/data";
+import { cards, days, sportChips, homeOgImage } from "@/lib/data";
 import { programmeCss, dakarToday } from "@/lib/programmeCss";
 import { longDay, shortDay } from "@/lib/time";
+import { pageSeo } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Programme complet",
   description: "Toutes les sessions des JOJ Dakar 2026, jour par jour, par secteur et par heure.",
+  ...pageSeo("/programme", [homeOgImage]),
 };
 
 /** Avant hydratation (et sans JS) : bandeau d'ancres vers chaque jour, plus des emplacements

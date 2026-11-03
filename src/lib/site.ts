@@ -13,13 +13,20 @@ export const site = {
   contact: "mxrcodes@gmail.com" as string | null,
 };
 
-/** URL publique du site : NEXT_PUBLIC_SITE_URL, sinon le domaine de production Vercel. */
+/** URL publique du site : NEXT_PUBLIC_SITE_URL, sinon le domaine de production Vercel.
+ *  Le nom de domaine définitif n'est pas encore choisi : le jour venu, il suffit de régler
+ *  NEXT_PUBLIC_SITE_URL sur Vercel (canonical, sitemap, robots, og:url et JSON-LD suivent). */
 export const siteUrl = new URL(
   process.env.NEXT_PUBLIC_SITE_URL ??
     (process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
       : "http://localhost:3000"),
 );
+
+/** Les déploiements de preview Vercel ne doivent pas être indexés (contenu en double). */
+export const indexable = process.env.VERCEL_ENV === undefined || process.env.VERCEL_ENV === "production";
+
+export const absoluteUrl = (path: string) => new URL(path, siteUrl).toString();
 
 export function mapsUrl(v: { lat: number | null; lng: number | null; mapsQuery: string }): string {
   const dest = v.lat !== null && v.lng !== null ? `${v.lat},${v.lng}` : v.mapsQuery;

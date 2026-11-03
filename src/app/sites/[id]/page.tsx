@@ -5,7 +5,8 @@ import { BackLink } from "@/components/BackLink";
 import { ClusterTag, SessionCard } from "@/components/SessionCard";
 import { HidePastDays } from "@/components/TimeAware";
 import { CLUSTER_LABEL } from "@/lib/cards";
-import { cards, officialLinks, venueById, venues } from "@/lib/data";
+import { cards, homeOgImage, officialLinks, venueById, venues } from "@/lib/data";
+import { breadcrumbJsonLd, JsonLd, pageSeo, venueJsonLd } from "@/lib/seo";
 import { mapsUrl } from "@/lib/site";
 import { dakarToday } from "@/lib/programmeCss";
 import { longDay } from "@/lib/time";
@@ -18,7 +19,11 @@ export async function generateMetadata({ params }: PageProps<"/sites/[id]">): Pr
   const { id } = await params;
   const v = venueById.get(id);
   if (!v) return {};
-  return { title: v.name, description: `${v.name} (${CLUSTER_LABEL[v.cluster]}) : accès, itinéraire et sessions des JOJ Dakar 2026.` };
+  return {
+    title: v.name,
+    description: `${v.name} (${CLUSTER_LABEL[v.cluster]}) : accès, itinéraire et sessions des JOJ Dakar 2026.`,
+    ...pageSeo(`/sites/${v.id}`, [homeOgImage]),
+  };
 }
 
 export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
@@ -31,6 +36,15 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
 
   return (
     <article className="pt-2">
+      <JsonLd
+        data={[
+          venueJsonLd(v),
+          breadcrumbJsonLd([
+            { name: "Sites", path: "/sites" },
+            { name: v.name, path: `/sites/${v.id}` },
+          ]),
+        ]}
+      />
       <BackLink href="/sites" />
       <h1 className="mt-1 display text-5xl text-heading">{v.name}</h1>
       <p className="mt-2">

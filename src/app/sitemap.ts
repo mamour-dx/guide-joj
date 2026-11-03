@@ -1,9 +1,8 @@
 import type { MetadataRoute } from "next";
 import { meta, sessions, venues } from "@/lib/data";
-import { siteUrl } from "@/lib/site";
+import { absoluteUrl as url } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const url = (path: string) => new URL(path, siteUrl).toString();
   const lastModified = meta.generatedAt;
   return [
     { url: url("/"), lastModified, changeFrequency: "hourly", priority: 1 },

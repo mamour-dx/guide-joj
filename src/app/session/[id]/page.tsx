@@ -9,6 +9,7 @@ import { SessionActions } from "@/components/SessionActions";
 import { CLUSTER_LABEL } from "@/lib/cards";
 import { officialLinks, sessionById, sessionLabel, sessions, ticketsFetchedAt, venueById } from "@/lib/data";
 import type { Session } from "@/lib/schema";
+import { breadcrumbJsonLd, JsonLd, pageSeo, sessionJsonLd } from "@/lib/seo";
 import { mapsUrl } from "@/lib/site";
 import { dayKey, hhmm, longDay, timeRange, updatedAt } from "@/lib/time";
 
@@ -25,6 +26,7 @@ export async function generateMetadata({ params }: PageProps<"/session/[id]">): 
   return {
     title: `${label} ${s.id} — ${longDay(dayKey(s.start))}`,
     description: `${label} (${s.id}), ${longDay(dayKey(s.start))} à ${hhmm(s.start)}, ${v.name}. ${s.events.slice(0, 3).join(" · ")}`,
+    ...pageSeo(`/session/${s.id}`),
   };
 }
 
@@ -114,6 +116,15 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
 
   return (
     <article className="pt-2">
+      <JsonLd
+        data={[
+          sessionJsonLd(s, v),
+          breadcrumbJsonLd([
+            { name: "Programme", path: "/programme" },
+            { name: `${label} ${s.id}`, path: `/session/${s.id}` },
+          ]),
+        ]}
+      />
       <BackLink href="/" />
 
       <div className="mt-1 flex items-start gap-4">

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { meta, sourceList } from "@/lib/data";
+import { meta, sourceList, homeOgImage } from "@/lib/data";
 import { Mascot } from "@/components/Brand";
 import { officialBranding } from "@/lib/brand";
 import { site } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
+import { pageSeo } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "À propos",
   description: `Ce qu'est ${site.name} et d'où viennent ses données.`,
+  ...pageSeo("/a-propos", [homeOgImage]),
 };
 
 export default function AboutPage() {

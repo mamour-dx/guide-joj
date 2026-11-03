@@ -8,19 +8,21 @@ import { HeaderEmblem, VerticalEmblem } from "@/components/Brand";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
 import { officialBranding } from "@/lib/brand";
 import { homeOgImage, meta, officialLinks, ticketsFetchedAt } from "@/lib/data";
-import { site, siteUrl } from "@/lib/site";
+import { siteLabel as label } from "@/lib/seo";
+import { indexable, site, siteUrl } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
 const bebas = Bebas_Neue({ variable: "--font-bebas", weight: "400", subsets: ["latin"], display: "swap" });
 
-const label = officialBranding ? site.name : `${site.name} (non officiel)`;
-
 export const metadata: Metadata = {
   metadataBase: siteUrl,
   applicationName: site.name,
   openGraph: { type: "website", locale: "fr_FR", siteName: label, images: [homeOgImage] },
-  twitter: { card: "summary_large_image", images: [homeOgImage.url] },
+  // pas de twitter:image : X reprend og:image, qui est propre à chaque page
+  twitter: { card: "summary_large_image" },
+  robots: indexable ? undefined : { index: false, follow: false },
+  formatDetection: { telephone: false },
   title: { default: officialBranding ? site.name : `${site.name} — JOJ Dakar 2026 (non officiel)`, template: `%s · ${site.name}` },
   description: `Qu'est-ce que je peux voir aux JOJ Dakar 2026 aujourd'hui, où, à quelle heure, et comment y aller ? ${site.tagline}.`,
 };

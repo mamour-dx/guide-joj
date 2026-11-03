@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import { TodayView } from "@/components/TodayView";
 import { buildDay, cardsForDay, days, homeDay, homeOgImage, sportChips } from "@/lib/data";
 import { officialBranding } from "@/lib/brand";
-import { site } from "@/lib/site";
+import { JsonLd, pageSeo, siteLabel, websiteJsonLd } from "@/lib/seo";
 import { longDay } from "@/lib/time";
-
-const siteLabel = officialBranding ? site.name : `${site.name} (non officiel)`;
 
 const homeCards = homeDay.day ? cardsForDay(homeDay.day) : [];
 
@@ -27,19 +25,21 @@ function summary(): { title: string; description: string } {
 }
 
 const { title, description } = summary();
+const seo = pageSeo("/", [homeOgImage]);
 
 export const metadata: Metadata = {
   title: { absolute: `${title} — ${siteLabel}` },
   description,
-  // l'objet openGraph d'une page remplace celui du layout : on y remet l'image datée
-  openGraph: { type: "website", locale: "fr_FR", siteName: siteLabel, title, description, images: [homeOgImage] },
-  twitter: { card: "summary_large_image", title, description, images: [homeOgImage.url] },
+  alternates: seo.alternates,
+  openGraph: { ...seo.openGraph, title, description },
+  twitter: { card: "summary_large_image", title, description },
   other: { "joj:build-day": buildDay },
 };
 
 export default function TodayPage() {
   return (
     <>
+      <JsonLd data={websiteJsonLd()} />
       <TodayView days={days} sports={sportChips} initial={{ ...homeDay, cards: homeCards }} />
       <noscript>
         <p className="card mt-4 p-4 text-sm">
