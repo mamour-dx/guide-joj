@@ -75,9 +75,10 @@ droits, filets noirs de 2 px, grands aplats de couleur pleine largeur. Valeurs e
 | Secteurs (carré de repère, texte noir) | Dakar rouge, Diamniadio vert, Saly jaune |
 | Badges | Gratuit = jaune + noir ; Finale = noir ; En ce moment = rouge + noir |
 
-- Cadre fixe de 6 px tout autour de l'écran, aux quatre couleurs (jaune, noir, vert, rouge sur
-  chaque côté, dans le sens des aiguilles d'une montre). Fond : trame de points très légère, avec
-  de loin en loin un petit carré jaune, vert ou rouge ; les cartes restent sur fond plein.
+- Bandes fixes de 6 px en haut et en bas de l'écran, aux quatre couleurs (jaune, noir, vert,
+  rouge). Fond : trame de points à peine visible ; les cartes restent sur fond plein.
+- Au clic ou au toucher, quatre carrés aux couleurs olympiques jaillissent (sauf si moins
+  d'animations demandé). À la souris, curseur en carré quatre couleurs, en losange sur les liens.
 - Sur un aplat de couleur, le texte est toujours noir (rouge 5,0:1, vert 6,6:1, jaune 11:1).
 - Typo : titres en **Big Shoulders** 800, texte en **Geist**, horaires, codes et sur-titres en
   **Geist Mono**.

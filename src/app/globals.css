@@ -70,8 +70,8 @@ body {
   --dot: rgb(246 246 243 / 0.06);
 }
 
-/* Cadre fixe aux quatre couleurs, qui tourne autour de l'écran dans le sens des aiguilles d'une
-   montre : jaune, noir, vert, rouge sur chaque côté. Au-dessus de tout, sans capter les touches. */
+/* Bandes fixes aux quatre couleurs en haut et en bas de l'écran (jaune, noir, vert, rouge en haut,
+   dans l'ordre inverse en bas). Au-dessus de tout, sans capter les touches. */
 :root {
   --frame: 6px;
 }
@@ -83,9 +83,7 @@ body {
   --c1: var(--o-yellow); --c2: var(--ink); --c3: var(--o-green); --c4: var(--o-red);
   background:
     linear-gradient(90deg,  var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) top    / 100% var(--frame) no-repeat,
-    linear-gradient(180deg, var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) right  / var(--frame) 100% no-repeat,
-    linear-gradient(270deg, var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) bottom / 100% var(--frame) no-repeat,
-    linear-gradient(0deg,   var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) left   / var(--frame) 100% no-repeat;
+    linear-gradient(270deg, var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) bottom / 100% var(--frame) no-repeat;
 }
 
 .tabular {
