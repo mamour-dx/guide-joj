@@ -1,4 +1,4 @@
-# JOJ Guide — le guide non officiel des JOJ Dakar 2026
+# Dakar 2026 · Guide des sessions — JOJ Dakar 2026
 
 > Ce fichier est le brief du projet. Lis-le en entier avant d'écrire du code,
 > puis lis `docs/SCRAPING.md`, `docs/DATA_MODEL.md` et `docs/UX.md`.
@@ -26,10 +26,15 @@ On fusionne tout ça en une seule interface rapide, lisible sur un téléphone.
 
 ## Règles non négociables
 
-1. **Site non officiel.** Pas de logo Dakar 2026, pas d'anneaux olympiques, pas de mascotte
-   (Ayo), pas de photos officielles. Footer + page « À propos » : « Site non officiel, sans
-   affiliation avec le COJOJ Dakar 2026 ni le CIO. Horaires à vérifier sur les sources
-   officielles. » Les **couleurs** peuvent évoquer l'ambiance des Jeux (voir `docs/UX.md`).
+1. **Marques officielles, sous autorisation du COJOJ (depuis le 02/11/2026).** Le site porte
+   l'identité Dakar 2026 à la demande du COJOJ (responsable design et charte). Les marques
+   (emblème, pictogrammes, mascotte Ayo, motif) viennent **uniquement** du guide médias officiel
+   et sont rangées dans `public/brand/`, utilisées telles quelles : jamais redessinées,
+   recolorées, recadrées ni déformées (charte olympique). On n'ajoute aucune autre marque
+   (anneaux seuls, photos officielles…) sans les fichiers et l'accord du COJOJ. Un seul
+   interrupteur, `officialBranding` dans `src/lib/brand.ts` : `false` retire toutes les marques
+   et rétablit la mention « Site non officiel, sans affiliation avec le COJOJ Dakar 2026 ni le
+   CIO ». Dans tous les cas : « Horaires à vérifier sur la billetterie officielle ».
 2. **Aucun paiement, aucune collecte de données.** Les billets = lien sortant vers la
    billetterie officielle. Pas de formulaire, pas de compte, pas de cookie de tracking
    (analytics sans cookie type Vercel Analytics OK).
@@ -102,7 +107,7 @@ dans les sources (je les montre en vidéo).
 - [ ] Page d'accueil < 150 KB de JS. Lisible en plein soleil (contrastes AA).
 - [ ] Chaque session : horaire, site, sport, épreuves, badge Gratuit/Payant/Inconnu,
       lien billetterie ou « voir la billetterie officielle », bouton agenda, itinéraire.
-- [ ] Mention « non officiel » visible dans le footer de toutes les pages.
+- [ ] Footer de toutes les pages : emblème (ou mention « non officiel » si `officialBranding = false`) et « horaires à vérifier ».
 - [ ] `meta.json.generatedAt` affiché discrètement : « Données mises à jour le … ».
 
 ## Ton et langue

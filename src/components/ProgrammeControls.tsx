@@ -51,7 +51,7 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
   }, [day]);
 
   useEffect(() => {
-    stripRef.current?.querySelector<HTMLElement>("[aria-current]")?.scrollIntoView({ inline: "center", block: "nearest" });
+    stripRef.current?.querySelector<HTMLElement>("[aria-current]")?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
   }, [day]);
 
   const css = programmeCss(params.toString(), days, today);
@@ -61,7 +61,7 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
     <>
       <style>{css}</style>
       {/* seul le bandeau de jours reste collé en haut : la recherche et les puces défilent */}
-      <div className="sticky top-0 z-10 -mx-4 bg-sand/95 px-4 py-2 backdrop-blur">
+      <div className="sticky top-0 z-10 -mx-4 bg-page/95 px-4 py-2 backdrop-blur">
       <div ref={stripRef} className="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4" aria-label="Jours">
         {days.map((d) => {
           const { weekday, num } = shortDay(d);
@@ -75,19 +75,22 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
               replace
               scroll={false}
               aria-current={active ? "date" : undefined}
-              className={`flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-xl border px-2 text-sm leading-tight ${
-                active ? "border-green bg-green text-on-accent" : "border-line bg-surface"
+              className={`pressable relative flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-2xl border px-2 text-sm leading-tight ${
+                active ? "border-blue bg-blue text-on-blue shadow-md shadow-blue/30" : "border-line-soft bg-surface"
               }`}
             >
               <span className="font-semibold">{weekday}</span>
-              <span className="tabular text-lg font-extrabold">{num}</span>
+              <span className="tabular display text-2xl">{num}</span>
+              {d === today && (
+                <span className={`absolute bottom-1 size-1 rounded-full ${active ? "bg-on-blue" : "bg-blue"}`} aria-label="aujourd'hui" />
+              )}
             </Link>
           );
         })}
       </div>
       </div>
 
-      <label className="mt-1 flex min-h-12 items-center gap-2 rounded-xl border border-line bg-surface px-3">
+      <label className="mt-1 flex min-h-12 items-center gap-2 rounded-full border border-line-soft bg-surface px-4 shadow-[var(--shadow)] transition focus-within:border-blue focus-within:ring-4 focus-within:ring-blue/15">
         <Search aria-hidden="true" size={18} className="text-muted" />
         <span className="sr-only">Rechercher</span>
         <input
@@ -99,7 +102,7 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
           enterKeyHint="search"
         />
         {q && (
-          <button type="button" aria-label="Effacer la recherche" onClick={() => setQ("")} className="p-1 text-muted">
+          <button type="button" aria-label="Effacer la recherche" onClick={() => setQ("")} className="pop flex size-8 items-center justify-center rounded-full bg-line-soft text-muted transition active:scale-90">
             <X size={18} aria-hidden="true" />
           </button>
         )}
@@ -108,7 +111,7 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
 
       <FilterChips value={filters} onChange={(f) => push(f)} sports={sports} />
       {activeCount(filters) > 0 && (
-        <button type="button" onClick={() => { setQ(""); push(EMPTY_FILTERS); }} className="min-h-11 text-sm font-bold text-green-ink underline">
+        <button type="button" onClick={() => { setQ(""); push(EMPTY_FILTERS); }} className="min-h-11 text-sm font-bold text-blue-ink underline">
           Effacer les filtres ({activeCount(filters)})
         </button>
       )}

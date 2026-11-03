@@ -1,6 +1,7 @@
 // Image de partage de l'accueil, datée : /og/jour-2026-11-08.png. L'URL change chaque jour,
 // donc les messageries (WhatsApp…) ne ressortent pas l'aperçu de la veille depuis leur cache.
 import { ogImage } from "@/lib/og";
+import { site } from "@/lib/site";
 import { cardsForDay, days } from "@/lib/data";
 import { longDay } from "@/lib/time";
 
@@ -12,7 +13,7 @@ export async function GET(_req: Request, { params }: RouteContext<"/og/[file]">)
   const { file } = await params;
   if (file === "fin.png") {
     return ogImage({
-      kicker: "Le guide non officiel",
+      kicker: site.shortName,
       title: "Les JOJ Dakar 2026 sont terminés",
       lines: ["Du 30 octobre au 13 novembre 2026"],
       titleSize: 68,

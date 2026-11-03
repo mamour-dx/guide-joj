@@ -1,62 +1,75 @@
 @import "tailwindcss";
 
-/* Palette de docs/UX.md. Ajouts : --green-700 et --sun-700 pour le texte (le vert sur
-   sable fait 4,44:1 et l'orange 2,45:1 sur blanc, sous le seuil AA), --surface et --line. */
+/* Identité Dakar 2026 (guide médias du COJOJ, oct. 2026 + charte olympique) :
+   bleu en aplat, beaucoup de blanc, titres condensés en capitales, texte courant noir.
+   La couleur sert d'aplat, de repère ou d'action, jamais pour le texte courant.
+   Contrastes AA vérifiés : --blue / blanc 4,57:1 ; --blue-ink / --tint 5,7:1 ; --red-ink / blanc 5,2:1. */
 :root {
-  --green-600: #00853F;   /* vert drapeau — actions principales */
-  --green-700: #006B33;   /* vert pour le texte sur fond clair */
-  --green-50:  #E6F4EC;
-  --yellow-400:#FDEF42;   /* jaune drapeau — badge "Gratuit" (fond uniquement) */
-  --red-600:   #E31B23;   /* rouge drapeau — "En ce moment", alertes */
-  --sand-50:   #FBF7EF;   /* fond clair, évoque la plage de Saly */
+  --blue:      #0078D0;   /* bleu Dakar 2026 (relevé dans le guide médias) — aplats, boutons */
+  --blue-ink:  #005FA8;   /* bleu pour petit texte et liens */
+  --tint:      #E6F1FA;   /* bleu très clair des encarts du guide médias */
+  --page:      #F3F6FA;   /* fond légèrement bleuté : les cartes blanches ressortent */
   --surface:   #FFFFFF;
-  --line:      #E7E1D4;
-  --ink-900:   #14161A;   /* texte */
-  --ink-500:   #5B616B;   /* texte secondaire */
-  --ocean-600: #0B6E99;   /* secteur Saly */
-  --sun-500:   #F28C28;   /* secteur Diamniadio (pastilles, bordures) */
-  --sun-700:   #B35A00;   /* secteur Diamniadio (texte) */
-  --on-accent: #FFFFFF;   /* texte sur bouton vert */
-  --on-red:    #FFFFFF;   /* texte sur badge rouge (4,72:1) */
-  /* secteur Dakar = --green-600 */
+  --line:      #DCE2EA;
+  --line-soft: #E6EBF1;
+  --shadow:    0 1px 2px rgb(16 32 56 / 0.06), 0 1px 1px rgb(16 32 56 / 0.04);
+  --shadow-lg: 0 10px 24px -8px rgb(16 32 56 / 0.18), 0 2px 6px rgb(16 32 56 / 0.06);
+  --ease:      cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ink:       #0B0C0E;
+  --muted:     #50565E;
+  --on-blue:   #FFFFFF;
+  /* couleurs olympiques : repères de secteur et badges (jamais en texte courant) */
+  --o-red:     #EE334E;
+  --o-green:   #00A651;
+  --o-yellow:  #FCB131;
+  --red-ink:   #C8102E;   /* « En ce moment », « Complet » (texte blanc dessus : 5,9:1) */
+  --heading:   #0078D0;   /* titres de page (grand corps : 3:1 suffit) */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sand-50: #0F1113; --ink-900: #F2F2F2; --ink-500: #A3A9B3;
-    --surface: #1A1D21; --line: #2C3036;
-    --green-700: #3DDC84; --green-50: #12261B;
-    --sun-700: #FFA85C; --ocean-600: #4FB3E0; --red-600: #FF6B70;
-    --on-red: #14161A;  /* le rouge s'éclaircit en sombre : texte foncé (6,55:1) */
-  }
+/* Thème clair par défaut, quel que soit le réglage du téléphone. Le sombre ne s'active que
+   si on le choisit (bouton de l'en-tête, mémorisé dans localStorage). */
+:root {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #07090C; --surface: #12161C; --tint: #0E1B29; --line: #2A3038; --line-soft: #1E242C;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.5); --shadow-lg: 0 10px 24px -8px rgb(0 0 0 / 0.7);
+  --ink: #F4F6F8; --muted: #A7AEB8;
+  --blue-ink: #6CB6F2; --heading: #5AADEE;
+  --red-ink: #FF6F7F;
 }
 
 @theme inline {
-  --color-green: var(--green-600);
-  --color-green-ink: var(--green-700);
-  --color-green-soft: var(--green-50);
-  --color-yellow: var(--yellow-400);
-  --color-red: var(--red-600);
-  --color-sand: var(--sand-50);
+  --color-blue: var(--blue);
+  --color-blue-ink: var(--blue-ink);
+  --color-tint: var(--tint);
+  --color-page: var(--page);
   --color-surface: var(--surface);
   --color-line: var(--line);
-  --color-ink: var(--ink-900);
-  --color-muted: var(--ink-500);
-  --color-ocean: var(--ocean-600);
-  --color-sun: var(--sun-500);
-  --color-sun-ink: var(--sun-700);
-  --color-on-accent: var(--on-accent);
-  --color-on-red: var(--on-red);
+  --color-line-soft: var(--line-soft);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-on-blue: var(--on-blue);
+  --color-o-red: var(--o-red);
+  --color-o-green: var(--o-green);
+  --color-o-yellow: var(--o-yellow);
+  --color-red-ink: var(--red-ink);
+  --color-heading: var(--heading);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  /* titres : condensé en capitales (substitut public de l'« Olympic Headline ») */
+  --font-display: var(--font-bebas), "Arial Narrow", Impact, sans-serif;
 }
 
 html {
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--sand-50);
-  color: var(--ink-900);
+  background: var(--page);
+  color: var(--ink);
   font-size: 16px;
 }
 
@@ -65,16 +78,175 @@ body {
 }
 
 :focus-visible {
-  outline: 3px solid var(--green-600);
+  outline: 3px solid var(--blue);
   outline-offset: 2px;
-  border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+.on-blue :focus-visible {
+  outline-color: #FFFFFF;
 }
 
-/* bande tricolore fine en haut de page */
-.stripe {
-  height: 3px;
-  background: linear-gradient(90deg, #00853F 0 33.33%, #FDEF42 33.33% 66.66%, #E31B23 66.66%);
+/* Titres condensés : capitales, interlignage serré, approche légèrement resserrée. */
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: 0.005em;
+}
+
+/* En-tête : aplat bleu, avec le motif du « look des Jeux » (couverture du guide médias) qui
+   apparaît en fondu sur la droite. À gauche, bleu uni sous l'emblème (son fond est ce bleu). */
+.header-bg {
+  background:
+    linear-gradient(90deg, #0078D0 0%, #0078D0 42%, rgb(0 120 208 / 0.4) 72%, rgb(0 120 208 / 0.05) 100%),
+    url("/brand/pattern.webp") right 30% / 360px auto no-repeat,
+    #0078D0;
+}
+
+/* Carte : surface blanche arrondie, ombre douce. */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+/* Retour tactile : léger enfoncement au toucher, soulèvement au survol (souris seulement). */
+.pressable {
+  transition: transform 0.18s var(--ease), box-shadow 0.25s var(--ease), background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+.pressable:active {
+  transform: scale(0.98);
+}
+@media (hover: hover) {
+  .pressable:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  .pressable:hover .nudge {
+    transform: translateX(3px);
+  }
+}
+.nudge {
+  transition: transform 0.2s var(--ease);
+}
+
+/* Entrée en douceur : pages et éléments de liste (décalés via --i). */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+.page-enter {
+  animation: rise 0.35s var(--ease) both;
+}
+.rise {
+  animation: rise 0.4s var(--ease) both;
+  animation-delay: calc(min(var(--i, 0), 8) * 35ms);
+}
+
+/* Point « en direct » : halo qui s'étend. */
+@keyframes ping {
+  0%   { transform: scale(1); opacity: 0.7; }
+  80%, 100% { transform: scale(2.4); opacity: 0; }
+}
+.live-dot {
+  position: relative;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: currentColor;
+}
+.live-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: currentColor;
+  animation: ping 1.6s var(--ease) infinite;
+}
+
+/* Squelette de chargement. */
+@keyframes shimmer {
+  from { background-position: 150% 0; }
+  to   { background-position: -50% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--line-soft) 25%, var(--surface) 50%, var(--line-soft) 75%) 0 0 / 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: 1rem;
+}
+
+/* Petite apparition (icônes qui changent, coches). */
+@keyframes pop {
+  from { transform: scale(0.6) rotate(-20deg); opacity: 0; }
+  to   { transform: none; opacity: 1; }
+}
+.pop {
+  animation: pop 0.3s var(--ease) both;
 }
 
 .no-scrollbar { scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Carte des sites (Leaflet, chargée à la demande). Pastilles aux couleurs des secteurs,
+   bordées de blanc ; noms affichés seulement quand on a zoomé sur un secteur. */
+.sites-map {
+  background: var(--tint);
+  font-family: inherit;
+  z-index: 0;
+}
+/* sélecteurs doublés : la feuille de Leaflet, chargée après, impose display:block aux marqueurs */
+.leaflet-marker-icon.venue-pin {
+  display: grid;
+  place-items: center;
+}
+.venue-dot {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s;
+}
+.venue-dot-dakar { background: var(--o-red); }
+.venue-dot-diamniadio { background: var(--o-green); }
+.venue-dot-saly { background: var(--o-yellow); }
+.venue-dot.is-active {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 3px var(--blue), 0 2px 8px rgb(0 0 0 / 0.35);
+}
+.sites-map .venue-label {
+  display: none;
+  padding: 2px 6px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+.sites-map .venue-label::before { display: none; }
+.sites-map.show-labels .venue-label { display: block; }
+.sites-map .leaflet-control-zoom a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+}
+:root[data-theme="dark"] .sites-map .leaflet-tile-pane {
+  /* tuiles OSM assombries pour le thème sombre */
+  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+}
+:root[data-theme="dark"] .sites-map .leaflet-bar a,
+:root[data-theme="dark"] .sites-map .leaflet-control-attribution {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+:root[data-theme="dark"] .sites-map .leaflet-control-attribution a { color: var(--blue-ink); }

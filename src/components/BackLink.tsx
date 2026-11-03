@@ -17,9 +17,9 @@ export function BackLink({ href, label = "Retour" }: { href: string; label?: str
           router.back();
         }
       }}
-      className="-ml-1 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-muted"
+      className="group -ml-2 inline-flex min-h-11 items-center gap-1 rounded-full px-2 text-sm font-semibold text-muted transition hover:bg-line-soft hover:text-ink active:scale-95"
     >
-      <ChevronLeft aria-hidden="true" size={18} /> {label}
+      <ChevronLeft aria-hidden="true" size={18} className="transition-transform group-hover:-translate-x-0.5" /> {label}
     </Link>
   );
 }

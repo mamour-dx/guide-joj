@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { ProgrammeControls } from "@/components/ProgrammeControls";
-import { SessionCard } from "@/components/SessionCard";
+import { CLUSTER_DOT, SessionCard } from "@/components/SessionCard";
 import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
-import { cards, days, sportChips } from "@/lib/data";
+import { cards, days, sportChips, homeOgImage } from "@/lib/data";
 import { programmeCss, dakarToday } from "@/lib/programmeCss";
 import { longDay, shortDay } from "@/lib/time";
+import { pageSeo } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Programme complet",
   description: "Toutes les sessions des JOJ Dakar 2026, jour par jour, par secteur et par heure.",
+  ...pageSeo("/programme", [homeOgImage]),
 };
 
 /** Avant hydratation (et sans JS) : bandeau d'ancres vers chaque jour, plus des emplacements
@@ -17,18 +19,18 @@ export const metadata: Metadata = {
 function StaticDayStrip() {
   return (
     <>
-    <nav aria-label="Jours" className="sticky top-0 z-10 -mx-4 flex gap-1.5 overflow-x-auto bg-sand/95 px-4 py-2 no-scrollbar">
+    <nav aria-label="Jours" className="sticky top-0 z-10 -mx-4 flex gap-1.5 overflow-x-auto bg-page/95 px-4 py-2 no-scrollbar">
       {days.map((d) => {
         const { weekday, num } = shortDay(d);
         return (
-          <a key={d} href={`#j-${d}`} className="flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-xl border border-line bg-surface px-2 text-sm leading-tight">
+          <a key={d} href={`#j-${d}`} className="flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-2xl border px-2 text-sm leading-tight border-line-soft bg-surface">
             <span className="font-semibold">{weekday}</span>
-            <span className="tabular text-lg font-extrabold">{num}</span>
+            <span className="tabular display text-2xl">{num}</span>
           </a>
         );
       })}
     </nav>
-    <div aria-hidden="true" className="mt-1 min-h-12 rounded-xl border border-line bg-surface" />
+    <div aria-hidden="true" className="mt-1 min-h-12 rounded-full border border-line-soft bg-surface" />
     <div aria-hidden="true" className="min-h-15" />
     </>
   );
@@ -47,24 +49,28 @@ document.head.appendChild(s);}catch(e){}})();`;
 export default function ProgrammePage() {
   return (
     <>
-      <h1 className="mt-2 text-2xl font-extrabold">Programme</h1>
+      <h1 className="mt-2 display text-5xl text-heading">Programme</h1>
       <Suspense fallback={<StaticDayStrip />}>
         <ProgrammeControls days={days} sports={sportChips} />
       </Suspense>
 
       <script dangerouslySetInnerHTML={{ __html: initialScript() }} />
       <div id="prog" className="mt-2">
-        <p className="prog-empty mt-4 hidden rounded-xl bg-surface p-4">Aucune session ne correspond à ces filtres.</p>
+        <p className="prog-empty card mt-4 hidden p-4">Aucune session ne correspond à ces filtres.</p>
         {days.map((d) => (
           <section key={d} id={`j-${d}`} data-group="day" data-day={d} className="scroll-mt-24">
-            <h2 className="mt-5 text-lg font-extrabold first-letter:uppercase">{longDay(d)}</h2>
+            <h2 className="display mt-8 text-4xl text-heading">{longDay(d)}</h2>
             {CLUSTERS.map((cl) => {
               const list = cards.filter((c) => c.day === d && c.cluster === cl);
               if (!list.length) return null;
               return (
                 <div key={cl} data-group="cluster" className="mt-3">
-                  <h3 className="mb-2 text-sm font-extrabold uppercase tracking-wide text-muted">{CLUSTER_LABEL[cl]}</h3>
-                  <ul className="space-y-2.5">
+                  <h3 className="display mb-3 flex items-center gap-2 text-2xl">
+                    <span className={`size-3 rounded-full ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
+                    {CLUSTER_LABEL[cl]}
+                    <span className="h-px flex-1 bg-line" aria-hidden="true" />
+                  </h3>
+                  <ul className="space-y-3">
                     {list.map((c) => (
                       <li
                         key={c.id}
