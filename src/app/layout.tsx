@@ -38,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body className="min-h-dvh flex flex-col">
-        <header className="on-blue bg-blue text-on-blue">
+        <header className="on-blue header-bg text-on-blue">
           <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-3 px-4 py-3">
             <Link href="/" aria-label={`${site.name} — accueil`} className="-my-1 py-1">
               <HeaderEmblem />
@@ -54,7 +54,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <ThemeToggle />
             </div>
           </div>
-          <div className="pattern h-3" aria-hidden="true" />
         </header>
 
         <main className="mx-auto w-full max-w-2xl flex-1 px-4 pb-8">{children}</main>

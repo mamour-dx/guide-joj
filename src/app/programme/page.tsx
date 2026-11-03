@@ -21,14 +21,14 @@ function StaticDayStrip() {
       {days.map((d) => {
         const { weekday, num } = shortDay(d);
         return (
-          <a key={d} href={`#j-${d}`} className="flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center border border-line bg-surface px-2 text-sm leading-tight">
+          <a key={d} href={`#j-${d}`} className="flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-2xl border px-2 text-sm leading-tight border-line-soft bg-surface">
             <span className="font-semibold">{weekday}</span>
             <span className="tabular display text-2xl">{num}</span>
           </a>
         );
       })}
     </nav>
-    <div aria-hidden="true" className="mt-1 min-h-12 border border-line bg-surface" />
+    <div aria-hidden="true" className="mt-1 min-h-12 rounded-full border border-line-soft bg-surface" />
     <div aria-hidden="true" className="min-h-15" />
     </>
   );
@@ -54,7 +54,7 @@ export default function ProgrammePage() {
 
       <script dangerouslySetInnerHTML={{ __html: initialScript() }} />
       <div id="prog" className="mt-2">
-        <p className="prog-empty chamfer mt-4 hidden bg-tint p-4">Aucune session ne correspond à ces filtres.</p>
+        <p className="prog-empty card mt-4 hidden p-4">Aucune session ne correspond à ces filtres.</p>
         {days.map((d) => (
           <section key={d} id={`j-${d}`} data-group="day" data-day={d} className="scroll-mt-24">
             <h2 className="display mt-8 text-4xl text-heading">{longDay(d)}</h2>
@@ -64,7 +64,7 @@ export default function ProgrammePage() {
               return (
                 <div key={cl} data-group="cluster" className="mt-3">
                   <h3 className="display mb-3 flex items-center gap-2 text-2xl">
-                    <span className={`size-3 ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
+                    <span className={`size-3 rounded-full ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
                     {CLUSTER_LABEL[cl]}
                     <span className="h-px flex-1 bg-line" aria-hidden="true" />
                   </h3>

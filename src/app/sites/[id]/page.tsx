@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, MapPinned } from "lucide-react";
 import { BackLink } from "@/components/BackLink";
 import { ClusterTag, SessionCard } from "@/components/SessionCard";
 import { HidePastDays } from "@/components/TimeAware";
@@ -41,9 +41,16 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
         href={mapsUrl(v)}
         target="_blank"
         rel="noopener"
-        className="display mt-4 flex min-h-13 w-full items-center justify-center gap-2 bg-blue px-4 py-3 text-2xl text-on-blue"
+        className="pressable mt-4 flex min-h-16 w-full items-center gap-3 rounded-2xl bg-blue px-4 py-3 text-on-blue shadow-lg shadow-blue/25"
       >
-        Itinéraire <ArrowUpRight aria-hidden="true" size={20} />
+        <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/20">
+          <MapPinned aria-hidden="true" size={22} />
+        </span>
+        <span className="flex-1 text-left">
+          <span className="display block text-2xl">Itinéraire</span>
+          <span className="block text-sm font-semibold opacity-90">S&apos;ouvre dans Google Maps</span>
+        </span>
+        <ArrowUpRight aria-hidden="true" size={22} className="nudge" />
       </a>
       {(v.lat === null || v.lng === null) && (
         <p className="mt-1 text-xs text-muted">
@@ -51,7 +58,7 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
         </p>
       )}
 
-      <section className="chamfer mt-5 bg-tint p-4">
+      <section className="card mt-5 p-4">
         <h2 className="display text-2xl">Accès</h2>
         {v.accessNote ? (
           <p className="mt-1">

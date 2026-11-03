@@ -21,7 +21,7 @@ export default function SitesPage() {
         return (
           <section key={cl} className="mt-5">
             <h2 className="display mb-3 flex items-center gap-2 text-3xl">
-              <span className={`size-3.5 ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
+              <span className={`size-3.5 rounded-full ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
               {CLUSTER_LABEL[cl]}
               <span className="h-px flex-1 bg-line" aria-hidden="true" />
             </h2>
@@ -32,7 +32,7 @@ export default function SitesPage() {
                   <li key={v.id}>
                     <Link
                       href={`/sites/${v.id}`}
-                      className="chamfer flex min-h-16 items-center justify-between gap-3 bg-tint p-3 pr-4"
+                      className="card pressable flex min-h-16 items-center justify-between gap-3 p-4"
                     >
                       <span>
                         <span className="block display text-[1.75rem]">{v.name}</span>
@@ -40,7 +40,7 @@ export default function SitesPage() {
                           <RemainingCount ends={vs.map((s) => s.end ?? s.start)} total={vs.length} />
                         </span>
                       </span>
-                      <ChevronRight aria-hidden="true" className="shrink-0 text-blue-ink" />
+                      <ChevronRight aria-hidden="true" className="nudge shrink-0 text-muted" />
                     </Link>
                   </li>
                 );

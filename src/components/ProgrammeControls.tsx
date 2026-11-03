@@ -51,7 +51,7 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
   }, [day]);
 
   useEffect(() => {
-    stripRef.current?.querySelector<HTMLElement>("[aria-current]")?.scrollIntoView({ inline: "center", block: "nearest" });
+    stripRef.current?.querySelector<HTMLElement>("[aria-current]")?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
   }, [day]);
 
   const css = programmeCss(params.toString(), days, today);
@@ -75,19 +75,22 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
               replace
               scroll={false}
               aria-current={active ? "date" : undefined}
-              className={`flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center border px-2 text-sm leading-tight ${
-                active ? "border-blue bg-blue text-on-blue" : "border-line bg-surface"
+              className={`pressable relative flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-2xl border px-2 text-sm leading-tight ${
+                active ? "border-blue bg-blue text-on-blue shadow-md shadow-blue/30" : "border-line-soft bg-surface"
               }`}
             >
               <span className="font-semibold">{weekday}</span>
               <span className="tabular display text-2xl">{num}</span>
+              {d === today && (
+                <span className={`absolute bottom-1 size-1 rounded-full ${active ? "bg-on-blue" : "bg-blue"}`} aria-label="aujourd'hui" />
+              )}
             </Link>
           );
         })}
       </div>
       </div>
 
-      <label className="mt-1 flex min-h-12 items-center gap-2 border border-line bg-surface px-3">
+      <label className="mt-1 flex min-h-12 items-center gap-2 rounded-full border border-line-soft bg-surface px-4 shadow-[var(--shadow)] transition focus-within:border-blue focus-within:ring-4 focus-within:ring-blue/15">
         <Search aria-hidden="true" size={18} className="text-muted" />
         <span className="sr-only">Rechercher</span>
         <input
@@ -99,7 +102,7 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
           enterKeyHint="search"
         />
         {q && (
-          <button type="button" aria-label="Effacer la recherche" onClick={() => setQ("")} className="p-1 text-muted">
+          <button type="button" aria-label="Effacer la recherche" onClick={() => setQ("")} className="pop flex size-8 items-center justify-center rounded-full bg-line-soft text-muted transition active:scale-90">
             <X size={18} aria-hidden="true" />
           </button>
         )}

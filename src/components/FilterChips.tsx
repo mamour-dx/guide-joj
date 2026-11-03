@@ -1,5 +1,6 @@
 "use client";
 
+import { Check } from "lucide-react";
 import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
 import { toggle, type Filters } from "@/lib/filters";
 import { CLUSTER_DOT } from "./SessionCard";
@@ -12,10 +13,11 @@ function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () =>
       type="button"
       aria-pressed={pressed}
       onClick={onClick}
-      className={`inline-flex min-h-11 shrink-0 items-center gap-1.5 border px-3.5 text-sm font-semibold whitespace-nowrap ${
-        pressed ? "border-blue bg-blue text-on-blue" : "border-line bg-page text-ink"
+      className={`pressable inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border px-4 text-sm font-semibold whitespace-nowrap ${
+        pressed ? "border-blue bg-blue text-on-blue shadow-md shadow-blue/25" : "border-line bg-surface text-ink"
       }`}
     >
+      {pressed && <Check aria-hidden="true" size={16} strokeWidth={3} className="pop -ml-1" />}
       {children}
     </button>
   );
@@ -36,7 +38,7 @@ export function FilterChips({
       <Chip pressed={value.finals} onClick={() => onChange({ ...value, finals: !value.finals })}>Finales</Chip>
       {CLUSTERS.map((c) => (
         <Chip key={c} pressed={value.clusters.includes(c)} onClick={() => onChange({ ...value, clusters: toggle(value.clusters, c) })}>
-          <span className={`inline-block size-2.5 ${CLUSTER_DOT[c]}`} aria-hidden="true" />
+          <span className={`inline-block size-2.5 rounded-full ring-2 ring-white/70 ${CLUSTER_DOT[c]}`} aria-hidden="true" />
           {CLUSTER_LABEL[c]}
         </Chip>
       ))}

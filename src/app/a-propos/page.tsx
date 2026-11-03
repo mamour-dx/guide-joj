@@ -15,10 +15,10 @@ export default function AboutPage() {
     <article className="pt-2">
       <h1 className="display text-5xl text-heading">À propos</h1>
 
-      <div className="mt-3 border-l-4 border-blue bg-tint p-4 font-semibold">{site.disclaimer}</div>
+      <div className="mt-3 rounded-2xl border-l-4 border-blue bg-tint p-4 font-semibold">{site.disclaimer}</div>
 
       {officialBranding && (
-        <section className="mt-6 flex items-end gap-4 border border-line bg-white p-4 text-black">
+        <section className="card mt-6 flex items-end gap-4 !bg-white p-4 text-black">
           <Mascot height={170} />
           <div className="pb-1">
             <p className="display text-4xl text-[#0078D0]">Ayo</p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
           PDF, on affiche celui de la billetterie, avec une mention. Une info inconnue est marquée « à vérifier », jamais
           devinée.
         </p>
-        <ul className="divide-y divide-line border border-line bg-surface">
+        <ul className="card divide-y divide-line-soft overflow-hidden">
           {sourceList.map((s) => (
             <li key={s.id} className="px-4 py-3">
               <span className="tabular mr-2 text-xs font-bold text-muted">{s.id}</span>

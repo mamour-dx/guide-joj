@@ -34,9 +34,12 @@ export function ThemeToggle() {
       onClick={flip}
       aria-label={dark ? "Passer en thème clair" : "Passer en thème sombre"}
       aria-pressed={dark}
-      className="flex size-11 shrink-0 items-center justify-center border border-white/40 text-on-blue"
+      className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/15 text-on-blue transition hover:bg-white/25 active:scale-90"
     >
-      {dark ? <Sun aria-hidden="true" size={20} /> : <Moon aria-hidden="true" size={20} />}
+      {/* la clé force le remontage : l'icône « pop » à chaque bascule */}
+      <span key={String(dark)} className="pop">
+        {dark ? <Sun aria-hidden="true" size={20} /> : <Moon aria-hidden="true" size={20} />}
+      </span>
     </button>
   );
 }

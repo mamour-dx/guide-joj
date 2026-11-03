@@ -42,7 +42,7 @@ export default function TodayPage() {
     <>
       <TodayView days={days} sports={sportChips} initial={{ ...homeDay, cards: homeCards }} />
       <noscript>
-        <p className="mt-4 border border-line p-4 text-sm">
+        <p className="card mt-4 p-4 text-sm">
           Sans JavaScript, la page ne sait pas ce qui est en cours : toutes les sessions du jour sont listées par heure.
         </p>
       </noscript>
