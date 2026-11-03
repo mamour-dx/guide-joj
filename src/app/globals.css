@@ -56,21 +56,18 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Fond : trame de points très légère, avec de loin en loin un petit carré jaune, vert ou rouge
-   centré sur un point. Les cartes restent sur fond plein : la trame ne gêne jamais la lecture. */
+/* Fond : trame de points à peine visible. Les cartes restent sur fond plein. */
 body {
-  --dot: rgb(0 0 0 / 0.09);
+  --dot: rgb(0 0 0 / 0.055);
   background-color: var(--page);
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg opacity='.55'%3E%3Crect x='47' y='67' width='6' height='6' fill='%23FFB114'/%3E%3Crect x='167' y='27' width='6' height='6' fill='%2300A651'/%3E%3Crect x='107' y='167' width='6' height='6' fill='%23F0282D'/%3E%3C/g%3E%3C/svg%3E"),
-    radial-gradient(var(--dot) 1px, transparent 1.5px);
-  background-size: 240px 240px, 20px 20px;
+  background-image: radial-gradient(var(--dot) 1px, transparent 1.5px);
+  background-size: 24px 24px;
   color: var(--ink);
   font-size: 16px;
   padding-top: var(--frame);
 }
 :root[data-theme="dark"] body {
-  --dot: rgb(246 246 243 / 0.09);
+  --dot: rgb(246 246 243 / 0.06);
 }
 
 /* Cadre fixe aux quatre couleurs, qui tourne autour de l'écran dans le sens des aiguilles d'une
@@ -305,3 +302,57 @@ body {
   border-color: var(--line);
 }
 :root[data-theme="dark"] .sites-map .leaflet-control-attribution a { color: var(--ink); }
+
+/* Clic / toucher : quatre carrés aux couleurs olympiques qui jaillissent en tournant, autour d'un
+   carré noir qui s'ouvre. Créés par ClickBurst, retirés à la fin de l'animation. */
+.burst {
+  position: fixed;
+  width: 0;
+  height: 0;
+  z-index: 60;
+  pointer-events: none;
+}
+.burst i,
+.burst b {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.burst i {
+  width: 8px;
+  height: 8px;
+  margin: -4px;
+  background: var(--c);
+  animation: burst-fly 0.6s var(--ease) forwards;
+}
+.burst b {
+  width: 16px;
+  height: 16px;
+  margin: -8px;
+  border: 2px solid var(--ink);
+  animation: burst-ring 0.45s var(--ease) forwards;
+}
+@keyframes burst-fly {
+  0%   { transform: translate(0, 0) rotate(0) scale(1.2); opacity: 1; }
+  70%  { opacity: 1; }
+  100% { transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(0.4); opacity: 0; }
+}
+@keyframes burst-ring {
+  0%   { transform: rotate(45deg) scale(0.2); opacity: 1; }
+  60%  { opacity: 0.8; }
+  100% { transform: rotate(135deg) scale(2.4); opacity: 0; }
+}
+
+/* Curseur (souris seulement) : le petit carré aux quatre couleurs de l'en-tête, pointe au centre.
+   Sur ce qui se clique, il pivote en losange. Les champs de texte gardent le curseur texte. */
+@media (pointer: fine) {
+  html {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Cg stroke='%23fff'%3E%3Crect x='1.5' y='1.5' width='9' height='9' fill='%23FFB114'/%3E%3Crect x='11.5' y='1.5' width='9' height='9' fill='%23000'/%3E%3Crect x='1.5' y='11.5' width='9' height='9' fill='%2300A651'/%3E%3Crect x='11.5' y='11.5' width='9' height='9' fill='%23F0282D'/%3E%3C/g%3E%3C/svg%3E") 11 11, auto;
+  }
+  a, button, summary, label, [role="tab"], .leaflet-interactive, .leaflet-marker-icon {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cg stroke='%23fff' transform='translate(5 5) rotate(45 11 11)'%3E%3Crect x='1.5' y='1.5' width='9' height='9' fill='%23FFB114'/%3E%3Crect x='11.5' y='1.5' width='9' height='9' fill='%23000'/%3E%3Crect x='1.5' y='11.5' width='9' height='9' fill='%2300A651'/%3E%3Crect x='11.5' y='11.5' width='9' height='9' fill='%23F0282D'/%3E%3C/g%3E%3C/svg%3E") 16 16, pointer;
+  }
+  input, textarea {
+    cursor: text;
+  }
+}

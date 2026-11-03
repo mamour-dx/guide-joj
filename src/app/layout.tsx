@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
+import { ClickBurst } from "@/components/ClickBurst";
 import { VerticalEmblem } from "@/components/Brand";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
 import { officialBranding } from "@/lib/brand";
@@ -97,6 +98,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </div>
         </footer>
         <BottomNav />
+        <ClickBurst />
       </body>
     </html>
   );
