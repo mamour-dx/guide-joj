@@ -82,8 +82,9 @@ droits, filets noirs de 2 px, grands aplats de couleur pleine largeur. Valeurs e
 - Sur un aplat de couleur, le texte est toujours noir (rouge 5,0:1, vert 6,6:1, jaune 11:1).
 - Typo : titres en **Big Shoulders** 800, texte en **Geist**, horaires, codes et sur-titres en
   **Geist Mono**.
-- **Marques** (`src/components/Brand.tsx`, fichiers dans `public/brand/`) : emblème vertical
-  couleurs sur blanc dans le pied de page (l'en-tête porte un nom en texte, sans marque),
+- **Marques** (`src/components/Brand.tsx`, fichiers dans `public/brand/`) : aucun emblème à
+  l'écran (en-tête : nom en texte ; pied de page : « DAKAR 2026 » en très grand, chiffres de 2026
+  en jaune, blanc, vert, rouge),
   25 pictogrammes officiels sur les cartes, Ayo sur « À propos » et « Jeux terminés », motif
   du « look des Jeux » réservé à l'image de partage. Jamais modifiés. Emblème couleurs = fond blanc.
 - La couleur n'est jamais celle du texte courant. Le jaune ne sert jamais de texte.

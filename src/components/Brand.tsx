@@ -1,26 +1,9 @@
 /* eslint-disable @next/next/no-img-element -- petites images statiques à taille fixe, pas besoin de next/image */
-// Marques officielles, toutes au même endroit. Avec officialBranding = false, chaque composant
-// retombe sur un équivalent sans marque. L'emblème est utilisé tel que fourni : jamais redessiné,
-// recoloré ni recadré (charte : « must not be altered, modified or reproduced »).
+// Marques officielles (mascotte, pictogrammes), toutes au même endroit. Avec officialBranding = false,
+// chaque composant retombe sur un équivalent sans marque. Les fichiers sont utilisés tels que
+// fournis : jamais redessinés, recolorés ni recadrés (charte olympique).
 import { PartyPopper } from "lucide-react";
 import { officialBranding, pictoUrl } from "@/lib/brand";
-
-/** Emblème vertical en couleurs, sur fond blanc uniquement (charte des anneaux). */
-export function VerticalEmblem({ height = 96 }: { height?: number }) {
-  if (!officialBranding) return null;
-  return (
-    <span className="inline-block bg-white p-2">
-      <img
-        src="/brand/emblem-vertical.png"
-        alt="Dakar 2026 — Jeux Olympiques de la Jeunesse"
-        width={Math.round((height * 279) / 385)}
-        height={height}
-        loading="lazy"
-        style={{ height, width: "auto" }}
-      />
-    </span>
-  );
-}
 
 /** Ayo, la mascotte. Fond blanc d'origine : toujours posée sur blanc. */
 export function Mascot({ height = 160 }: { height?: number }) {

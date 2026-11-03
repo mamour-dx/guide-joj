@@ -5,7 +5,6 @@ import { ArrowUpRight } from "lucide-react";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
 import { ClickBurst } from "@/components/ClickBurst";
-import { VerticalEmblem } from "@/components/Brand";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
 import { officialBranding } from "@/lib/brand";
 import { homeOgImage, meta, officialLinks, ticketsFetchedAt } from "@/lib/data";
@@ -69,17 +68,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="bleed bleed-black pb-24">
           <div className="mx-auto w-full max-w-2xl px-4 pt-10">
             <p className="display text-6xl">{site.slogan}</p>
-            <div className="mt-6 flex gap-4">
-              <div className="shrink-0">
-                <VerticalEmblem height={84} />
-              </div>
-              <div className="eyebrow min-w-0 text-[#B4B4AA]">
-                <p>{site.disclaimer}</p>
-                <p className="mt-2">
-                  Programme mis à jour le {updatedAt(meta.generatedAt)}
-                  {ticketsFetchedAt && <> · Statuts billetterie relevés le {updatedAt(ticketsFetchedAt)}</>} (heure de Dakar).
-                </p>
-              </div>
+            <div className="eyebrow mt-6 space-y-2 text-[#B4B4AA]">
+              <p>{site.disclaimer}</p>
+              <p>
+                Programme mis à jour le {updatedAt(meta.generatedAt)}
+                {ticketsFetchedAt && <> · Statuts billetterie relevés le {updatedAt(ticketsFetchedAt)}</>} (heure de Dakar).
+              </p>
             </div>
             <p className="mt-6 flex flex-wrap gap-2">
               <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="btn bg-[#F6F6F3] text-black">
@@ -89,6 +83,23 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 Sources et à propos
               </Link>
             </p>
+
+            {/* signature : le nom en très grand, sur toute la largeur, chiffres de 2026 aux couleurs olympiques */}
+            <div className="mt-12 border-t-2 border-[#F6F6F3] pt-4 @container" aria-hidden="true">
+              <p className="eyebrow flex flex-wrap justify-between gap-x-4 text-[#B4B4AA]">
+                <span>30.10 → 13.11.2026</span>
+                <span>Dakar · Diamniadio · Saly</span>
+              </p>
+              <p className="display mt-3 flex justify-between whitespace-nowrap leading-[0.8]" style={{ fontSize: "21.5cqw" }}>
+                <span>Dakar</span>
+                <span>
+                  <span className="text-o-yellow">2</span>
+                  <span>0</span>
+                  <span className="text-o-green">2</span>
+                  <span className="text-o-red">6</span>
+                </span>
+              </p>
+            </div>
           </div>
         </footer>
         <BottomNav />
