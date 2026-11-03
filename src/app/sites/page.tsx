@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { CLUSTER_DOT } from "@/components/SessionCard";
+import type { MapVenue } from "@/components/SitesMap";
+import { SitesView } from "@/components/SitesView";
 import { RemainingCount } from "@/components/TimeAware";
 import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
 import { sessions, venues, homeOgImage } from "@/lib/data";
 import { pageSeo } from "@/lib/seo";
+import { mapsUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Sites",
@@ -13,11 +16,33 @@ export const metadata: Metadata = {
   ...pageSeo("/sites", [homeOgImage]),
 };
 
+function endsOf(venueId: string) {
+  return sessions.filter((s) => s.venueId === venueId).map((s) => s.end ?? s.start);
+}
+
+// sur la carte : seulement les sites dont les coordonnées ont été vérifiées
+const mapVenues: MapVenue[] = venues.flatMap((v) =>
+  v.lat === null || v.lng === null
+    ? []
+    : [{
+        id: v.id,
+        name: v.name,
+        shortName: v.name.replace(/\s*\(.*\)$/, ""),
+        cluster: v.cluster,
+        lat: v.lat,
+        lng: v.lng,
+        routeUrl: mapsUrl(v),
+        ends: endsOf(v.id),
+        total: endsOf(v.id).length,
+      }],
+);
+
 export default function SitesPage() {
   return (
     <>
       <h1 className="mt-2 display text-5xl text-heading">Sites</h1>
       <p className="mt-1 text-muted">{venues.length} sites, 3 secteurs.</p>
+      <SitesView venues={mapVenues} unplaced={venues.length - mapVenues.length}>
       {CLUSTERS.map((cl) => {
         const list = venues.filter((v) => v.cluster === cl);
         return (
@@ -29,7 +54,7 @@ export default function SitesPage() {
             </h2>
             <ul className="space-y-2.5">
               {list.map((v) => {
-                const vs = sessions.filter((s) => s.venueId === v.id);
+                const ends = endsOf(v.id);
                 return (
                   <li key={v.id}>
                     <Link
@@ -39,7 +64,7 @@ export default function SitesPage() {
                       <span>
                         <span className="block display text-[1.75rem]">{v.name}</span>
                         <span className="text-sm text-muted">
-                          <RemainingCount ends={vs.map((s) => s.end ?? s.start)} total={vs.length} />
+                          <RemainingCount ends={ends} total={ends.length} />
                         </span>
                       </span>
                       <ChevronRight aria-hidden="true" className="nudge shrink-0 text-muted" />
@@ -51,6 +76,7 @@ export default function SitesPage() {
           </section>
         );
       })}
+      </SitesView>
     </>
   );
 }

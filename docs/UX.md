@@ -36,8 +36,12 @@
 - Fiche site : note d'accès (guide mobilité, citée), bouton **Itinéraire** (Google Maps :
   `https://www.google.com/maps/dir/?api=1&destination=<lat,lng ou mapsQuery>`),
   sessions à venir.
-- Pas de carte interactive lourde au départ ; si le temps le permet : une carte statique
-  légère (Leaflet + tuiles OSM) chargée à la demande.
+- Bascule **Liste / Carte** (liste par défaut, sans JS ; `#carte` rouvre la carte).
+  La carte (Leaflet + tuiles OSM, ~45 Ko gz) n'est téléchargée qu'au premier passage sur
+  « Carte ». Boutons de secteur pour zoomer (Dakar, Diamniadio, Saly), pastilles aux couleurs
+  des secteurs, noms affichés une fois zoomé ; toucher un site ouvre un panneau en bas
+  (sessions à venir, « Voir le site », « Itinéraire »). Seuls les sites aux lat/lng vérifiés
+  sont placés ; les autres sont signalés sous la carte.
 
 ### 4. `/session/[id]` — Fiche session
 - Titre sport + code session en évidence (« Cherche ATH02 sur la billetterie »).

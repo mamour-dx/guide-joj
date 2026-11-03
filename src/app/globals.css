@@ -192,3 +192,61 @@ body {
 
 .no-scrollbar { scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Carte des sites (Leaflet, chargée à la demande). Pastilles aux couleurs des secteurs,
+   bordées de blanc ; noms affichés seulement quand on a zoomé sur un secteur. */
+.sites-map {
+  background: var(--tint);
+  font-family: inherit;
+  z-index: 0;
+}
+/* sélecteurs doublés : la feuille de Leaflet, chargée après, impose display:block aux marqueurs */
+.leaflet-marker-icon.venue-pin {
+  display: grid;
+  place-items: center;
+}
+.venue-dot {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s;
+}
+.venue-dot-dakar { background: var(--o-red); }
+.venue-dot-diamniadio { background: var(--o-green); }
+.venue-dot-saly { background: var(--o-yellow); }
+.venue-dot.is-active {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 3px var(--blue), 0 2px 8px rgb(0 0 0 / 0.35);
+}
+.sites-map .venue-label {
+  display: none;
+  padding: 2px 6px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+.sites-map .venue-label::before { display: none; }
+.sites-map.show-labels .venue-label { display: block; }
+.sites-map .leaflet-control-zoom a {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+}
+:root[data-theme="dark"] .sites-map .leaflet-tile-pane {
+  /* tuiles OSM assombries pour le thème sombre */
+  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+}
+:root[data-theme="dark"] .sites-map .leaflet-bar a,
+:root[data-theme="dark"] .sites-map .leaflet-control-attribution {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--line);
+}
+:root[data-theme="dark"] .sites-map .leaflet-control-attribution a { color: var(--blue-ink); }
