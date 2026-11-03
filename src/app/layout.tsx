@@ -7,7 +7,7 @@ import { BottomNav } from "@/components/BottomNav";
 import { ClickBurst } from "@/components/ClickBurst";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
 import { officialBranding } from "@/lib/brand";
-import { homeOgImage, meta, officialLinks, ticketsFetchedAt } from "@/lib/data";
+import { homeOgImage, meta, officialLinks } from "@/lib/data";
 import { siteLabel as label } from "@/lib/seo";
 import { indexable, site, siteUrl } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
@@ -65,39 +65,32 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <main className="mx-auto w-full max-w-2xl flex-1 px-4 pb-8">{children}</main>
 
+        {/* pied de page sobre : le nom en très grand (chiffres de 2026 aux couleurs olympiques),
+            puis une seule ligne d'infos et deux liens */}
         <footer className="bleed bleed-black pb-24">
-          <div className="mx-auto w-full max-w-2xl px-4 pt-10">
-            <p className="display text-6xl">{site.slogan}</p>
-            <div className="eyebrow mt-6 space-y-2 text-[#B4B4AA]">
-              <p>{site.disclaimer}</p>
-              <p>
-                Programme mis à jour le {updatedAt(meta.generatedAt)}
-                {ticketsFetchedAt && <> · Statuts billetterie relevés le {updatedAt(ticketsFetchedAt)}</>} (heure de Dakar).
-              </p>
-            </div>
-            <p className="mt-6 flex flex-wrap gap-2">
-              <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="btn bg-[#F6F6F3] text-black">
-                Billetterie officielle <ArrowUpRight aria-hidden="true" size={18} className="nudge" />
-              </a>
-              <Link href="/a-propos" className="btn btn-ghost border-[#F6F6F3] text-[#F6F6F3]">
-                Sources et à propos
-              </Link>
+          <div className="mx-auto w-full max-w-2xl px-4 pt-10 @container">
+            <p className="display flex justify-between whitespace-nowrap leading-[0.8]" style={{ fontSize: "21.5cqw" }} aria-label="Dakar 2026">
+              <span>Dakar</span>
+              <span aria-hidden="true">
+                <span className="text-o-yellow">2</span>
+                <span>0</span>
+                <span className="text-o-green">2</span>
+                <span className="text-o-red">6</span>
+              </span>
             </p>
-
-            {/* signature : le nom en très grand, sur toute la largeur, chiffres de 2026 aux couleurs olympiques */}
-            <div className="mt-12 border-t-2 border-[#F6F6F3] pt-4 @container" aria-hidden="true">
-              <p className="eyebrow flex flex-wrap justify-between gap-x-4 text-[#B4B4AA]">
-                <span>30.10 → 13.11.2026</span>
-                <span>Dakar · Diamniadio · Saly</span>
+            <div className="eyebrow mt-5 flex flex-wrap items-end justify-between gap-x-6 gap-y-2 border-t-2 border-[#F6F6F3] pt-3 text-xs text-[#B4B4AA]">
+              <p>
+                {site.disclaimer}
+                <br />
+                Mis à jour le {updatedAt(meta.generatedAt)} (heure de Dakar).
               </p>
-              <p className="display mt-3 flex justify-between whitespace-nowrap leading-[0.8]" style={{ fontSize: "21.5cqw" }}>
-                <span>Dakar</span>
-                <span>
-                  <span className="text-o-yellow">2</span>
-                  <span>0</span>
-                  <span className="text-o-green">2</span>
-                  <span className="text-o-red">6</span>
-                </span>
+              <p className="flex gap-4 text-[#F6F6F3]">
+                <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center gap-1 underline underline-offset-4">
+                  Billetterie <ArrowUpRight aria-hidden="true" size={14} />
+                </a>
+                <Link href="/a-propos" className="inline-flex min-h-11 items-center underline underline-offset-4">
+                  À propos
+                </Link>
               </p>
             </div>
           </div>
