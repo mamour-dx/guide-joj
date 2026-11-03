@@ -1,6 +1,6 @@
-# Rapport de validation — 2026-11-02T22:44+00:00
+# Rapport de validation — 2026-11-03T13:23+00:00
 
-**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-02T22:38:21+00:00.
+**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-03T13:22:56+00:00.
 
 ## Compteurs
 
@@ -89,19 +89,19 @@ Aucune.
 ## Sites
 
 - Sans note d'accès (0) : —
-- Sans coordonnées GPS vérifiées (6) : iba-mar-diop, corniche-ouest, dakar-arena, dakar-expo-centre, centre-equestre, stade-abdoulaye-wade
+- Sans coordonnées GPS vérifiées (0) : —
 
-## Contrôle humain — 10 sessions tirées au hasard (graine 2026)
+## Contrôle humain — 10 sessions tirées au hasard (graine 580402)
 
 À comparer ligne à ligne avec le PDF (numéro de page indiqué).
 
-- [ ] **TTE04** — p. 2 — jour 2 10:00–12:20 — Dakar Expo Centre — Women's Single - Preliminary Stage / Men's Single - Preliminary Stage
-- [ ] **SWM10** — p. 4 — jour 5 15:00–17:00 — Complexe Tour de l'Oeuf — Women's 50m Backstroke - Final / Men's 50m Backstroke - Final / Women's 50m Breaststroke - Final / Men's 50m Breaststroke - Final
-- [ ] **ARC06** — p. 6 — jour 9 10:00–11:52 — Stade Abdoulaye Wade — Women's 1/8 Elimination Round
-- [ ] **TKW03** — p. 6 — jour 9 11:00–13:24 — Complexe Iba Mar Diop — Women -49kg - Elimination Round of 16, Quarterfinals / Men -55kg - Elimination Round of 16, Quarterfinals
-- [ ] **FBS18** — p. 8 — jour 11 15:00–17:50 — Dakar Arena — Women's Final
-- [ ] **WST03** — p. 2 — jour 2 09:30–11:30 — Dakar Expo Centre — Men's Gunshu - Preliminary Round / Women's Taijiquan - Preliminary Round
-- [ ] **BS509** — p. 3 — jour 3 15:00–18:05 — Complexe Tour de l'Oeuf — Bronze Medal Game / Gold Medal Game
-- [ ] **ATH03** — p. 7 — jour 10 10:00–14:18 — Complexe Iba Mar Diop — Women's Hammer Throw - final / Men's 5000m Race Walk - final / Women's Shot Put - final / Men's Pole Vault - final / Women's 5000m Race Walk - final / Men's 200m - semi & final / Women's High Jump - final / Women's 200m - semi & final / Men's Triple Jump - final / Men's Javelin Throw - final / Men's 400m Hurdles - final / Women's 400m Hurdles - final / Men's 800m - final / Women's 1500m - final
-- [ ] **HBB04** — p. 8 — jour 11 10:00–12:30 — Saly Beach West — Women's and Men's singles - Quarterfinals
-- [ ] **BOX06** — p. 6 — jour 9 17:00–19:00 — Dakar Expo Centre — Women's 51kg - Quarterfinals / Women's 57kg - Quarterfinals
+- [ ] **RCB03** — p. 2 — jour 2 10:00–13:10 — Saly Beach West — Men's Solo - Last 16 / Women's Solo - Last 16 / Mixed Double Sculls - Last 8
+- [ ] **HBB03** — p. 7 — jour 10 10:00–13:20 — Saly Beach West — M BRA vs HUN ; M PUR vs SEN / W ESP vs CRO ; W CHN vs MEX / M GER vs TUN ; M THA vs COK / W URU vs FRA ; W KEN vs SEN
+- [ ] **RU704** — p. 3 — jour 3 09:40–11:08 — Complexe Iba Mar Diop — Women - Pool Round
+- [ ] **GAR07** — p. 7 — jour 10 11:30–14:00 — Dakar Expo Centre — Men's All-Around - final
+- [ ] **FBS13** — p. 5 — jour 8 11:00–13:30 — Dakar Arena — Women's Winner B vs Runner-up A
+- [ ] **BOX01** — p. 4 — jour 7 12:00–14:30 — Dakar Expo Centre — Women's 51kg - Preliminaries / Women's 57kg - Preliminaries / Men's 55kg - Preliminaries / Men's 65kg - Preliminaries / Men's 70kg - Preliminaries
+- [ ] **GAR103** — p. 4 — jour 6 12:00–13:45 — Dakar Expo Centre — Women's Podium Training
+- [ ] **BS507** — p. 2 — jour 2 15:00–17:45 — Complexe Tour de l'Oeuf — Semifinals
+- [ ] **SWM02** — p. 1 — jour 1 15:00–17:00 — Complexe Tour de l'Oeuf — Women's 400m Freestyle - Fastest Heats / Men's 800m Freestyle - Fastest Heats / Women's 200m Backstroke - Final / Men's 200m Backstroke - Final / Women's 100m Butterfly - Final / Men's 100m Butterfly - Final
+- [ ] **VBV01** — p. 1 — jour 0 08:30–15:10 — Saly Beach West — Women and Men - Pool Round
