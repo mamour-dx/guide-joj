@@ -41,13 +41,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body className="min-h-dvh flex flex-col">
-        {/* bande aux quatre couleurs olympiques, au-dessus de l'en-tête */}
-        <div aria-hidden="true" className="grid h-1.5 grid-cols-4">
-          <span className="bg-o-yellow" />
-          <span className="bg-ink" />
-          <span className="bg-o-green" />
-          <span className="bg-o-red" />
-        </div>
+        {/* cadre aux quatre couleurs olympiques tout autour de l'écran (voir .frame) */}
+        <div aria-hidden="true" className="frame" />
         <header className="border-b-2 border-line">
           <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-3 px-4 py-3">
             <Link href="/" aria-label={`${site.name} — accueil`} className="group flex min-w-0 items-center gap-2">

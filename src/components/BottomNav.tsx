@@ -15,7 +15,7 @@ export function BottomNav() {
   return (
     <nav
       aria-label="Navigation principale"
-      className="fixed inset-x-0 bottom-0 z-20 border-t-2 border-line bg-page pb-[env(safe-area-inset-bottom)]"
+      className="fixed inset-x-0 bottom-0 z-20 border-t-2 border-line bg-page pb-[calc(env(safe-area-inset-bottom)+var(--frame))]"
     >
       <ul className="mx-auto grid max-w-2xl grid-cols-3 gap-2 px-2 py-2">
         {TABS.map(({ href, label, Icon, match }) => {

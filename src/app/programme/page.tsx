@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 function StaticDayStrip() {
   return (
     <>
-    <nav aria-label="Jours" className="sticky top-0 z-10 -mx-4 flex gap-1.5 overflow-x-auto bg-page/95 px-4 py-2 no-scrollbar">
+    <nav aria-label="Jours" className="sticky top-[var(--frame)] z-10 -mx-4 flex gap-1.5 overflow-x-auto bg-page/95 px-4 py-2 no-scrollbar">
       {days.map((d) => {
         const { weekday, num } = shortDay(d);
         return (

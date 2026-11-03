@@ -61,7 +61,7 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
     <>
       <style>{css}</style>
       {/* seul le bandeau de jours reste collé en haut : la recherche et les puces défilent */}
-      <div className="sticky top-0 z-10 -mx-4 bg-page/95 px-4 py-2 backdrop-blur">
+      <div className="sticky top-[var(--frame)] z-10 -mx-4 bg-page/95 px-4 py-2 backdrop-blur">
       <div ref={stripRef} className="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4" aria-label="Jours">
         {days.map((d) => {
           const { weekday, num } = shortDay(d);

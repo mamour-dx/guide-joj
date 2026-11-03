@@ -56,10 +56,39 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fond : trame de points très légère, avec de loin en loin un petit carré jaune, vert ou rouge
+   centré sur un point. Les cartes restent sur fond plein : la trame ne gêne jamais la lecture. */
 body {
-  background: var(--page);
+  --dot: rgb(0 0 0 / 0.09);
+  background-color: var(--page);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg opacity='.55'%3E%3Crect x='47' y='67' width='6' height='6' fill='%23FFB114'/%3E%3Crect x='167' y='27' width='6' height='6' fill='%2300A651'/%3E%3Crect x='107' y='167' width='6' height='6' fill='%23F0282D'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(var(--dot) 1px, transparent 1.5px);
+  background-size: 240px 240px, 20px 20px;
   color: var(--ink);
   font-size: 16px;
+  padding-top: var(--frame);
+}
+:root[data-theme="dark"] body {
+  --dot: rgb(246 246 243 / 0.09);
+}
+
+/* Cadre fixe aux quatre couleurs, qui tourne autour de l'écran dans le sens des aiguilles d'une
+   montre : jaune, noir, vert, rouge sur chaque côté. Au-dessus de tout, sans capter les touches. */
+:root {
+  --frame: 6px;
+}
+.frame {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  --c1: var(--o-yellow); --c2: var(--ink); --c3: var(--o-green); --c4: var(--o-red);
+  background:
+    linear-gradient(90deg,  var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) top    / 100% var(--frame) no-repeat,
+    linear-gradient(180deg, var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) right  / var(--frame) 100% no-repeat,
+    linear-gradient(270deg, var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) bottom / 100% var(--frame) no-repeat,
+    linear-gradient(0deg,   var(--c1) 0 25%, var(--c2) 0 50%, var(--c3) 0 75%, var(--c4) 0) left   / var(--frame) 100% no-repeat;
 }
 
 .tabular {
