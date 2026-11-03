@@ -1,29 +1,23 @@
 @import "tailwindcss";
 
-/* Identité Dakar 2026 (guide médias du COJOJ, oct. 2026 + charte olympique) :
-   bleu en aplat, beaucoup de blanc, titres condensés en capitales, texte courant noir.
-   La couleur sert d'aplat, de repère ou d'action, jamais pour le texte courant.
-   Contrastes AA vérifiés : --blue / blanc 4,57:1 ; --blue-ink / --tint 5,7:1 ; --red-ink / blanc 5,2:1. */
+/* Direction « meetsponsors » : fond cassé, encre noire, titres condensés très gras en capitales,
+   petites étiquettes en mono, angles droits, filets noirs de 2 px et grands aplats de couleur.
+   Couleurs olympiques en aplat ou en repère, jamais pour le texte courant ; sur un aplat de couleur
+   le texte est toujours noir (noir / rouge 5,0:1 ; noir / vert 6,6:1 ; noir / jaune 11:1). */
 :root {
-  --blue:      #0078D0;   /* bleu Dakar 2026 (relevé dans le guide médias) — aplats, boutons */
-  --blue-ink:  #005FA8;   /* bleu pour petit texte et liens */
-  --tint:      #E6F1FA;   /* bleu très clair des encarts du guide médias */
-  --page:      #F3F6FA;   /* fond légèrement bleuté : les cartes blanches ressortent */
-  --surface:   #FFFFFF;
-  --line:      #DCE2EA;
-  --line-soft: #E6EBF1;
-  --shadow:    0 1px 2px rgb(16 32 56 / 0.06), 0 1px 1px rgb(16 32 56 / 0.04);
-  --shadow-lg: 0 10px 24px -8px rgb(16 32 56 / 0.18), 0 2px 6px rgb(16 32 56 / 0.06);
-  --ease:      cubic-bezier(0.2, 0.8, 0.2, 1);
-  --ink:       #0B0C0E;
-  --muted:     #50565E;
-  --on-blue:   #FFFFFF;
-  /* couleurs olympiques : repères de secteur et badges (jamais en texte courant) */
-  --o-red:     #EE334E;
+  --o-yellow:  #FFB114;
+  --o-black:   #000000;
   --o-green:   #00A651;
-  --o-yellow:  #FCB131;
-  --red-ink:   #C8102E;   /* « En ce moment », « Complet » (texte blanc dessus : 5,9:1) */
-  --heading:   #0078D0;   /* titres de page (grand corps : 3:1 suffit) */
+  --o-red:     #F0282D;
+  --page:      #F6F6F3;   /* blanc cassé */
+  --surface:   #FFFFFF;
+  --tint:      #ECEBE5;
+  --ink:       #000000;
+  --muted:     #55554F;   /* 6,9:1 sur --page */
+  --line:      #000000;   /* filets francs */
+  --line-soft: #D9D8D1;
+  --ease:      cubic-bezier(0.2, 0.8, 0.2, 1);
+  --red-ink:   #C4161B;   /* « En ce moment », « Complet » en texte sur fond clair (5,9:1) */
 }
 
 /* Thème clair par défaut, quel que soit le réglage du téléphone. Le sombre ne s'active que
@@ -33,32 +27,27 @@
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page: #07090C; --surface: #12161C; --tint: #0E1B29; --line: #2A3038; --line-soft: #1E242C;
-  --shadow: 0 1px 2px rgb(0 0 0 / 0.5); --shadow-lg: 0 10px 24px -8px rgb(0 0 0 / 0.7);
-  --ink: #F4F6F8; --muted: #A7AEB8;
-  --blue-ink: #6CB6F2; --heading: #5AADEE;
-  --red-ink: #FF6F7F;
+  --page: #000000; --surface: #0E0E0C; --tint: #1A1A17; --line: #F6F6F3; --line-soft: #2A2A26;
+  --ink: #F6F6F3; --muted: #B4B4AA;
+  --red-ink: #FF6A6E;
 }
 
 @theme inline {
-  --color-blue: var(--blue);
-  --color-blue-ink: var(--blue-ink);
-  --color-tint: var(--tint);
   --color-page: var(--page);
   --color-surface: var(--surface);
+  --color-tint: var(--tint);
   --color-line: var(--line);
   --color-line-soft: var(--line-soft);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
-  --color-on-blue: var(--on-blue);
   --color-o-red: var(--o-red);
   --color-o-green: var(--o-green);
   --color-o-yellow: var(--o-yellow);
   --color-red-ink: var(--red-ink);
-  --color-heading: var(--heading);
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  /* titres : condensé en capitales (substitut public de l'« Olympic Headline ») */
-  --font-display: var(--font-bebas), "Arial Narrow", Impact, sans-serif;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* titres : condensé très gras en capitales */
+  --font-display: var(--font-shoulders), "Arial Narrow", Impact, sans-serif;
 }
 
 html {
@@ -78,61 +67,96 @@ body {
 }
 
 :focus-visible {
-  outline: 3px solid var(--blue);
+  outline: 3px solid var(--o-red);
   outline-offset: 2px;
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
-.on-blue :focus-visible {
-  outline-color: #FFFFFF;
-}
 
-/* Titres condensés : capitales, interlignage serré, approche légèrement resserrée. */
+/* Composants : dans une couche, pour que les utilitaires Tailwind puissent les surcharger. */
+@layer components {
+/* Titres condensés : capitales, très gras, interlignage serré. */
 .display {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
-  line-height: 0.95;
-  letter-spacing: 0.005em;
+  line-height: 0.9;
+  letter-spacing: 0;
 }
 
-/* En-tête : aplat bleu, avec le motif du « look des Jeux » (couverture du guide médias) qui
-   apparaît en fondu sur la droite. À gauche, bleu uni sous l'emblème (son fond est ce bleu). */
-.header-bg {
-  background:
-    linear-gradient(90deg, #0078D0 0%, #0078D0 42%, rgb(0 120 208 / 0.4) 72%, rgb(0 120 208 / 0.05) 100%),
-    url("/brand/pattern.webp") right 30% / 360px auto no-repeat,
-    #0078D0;
+/* Petite étiquette mono (« Got a creator? ») : sur-titres, codes, compteurs. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
-/* Carte : surface blanche arrondie, ombre douce. */
+/* Aplat pleine largeur depuis un conteneur étroit, sans défilement horizontal :
+   le fond déborde par une ombre, rognée verticalement. */
+.bleed {
+  background: var(--bleed);
+  box-shadow: 0 0 0 100vmax var(--bleed);
+  clip-path: inset(0 -100vmax);
+}
+.bleed-green  { --bleed: var(--o-green);  color: #000; }
+.bleed-yellow { --bleed: var(--o-yellow); color: #000; }
+.bleed-red    { --bleed: var(--o-red);    color: #000; }
+.bleed-black  { --bleed: #000;            color: #F6F6F3; }
+:root[data-theme="dark"] .bleed-black { --bleed: #1A1A17; }   /* sinon noir sur noir */
+.bleed-green, .bleed-yellow, .bleed-red { --muted: #000; }
+.bleed-black :focus-visible, .bleed-red :focus-visible { outline-color: #F6F6F3; }
+
+/* Carte : surface blanche, filet noir de 2 px, angles droits, pas d'ombre. */
 .card {
   background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
+  border: 2px solid var(--line);
 }
 
-/* Retour tactile : léger enfoncement au toucher, soulèvement au survol (souris seulement). */
+/* Retour tactile : enfoncement au toucher ; au survol (souris), la carte prend le fond teinté. */
 .pressable {
-  transition: transform 0.18s var(--ease), box-shadow 0.25s var(--ease), background-color 0.2s, border-color 0.2s, color 0.2s;
+  transition: transform 0.15s var(--ease), background-color 0.15s, border-color 0.15s, color 0.15s;
 }
 .pressable:active {
-  transform: scale(0.98);
+  transform: translateY(1px);
 }
 @media (hover: hover) {
-  .pressable:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+  .card.pressable:hover {
+    background: var(--tint);
   }
   .pressable:hover .nudge {
-    transform: translateX(3px);
+    transform: translateX(4px);
   }
 }
 .nudge {
   transition: transform 0.2s var(--ease);
+}
+
+/* Bouton principal : bloc noir, texte clair (inversé en sombre). */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.25rem;
+  background: var(--ink);
+  color: var(--page);
+  font-weight: 500;
+  transition: background-color 0.15s, color 0.15s, transform 0.15s var(--ease);
+}
+.btn:active { transform: translateY(1px); }
+@media (hover: hover) {
+  .btn:hover .nudge { transform: translateX(4px); }
+}
+/* sur un aplat de couleur, le noir reste noir dans les deux thèmes */
+.bleed-green .btn, .bleed-yellow .btn, .bleed-red .btn { background: #000; color: #F6F6F3; }
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--line);
 }
 
 /* Entrée en douceur : pages et éléments de liste (décalés via --i). */
@@ -148,7 +172,7 @@ body {
   animation-delay: calc(min(var(--i, 0), 8) * 35ms);
 }
 
-/* Point « en direct » : halo qui s'étend. */
+/* Point « en direct » : carré qui clignote. */
 @keyframes ping {
   0%   { transform: scale(1); opacity: 0.7; }
   80%, 100% { transform: scale(2.4); opacity: 0; }
@@ -158,14 +182,12 @@ body {
   display: inline-block;
   width: 0.5rem;
   height: 0.5rem;
-  border-radius: 9999px;
   background: currentColor;
 }
 .live-dot::after {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: inherit;
   background: currentColor;
   animation: ping 1.6s var(--ease) infinite;
 }
@@ -178,7 +200,6 @@ body {
 .skeleton {
   background: linear-gradient(90deg, var(--line-soft) 25%, var(--surface) 50%, var(--line-soft) 75%) 0 0 / 200% 100%;
   animation: shimmer 1.4s linear infinite;
-  border-radius: 1rem;
 }
 
 /* Petite apparition (icônes qui changent, coches). */
@@ -188,6 +209,7 @@ body {
 }
 .pop {
   animation: pop 0.3s var(--ease) both;
+}
 }
 
 .no-scrollbar { scrollbar-width: none; }
@@ -209,9 +231,7 @@ body {
   display: block;
   width: 22px;
   height: 22px;
-  border-radius: 9999px;
-  border: 3px solid #FFFFFF;
-  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  border: 3px solid #000000;
   transition: transform 0.2s var(--ease), box-shadow 0.2s;
 }
 .venue-dot-dakar { background: var(--o-red); }
@@ -219,21 +239,27 @@ body {
 .venue-dot-saly { background: var(--o-yellow); }
 .venue-dot.is-active {
   transform: scale(1.35);
-  box-shadow: 0 0 0 3px var(--blue), 0 2px 8px rgb(0 0 0 / 0.35);
+  box-shadow: 0 0 0 3px #FFFFFF, 0 0 0 5px #000000;
 }
 .sites-map .venue-label {
   display: none;
   padding: 2px 6px;
-  border: 0;
-  border-radius: 6px;
-  background: var(--surface);
-  color: var(--ink);
+  border: 2px solid #000000;
+  border-radius: 0;
+  background: #FFFFFF;
+  color: #000000;
+  font-family: var(--font-mono);
   font-size: 12px;
-  font-weight: 600;
-  box-shadow: var(--shadow);
+  font-weight: 500;
+  box-shadow: none;
 }
 .sites-map .venue-label::before { display: none; }
 .sites-map.show-labels .venue-label { display: block; }
+.sites-map .leaflet-bar {
+  border: 2px solid var(--line);
+  border-radius: 0;
+}
+.sites-map .leaflet-bar a { border-radius: 0 !important; }
 .sites-map .leaflet-control-zoom a {
   width: 44px;
   height: 44px;
@@ -249,4 +275,4 @@ body {
   color: var(--ink);
   border-color: var(--line);
 }
-:root[data-theme="dark"] .sites-map .leaflet-control-attribution a { color: var(--blue-ink); }
+:root[data-theme="dark"] .sites-map .leaflet-control-attribution a { color: var(--ink); }

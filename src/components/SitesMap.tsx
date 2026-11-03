@@ -129,11 +129,11 @@ export default function SitesMap({ venues }: { venues: MapVenue[] }) {
             type="button"
             aria-pressed={focus === f}
             onClick={() => zoomTo(f)}
-            className={`pressable inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border px-4 text-sm font-semibold whitespace-nowrap ${
-              focus === f ? "border-blue bg-blue text-on-blue shadow-md shadow-blue/25" : "border-line bg-surface text-ink"
+            className={`pressable inline-flex min-h-11 shrink-0 items-center gap-1.5 border-2 border-line px-3.5 text-sm font-medium whitespace-nowrap ${
+              focus === f ? "bg-ink text-page" : "bg-surface text-ink hover:bg-tint"
             }`}
           >
-            {f !== "all" && <span className={`inline-block size-2.5 rounded-full ring-2 ring-white/70 ${CLUSTER_DOT[f]}`} aria-hidden="true" />}
+            {f !== "all" && <span className={`inline-block size-2.5 ring-1 ring-black ${CLUSTER_DOT[f]}`} aria-hidden="true" />}
             {f === "all" ? "Tous" : CLUSTER_LABEL[f]}
           </button>
         ))}
@@ -146,7 +146,7 @@ export default function SitesMap({ venues }: { venues: MapVenue[] }) {
           <div
             role="dialog"
             aria-label={current.name}
-            className="rise absolute inset-x-2 bottom-2 z-[1000] rounded-2xl border border-line-soft bg-surface p-4 shadow-lg"
+            className="rise absolute inset-x-2 bottom-2 z-[1000] border-2 border-line bg-surface p-4"
           >
             <div className="flex items-start justify-between gap-2">
               <div className="min-w-0">
@@ -162,7 +162,7 @@ export default function SitesMap({ venues }: { venues: MapVenue[] }) {
                 type="button"
                 onClick={() => setSelected(null)}
                 aria-label="Fermer"
-                className="-mt-2 -mr-2 flex size-11 shrink-0 items-center justify-center rounded-full text-muted hover:bg-line-soft"
+                className="-mt-2 -mr-2 flex size-11 shrink-0 items-center justify-center text-muted hover:bg-tint hover:text-ink"
               >
                 <X aria-hidden="true" size={20} />
               </button>
@@ -170,7 +170,7 @@ export default function SitesMap({ venues }: { venues: MapVenue[] }) {
             <div className="mt-3 grid grid-cols-2 gap-2">
               <Link
                 href={`/sites/${current.id}`}
-                className="pressable inline-flex min-h-11 items-center justify-center gap-1 rounded-full bg-blue px-4 text-sm font-semibold text-on-blue"
+                className="btn min-h-11 px-4 text-sm"
               >
                 Voir le site <ArrowRight aria-hidden="true" size={16} className="nudge" />
               </Link>
@@ -178,7 +178,7 @@ export default function SitesMap({ venues }: { venues: MapVenue[] }) {
                 href={current.routeUrl}
                 target="_blank"
                 rel="noopener"
-                className="pressable inline-flex min-h-11 items-center justify-center gap-1.5 rounded-full border border-line bg-surface px-4 text-sm font-semibold text-blue-ink"
+                className="btn btn-ghost min-h-11 px-4 text-sm"
               >
                 <Navigation aria-hidden="true" size={16} /> Itinéraire
               </a>

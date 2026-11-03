@@ -34,15 +34,15 @@ export function SitesView({ venues, unplaced, children }: { venues: MapVenue[]; 
 
   return (
     <>
-      <div role="group" aria-label="Affichage" className="mt-4 grid grid-cols-2 gap-1 rounded-full border border-line bg-surface p-1">
+      <div role="group" aria-label="Affichage" className="mt-4 grid grid-cols-2 border-2 border-line bg-surface">
         {tabs.map(({ id, label, Icon }) => (
           <button
             key={id}
             type="button"
             aria-pressed={view === id}
             onClick={() => choose(id)}
-            className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-full text-sm font-semibold transition-colors duration-200 ${
-              view === id ? "bg-blue text-on-blue" : "text-muted hover:text-ink"
+            className={`inline-flex min-h-11 items-center justify-center gap-2 text-sm font-medium transition-colors duration-200 ${
+              view === id ? "bg-ink text-page" : "text-ink hover:bg-tint"
             }`}
           >
             <Icon aria-hidden="true" size={18} />
@@ -57,7 +57,7 @@ export function SitesView({ venues, unplaced, children }: { venues: MapVenue[]; 
           {unplaced > 0 && (
             <p className="mt-2 text-sm text-muted">
               {unplaced} site{unplaced > 1 ? "s" : ""} pas encore placé{unplaced > 1 ? "s" : ""} sur la carte (position à vérifier) :{" "}
-              <button type="button" onClick={() => choose("liste")} className="font-semibold text-blue-ink underline">
+              <button type="button" onClick={() => choose("liste")} className="font-semibold text-ink underline underline-offset-2">
                 voir la liste
               </button>
               .

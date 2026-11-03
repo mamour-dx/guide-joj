@@ -5,14 +5,14 @@ import { useState } from "react";
 import { buildIcs, type IcsEvent } from "@/lib/ics";
 
 const btn =
-  "card pressable flex min-h-16 flex-1 flex-col items-center justify-center gap-1 px-2 py-2 text-sm font-semibold";
+  "card pressable flex min-h-16 flex-1 flex-col items-center justify-center gap-1 px-2 py-2 text-sm font-medium";
 
-/** Pastille d'icône ; passe au vert avec une coche quand l'action a réussi. */
+/** Carré d'icône ; passe au vert avec une coche quand l'action a réussi. */
 function Icon({ done, children }: { done: boolean; children: React.ReactNode }) {
   return (
     <span
       key={String(done)}
-      className={`pop flex size-9 items-center justify-center rounded-full transition-colors ${done ? "bg-o-green text-white" : "bg-tint text-blue-ink"}`}
+      className={`pop flex size-9 items-center justify-center transition-colors ${done ? "bg-o-green text-black" : "bg-ink text-page"}`}
     >
       {done ? <Check aria-hidden="true" size={18} strokeWidth={3} /> : children}
     </span>
@@ -64,7 +64,7 @@ export function SessionActions({ ics, mapsHref, shareTitle }: { ics: Omit<IcsEve
         <Icon done={false}><Navigation aria-hidden="true" size={20} /></Icon>
         <span className="leading-tight">
           Itinéraire
-          <span className="block text-[0.6875rem] font-medium text-muted">Google Maps</span>
+          <span className="block font-mono text-[0.6875rem] text-muted">Google Maps</span>
         </span>
       </a>
       <button type="button" onClick={share} className={btn} aria-live="polite">

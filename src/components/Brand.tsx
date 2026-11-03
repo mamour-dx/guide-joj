@@ -6,9 +6,9 @@ import { PartyPopper } from "lucide-react";
 import { officialBranding, pictoUrl } from "@/lib/brand";
 import { site } from "@/lib/site";
 
-/** Emblème horizontal blanc sur bleu, pour la barre d'en-tête (même bleu que le fond). */
+/** Emblème horizontal blanc sur bleu, pour la barre d'en-tête (posé tel quel, avec son aplat bleu). */
 export function HeaderEmblem() {
-  if (!officialBranding) return <span className="display text-3xl text-on-blue">{site.name}</span>;
+  if (!officialBranding) return <span className="display text-3xl text-ink">{site.name}</span>;
   return (
     <img
       src="/brand/emblem-horizontal-blue.png"

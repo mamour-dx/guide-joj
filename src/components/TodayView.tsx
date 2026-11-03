@@ -12,6 +12,7 @@ import { applyFilters, EMPTY_FILTERS, type Filters } from "@/lib/filters";
 import { addDays, dayKey, longDay } from "@/lib/time";
 import { useNow } from "@/lib/useNow";
 import { Mascot } from "./Brand";
+import { PageHero } from "./PageHero";
 import { FilterChips } from "./FilterChips";
 import { SessionCard } from "./SessionCard";
 
@@ -47,11 +48,10 @@ function timing(c: CardData, now: number | null): { hint?: string; progress?: nu
 
 function SectionTitle({ title, count, tone }: { title: string; count: number | null; tone?: "live" | "muted" }) {
   return (
-    <h2 className={`display mb-3 flex items-center gap-2 text-2xl ${tone === "live" ? "text-red-ink" : tone === "muted" ? "text-muted" : ""}`}>
-      {tone === "live" && <span className="live-dot" aria-hidden="true" />}
-      {title}
-      {count !== null && <span className="rounded-full bg-line-soft px-2 py-0.5 font-sans text-xs font-bold text-muted">{count}</span>}
-      <span className="h-px flex-1 bg-line" aria-hidden="true" />
+    <h2 className={`display mb-3 flex items-baseline gap-2 border-b-2 border-line pb-2 text-4xl ${tone === "live" ? "text-red-ink" : tone === "muted" ? "text-muted" : ""}`}>
+      {tone === "live" && <span className="live-dot self-center" aria-hidden="true" />}
+      {title}.
+      {count !== null && <span className="ml-auto font-mono text-sm font-medium text-muted normal-case">{String(count).padStart(2, "0")}</span>}
     </h2>
   );
 }
@@ -62,7 +62,7 @@ function Section({ title, tone, cards, live = false, sec, hidden = false, tagged
 }) {
   if (!cards.length) return null;
   return (
-    <section className={`mt-6 ${hidden ? "hidden" : ""}`} data-sec={sec}>
+    <section className={`mt-8 ${hidden ? "hidden" : ""}`} data-sec={sec}>
       <SectionTitle title={title} count={hidden ? null : cards.length} tone={tone} />
       <ul className="space-y-3">
         {cards.map((c, i) => (
@@ -95,13 +95,13 @@ function Skeleton() {
 function DoneSection({ cards, sec, hidden = false }: { cards: CardData[]; sec?: string; hidden?: boolean }) {
   if (!cards.length) return null;
   return (
-    <details className={`group mt-6 ${hidden ? "hidden" : ""}`} data-sec={sec}>
-      <summary className="display flex min-h-11 cursor-pointer list-none items-center gap-2 py-2 text-2xl text-muted [&::-webkit-details-marker]:hidden">
-        <ChevronRight aria-hidden="true" size={20} className="transition-transform duration-200 group-open:rotate-90" />
-        Déjà terminé
-        <span className="rounded-full bg-line-soft px-2 py-0.5 font-sans text-xs font-bold">{cards.length}</span>
+    <details className={`group mt-8 ${hidden ? "hidden" : ""}`} data-sec={sec}>
+      <summary className="display flex min-h-11 cursor-pointer list-none items-center gap-2 border-b-2 border-line-soft py-2 text-4xl text-muted [&::-webkit-details-marker]:hidden">
+        <ChevronRight aria-hidden="true" size={24} className="transition-transform duration-200 group-open:rotate-90" />
+        Déjà terminé.
+        <span className="ml-auto font-mono text-sm font-medium normal-case">{String(cards.length).padStart(2, "0")}</span>
       </summary>
-      <ul className="space-y-3">
+      <ul className="mt-3 space-y-3">
         {cards.map((c) => (
           <li key={c.id} data-id={c.id} className="opacity-60 grayscale-[30%]"><SessionCard c={c} /></li>
         ))}
@@ -128,9 +128,9 @@ function Ended() {
     <div className="card mt-6 flex items-end gap-4 p-4">
       <Mascot height={150} />
       <div>
-        <h1 className="display text-5xl text-heading">Les Jeux sont terminés</h1>
+        <h1 className="display text-5xl">Les Jeux sont terminés.</h1>
         <p className="mt-2 text-muted">Les JOJ Dakar 2026 se sont déroulés du 30 octobre au 13 novembre 2026.</p>
-        <Link href="/programme" className="mt-3 inline-flex min-h-11 items-center font-bold text-blue-ink underline">Revoir le programme</Link>
+        <Link href="/programme" className="btn mt-3">Revoir le programme <ChevronRight aria-hidden="true" size={18} className="nudge" /></Link>
       </div>
     </div>
   );
@@ -189,51 +189,44 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
 
   return (
     <div>
-      <div className="mt-2">
-        <p className="text-sm font-bold uppercase tracking-wider text-blue-ink">
-          {tab === "tomorrow" ? "Demain" : base.isToday ? "Aujourd'hui" : "Prochain jour de compétition"}
-        </p>
-        <h1 className="display mt-1 text-5xl text-heading">{shown ? longDay(shown) : "—"}</h1>
+      {/* aujourd'hui en vert, demain en jaune : on voit tout de suite quel jour est affiché */}
+      <PageHero
+        tone={tab === "tomorrow" ? "yellow" : "green"}
+        eyebrow={tab === "tomorrow" ? "Et demain ?" : base.isToday ? "Qu'est-ce qu'on voit aujourd'hui ?" : "Prochain jour de compétition"}
+        title={shown ? `${longDay(shown)}.` : "—"}
+      >
         {cards && cards.length > 0 && (
-          <p className="mt-1 text-sm text-muted">
+          <p className="eyebrow mt-3 flex flex-wrap items-center gap-x-2 gap-y-1">
             {cards.length} session{cards.length > 1 ? "s" : ""}
             {live.length > 0 && (
-              <>
-                {" · "}
-                <span className="inline-flex items-center gap-1.5 font-semibold text-red-ink">
-                  <span className="live-dot size-1.5" aria-hidden="true" />
-                  {live.length} en direct
-                </span>
-              </>
+              <span className="inline-flex items-center gap-1.5 bg-black px-1.5 py-0.5 text-[#F6F6F3]">
+                <span className="live-dot size-1.5 text-o-red" aria-hidden="true" />
+                {live.length} en direct
+              </span>
             )}
           </p>
         )}
-      </div>
 
-      <div role="tablist" aria-label="Jour" className="card relative mt-4 grid grid-cols-2 rounded-full p-1">
-        <span
-          aria-hidden="true"
-          className="absolute inset-y-1 left-1 w-[calc(50%-0.25rem)] rounded-full bg-blue shadow-md shadow-blue/30 transition-transform duration-300 [transition-timing-function:var(--ease)]"
-          style={{ transform: tab === "tomorrow" ? "translateX(100%)" : undefined }}
-        />
-        {(["today", "tomorrow"] as const).map((k) => (
-          <button
-            key={k}
-            role="tab"
-            type="button"
-            aria-selected={tab === k}
-            onClick={() => changeTab(k)}
-            className={`relative z-10 min-h-11 rounded-full text-base font-bold transition-colors duration-300 ${tab === k ? "text-on-blue" : "text-ink"}`}
-          >
-            {k === "today" ? (base.isToday ? "Aujourd'hui" : "Prochain jour") : "Demain"}
-          </button>
-        ))}
-      </div>
+        <div role="tablist" aria-label="Jour" className="mt-5 grid grid-cols-2 border-2 border-black">
+          {(["today", "tomorrow"] as const).map((k) => (
+            <button
+              key={k}
+              role="tab"
+              type="button"
+              aria-selected={tab === k}
+              onClick={() => changeTab(k)}
+              className={`min-h-12 text-base font-medium transition-colors duration-200 ${tab === k ? "bg-black text-[#F6F6F3]" : "text-black hover:bg-black/10"}`}
+            >
+              {k === "today" ? (base.isToday ? "Aujourd'hui" : "Prochain jour") : "Demain"}
+            </button>
+          ))}
+        </div>
+      </PageHero>
 
       {!shownHasData ? (
         <p className="card mt-6 p-4">
           Aucune session prévue ce jour-là.{" "}
-          <Link href="/programme" className="font-bold text-blue-ink underline">Voir tout le programme</Link>
+          <Link href="/programme" className="font-semibold underline underline-offset-2">Voir tout le programme</Link>
         </p>
       ) : cards === null ? (
         load?.error && load.day === shown ? (
@@ -243,11 +236,13 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
         )
       ) : (
         <>
-          <FilterChips value={filters} onChange={changeFilters} sports={daySports} />
+          <div className="mt-3">
+            <FilterChips value={filters} onChange={changeFilters} sports={daySports} />
+          </div>
           {filtered.length === 0 && (
             <p className="card mt-4 p-4">
               Aucune session ne correspond à ces filtres.{" "}
-              <button type="button" className="font-bold text-blue-ink underline" onClick={() => changeFilters(EMPTY_FILTERS)}>
+              <button type="button" className="font-semibold underline underline-offset-2" onClick={() => changeFilters(EMPTY_FILTERS)}>
                 Tout afficher
               </button>
             </p>

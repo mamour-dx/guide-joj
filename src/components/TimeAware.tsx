@@ -30,7 +30,7 @@ export function HidePastDays({ scope, days }: { scope: string; days: string[] })
     <div className="min-h-11">
       <style>{css}</style>
       {past.length > 0 && (
-        <button type="button" onClick={() => setShow(!show)} className="min-h-11 text-sm font-bold text-blue-ink underline">
+        <button type="button" onClick={() => setShow(!show)} className="min-h-11 text-sm font-semibold text-ink underline underline-offset-2">
           {show ? "Masquer les jours passés" : `Afficher les jours passés (${past.length})`}
         </button>
       )}

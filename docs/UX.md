@@ -62,26 +62,28 @@
 
 ## Design tokens
 
-Identité **Dakar 2026**, relevée dans le guide médias du COJOJ (oct. 2026) et la charte
-olympique (résumé dans le kit de marque) : aplats de bleu, beaucoup de blanc, titres condensés
-en capitales, texte courant noir. Valeurs exactes dans `src/app/globals.css`.
+Direction inspirée de meetsponsors.com, aux couleurs olympiques : fond blanc cassé, encre noire,
+titres condensés très gras en capitales terminés par un point, petites étiquettes en mono, angles
+droits, filets noirs de 2 px, grands aplats de couleur pleine largeur. Valeurs exactes dans
+`src/app/globals.css`.
 
 | Rôle | Valeur |
 |---|---|
-| Bleu Dakar 2026 (en-tête, boutons, onglet actif) | `#0078D0`, texte blanc 4,57:1 |
-| Bleu texte / liens | `#005FA8` |
-| Encart (cartes, panneaux) | `#E6F1FA`, coin bas-droit coupé (`.chamfer`) |
-| Secteurs (carré de repère, texte noir) | Dakar `#EE334E`, Diamniadio `#00A651`, Saly `#FCB131` (plan directeur) |
-| Badges | Gratuit = jaune olympique + noir ; Finale = noir ; En ce moment = `#C8102E` + blanc |
+| Fond / encre | `#F6F6F3` / `#000000` ; boutons = bloc noir, texte blanc cassé |
+| Couleurs olympiques | Jaune `#FFB114`, Noir `#000000`, Vert `#00A651`, Rouge `#F0282D` |
+| En-têtes de page (aplat `.bleed`) | Aujourd'hui vert (Demain jaune), Programme jaune, Sites rouge, À propos noir ; fiche session et fiche site à la couleur du secteur |
+| Secteurs (carré de repère, texte noir) | Dakar rouge, Diamniadio vert, Saly jaune |
+| Badges | Gratuit = jaune + noir ; Finale = noir ; En ce moment = rouge + noir |
 
+- Sur un aplat de couleur, le texte est toujours noir (rouge 5,0:1, vert 6,6:1, jaune 11:1).
+- Typo : titres en **Big Shoulders** 800, texte en **Geist**, horaires, codes et sur-titres en
+  **Geist Mono**.
 - **Marques** (`src/components/Brand.tsx`, fichiers dans `public/brand/`) : emblème horizontal
   blanc sur bleu dans l'en-tête, emblème vertical couleurs sur blanc dans le pied de page,
   25 pictogrammes officiels sur les cartes, Ayo sur « À propos » et « Jeux terminés », motif
-  du « look des Jeux » en bande sous l'en-tête. Jamais modifiés. Emblème couleurs = fond blanc.
+  du « look des Jeux » réservé à l'image de partage. Jamais modifiés. Emblème couleurs = fond blanc.
 - La couleur n'est jamais celle du texte courant. Le jaune ne sert jamais de texte.
-- Typo : titres en **Bebas Neue** (substitut public de l'« Olympic Headline », capitales,
-  ≤ 6 mots), tout le reste en **Inter**. Chiffres tabulaires pour les horaires.
-- Angles droits partout (pas de coins arrondis), filets fins, pointillés bleus du guide médias.
+- Angles droits partout (pas de coins arrondis), pas d'ombres, pointillés pour les séparations fines.
 - Mode sombre : fond noir (recommandé par la charte en numérique), emblème et pictogrammes
   restent sur blanc.
 

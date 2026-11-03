@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bebas_Neue, Inter } from "next/font/google";
+import { Big_Shoulders, Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import "./globals.css";
@@ -12,8 +12,9 @@ import { siteLabel as label } from "@/lib/seo";
 import { indexable, site, siteUrl } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
-const bebas = Bebas_Neue({ variable: "--font-bebas", weight: "400", subsets: ["latin"], display: "swap" });
+const geist = Geist({ variable: "--font-geist", subsets: ["latin"], display: "swap" });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "swap" });
+const shoulders = Big_Shoulders({ variable: "--font-shoulders", weight: "800", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
@@ -28,26 +29,26 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  // la barre d'en-tête est bleue dans les deux thèmes
-  themeColor: "#0078D0",
+  // fond blanc cassé de l'en-tête (thème clair par défaut)
+  themeColor: "#F6F6F3",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${inter.variable} ${bebas.variable} antialiased`} suppressHydrationWarning>
+    <html lang="fr" className={`${geist.variable} ${geistMono.variable} ${shoulders.variable} antialiased`} suppressHydrationWarning>
       <head>
         {/* thème sombre choisi : appliqué avant l'affichage (clair par défaut) */}
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body className="min-h-dvh flex flex-col">
-        <header className="on-blue header-bg text-on-blue">
+        <header className="border-b-2 border-line">
           <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-3 px-4 py-3">
             <Link href="/" aria-label={`${site.name} — accueil`} className="-my-1 py-1">
               <HeaderEmblem />
             </Link>
             <div className="flex items-center gap-3">
               {officialBranding && (
-                <p className="display text-right text-[1.375rem]">
+                <p className="eyebrow text-right leading-tight">
                   Guide
                   <br />
                   des sessions
@@ -60,27 +61,29 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <main className="mx-auto w-full max-w-2xl flex-1 px-4 pb-8">{children}</main>
 
-        <footer className="border-t border-line pb-24">
-          <div className="mx-auto flex w-full max-w-2xl gap-4 px-4 pt-5">
-            <div className="shrink-0">
-              <VerticalEmblem height={84} />
+        <footer className="bleed bleed-black pb-24">
+          <div className="mx-auto w-full max-w-2xl px-4 pt-10">
+            <p className="display text-6xl">{site.slogan}</p>
+            <div className="mt-6 flex gap-4">
+              <div className="shrink-0">
+                <VerticalEmblem height={84} />
+              </div>
+              <div className="eyebrow min-w-0 text-[#B4B4AA]">
+                <p>{site.disclaimer}</p>
+                <p className="mt-2">
+                  Programme mis à jour le {updatedAt(meta.generatedAt)}
+                  {ticketsFetchedAt && <> · Statuts billetterie relevés le {updatedAt(ticketsFetchedAt)}</>} (heure de Dakar).
+                </p>
+              </div>
             </div>
-            <div className="min-w-0 text-sm text-muted">
-              <p className="display text-2xl text-heading">{site.slogan}</p>
-              <p className="mt-2">{site.disclaimer}</p>
-              <p className="mt-2">
-                Programme mis à jour le {updatedAt(meta.generatedAt)}
-                {ticketsFetchedAt && <> · Statuts billetterie relevés le {updatedAt(ticketsFetchedAt)}</>} (heure de Dakar).
-              </p>
-              <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 font-semibold text-blue-ink">
-                <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center gap-0.5 underline underline-offset-2">
-                  Billetterie officielle <ArrowUpRight aria-hidden="true" size={16} />
-                </a>
-                <Link href="/a-propos" className="inline-flex min-h-11 items-center underline underline-offset-2">
-                  Sources et à propos
-                </Link>
-              </p>
-            </div>
+            <p className="mt-6 flex flex-wrap gap-2">
+              <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="btn bg-[#F6F6F3] text-black">
+                Billetterie officielle <ArrowUpRight aria-hidden="true" size={18} className="nudge" />
+              </a>
+              <Link href="/a-propos" className="btn btn-ghost border-[#F6F6F3] text-[#F6F6F3]">
+                Sources et à propos
+              </Link>
+            </p>
           </div>
         </footer>
         <BottomNav />

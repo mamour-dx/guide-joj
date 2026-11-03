@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
+import { PageHero } from "@/components/PageHero";
 import { ProgrammeControls } from "@/components/ProgrammeControls";
 import { CLUSTER_DOT, SessionCard } from "@/components/SessionCard";
 import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
@@ -23,14 +24,14 @@ function StaticDayStrip() {
       {days.map((d) => {
         const { weekday, num } = shortDay(d);
         return (
-          <a key={d} href={`#j-${d}`} className="flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-2xl border px-2 text-sm leading-tight border-line-soft bg-surface">
-            <span className="font-semibold">{weekday}</span>
+          <a key={d} href={`#j-${d}`} className="flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center border-2 border-line bg-surface px-2 text-sm leading-tight">
+            <span className="font-mono text-xs">{weekday}</span>
             <span className="tabular display text-2xl">{num}</span>
           </a>
         );
       })}
     </nav>
-    <div aria-hidden="true" className="mt-1 min-h-12 rounded-full border border-line-soft bg-surface" />
+    <div aria-hidden="true" className="mt-1 min-h-12 border-2 border-line bg-surface" />
     <div aria-hidden="true" className="min-h-15" />
     </>
   );
@@ -49,7 +50,8 @@ document.head.appendChild(s);}catch(e){}})();`;
 export default function ProgrammePage() {
   return (
     <>
-      <h1 className="mt-2 display text-5xl text-heading">Programme</h1>
+      <PageHero tone="yellow" eyebrow="Du 30 octobre au 13 novembre" title="Tout le programme." />
+      <div className="h-2" aria-hidden="true" />
       <Suspense fallback={<StaticDayStrip />}>
         <ProgrammeControls days={days} sports={sportChips} />
       </Suspense>
@@ -59,16 +61,15 @@ export default function ProgrammePage() {
         <p className="prog-empty card mt-4 hidden p-4">Aucune session ne correspond à ces filtres.</p>
         {days.map((d) => (
           <section key={d} id={`j-${d}`} data-group="day" data-day={d} className="scroll-mt-24">
-            <h2 className="display mt-8 text-4xl text-heading">{longDay(d)}</h2>
+            <h2 className="display mt-10 text-5xl">{longDay(d)}.</h2>
             {CLUSTERS.map((cl) => {
               const list = cards.filter((c) => c.day === d && c.cluster === cl);
               if (!list.length) return null;
               return (
                 <div key={cl} data-group="cluster" className="mt-3">
-                  <h3 className="display mb-3 flex items-center gap-2 text-2xl">
-                    <span className={`size-3 rounded-full ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
+                  <h3 className="display mb-3 flex items-center gap-2 border-b-2 border-line pb-2 text-3xl">
+                    <span className={`size-3.5 ring-1 ring-black ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
                     {CLUSTER_LABEL[cl]}
-                    <span className="h-px flex-1 bg-line" aria-hidden="true" />
                   </h3>
                   <ul className="space-y-3">
                     {list.map((c) => (

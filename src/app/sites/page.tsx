@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { CLUSTER_DOT } from "@/components/SessionCard";
 import type { MapVenue } from "@/components/SitesMap";
+import { PageHero } from "@/components/PageHero";
 import { SitesView } from "@/components/SitesView";
 import { RemainingCount } from "@/components/TimeAware";
 import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
@@ -40,17 +41,17 @@ const mapVenues: MapVenue[] = venues.flatMap((v) =>
 export default function SitesPage() {
   return (
     <>
-      <h1 className="mt-2 display text-5xl text-heading">Sites</h1>
-      <p className="mt-1 text-muted">{venues.length} sites, 3 secteurs.</p>
+      <PageHero tone="red" eyebrow="Où ça se passe ?" title="Les sites.">
+        <p className="eyebrow mt-3">{venues.length} sites · 3 secteurs · Dakar, Diamniadio, Saly</p>
+      </PageHero>
       <SitesView venues={mapVenues} unplaced={venues.length - mapVenues.length}>
       {CLUSTERS.map((cl) => {
         const list = venues.filter((v) => v.cluster === cl);
         return (
-          <section key={cl} className="mt-5">
-            <h2 className="display mb-3 flex items-center gap-2 text-3xl">
-              <span className={`size-3.5 rounded-full ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
-              {CLUSTER_LABEL[cl]}
-              <span className="h-px flex-1 bg-line" aria-hidden="true" />
+          <section key={cl} className="mt-8">
+            <h2 className="display mb-3 flex items-center gap-2 border-b-2 border-line pb-2 text-4xl">
+              <span className={`size-4 ring-1 ring-black ${CLUSTER_DOT[cl]}`} aria-hidden="true" />
+              {CLUSTER_LABEL[cl]}.
             </h2>
             <ul className="space-y-2.5">
               {list.map((v) => {
@@ -63,7 +64,7 @@ export default function SitesPage() {
                     >
                       <span>
                         <span className="block display text-[1.75rem]">{v.name}</span>
-                        <span className="text-sm text-muted">
+                        <span className="eyebrow text-muted">
                           <RemainingCount ends={ends} total={ends.length} />
                         </span>
                       </span>

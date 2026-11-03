@@ -75,14 +75,14 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
               replace
               scroll={false}
               aria-current={active ? "date" : undefined}
-              className={`pressable relative flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center rounded-2xl border px-2 text-sm leading-tight ${
-                active ? "border-blue bg-blue text-on-blue shadow-md shadow-blue/30" : "border-line-soft bg-surface"
+              className={`pressable relative flex min-h-14 min-w-12 shrink-0 flex-col items-center justify-center border-2 border-line px-2 text-sm leading-tight ${
+                active ? "bg-ink text-page" : "bg-surface hover:bg-tint"
               }`}
             >
-              <span className="font-semibold">{weekday}</span>
+              <span className="font-mono text-xs">{weekday}</span>
               <span className="tabular display text-2xl">{num}</span>
               {d === today && (
-                <span className={`absolute bottom-1 size-1 rounded-full ${active ? "bg-on-blue" : "bg-blue"}`} aria-label="aujourd'hui" />
+                <span className="absolute inset-x-0 top-0 h-1 bg-o-red" aria-label="aujourd'hui" />
               )}
             </Link>
           );
@@ -90,28 +90,28 @@ export function ProgrammeControls({ days, sports }: { days: string[]; sports: Sp
       </div>
       </div>
 
-      <label className="mt-1 flex min-h-12 items-center gap-2 rounded-full border border-line-soft bg-surface px-4 shadow-[var(--shadow)] transition focus-within:border-blue focus-within:ring-4 focus-within:ring-blue/15">
-        <Search aria-hidden="true" size={18} className="text-muted" />
+      <label className="mt-1 flex min-h-12 items-center gap-2 border-2 border-line bg-surface px-3 transition focus-within:outline-3 focus-within:outline-offset-2 focus-within:outline-o-red">
+        <Search aria-hidden="true" size={18} className="text-ink" />
         <span className="sr-only">Rechercher</span>
         <input
           type="search"
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Sport, pays (SEN), épreuve (100 m)…"
-          className="min-w-0 flex-1 bg-transparent py-2 text-base outline-none placeholder:text-muted"
+          className="min-w-0 flex-1 bg-transparent py-2 font-mono text-base outline-none placeholder:text-muted"
           enterKeyHint="search"
         />
         {q && (
-          <button type="button" aria-label="Effacer la recherche" onClick={() => setQ("")} className="pop flex size-8 items-center justify-center rounded-full bg-line-soft text-muted transition active:scale-90">
+          <button type="button" aria-label="Effacer la recherche" onClick={() => setQ("")} className="pop flex size-8 items-center justify-center bg-ink text-page transition active:translate-y-px">
             <X size={18} aria-hidden="true" />
           </button>
         )}
       </label>
-      {searching && <p className="mt-1 text-sm text-muted">Recherche sur tous les jours.</p>}
+      {searching && <p className="eyebrow mt-1 text-muted">Recherche sur tous les jours.</p>}
 
       <FilterChips value={filters} onChange={(f) => push(f)} sports={sports} />
       {activeCount(filters) > 0 && (
-        <button type="button" onClick={() => { setQ(""); push(EMPTY_FILTERS); }} className="min-h-11 text-sm font-bold text-blue-ink underline">
+        <button type="button" onClick={() => { setQ(""); push(EMPTY_FILTERS); }} className="min-h-11 text-sm font-semibold underline underline-offset-2">
           Effacer les filtres ({activeCount(filters)})
         </button>
       )}
