@@ -107,7 +107,8 @@ dans les sources (je les montre en vidéo).
 - [ ] Page d'accueil < 150 KB de JS. Lisible en plein soleil (contrastes AA).
 - [ ] Chaque session : horaire, site, sport, épreuves, badge Gratuit/Payant/Inconnu,
       lien billetterie ou « voir la billetterie officielle », bouton agenda, itinéraire.
-- [ ] Footer de toutes les pages : emblème (ou mention « non officiel » si `officialBranding = false`) et « horaires à vérifier ».
+- [ ] Footer de toutes les pages : « DAKAR 2026 » en grand (sans emblème), mention « non officiel » si
+      `officialBranding = false`, et « horaires à vérifier ».
 - [ ] `meta.json.generatedAt` affiché discrètement : « Données mises à jour le … ».
 
 ## Ton et langue
