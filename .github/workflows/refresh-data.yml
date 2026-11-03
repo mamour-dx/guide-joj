@@ -1,5 +1,5 @@
 # Rafraîchissement quotidien des données (SCRAPING.md §7).
-# 06:00 à Dakar (= 06:00 UTC). Re-télécharge S1 + S3 et les statuts billetterie (S2 : une
+# 05:17 à Dakar (= UTC) : minute hors heure pile, que GitHub retarde moins. Re-télécharge S1 + S3 et les statuts billetterie (S2 : une
 # requête à l'endpoint JSON public, échec silencieux) ; si rien n'a changé, s'arrête.
 # Sinon parse → build → validate → tests, puis commit de data/ → Vercel redéploie.
 # Si validate.py ou les tests échouent, le job échoue et RIEN n'est publié.
@@ -14,7 +14,7 @@ name: refresh-data
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "17 5 * * *"
   workflow_dispatch:
     inputs:
       force:

@@ -205,7 +205,7 @@ billetterie bloque un jour la CI, on revient à la sauvegarde manuelle (plan A d
 
 ## 7. Refresh pendant les Jeux
 
-- **GitHub Action** quotidienne (06:00 Dakar) : re-télécharge **S1 et S3 uniquement**,
+- **GitHub Action** quotidienne (05:17 Dakar ; GitHub peut la retarder de plusieurs heures) : re-télécharge **S1 et S3 uniquement**,
   recalcule, compare les hash. Si rien n'a changé → stop. Si changement → `build_data.py`
   + `validate.py` → commit → Vercel redeploie. Si `validate.py` échoue → l'Action échoue et
   **rien n'est publié** (le site garde la dernière version valide).
