@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
-import { HeaderEmblem, VerticalEmblem } from "@/components/Brand";
+import { VerticalEmblem } from "@/components/Brand";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
 import { officialBranding } from "@/lib/brand";
 import { homeOgImage, meta, officialLinks, ticketsFetchedAt } from "@/lib/data";
@@ -41,19 +41,34 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body className="min-h-dvh flex flex-col">
+        {/* bande aux quatre couleurs olympiques, au-dessus de l'en-tête */}
+        <div aria-hidden="true" className="grid h-1.5 grid-cols-4">
+          <span className="bg-o-yellow" />
+          <span className="bg-ink" />
+          <span className="bg-o-green" />
+          <span className="bg-o-red" />
+        </div>
         <header className="border-b-2 border-line">
           <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-3 px-4 py-3">
-            <Link href="/" aria-label={`${site.name} — accueil`} className="-my-1 py-1">
-              <HeaderEmblem />
+            <Link href="/" aria-label={`${site.name} — accueil`} className="group flex min-w-0 items-center gap-2">
+              <span aria-hidden="true" className="grid shrink-0 grid-cols-2 gap-0.5 transition-transform duration-300 [transition-timing-function:var(--ease)] group-hover:rotate-90">
+                <span className="size-3 bg-o-yellow" />
+                <span className="size-3 bg-ink" />
+                <span className="size-3 bg-o-green" />
+                <span className="size-3 bg-o-red" />
+              </span>
+              <span className="leading-none">
+                <span className="display block whitespace-nowrap text-[1.75rem]">{officialBranding ? "Dakar 2026" : "JOJ Guide"}</span>
+                <span className="eyebrow block whitespace-nowrap text-xs text-muted">{officialBranding ? "Guide des sessions" : "Non officiel"}</span>
+              </span>
             </Link>
-            <div className="flex items-center gap-3">
-              {officialBranding && (
-                <p className="eyebrow text-right leading-tight">
-                  Guide
-                  <br />
-                  des sessions
-                </p>
-              )}
+            <div className="flex items-center gap-2">
+              <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="btn min-h-11 px-3 text-sm">
+                {/* « Billets » sur les petits écrans : le nom du site garde sa place */}
+                <span className="hidden min-[400px]:inline">Billetterie</span>
+                <span className="min-[400px]:hidden">Billets</span>
+                <ArrowUpRight aria-hidden="true" size={16} className="nudge" />
+              </a>
               <ThemeToggle />
             </div>
           </div>

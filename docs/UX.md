@@ -78,8 +78,8 @@ droits, filets noirs de 2 px, grands aplats de couleur pleine largeur. Valeurs e
 - Sur un aplat de couleur, le texte est toujours noir (rouge 5,0:1, vert 6,6:1, jaune 11:1).
 - Typo : titres en **Big Shoulders** 800, texte en **Geist**, horaires, codes et sur-titres en
   **Geist Mono**.
-- **Marques** (`src/components/Brand.tsx`, fichiers dans `public/brand/`) : emblème horizontal
-  blanc sur bleu dans l'en-tête, emblème vertical couleurs sur blanc dans le pied de page,
+- **Marques** (`src/components/Brand.tsx`, fichiers dans `public/brand/`) : emblème vertical
+  couleurs sur blanc dans le pied de page (l'en-tête porte un nom en texte, sans marque),
   25 pictogrammes officiels sur les cartes, Ayo sur « À propos » et « Jeux terminés », motif
   du « look des Jeux » réservé à l'image de partage. Jamais modifiés. Emblème couleurs = fond blanc.
 - La couleur n'est jamais celle du texte courant. Le jaune ne sert jamais de texte.

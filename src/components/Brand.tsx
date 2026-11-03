@@ -4,22 +4,6 @@
 // recoloré ni recadré (charte : « must not be altered, modified or reproduced »).
 import { PartyPopper } from "lucide-react";
 import { officialBranding, pictoUrl } from "@/lib/brand";
-import { site } from "@/lib/site";
-
-/** Emblème horizontal blanc sur bleu, pour la barre d'en-tête (posé tel quel, avec son aplat bleu). */
-export function HeaderEmblem() {
-  if (!officialBranding) return <span className="display text-3xl text-ink">{site.name}</span>;
-  return (
-    <img
-      src="/brand/emblem-horizontal-blue.png"
-      alt="Dakar 2026 — Jeux Olympiques de la Jeunesse"
-      width={128}
-      height={44}
-      className="block h-11 w-auto"
-      fetchPriority="high"
-    />
-  );
-}
 
 /** Emblème vertical en couleurs, sur fond blanc uniquement (charte des anneaux). */
 export function VerticalEmblem({ height = 96 }: { height?: number }) {
