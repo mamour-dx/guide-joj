@@ -1,12 +1,12 @@
-# Rapport de validation — 2026-11-03T13:23+00:00
+# Rapport de validation — 2026-11-03T13:30+00:00
 
-**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-03T13:22:56+00:00.
+**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-03T13:29:59+00:00.
 
 ## Compteurs
 
-- Sessions : 212 (185 sportives, 27 Fan)
-- Billetterie : code 143 · site+jour 25 · aucun 44
-- Gratuites : 25 · Finales : 56
+- Sessions : 211 (185 sportives, 26 Fan)
+- Billetterie : code 133 · site+jour 24 · aucun 54
+- Gratuites : 24 · Finales : 56
 
 | Jour | PDF (texte brut) | sessions.json |
 |---|---|---|
@@ -34,7 +34,7 @@ Aucune.
 
 - GAR : deux séries de numérotation 2 chiffres (dès le 2026-11-07), 3 chiffres (dès le 2026-11-05)
 - GAR101 : Épreuve 'Men's Street - Finals' sous Gymnastique artistique (copier-coller probable dans la source) (non corrigé, à vérifier)
-- 8 horaire(s) de la billetterie affiché(s) à la place du PDF (fin inconnue, mention dans l'UI) : SWM05 : 11:00 dans le PDF, 10:00 sur la billetterie ; RU705 : 13:08 dans le PDF, 13:00 sur la billetterie ; SWM07 : 11:00 dans le PDF, 10:00 sur la billetterie ; SWM09 : 11:00 dans le PDF, 10:00 sur la billetterie ; ATH01 : 14:30 dans le PDF, 14:00 sur la billetterie ; ATH02 : 10:00 dans le PDF, 14:00 sur la billetterie ; ATH03 : 10:00 dans le PDF, 14:00 sur la billetterie ; BOX12 : 17:00 dans le PDF, 18:20 sur la billetterie
+- 7 horaire(s) de la billetterie affiché(s) à la place du PDF (fin inconnue, mention dans l'UI) : RU705 : 13:08 dans le PDF, 13:00 sur la billetterie ; SWM07 : 11:00 dans le PDF, 10:00 sur la billetterie ; SWM09 : 11:00 dans le PDF, 10:00 sur la billetterie ; ATH01 : 14:30 dans le PDF, 14:00 sur la billetterie ; ATH02 : 10:00 dans le PDF, 14:00 sur la billetterie ; ATH03 : 10:00 dans le PDF, 14:00 sur la billetterie ; BOX12 : 17:00 dans le PDF, 18:20 sur la billetterie
 - billets sans session dans le PDF : FEN11 (Escrime (Fencing), 2026-11-13 09:00, Centre des Expositions de Dakar(Pavillon A))
 - billetterie : aucun lien d'achat profond (connexion obligatoire sur la billetterie, voir tickets._purchaseUrlTemplate) — l'UI renvoie vers la page programme avec le code
 
@@ -67,14 +67,14 @@ Texte source gardé tel quel dans `eventsRaw` ; corrections éventuelles dans `d
 
 Aucune.
 
-## Sessions sans lien billetterie (44)
+## Sessions sans lien billetterie (54)
 
-`BS501`, `BS502`, `BS503`, `VBV01`, `RCB01`, `TTE01`, `VBV02`, `BDM01`, `TTE02`, `WST01`, `FBS01`, `JUD01`, `RCB02`, `BS504`, `RU701`, `SWM01`, `RU702`, `BDM02`, `TTE03`, `WST02`, `BS505`, `SWM02`, `FBS02`, `JUD02`, `BDM03`, `WST03`, `FBS03`, `JUD03`, `TTE04`, `BS506`, `SWM03`, `RU703`, `BDM04`, `TTE05`, `WST04`, `BS507`, `SWM04`, `FBS04`, `JUD04`, `GAR100`, `GAR101`, `GAR102`, `GAR103`, `GAR104`
+`BS501`, `BS502`, `BS503`, `VBV01`, `RCB01`, `TTE01`, `VBV02`, `BDM01`, `TTE02`, `WST01`, `FBS01`, `JUD01`, `RCB02`, `BS504`, `RU701`, `SWM01`, `RU702`, `BDM02`, `TTE03`, `WST02`, `BS505`, `SWM02`, `FBS02`, `JUD02`, `BDM03`, `VBV03`, `WST03`, `FBS03`, `JUD03`, `RCB03`, `TTE04`, `BS506`, `SWM03`, `RU703`, `VBV04`, `BDM04`, `TTE05`, `WST04`, `BS507`, `SWM04`, `FBS04`, `JUD04`, `BDM05`, `EQU01`, `WST05`, `RU704`, `FBS05`, `JUD05`, `TTE06`, `GAR100`, `GAR101`, `GAR102`, `GAR103`, `GAR104`
 
 ## Billets groupés (jointure site + jour)
 
-- 2026-11-02 · saly-plage-ouest : VBV03, RCB03, VBV04
 - 2026-11-03 · saly-plage-ouest : VBV05, RCB04
+- 2026-11-03 · tour-de-l-oeuf : BS508, SWM05
 - 2026-11-04 · saly-plage-ouest : VBV06
 - 2026-11-05 · saly-plage-ouest : TRI01
 - 2026-11-06 · saly-plage-ouest : TRI02
@@ -89,19 +89,19 @@ Aucune.
 ## Sites
 
 - Sans note d'accès (0) : —
-- Sans coordonnées GPS vérifiées (0) : —
+- Sans coordonnées GPS vérifiées (6) : iba-mar-diop, corniche-ouest, dakar-arena, dakar-expo-centre, centre-equestre, stade-abdoulaye-wade
 
-## Contrôle humain — 10 sessions tirées au hasard (graine 580402)
+## Contrôle humain — 10 sessions tirées au hasard (graine 20261103)
 
 À comparer ligne à ligne avec le PDF (numéro de page indiqué).
 
-- [ ] **RCB03** — p. 2 — jour 2 10:00–13:10 — Saly Beach West — Men's Solo - Last 16 / Women's Solo - Last 16 / Mixed Double Sculls - Last 8
-- [ ] **HBB03** — p. 7 — jour 10 10:00–13:20 — Saly Beach West — M BRA vs HUN ; M PUR vs SEN / W ESP vs CRO ; W CHN vs MEX / M GER vs TUN ; M THA vs COK / W URU vs FRA ; W KEN vs SEN
-- [ ] **RU704** — p. 3 — jour 3 09:40–11:08 — Complexe Iba Mar Diop — Women - Pool Round
-- [ ] **GAR07** — p. 7 — jour 10 11:30–14:00 — Dakar Expo Centre — Men's All-Around - final
-- [ ] **FBS13** — p. 5 — jour 8 11:00–13:30 — Dakar Arena — Women's Winner B vs Runner-up A
-- [ ] **BOX01** — p. 4 — jour 7 12:00–14:30 — Dakar Expo Centre — Women's 51kg - Preliminaries / Women's 57kg - Preliminaries / Men's 55kg - Preliminaries / Men's 65kg - Preliminaries / Men's 70kg - Preliminaries
-- [ ] **GAR103** — p. 4 — jour 6 12:00–13:45 — Dakar Expo Centre — Women's Podium Training
-- [ ] **BS507** — p. 2 — jour 2 15:00–17:45 — Complexe Tour de l'Oeuf — Semifinals
-- [ ] **SWM02** — p. 1 — jour 1 15:00–17:00 — Complexe Tour de l'Oeuf — Women's 400m Freestyle - Fastest Heats / Men's 800m Freestyle - Fastest Heats / Women's 200m Backstroke - Final / Men's 200m Backstroke - Final / Women's 100m Butterfly - Final / Men's 100m Butterfly - Final
-- [ ] **VBV01** — p. 1 — jour 0 08:30–15:10 — Saly Beach West — Women and Men - Pool Round
+- [ ] **FBS02** — p. 1 — jour 1 15:30–19:30 — Complexe Iba Mar Diop — Women's VEN vs UKR / Women's SEN vs FIJ
+- [ ] **TTE05** — p. 2 — jour 2 14:30–18:30 — Dakar Expo Centre — Women's Single - Preliminary Stage / Men's Single - Preliminary Stage / Mixed Doubles - Semifinals
+- [ ] **JUD04** — p. 2 — jour 2 16:00–17:40 — Dakar Expo Centre — Women -52kg - Final Block / Men -81kg - Final Block / Women -63kg - Final Block
+- [ ] **RCB04** — p. 3 — jour 3 10:00–12:11 — Saly Beach West — Men's Solo - Last 8 / Women's Solo - Last 8
+- [ ] **FEN07** — p. 8 — jour 11 09:00–12:35 — Dakar Expo Centre — Men's Épée Individual - Pool Round, Table of 16, Table of 8
+- [ ] **BOX08** — p. 7 — jour 10 17:00–20:00 — Dakar Expo Centre — Women's 48kg - Preliminaries / Women's 54kg - Preliminaries / Women's 60kg - Preliminaries
+- [ ] **VBV04** — p. 2 — jour 2 13:00–17:00 — Saly Beach West — Women and Men - Round of 16
+- [ ] **BS504** — p. 1 — jour 1 10:30–13:15 — Complexe Tour de l'Oeuf — KEN vs SYR / FRA vs MEX
+- [ ] **ARC07** — p. 6 — jour 9 14:00–16:30 — Stade Abdoulaye Wade — Women's Quarterfinals / Women's Semifinals / Women's Finals (Bronze and Gold)
+- [ ] **VBV06** — p. 3 — jour 4 11:00–16:18 — Saly Beach West — Women and Men - Finals (Bronze and Gold Medal Matches)

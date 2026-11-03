@@ -693,27 +693,6 @@
     "scheduleConflict": null
   },
   {
-    "id": "COR03",
-    "kind": "fan",
-    "sportId": null,
-    "title": "Festival de la Corniche",
-    "venueId": "corniche-ouest",
-    "hall": null,
-    "start": "2026-11-02T09:00:00+00:00",
-    "end": null,
-    "day": 2,
-    "events": [],
-    "eventsRaw": [],
-    "hasFinal": false,
-    "isFree": true,
-    "freeSource": "https://tickets.dakar2026.org/fr",
-    "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
-    "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
-    "scheduleConflict": null
-  },
-  {
     "id": "VBV03",
     "kind": "sport",
     "sportId": "beach-volleyball",
@@ -733,8 +712,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "venue-day",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -845,8 +824,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "venue-day",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -984,8 +963,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "venue-day",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1202,8 +1181,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1269,8 +1248,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1305,7 +1284,7 @@
     "sportId": "wushu",
     "title": null,
     "venueId": "dakar-expo-centre",
-    "hall": "Pavillon C",
+    "hall": null,
     "start": "2026-11-03T09:00:00+00:00",
     "end": "2026-11-03T12:00:00+00:00",
     "day": 3,
@@ -1325,8 +1304,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1336,7 +1315,7 @@
     "sportId": "rugby-sevens",
     "title": null,
     "venueId": "iba-mar-diop",
-    "hall": "Stade Iba Mar Diop",
+    "hall": null,
     "start": "2026-11-03T09:40:00+00:00",
     "end": "2026-11-03T11:08:00+00:00",
     "day": 3,
@@ -1350,8 +1329,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1361,7 +1340,7 @@
     "sportId": "futsal",
     "title": null,
     "venueId": "iba-mar-diop",
-    "hall": "Iba Mar Diop Arena",
+    "hall": null,
     "start": "2026-11-03T10:00:00+00:00",
     "end": "2026-11-03T14:00:00+00:00",
     "day": 3,
@@ -1377,8 +1356,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1388,7 +1367,7 @@
     "sportId": "judo",
     "title": null,
     "venueId": "dakar-expo-centre",
-    "hall": "Pavillon E",
+    "hall": null,
     "start": "2026-11-03T10:00:00+00:00",
     "end": "2026-11-03T12:00:00+00:00",
     "day": 3,
@@ -1404,8 +1383,8 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1437,14 +1416,68 @@
     "scheduleConflict": null
   },
   {
+    "id": "TTE06",
+    "kind": "sport",
+    "sportId": "table-tennis",
+    "title": null,
+    "venueId": "dakar-expo-centre",
+    "hall": null,
+    "start": "2026-11-03T10:00:00+00:00",
+    "end": "2026-11-03T12:45:00+00:00",
+    "day": 3,
+    "events": [
+      "Simple femmes — huitièmes de finale",
+      "Simple hommes — huitièmes de finale"
+    ],
+    "eventsRaw": [
+      "Women's Single - Round of 16",
+      "Men's Single - Round of 16"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "none",
+    "ticketStatus": "unknown",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
+    "id": "BS508",
+    "kind": "sport",
+    "sportId": "baseball5",
+    "title": null,
+    "venueId": "tour-de-l-oeuf",
+    "hall": null,
+    "start": "2026-11-03T10:30:00+00:00",
+    "end": "2026-11-03T13:15:00+00:00",
+    "day": 3,
+    "events": [
+      "Match pour la 7e place",
+      "Match pour la 5e place"
+    ],
+    "eventsRaw": [
+      "7th place",
+      "5th place"
+    ],
+    "hasFinal": false,
+    "isFree": null,
+    "freeSource": null,
+    "ticketUrl": null,
+    "ticketMatch": "venue-day",
+    "ticketStatus": "limited",
+    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
+    "scheduleConflict": null
+  },
+  {
     "id": "SWM05",
     "kind": "sport",
     "sportId": "swimming",
     "title": null,
     "venueId": "tour-de-l-oeuf",
-    "hall": "Centre Aquatique de Dakar",
-    "start": "2026-11-03T10:00:00+00:00",
-    "end": null,
+    "hall": null,
+    "start": "2026-11-03T11:00:00+00:00",
+    "end": "2026-11-03T13:00:00+00:00",
     "day": 3,
     "events": [
       "100 m dos femmes — séries",
@@ -1466,65 +1499,7 @@
     "isFree": null,
     "freeSource": null,
     "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "soldout",
-    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
-    "scheduleConflict": {
-      "pdfStart": "2026-11-03T11:00:00+00:00",
-      "pdfEnd": "2026-11-03T13:00:00+00:00",
-      "ticketStart": "2026-11-03T10:00:00+00:00"
-    }
-  },
-  {
-    "id": "TTE06",
-    "kind": "sport",
-    "sportId": "table-tennis",
-    "title": null,
-    "venueId": "dakar-expo-centre",
-    "hall": "Pavillon A",
-    "start": "2026-11-03T10:00:00+00:00",
-    "end": "2026-11-03T12:45:00+00:00",
-    "day": 3,
-    "events": [
-      "Simple femmes — huitièmes de finale",
-      "Simple hommes — huitièmes de finale"
-    ],
-    "eventsRaw": [
-      "Women's Single - Round of 16",
-      "Men's Single - Round of 16"
-    ],
-    "hasFinal": false,
-    "isFree": null,
-    "freeSource": null,
-    "ticketUrl": null,
-    "ticketMatch": "code",
-    "ticketStatus": "limited",
-    "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
-    "scheduleConflict": null
-  },
-  {
-    "id": "BS508",
-    "kind": "sport",
-    "sportId": "baseball5",
-    "title": null,
-    "venueId": "tour-de-l-oeuf",
-    "hall": "Terrain Exterieur",
-    "start": "2026-11-03T10:30:00+00:00",
-    "end": "2026-11-03T13:15:00+00:00",
-    "day": 3,
-    "events": [
-      "Match pour la 7e place",
-      "Match pour la 5e place"
-    ],
-    "eventsRaw": [
-      "7th place",
-      "5th place"
-    ],
-    "hasFinal": false,
-    "isFree": null,
-    "freeSource": null,
-    "ticketUrl": null,
-    "ticketMatch": "code",
+    "ticketMatch": "venue-day",
     "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
@@ -1670,7 +1645,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "soldout",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1705,7 +1680,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "soldout",
+    "ticketStatus": "limited",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -1888,7 +1863,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-04T11:00:00+00:00",
@@ -2283,7 +2258,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": {
       "pdfStart": "2026-11-05T11:00:00+00:00",
@@ -2566,7 +2541,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
@@ -3313,7 +3288,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr/ticketing",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
@@ -4067,7 +4042,7 @@
     "freeSource": null,
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
     "scheduleConflict": null
   },
