@@ -1,33 +1,39 @@
 {
-  "generatedAt": "2026-11-02T22:38:21+00:00",
+  "generatedAt": "2026-11-03T13:29:59+00:00",
   "sources": [
     {
       "id": "S1",
       "url": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
       "sha256": "9ee4505bd979f0eba8504ba1913552a9f4cfa5015ba9defabdb8f7419defce59",
-      "fetchedAt": "2026-11-02T19:23:09+00:00"
+      "fetchedAt": "2026-11-03T13:29:54+00:00"
+    },
+    {
+      "id": "S2",
+      "url": "https://tickets.dakar2026.org/api/ticketing",
+      "sha256": "29d49475c4528a799de66b4e676cafc72fec5683515322188d5a18da9065c6cc",
+      "fetchedAt": "2026-11-03T13:29:56+00:00"
     },
     {
       "id": "S3",
       "url": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf",
       "sha256": "bb06a3cd4755e025ec70fb3e05d08d2e9a22a40cdcb3a6f3ce343a9407195729",
-      "fetchedAt": "2026-11-02T19:23:12+00:00"
+      "fetchedAt": "2026-11-03T13:29:58+00:00"
     },
     {
       "id": "S2",
       "url": "https://tickets.dakar2026.org/api/ticketing",
-      "sha256": "d36fda0037de96f18360f03c2def6fc9886645c59de80591bddf080a0bb55220",
-      "fetchedAt": "2026-11-02T18:35:09+00:00"
+      "sha256": "29d49475c4528a799de66b4e676cafc72fec5683515322188d5a18da9065c6cc",
+      "fetchedAt": "2026-11-03T13:29:56+00:00"
     }
   ],
   "counts": {
-    "sessions": 212,
+    "sessions": 211,
     "venues": 8,
     "sports": 25
   },
   "warnings": [
     "GAR101 : Épreuve 'Men's Street - Finals' sous Gymnastique artistique (copier-coller probable dans la source) (non corrigé, à vérifier)",
-    "8 horaire(s) de la billetterie affiché(s) à la place du PDF (fin inconnue, mention dans l'UI) : SWM05 : 11:00 dans le PDF, 10:00 sur la billetterie ; RU705 : 13:08 dans le PDF, 13:00 sur la billetterie ; SWM07 : 11:00 dans le PDF, 10:00 sur la billetterie ; SWM09 : 11:00 dans le PDF, 10:00 sur la billetterie ; ATH01 : 14:30 dans le PDF, 14:00 sur la billetterie ; ATH02 : 10:00 dans le PDF, 14:00 sur la billetterie ; ATH03 : 10:00 dans le PDF, 14:00 sur la billetterie ; BOX12 : 17:00 dans le PDF, 18:20 sur la billetterie",
+    "7 horaire(s) de la billetterie affiché(s) à la place du PDF (fin inconnue, mention dans l'UI) : RU705 : 13:08 dans le PDF, 13:00 sur la billetterie ; SWM07 : 11:00 dans le PDF, 10:00 sur la billetterie ; SWM09 : 11:00 dans le PDF, 10:00 sur la billetterie ; ATH01 : 14:30 dans le PDF, 14:00 sur la billetterie ; ATH02 : 10:00 dans le PDF, 14:00 sur la billetterie ; ATH03 : 10:00 dans le PDF, 14:00 sur la billetterie ; BOX12 : 17:00 dans le PDF, 18:20 sur la billetterie",
     "billets sans session dans le PDF : FEN11 (Escrime (Fencing), 2026-11-13 09:00, Centre des Expositions de Dakar(Pavillon A))",
     "billetterie : aucun lien d'achat profond (connexion obligatoire sur la billetterie, voir tickets._purchaseUrlTemplate) — l'UI renvoie vers la page programme avec le code"
   ]
