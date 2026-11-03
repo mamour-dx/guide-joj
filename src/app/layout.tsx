@@ -1,19 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Bebas_Neue, Inter } from "next/font/google";
+import { Big_Shoulders, Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
-import { HeaderEmblem, VerticalEmblem } from "@/components/Brand";
+import { ClickBurst } from "@/components/ClickBurst";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
 import { officialBranding } from "@/lib/brand";
-import { homeOgImage, meta, officialLinks, ticketsFetchedAt } from "@/lib/data";
+import { homeOgImage, meta, officialLinks } from "@/lib/data";
 import { siteLabel as label } from "@/lib/seo";
 import { indexable, site, siteUrl } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
-const bebas = Bebas_Neue({ variable: "--font-bebas", weight: "400", subsets: ["latin"], display: "swap" });
+const geist = Geist({ variable: "--font-geist", subsets: ["latin"], display: "swap" });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "swap" });
+const shoulders = Big_Shoulders({ variable: "--font-shoulders", weight: "800", subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: siteUrl,
@@ -28,31 +29,35 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  // la barre d'en-tête est bleue dans les deux thèmes
-  themeColor: "#0078D0",
+  // fond blanc cassé de l'en-tête (thème clair par défaut)
+  themeColor: "#F6F6F3",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="fr" className={`${inter.variable} ${bebas.variable} antialiased`} suppressHydrationWarning>
+    <html lang="fr" className={`${geist.variable} ${geistMono.variable} ${shoulders.variable} antialiased`} suppressHydrationWarning>
       <head>
         {/* thème sombre choisi : appliqué avant l'affichage (clair par défaut) */}
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body className="min-h-dvh flex flex-col">
-        <header className="on-blue header-bg text-on-blue">
+        {/* cadre aux quatre couleurs olympiques tout autour de l'écran (voir .frame) */}
+        <div aria-hidden="true" className="frame" />
+        <header className="border-b-2 border-line">
           <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-3 px-4 py-3">
-            <Link href="/" aria-label={`${site.name} — accueil`} className="-my-1 py-1">
-              <HeaderEmblem />
+            <Link href="/" aria-label={`${site.name} — accueil`} className="flex min-w-0 items-center">
+              <span className="leading-none">
+                <span className="display block whitespace-nowrap text-[1.75rem]">{officialBranding ? "Dakar 2026" : "JOJ Guide"}</span>
+                <span className="eyebrow block whitespace-nowrap text-xs text-muted">{officialBranding ? "Guide des sessions" : "Non officiel"}</span>
+              </span>
             </Link>
-            <div className="flex items-center gap-3">
-              {officialBranding && (
-                <p className="display text-right text-[1.375rem]">
-                  Guide
-                  <br />
-                  des sessions
-                </p>
-              )}
+            <div className="flex items-center gap-2">
+              <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="btn min-h-11 px-3 text-sm">
+                {/* « Billets » sur les petits écrans : le nom du site garde sa place */}
+                <span className="hidden min-[400px]:inline">Billetterie</span>
+                <span className="min-[400px]:hidden">Billets</span>
+                <ArrowUpRight aria-hidden="true" size={16} className="nudge" />
+              </a>
               <ThemeToggle />
             </div>
           </div>
@@ -60,30 +65,38 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <main className="mx-auto w-full max-w-2xl flex-1 px-4 pb-8">{children}</main>
 
-        <footer className="border-t border-line pb-24">
-          <div className="mx-auto flex w-full max-w-2xl gap-4 px-4 pt-5">
-            <div className="shrink-0">
-              <VerticalEmblem height={84} />
-            </div>
-            <div className="min-w-0 text-sm text-muted">
-              <p className="display text-2xl text-heading">{site.slogan}</p>
-              <p className="mt-2">{site.disclaimer}</p>
-              <p className="mt-2">
-                Programme mis à jour le {updatedAt(meta.generatedAt)}
-                {ticketsFetchedAt && <> · Statuts billetterie relevés le {updatedAt(ticketsFetchedAt)}</>} (heure de Dakar).
+        {/* pied de page sobre : le nom en très grand (chiffres de 2026 aux couleurs olympiques),
+            puis une seule ligne d'infos et deux liens */}
+        <footer className="bleed bleed-black pb-24">
+          <div className="mx-auto w-full max-w-2xl px-4 pt-10 @container">
+            <p className="display flex justify-between whitespace-nowrap leading-[0.8]" style={{ fontSize: "21.5cqw" }} aria-label="Dakar 2026">
+              <span>Dakar</span>
+              <span aria-hidden="true">
+                <span className="text-o-yellow">2</span>
+                <span>0</span>
+                <span className="text-o-green">2</span>
+                <span className="text-o-red">6</span>
+              </span>
+            </p>
+            <div className="eyebrow mt-5 flex flex-wrap items-end justify-between gap-x-6 gap-y-2 border-t-2 border-[#F6F6F3] pt-3 text-xs text-[#B4B4AA]">
+              <p>
+                {site.disclaimer}
+                <br />
+                Mis à jour le {updatedAt(meta.generatedAt)} (heure de Dakar).
               </p>
-              <p className="mt-3 flex flex-wrap gap-x-4 gap-y-1 font-semibold text-blue-ink">
-                <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center gap-0.5 underline underline-offset-2">
-                  Billetterie officielle <ArrowUpRight aria-hidden="true" size={16} />
+              <p className="flex gap-4 text-[#F6F6F3]">
+                <a href={officialLinks.ticketingHome} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center gap-1 underline underline-offset-4">
+                  Billetterie <ArrowUpRight aria-hidden="true" size={14} />
                 </a>
-                <Link href="/a-propos" className="inline-flex min-h-11 items-center underline underline-offset-2">
-                  Sources et à propos
+                <Link href="/a-propos" className="inline-flex min-h-11 items-center underline underline-offset-4">
+                  À propos
                 </Link>
               </p>
             </div>
           </div>
         </footer>
         <BottomNav />
+        <ClickBurst />
       </body>
     </html>
   );

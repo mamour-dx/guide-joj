@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, MapPinned } from "lucide-react";
 import { BackLink } from "@/components/BackLink";
-import { ClusterTag, SessionCard } from "@/components/SessionCard";
+import { PageHero } from "@/components/PageHero";
+import { SessionCard } from "@/components/SessionCard";
 import { HidePastDays } from "@/components/TimeAware";
 import { CLUSTER_LABEL } from "@/lib/cards";
 import { cards, homeOgImage, officialLinks, venueById, venues } from "@/lib/data";
@@ -35,7 +36,7 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
   const scope = `site-${v.id}`;
 
   return (
-    <article className="pt-2">
+    <article>
       <JsonLd
         data={[
           venueJsonLd(v),
@@ -45,24 +46,22 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
           ]),
         ]}
       />
-      <BackLink href="/sites" />
-      <h1 className="mt-1 display text-5xl text-heading">{v.name}</h1>
-      <p className="mt-2">
-        <ClusterTag cluster={v.cluster} prefix="Secteur " />
-      </p>
+      <PageHero tone={v.cluster === "dakar" ? "red" : v.cluster === "diamniadio" ? "green" : "yellow"} eyebrow={<BackLink href="/sites" />} title={`${v.name}.`}>
+        <p className="eyebrow mt-3">Secteur {CLUSTER_LABEL[v.cluster]}</p>
+      </PageHero>
 
       <a
         href={mapsUrl(v)}
         target="_blank"
         rel="noopener"
-        className="pressable mt-4 flex min-h-16 w-full items-center gap-3 rounded-2xl bg-blue px-4 py-3 text-on-blue shadow-lg shadow-blue/25"
+        className="btn mt-5 min-h-16 w-full justify-start gap-3 px-4 py-3"
       >
-        <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/20">
+        <span className="flex size-10 shrink-0 items-center justify-center border-2 border-page">
           <MapPinned aria-hidden="true" size={22} />
         </span>
         <span className="flex-1 text-left">
-          <span className="display block text-2xl">Itinéraire</span>
-          <span className="block text-sm font-semibold opacity-90">S&apos;ouvre dans Google Maps</span>
+          <span className="display block text-3xl">Itinéraire</span>
+          <span className="eyebrow block opacity-80">S&apos;ouvre dans Google Maps</span>
         </span>
         <ArrowUpRight aria-hidden="true" size={22} className="nudge" />
       </a>
@@ -73,7 +72,7 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
       )}
 
       <section className="card mt-5 p-4">
-        <h2 className="display text-2xl">Accès</h2>
+        <h2 className="display text-3xl">Accès.</h2>
         {v.accessNote ? (
           <p className="mt-1">
             {v.accessNote}
@@ -95,7 +94,7 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
       </section>
 
       <section id={scope} className="mt-6">
-        <h2 className="display text-2xl">Sessions ({list.length})</h2>
+        <h2 className="display flex items-baseline border-b-2 border-line pb-2 text-4xl">Sessions.<span className="ml-auto font-mono text-sm font-medium">{String(list.length).padStart(2, "0")}</span></h2>
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var dakarToday=${dakarToday.toString()};var t=dakarToday();var s=document.createElement("style");s.id="past-initial";s.textContent=${JSON.stringify(days)}.filter(function(d){return d<t}).map(function(d){return '#${scope} [data-past-day="'+d+'"]{display:none}'}).join("");document.head.appendChild(s);}catch(e){}})();`,
@@ -104,7 +103,7 @@ export default async function SitePage({ params }: PageProps<"/sites/[id]">) {
         <HidePastDays scope={scope} days={days} />
         {days.map((d) => (
           <div key={d} data-past-day={d}>
-            <h3 className="mt-4 mb-2 display text-2xl">{longDay(d)}</h3>
+            <h3 className="eyebrow mt-5 mb-2 uppercase">{longDay(d)}</h3>
             <ul className="space-y-2.5">
               {list.filter((c) => c.day === d).map((c) => (
                 <li key={c.id}><SessionCard c={c} /></li>

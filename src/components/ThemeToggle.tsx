@@ -34,7 +34,7 @@ export function ThemeToggle() {
       onClick={flip}
       aria-label={dark ? "Passer en thème clair" : "Passer en thème sombre"}
       aria-pressed={dark}
-      className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/15 text-on-blue transition hover:bg-white/25 active:scale-90"
+      className="flex size-11 shrink-0 items-center justify-center border-2 border-line text-ink transition hover:bg-ink hover:text-page active:translate-y-px"
     >
       {/* la clé force le remontage : l'icône « pop » à chaque bascule */}
       <span key={String(dark)} className="pop">

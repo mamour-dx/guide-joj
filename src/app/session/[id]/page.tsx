@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, TriangleAlert } from "lucide-react";
 import { BackLink } from "@/components/BackLink";
+import { PageHero } from "@/components/PageHero";
 import { SportPicto } from "@/components/Brand";
 import { Badge, ClusterTag } from "@/components/SessionCard";
 import { SessionActions } from "@/components/SessionActions";
@@ -39,16 +40,15 @@ const STATUS_LABEL: Record<Session["ticketStatus"], string | null> = {
 };
 
 function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
-  const primary =
-    "display pressable flex min-h-14 w-full items-center justify-center gap-2 rounded-2xl bg-blue px-4 py-3 text-center text-2xl text-on-blue shadow-lg shadow-blue/25";
+  const primary = "btn display min-h-16 w-full px-4 py-3 text-center text-2xl";
   const status = STATUS_LABEL[s.ticketStatus];
 
   if (s.isFree === true) {
     return (
-      <div className="card p-4">
+      <div className="border-2 border-black bg-o-yellow p-4 text-black">
         <div className="flex items-center gap-2">
-          <Badge tone="free">Gratuit</Badge>
-          <span className="text-sm text-muted">
+          <span className="display text-4xl">Gratuit.</span>
+          <span className="text-sm">
             Accès libre annoncé par les organisateurs
             {s.freeSource && (
               <>
@@ -57,11 +57,11 @@ function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
             )}
           </span>
         </div>
-        <a href={mapsHref} target="_blank" rel="noopener" className={`${primary} mt-3`}>
-          Comment y aller <ArrowUpRight aria-hidden="true" size={20} />
+        <a href={mapsHref} target="_blank" rel="noopener" className={`${primary} mt-3 !bg-black !text-[#F6F6F3]`}>
+          Comment y aller <ArrowUpRight aria-hidden="true" size={24} className="nudge" />
           <span className="sr-only"> (Google Maps)</span>
         </a>
-        <p className="mt-2 text-center text-sm text-muted">Itinéraire dans Google Maps</p>
+        <p className="eyebrow mt-2 text-center">Itinéraire dans Google Maps</p>
       </div>
     );
   }
@@ -71,11 +71,11 @@ function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
     <div className="card p-4">
       {/* isFree null = gratuité non annoncée : jamais « Payant » par défaut */}
       <p className="mb-2 flex items-center gap-2 text-sm">
-        <span className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-line-soft px-2.5 py-0.5 text-xs font-bold">Prix : à vérifier</span>
+        <span className="inline-flex shrink-0 items-center whitespace-nowrap px-2 py-0.5 font-mono text-xs uppercase ring-2 ring-inset ring-line">Prix : à vérifier</span>
         <span className="text-muted">Tarifs sur la billetterie officielle</span>
       </p>
       {status && (
-        <p className={`mb-2 font-bold ${s.ticketStatus === "soldout" || s.ticketStatus === "cancelled" ? "text-red-ink" : "text-blue-ink"}`}>
+        <p className={`mb-2 font-semibold ${s.ticketStatus === "soldout" || s.ticketStatus === "cancelled" ? "text-red-ink" : "text-ink"}`}>
           {status}
           {ticketsFetchedAt && (
             <span className="ml-1 text-xs font-normal text-muted">· relevé le {updatedAt(ticketsFetchedAt)}</span>
@@ -84,7 +84,7 @@ function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
       )}
       <a href={href} target="_blank" rel="noopener" className={primary}>
         {s.ticketUrl ? "Acheter sur la billetterie officielle" : "Ouvrir la billetterie officielle"}
-        <ArrowUpRight aria-hidden="true" size={20} />
+        <ArrowUpRight aria-hidden="true" size={24} className="nudge shrink-0" />
       </a>
       {!s.ticketUrl &&
         (s.ticketMatch === "venue-day" ? (
@@ -94,11 +94,11 @@ function TicketCta({ s, mapsHref }: { s: Session; mapsHref: string }) {
           </p>
         ) : (
           <p className="mt-2 text-center text-sm">
-            Cherche le code <strong className="tabular text-base">{s.id}</strong>
+            Cherche le code <strong className="tabular bg-ink px-1.5 py-0.5 font-mono text-base font-medium text-page">{s.id}</strong>
           </p>
         ))}
       {s.ticketMatch === "none" && s.kind === "sport" && (
-        <p className="mt-1 text-center text-xs text-muted">Session introuvable dans la billetterie (vente close ou pas de billet).</p>
+        <p className="eyebrow mt-1 text-center text-xs text-muted">Session introuvable dans la billetterie (vente close ou pas de billet).</p>
       )}
     </div>
   );
@@ -115,7 +115,7 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
   const place = `${v.name}${s.hall ? ` (${s.hall})` : ""}`;
 
   return (
-    <article className="pt-2">
+    <article>
       <JsonLd
         data={[
           sessionJsonLd(s, v),
@@ -125,24 +125,27 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
           ]),
         ]}
       />
-      <BackLink href="/" />
-
-      <div className="mt-1 flex items-start gap-4">
-        <span className="flex size-20 shrink-0 items-center justify-center rounded-2xl bg-surface shadow-[var(--shadow)]">
-          <SportPicto sportId={s.sportId} emoji={emoji} size={64} />
+      {/* couleur du secteur : on sait d'un coup d'œil où ça se passe */}
+      <PageHero tone={v.cluster === "dakar" ? "red" : v.cluster === "diamniadio" ? "green" : "yellow"} eyebrow={<BackLink href="/" />} title={
+        <span className="flex items-end justify-between gap-4">
+          <span className="min-w-0">{label}.</span>
+          <span className="shrink-0 border-2 border-black">
+            <SportPicto sportId={s.sportId} emoji={emoji} size={72} />
+          </span>
         </span>
-        <div className="min-w-0">
-          <p className="tabular inline-block rounded-md bg-ink px-2 py-0.5 text-sm font-bold tracking-wider text-surface">{s.id}</p>
-          <h1 className="display mt-2 text-5xl text-heading">{label}</h1>
-        </div>
-      </div>
+      }>
+        <p className="mt-4 flex flex-wrap items-center gap-2">
+          <span className="tabular bg-black px-2 py-0.5 font-mono text-base text-[#F6F6F3]">{s.id}</span>
+          <span className="eyebrow">Le code à chercher sur la billetterie</span>
+        </p>
+      </PageHero>
 
-      <div className="card mt-4 p-4">
-        <p className="text-sm font-bold uppercase tracking-wider text-blue-ink">{longDay(day)}</p>
-        <p className="tabular display mt-1 text-5xl">
+      <div className="card mt-5 p-4">
+        <p className="eyebrow uppercase text-muted">{longDay(day)}</p>
+        <p className="tabular display mt-1 text-6xl">
           {timeRange(s.start, s.end)}
         </p>
-        <div className="my-3 h-px bg-line-soft" aria-hidden="true" />
+        <div className="my-3 border-t-2 border-dotted border-line-soft" aria-hidden="true" />
         <p>
           <Link href={`/sites/${v.id}`} className="font-bold underline underline-offset-2">{place}</Link>
           <span className="ml-2 text-sm">
@@ -158,9 +161,9 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
       </div>
 
       {s.scheduleConflict && (
-        <div role="note" className="mt-3 flex gap-2 border border-current p-3 text-sm text-ink">
+        <div role="note" className="mt-3 flex gap-2 border-2 border-black bg-o-yellow p-3 text-sm text-black">
           <TriangleAlert aria-hidden="true" size={20} className="shrink-0" />
-          <p className="text-ink">
+          <p>
             <strong>Horaire modifié.</strong> La billetterie indique un début à{" "}
             <strong className="tabular">{hhmm(s.scheduleConflict.ticketStart)}</strong>. Le programme PDF du 30/10
             annonçait <span className="tabular">{timeRange(s.scheduleConflict.pdfStart, s.scheduleConflict.pdfEnd)}</span>.
@@ -187,17 +190,18 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
       />
 
       {s.events.length > 0 && (
-        <section className="mt-6">
-          <h2 className="display mb-2 text-3xl">
-            Épreuves ({s.events.length})
+        <section className="mt-8">
+          <h2 className="display mb-3 flex items-baseline border-b-2 border-line pb-2 text-4xl">
+            Épreuves.
+            <span className="ml-auto font-mono text-sm font-medium">{String(s.events.length).padStart(2, "0")}</span>
           </h2>
-          <ul className="card divide-y divide-line-soft overflow-hidden">
+          <ul className="card divide-y-2 divide-dotted divide-line-soft overflow-hidden">
             {s.events.map((e, i) => (
               <li key={i} className="px-4 py-2.5">{e}</li>
             ))}
           </ul>
           <details className="mt-2">
-            <summary className="min-h-11 cursor-pointer py-2 text-sm font-semibold text-muted">
+            <summary className="eyebrow min-h-11 cursor-pointer py-2 text-muted">
               Libellés originaux (anglais, programme officiel)
             </summary>
             <ul className="list-disc pl-5 text-sm text-muted" lang="en">

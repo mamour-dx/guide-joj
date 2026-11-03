@@ -13,8 +13,8 @@ function Chip({ pressed, onClick, children }: { pressed: boolean; onClick: () =>
       type="button"
       aria-pressed={pressed}
       onClick={onClick}
-      className={`pressable inline-flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border px-4 text-sm font-semibold whitespace-nowrap ${
-        pressed ? "border-blue bg-blue text-on-blue shadow-md shadow-blue/25" : "border-line bg-surface text-ink"
+      className={`pressable inline-flex min-h-11 shrink-0 items-center gap-1.5 border-2 border-line px-3.5 text-sm font-medium whitespace-nowrap ${
+        pressed ? "bg-ink text-page" : "bg-surface text-ink hover:bg-tint"
       }`}
     >
       {pressed && <Check aria-hidden="true" size={16} strokeWidth={3} className="pop -ml-1" />}
@@ -38,7 +38,7 @@ export function FilterChips({
       <Chip pressed={value.finals} onClick={() => onChange({ ...value, finals: !value.finals })}>Finales</Chip>
       {CLUSTERS.map((c) => (
         <Chip key={c} pressed={value.clusters.includes(c)} onClick={() => onChange({ ...value, clusters: toggle(value.clusters, c) })}>
-          <span className={`inline-block size-2.5 rounded-full ring-2 ring-white/70 ${CLUSTER_DOT[c]}`} aria-hidden="true" />
+          <span className={`inline-block size-2.5 ring-1 ring-black ${CLUSTER_DOT[c]}`} aria-hidden="true" />
           {CLUSTER_LABEL[c]}
         </Chip>
       ))}
