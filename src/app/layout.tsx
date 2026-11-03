@@ -46,13 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div aria-hidden="true" className="frame" />
         <header className="border-b-2 border-line">
           <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-3 px-4 py-3">
-            <Link href="/" aria-label={`${site.name} — accueil`} className="group flex min-w-0 items-center gap-2">
-              <span aria-hidden="true" className="grid shrink-0 grid-cols-2 gap-0.5 transition-transform duration-300 [transition-timing-function:var(--ease)] group-hover:rotate-90">
-                <span className="size-3 bg-o-yellow" />
-                <span className="size-3 bg-ink" />
-                <span className="size-3 bg-o-green" />
-                <span className="size-3 bg-o-red" />
-              </span>
+            <Link href="/" aria-label={`${site.name} — accueil`} className="flex min-w-0 items-center">
               <span className="leading-none">
                 <span className="display block whitespace-nowrap text-[1.75rem]">{officialBranding ? "Dakar 2026" : "JOJ Guide"}</span>
                 <span className="eyebrow block whitespace-nowrap text-xs text-muted">{officialBranding ? "Guide des sessions" : "Non officiel"}</span>
