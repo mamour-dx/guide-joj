@@ -48,6 +48,15 @@ export function updatedAt(iso: string): string {
   return updatedFmt.format(new Date(iso));
 }
 
+/** Durée supposée d'une session dont le programme ne donne pas la fin. Sert uniquement au calcul
+ *  (en cours, terminé, à venir) : on n'affiche jamais cette fin supposée. */
+export const ASSUMED_DURATION_MS = 3 * 3600_000;
+
+/** Fin d'une session en millisecondes : la vraie, sinon début + 3 h. */
+export function endMs(start: string, end: string | null): number {
+  return end === null ? Date.parse(start) + ASSUMED_DURATION_MS : Date.parse(end);
+}
+
 /** "10:00–14:37", ou "14:00" si la fin n'est pas connue */
 export function timeRange(start: string, end: string | null): string {
   return end ? `${hhmm(start)}–${hhmm(end)}` : hhmm(start);

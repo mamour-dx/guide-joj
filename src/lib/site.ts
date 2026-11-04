@@ -11,6 +11,9 @@ export const site = {
     : "Site non officiel, sans affiliation avec le COJOJ Dakar 2026 ni le CIO. Horaires à vérifier sur les sources officielles.",
   channelUrl: "https://www.youtube.com/@mxr_codes" as string | null,
   contact: "mxrcodes@gmail.com" as string | null,
+  /** Chaînes YouTube dont on signale le direct (bandeau « En direct »). Id de chaîne vérifié
+   *  sur youtube.com/@RTS2Sénégal-x1s. */
+  liveChannels: [{ name: "RTS2", channelId: "UC3picN6aAKBCztkoxJ5dbXA" }],
 };
 
 /** URL publique du site : NEXT_PUBLIC_SITE_URL, sinon le domaine de production Vercel.

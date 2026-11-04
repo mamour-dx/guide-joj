@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import "./globals.css";
 import { BottomNav } from "@/components/BottomNav";
 import { ClickBurst } from "@/components/ClickBurst";
+import { LiveBanner } from "@/components/LiveBanner";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
 import { officialBranding } from "@/lib/brand";
 import { homeOgImage, meta, officialLinks } from "@/lib/data";
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </div>
           </div>
         </header>
+        <LiveBanner />
 
         <main className="mx-auto w-full max-w-2xl flex-1 px-4 pb-8">{children}</main>
 

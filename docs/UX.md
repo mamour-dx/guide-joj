@@ -24,6 +24,10 @@
 - Hors période des Jeux : afficher le prochain jour avec des sessions.
 - L'heure « maintenant » vient du navigateur **convertie en Africa/Dakar** (un visiteur
   à Paris doit voir le bon « en ce moment »).
+- Session sans heure de fin : on la suppose finie **3 h après son début** pour la ranger
+  (« En ce moment », puis « Déjà terminé »). Cette fin supposée n'est jamais affichée : ni
+  « encore … », ni barre d'avancement ; l'horaire reste « 09:00 ». Même durée pour le `.ics`.
+
 
 ### 2. `/programme` — Programme complet
 - Bandeau de jours qui défile (`Ven 30` … `Ven 13`), jour courant sélectionné.
@@ -59,6 +63,16 @@
 ### 5. `/a-propos`
 - Ce qu'est le site, d'où viennent les données (liste des sources avec liens), date de
   mise à jour, Ayo (si `officialBranding`), contact. Lien vers la chaîne MXR CODES.
+
+### Bandeau « En direct » (toutes les pages)
+- Quand une chaîne suivie (`site.liveChannels`, aujourd'hui RTS2 Sénégal) est en direct sur
+  YouTube, un bandeau noir descend sous l'en-tête : bloc rouge « ● En direct », « RTS2 est en
+  live », titre du direct, lien sortant « Regarder ↗ » vers YouTube, bouton pour le masquer
+  (pour ce direct, dans cet onglet).
+- Source : API officielle YouTube Data v3, appelée côté serveur par `/api/live` (`src/lib/live.ts`),
+  résultat mis en cache 2 min (≈ 2 unités de quota par vérification). Clé dans la variable
+  d'environnement `YOUTUBE_API_KEY` (Vercel). Sans clé : pas de bandeau, rien ne casse.
+- Aucun lecteur intégré, aucun cookie : le direct s'ouvre sur YouTube.
 
 ## Design tokens
 

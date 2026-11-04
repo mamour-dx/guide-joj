@@ -1,10 +1,12 @@
 // Fichier .ics généré côté client (aucun envoi au serveur). Les heures sont en UTC,
 // ce qui est exactement l'heure de Dakar (UTC+0) ; X-WR-TIMEZONE indique Africa/Dakar.
+import { ASSUMED_DURATION_MS } from "./time";
+
 export type IcsEvent = {
   uid: string;
   title: string;
   start: string;          // ISO avec offset
-  end: string | null;     // null → durée inconnue : on bloque 2 h et on le dit dans la description
+  end: string | null;     // null → durée inconnue : on bloque 3 h et on le dit dans la description
   location: string;
   description: string;
   url: string;
@@ -35,10 +37,10 @@ function fold(line: string): string {
 }
 
 export function buildIcs(e: IcsEvent, now: Date): string {
-  const end = e.end ?? new Date(new Date(e.start).getTime() + 2 * 3600_000).toISOString();
+  const end = e.end ?? new Date(new Date(e.start).getTime() + ASSUMED_DURATION_MS).toISOString();
   const description = e.end
     ? e.description
-    : `${e.description}\n\nHeure de fin non communiquée : créneau de 2 h indicatif.`;
+    : `${e.description}\n\nHeure de fin non communiquée : créneau de 3 h indicatif.`;
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
