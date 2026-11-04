@@ -66,7 +66,7 @@
 
 ### Bandeau « En direct » (toutes les pages)
 - Quand une chaîne suivie est en direct sur YouTube, un bandeau noir descend sous l'en-tête :
-  bloc rouge « ● En direct », « Olympics est en live » (ou RTS2), titre du direct, lien sortant
+  bloc rouge « ● En direct », « Olympics en live » (ou RTS2), titre du direct, lien sortant
   « Regarder ↗ » vers YouTube, bouton pour le masquer (pour ce direct, dans cet onglet).
 - Un seul direct affiché, par priorité (`site.liveChannels`) : **Olympics**, puis **RTS2 Sénégal**.
   Si Olympics est en live, on ne signale pas RTS2.

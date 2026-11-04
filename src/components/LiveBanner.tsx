@@ -61,12 +61,12 @@ export function LiveBanner() {
     <aside aria-label={`${live.channel} en direct`} className="live-banner bleed-black border-b-2 border-line bg-[var(--bleed)]">
       <div className="mx-auto flex w-full max-w-2xl items-stretch pl-4">
         <a href={live.url} target="_blank" rel="noopener" className="group flex min-h-14 min-w-0 flex-1 items-center gap-3">
-          <span className="flex shrink-0 items-center gap-2 self-stretch bg-o-red px-3 font-mono text-xs font-medium uppercase text-black">
+          <span className="flex shrink-0 items-center gap-2 self-stretch bg-o-red px-2.5 font-mono text-xs font-medium uppercase text-black">
             <span className="live-dot" aria-hidden="true" />
             En direct
           </span>
           <span className="min-w-0 flex-1 py-2">
-            <span className="display block text-2xl leading-none">{live.channel} est en live</span>
+            <span className="display block truncate text-2xl leading-none">{live.channel} en live</span>
             <span className="eyebrow mt-0.5 block truncate text-xs text-[#B4B4AA]">{live.title}</span>
           </span>
           <span className="flex shrink-0 items-center gap-1 text-sm font-medium">
