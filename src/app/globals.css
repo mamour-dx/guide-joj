@@ -354,3 +354,12 @@ body {
     cursor: text;
   }
 }
+
+/* Bandeau « En direct » : descend sous l'en-tête à son apparition. */
+@keyframes live-drop {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: none; opacity: 1; }
+}
+.live-banner {
+  animation: live-drop 0.45s var(--ease) both;
+}

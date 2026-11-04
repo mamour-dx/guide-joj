@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { dayKey } from "@/lib/time";
 import { useNow } from "@/lib/useNow";
 
-/** « 12 sessions à venir » — `ends` = fin (ou début si fin inconnue) de chaque session. */
+/** « 12 sessions à venir » — `ends` = fin (ou début + 3 h si fin inconnue) de chaque session. */
 export function RemainingCount({ ends, total }: { ends: string[]; total: number }) {
   const now = useNow();
   if (now === null) return <>{total} session{total > 1 ? "s" : ""}</>;

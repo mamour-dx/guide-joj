@@ -24,6 +24,10 @@
 - Hors période des Jeux : afficher le prochain jour avec des sessions.
 - L'heure « maintenant » vient du navigateur **convertie en Africa/Dakar** (un visiteur
   à Paris doit voir le bon « en ce moment »).
+- Session sans heure de fin : on la suppose finie **3 h après son début** pour la ranger
+  (« En ce moment », puis « Déjà terminé »). Cette fin supposée n'est jamais affichée : ni
+  « encore … », ni barre d'avancement ; l'horaire reste « 09:00 ». Même durée pour le `.ics`.
+
 
 ### 2. `/programme` — Programme complet
 - Bandeau de jours qui défile (`Ven 30` … `Ven 13`), jour courant sélectionné.
@@ -59,6 +63,19 @@
 ### 5. `/a-propos`
 - Ce qu'est le site, d'où viennent les données (liste des sources avec liens), date de
   mise à jour, Ayo (si `officialBranding`), contact. Lien vers la chaîne MXR CODES.
+
+### Bandeau « En direct » (toutes les pages)
+- Quand une chaîne suivie est en direct sur YouTube, un bandeau noir descend sous l'en-tête :
+  bloc rouge « ● En direct », « Olympics en live » (ou RTS2), titre du direct, lien sortant
+  « Regarder ↗ » vers YouTube, bouton pour le masquer (pour ce direct, dans cet onglet).
+- Un seul direct affiché, par priorité (`site.liveChannels`) : **Olympics**, puis **RTS2 Sénégal**.
+  Si Olympics est en live, on ne signale pas RTS2.
+- Source (`/api/live`, `src/lib/live.ts`) : flux RSS public de chaque chaîne (15 dernières vidéos,
+  sans quota), puis statut de ces vidéos via l'API officielle YouTube Data v3 (1 unité). Résultat
+  mis en cache 2 min, soit au plus ~720 unités par jour sur 10 000 gratuites. Clé dans la variable
+  d'environnement `YOUTUBE_API_KEY` (`.env.local` en local, Vercel en ligne). Sans clé : pas de
+  bandeau, rien ne casse.
+- Aucun lecteur intégré, aucun cookie : le direct s'ouvre sur YouTube.
 
 ## Design tokens
 

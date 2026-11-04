@@ -2,14 +2,15 @@
 
 // Accueil. Les sessions du jour du build sont pré-rendues en HTML (`initial`) : sans JS, ou
 // avant l'hydratation, elles s'affichent en une seule liste « Au programme ». Une fois l'heure
-// connue dans le navigateur, on les répartit en « En ce moment / Plus tard / Terminé ».
+// connue dans le navigateur, on les répartit en « En ce moment / Plus tard / Terminé ». Une session
+// sans heure de fin est supposée durer 3 h (endMs) : elle finit par passer en « Déjà terminé ».
 // Le fichier /data/day-….json n'est chargé que si le jour affiché n'est pas celui du build.
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import type { CardData } from "@/lib/cards";
 import { applyFilters, EMPTY_FILTERS, type Filters } from "@/lib/filters";
-import { addDays, dayKey, longDay } from "@/lib/time";
+import { addDays, ASSUMED_DURATION_MS, dayKey, endMs, longDay } from "@/lib/time";
 import { useNow } from "@/lib/useNow";
 import { Mascot } from "./Brand";
 import { PageHero } from "./PageHero";
@@ -36,12 +37,13 @@ function duration(ms: number): string {
 }
 
 /** Indications calculées avec l'heure du navigateur : temps restant et avancement en direct,
- *  compte à rebours pour ce qui commence dans moins de 3 h. */
+ *  compte à rebours pour ce qui commence dans moins de 3 h. Fin inconnue : en direct, mais sans
+ *  temps restant ni barre d'avancement (la fin supposée n'est jamais affichée). */
 function timing(c: CardData, now: number | null): { hint?: string; progress?: number } {
   if (now === null) return {};
   const s = Date.parse(c.start);
-  const e = c.end === null ? null : Date.parse(c.end);
-  if (s <= now && e !== null && now < e) return { hint: `encore ${duration(e - now)}`, progress: (now - s) / (e - s) };
+  const e = endMs(c.start, c.end);
+  if (s <= now && now < e) return c.end === null ? {} : { hint: `encore ${duration(e - now)}`, progress: (now - s) / (e - s) };
   if (s > now && s - now < 3 * 3600_000) return { hint: `dans ${duration(s - now)}` };
   return {};
 }
@@ -115,9 +117,9 @@ function DoneSection({ cards, sec, hidden = false }: { cards: CardData[]; sec?: 
  *  la répartition faite ensuite par React ne fasse pas sauter la page. Sans JS : liste complète. */
 const PREPAINT = `(function(){try{var r=document.getElementById("today-sections");if(!r)return;
 var t=new Intl.DateTimeFormat("en-CA",{timeZone:"Africa/Dakar",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
-if(t!==r.getAttribute("data-day"))return;var n=Date.now(),g={live:[],open:[],later:[],done:[]};
+if(t!==r.getAttribute("data-day"))return;var n=Date.now(),g={live:[],later:[],done:[]};
 r.querySelectorAll('[data-sec="all"] li[data-id]').forEach(function(li){var s=Date.parse(li.getAttribute("data-start")),e=li.getAttribute("data-end");
-e=e?Date.parse(e):null;g[s<=n?(e===null?"open":(n<e?"live":"done")):"later"].push(li.getAttribute("data-id"));});
+e=e?Date.parse(e):s+${ASSUMED_DURATION_MS};g[s<=n?(n<e?"live":"done"):"later"].push(li.getAttribute("data-id"));});
 var p="#today-sections ",c=p+'[data-sec="all"]{display:none}';
 Object.keys(g).forEach(function(k){var q=p+'[data-sec="'+k+'"]';if(!g[k].length){c+=q+"{display:none}";return;}
 c+=q+"{display:block}"+q+" li:not("+g[k].map(function(i){return'[data-id="'+i+'"]';}).join(",")+"){display:none}";});
@@ -182,10 +184,9 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
   // Répartition selon l'heure : seulement dans le navigateur, et seulement pour le jour même.
   const isLiveDay = now !== null && tab === "today" && base.isToday;
   const t = now ?? 0;
-  const live = isLiveDay ? filtered.filter((c) => Date.parse(c.start) <= t && c.end !== null && t < Date.parse(c.end)) : [];
-  const startedOpen = isLiveDay ? filtered.filter((c) => Date.parse(c.start) <= t && c.end === null) : [];
+  const live = isLiveDay ? filtered.filter((c) => Date.parse(c.start) <= t && t < endMs(c.start, c.end)) : [];
   const later = isLiveDay ? filtered.filter((c) => Date.parse(c.start) > t) : filtered;
-  const done = isLiveDay ? filtered.filter((c) => c.end !== null && Date.parse(c.end) <= t) : [];
+  const done = isLiveDay ? filtered.filter((c) => endMs(c.start, c.end) <= t) : [];
 
   return (
     <div>
@@ -253,7 +254,6 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
             <div id="today-sections" data-day={initial.day ?? ""}>
               <Section title="Au programme" cards={filtered} sec="all" tagged />
               <Section title="En ce moment" tone="live" cards={filtered} live sec="live" hidden />
-              <Section title="Déjà commencé" cards={filtered} sec="open" hidden />
               <Section title="Plus tard aujourd'hui" cards={filtered} sec="later" hidden />
               <DoneSection cards={filtered} sec="done" hidden />
               <script dangerouslySetInnerHTML={{ __html: PREPAINT }} />
@@ -262,7 +262,6 @@ export function TodayView({ days, sports, initial }: { days: string[]; sports: S
             // la clé remonte la liste au changement d'onglet : les cartes rejouent leur entrée
             <div key={tab}>
               <Section title="En ce moment" tone="live" cards={live} live now={now} animate={animate} />
-              <Section title="Déjà commencé" cards={startedOpen} now={now} animate={animate} />
               <Section title={isLiveDay ? "Plus tard aujourd'hui" : "Au programme"} cards={later} now={isLiveDay ? now : null} animate={animate} />
               <DoneSection cards={done} />
             </div>

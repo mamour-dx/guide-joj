@@ -10,6 +10,7 @@ import { CLUSTER_LABEL, CLUSTERS } from "@/lib/cards";
 import { sessions, venues, homeOgImage } from "@/lib/data";
 import { pageSeo } from "@/lib/seo";
 import { mapsUrl } from "@/lib/site";
+import { endMs } from "@/lib/time";
 
 export const metadata: Metadata = {
   title: "Sites",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 function endsOf(venueId: string) {
-  return sessions.filter((s) => s.venueId === venueId).map((s) => s.end ?? s.start);
+  return sessions.filter((s) => s.venueId === venueId).map((s) => new Date(endMs(s.start, s.end)).toISOString());
 }
 
 // sur la carte : seulement les sites dont les coordonnées ont été vérifiées
