@@ -1,6 +1,6 @@
-// Directs en cours sur les chaînes suivies (voir lib/live.ts), pour le bandeau « En direct ».
-import { liveStreams } from "@/lib/live";
+// Direct en cours sur la chaîne suivie la plus prioritaire (voir lib/live.ts), ou null.
+import { currentLive } from "@/lib/live";
 
 export async function GET() {
-  return Response.json({ live: await liveStreams() });
+  return Response.json({ live: await currentLive() });
 }

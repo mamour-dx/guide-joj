@@ -1,6 +1,7 @@
 "use client";
 
-// Bandeau « En direct » sous l'en-tête, quand une chaîne suivie (RTS2…) diffuse sur YouTube.
+// Bandeau « En direct » sous l'en-tête, quand une chaîne suivie diffuse sur YouTube (un seul
+// direct : Olympics avant RTS2, voir site.liveChannels).
 // Interroge /api/live (cache serveur de 2 min) au chargement, puis toutes les 2 min tant que la page
 // est visible. Lien sortant vers YouTube, rien n'est intégré : pas de lecteur, pas de cookie.
 // « Masquer » vaut pour ce direct et cet onglet (sessionStorage), un nouveau direct réapparaît.
@@ -29,9 +30,8 @@ export function LiveBanner() {
       try {
         const r = await fetch("/api/live");
         if (!r.ok) return;
-        const { live: streams } = (await r.json()) as { live: LiveStream[] };
-        const first = streams.find((s) => !isDismissed(s.url)) ?? null;
-        if (!stopped) setLive(first);
+        const { live: stream } = (await r.json()) as { live: LiveStream | null };
+        if (!stopped) setLive(stream && !isDismissed(stream.url) ? stream : null);
       } catch {
         // hors ligne : on garde l'état actuel
       }

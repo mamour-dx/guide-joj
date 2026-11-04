@@ -1,46 +1,45 @@
-// Directs YouTube des chaînes suivies (site.liveChannels), lus côté serveur avec l'API officielle
-// YouTube Data v3 : les dernières vidéos de la chaîne (playlist « uploads »), puis leur statut.
-// Ce n'est pas du scraping : API publique avec clé (YOUTUBE_API_KEY), résultat mis en cache 2 min,
-// soit environ 2 unités de quota par vérification (quota gratuit : 10 000 par jour).
-// Sans clé, ou si YouTube répond mal : liste vide, le bandeau ne s'affiche simplement pas.
+// Direct YouTube en cours parmi les chaînes suivies (site.liveChannels, par ordre de priorité).
+// 1. Flux RSS public de chaque chaîne (sans clé, sans quota) : ses 15 dernières vidéos ; un direct
+//    y figure en tête, même programmé des semaines à l'avance (cas des directs Olympics).
+// 2. API officielle YouTube Data v3 (clé YOUTUBE_API_KEY) : statut de ces vidéos en un seul appel,
+//    1 unité de quota. Résultat mis en cache 2 min : au plus ~720 unités par jour (quota : 10 000).
+// Ce n'est pas du scraping : flux et API publics de YouTube. Sans clé, ou si YouTube répond mal :
+// null, le bandeau ne s'affiche simplement pas.
 import { cacheLife } from "next/cache";
 import { site } from "./site";
 
 export type LiveStream = { channel: string; title: string; url: string };
 
-const API = "https://www.googleapis.com/youtube/v3";
-
-async function getJson(url: string): Promise<{ items?: unknown[] }> {
-  const r = await fetch(url);
-  if (!r.ok) throw new Error(`YouTube API ${r.status}`);
-  return r.json();
+async function recentVideoIds(channelId: string): Promise<string[]> {
+  const r = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
+  if (!r.ok) throw new Error(`flux YouTube ${r.status}`);
+  return [...(await r.text()).matchAll(/<yt:videoId>([\w-]{11})<\/yt:videoId>/g)].map((m) => m[1]);
 }
 
-export async function liveStreams(): Promise<LiveStream[]> {
+/** Le direct de la chaîne la plus prioritaire qui est en live (Olympics avant RTS2), sinon null. */
+export async function currentLive(): Promise<LiveStream | null> {
   "use cache";
   cacheLife({ stale: 60, revalidate: 120, expire: 600 });
 
   const key = process.env.YOUTUBE_API_KEY;
-  if (!key) return [];
+  if (!key) return null;
   try {
-    // playlist « uploads » d'une chaîne = son id avec le préfixe UC remplacé par UU ;
-    // un direct en cours y figure en tête
-    const lists = await Promise.all(
-      site.liveChannels.map((ch) =>
-        getJson(`${API}/playlistItems?part=contentDetails&maxResults=5&playlistId=UU${ch.channelId.slice(2)}&key=${key}`),
-      ),
-    );
-    const ids = lists.flatMap((l) => (l.items ?? []).map((i) => (i as { contentDetails: { videoId: string } }).contentDetails.videoId));
-    if (!ids.length) return [];
+    // une chaîne dont le flux ne répond pas n'empêche pas de vérifier les autres
+    const feeds = await Promise.allSettled(site.liveChannels.map((ch) => recentVideoIds(ch.channelId)));
+    const ids = feeds.flatMap((f) => (f.status === "fulfilled" ? f.value : [])).slice(0, 50);
+    if (!ids.length) return null;
 
-    const videos = await getJson(`${API}/videos?part=snippet&id=${ids.join(",")}&key=${key}`);
-    return (videos.items ?? []).flatMap((item) => {
-      const v = item as { id: string; snippet: { title: string; channelId: string; liveBroadcastContent: string } };
-      if (v.snippet.liveBroadcastContent !== "live") return [];
-      const ch = site.liveChannels.find((c) => c.channelId === v.snippet.channelId);
-      return [{ channel: ch?.name ?? "YouTube", title: v.snippet.title, url: `https://www.youtube.com/watch?v=${v.id}` }];
-    });
+    const r = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${ids.join(",")}&key=${key}`);
+    if (!r.ok) return null;
+    const { items = [] } = (await r.json()) as {
+      items?: { id: string; snippet: { title: string; channelId: string; liveBroadcastContent: string } }[];
+    };
+    for (const ch of site.liveChannels) {
+      const v = items.find((i) => i.snippet.channelId === ch.channelId && i.snippet.liveBroadcastContent === "live");
+      if (v) return { channel: ch.name, title: v.snippet.title, url: `https://www.youtube.com/watch?v=${v.id}` };
+    }
+    return null;
   } catch {
-    return [];
+    return null;
   }
 }

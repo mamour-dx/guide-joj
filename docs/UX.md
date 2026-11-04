@@ -65,13 +65,16 @@
   mise à jour, Ayo (si `officialBranding`), contact. Lien vers la chaîne MXR CODES.
 
 ### Bandeau « En direct » (toutes les pages)
-- Quand une chaîne suivie (`site.liveChannels`, aujourd'hui RTS2 Sénégal) est en direct sur
-  YouTube, un bandeau noir descend sous l'en-tête : bloc rouge « ● En direct », « RTS2 est en
-  live », titre du direct, lien sortant « Regarder ↗ » vers YouTube, bouton pour le masquer
-  (pour ce direct, dans cet onglet).
-- Source : API officielle YouTube Data v3, appelée côté serveur par `/api/live` (`src/lib/live.ts`),
-  résultat mis en cache 2 min (≈ 2 unités de quota par vérification). Clé dans la variable
-  d'environnement `YOUTUBE_API_KEY` (Vercel). Sans clé : pas de bandeau, rien ne casse.
+- Quand une chaîne suivie est en direct sur YouTube, un bandeau noir descend sous l'en-tête :
+  bloc rouge « ● En direct », « Olympics est en live » (ou RTS2), titre du direct, lien sortant
+  « Regarder ↗ » vers YouTube, bouton pour le masquer (pour ce direct, dans cet onglet).
+- Un seul direct affiché, par priorité (`site.liveChannels`) : **Olympics**, puis **RTS2 Sénégal**.
+  Si Olympics est en live, on ne signale pas RTS2.
+- Source (`/api/live`, `src/lib/live.ts`) : flux RSS public de chaque chaîne (15 dernières vidéos,
+  sans quota), puis statut de ces vidéos via l'API officielle YouTube Data v3 (1 unité). Résultat
+  mis en cache 2 min, soit au plus ~720 unités par jour sur 10 000 gratuites. Clé dans la variable
+  d'environnement `YOUTUBE_API_KEY` (`.env.local` en local, Vercel en ligne). Sans clé : pas de
+  bandeau, rien ne casse.
 - Aucun lecteur intégré, aucun cookie : le direct s'ouvre sur YouTube.
 
 ## Design tokens
