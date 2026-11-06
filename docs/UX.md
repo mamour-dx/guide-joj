@@ -70,11 +70,14 @@
   « Regarder ↗ » vers YouTube, bouton pour le masquer (pour ce direct, dans cet onglet).
 - Un seul direct affiché, par priorité (`site.liveChannels`) : **Olympics**, puis **RTS2 Sénégal**.
   Si Olympics est en live, on ne signale pas RTS2.
-- Source (`/api/live`, `src/lib/live.ts`) : flux RSS public de chaque chaîne (15 dernières vidéos,
-  sans quota), puis statut de ces vidéos via l'API officielle YouTube Data v3 (1 unité). Résultat
-  mis en cache 2 min, soit au plus ~720 unités par jour sur 10 000 gratuites. Clé dans la variable
-  d'environnement `YOUTUBE_API_KEY` (`.env.local` en local, Vercel en ligne). Sans clé : pas de
-  bandeau, rien ne casse.
+- Source (`/api/live`, `src/lib/live.ts`) : vidéos récentes de chaque chaîne, par le flux RSS public
+  (sans quota ; seul endroit où un direct programmé longtemps à l'avance, comme ceux d'Olympics,
+  est en tête) **et** par la playlist « uploads » de l'API officielle YouTube Data v3 (1 unité ;
+  le flux RSS est parfois refusé aux serveurs d'hébergeurs) ; puis statut de ces vidéos en un appel
+  (1 unité). Résultat mis en cache 2 min, soit ~2 200 unités par jour au plus sur 10 000 gratuites.
+  Clé dans `YOUTUBE_API_KEY` (`.env.local` en local, Vercel en ligne). Sans clé : pas de bandeau.
+- La réponse contient `check` (clé présente, sources joignables, réponse de l'API) pour
+  diagnostiquer en production : `curl https://joj-guide.vercel.app/api/live`.
 - Aucun lecteur intégré, aucun cookie : le direct s'ouvre sur YouTube.
 
 ## Design tokens
