@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-11-05T13:15:25+00:00",
+  "generatedAt": "2026-11-07T13:45:07+00:00",
   "sources": [
     {
       "id": "S1",
       "url": "https://www.vie-publique.sn/docs/ef579e0e-e403-47c6-9623-7d653c1045dd/joj-dakar-2026-programme-competitions.pdf",
       "sha256": "9ee4505bd979f0eba8504ba1913552a9f4cfa5015ba9defabdb8f7419defce59",
-      "fetchedAt": "2026-11-05T13:15:21+00:00"
+      "fetchedAt": "2026-11-07T13:45:04+00:00"
     },
     {
       "id": "S2",
       "url": "https://tickets.dakar2026.org/api/ticketing",
-      "sha256": "8a0b72bb2f41962c7e319c5d1506c289064b45faa4fdd5d76ee82a577d9225c8",
-      "fetchedAt": "2026-11-05T13:15:22+00:00"
+      "sha256": "36a0e65d14c581edec0764e61a20292f16e76737791aa84912a9ba0e79eb0cb4",
+      "fetchedAt": "2026-11-07T13:45:06+00:00"
     },
     {
       "id": "S3",
       "url": "https://www.vie-publique.sn/docs/7ec17f81-341f-48d4-a0b1-c18ea09c3603/guide-mobilite-dakar-joj-2026.pdf",
       "sha256": "bb06a3cd4755e025ec70fb3e05d08d2e9a22a40cdcb3a6f3ce343a9407195729",
-      "fetchedAt": "2026-11-05T13:15:25+00:00"
+      "fetchedAt": "2026-11-07T13:45:06+00:00"
     },
     {
       "id": "S2",
       "url": "https://tickets.dakar2026.org/api/ticketing",
-      "sha256": "8a0b72bb2f41962c7e319c5d1506c289064b45faa4fdd5d76ee82a577d9225c8",
-      "fetchedAt": "2026-11-05T13:15:22+00:00"
+      "sha256": "36a0e65d14c581edec0764e61a20292f16e76737791aa84912a9ba0e79eb0cb4",
+      "fetchedAt": "2026-11-07T13:45:06+00:00"
     }
   ],
   "counts": {
-    "sessions": 207,
+    "sessions": 202,
     "venues": 8,
     "sports": 25
   },

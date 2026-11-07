@@ -1,12 +1,12 @@
-# Rapport de validation — 2026-11-05T13:15+00:00
+# Rapport de validation — 2026-11-07T13:45+00:00
 
-**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-05T13:15:25+00:00.
+**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-07T13:45:07+00:00.
 
 ## Compteurs
 
-- Sessions : 207 (185 sportives, 22 Fan)
-- Billetterie : code 107 · site+jour 20 · aucun 80
-- Gratuites : 20 · Finales : 56
+- Sessions : 202 (185 sportives, 17 Fan)
+- Billetterie : code 85 · site+jour 19 · aucun 98
+- Gratuites : 16 · Finales : 56
 
 | Jour | PDF (texte brut) | sessions.json |
 |---|---|---|
@@ -67,15 +67,14 @@ Texte source gardé tel quel dans `eventsRaw` ; corrections éventuelles dans `d
 
 Aucune.
 
-## Sessions sans lien billetterie (80)
+## Sessions sans lien billetterie (98)
 
-`BS501`, `BS502`, `BS503`, `VBV01`, `RCB01`, `TTE01`, `VBV02`, `BDM01`, `TTE02`, `WST01`, `FBS01`, `JUD01`, `RCB02`, `BS504`, `RU701`, `SWM01`, `RU702`, `BDM02`, `TTE03`, `WST02`, `BS505`, `SWM02`, `FBS02`, `JUD02`, `BDM03`, `VBV03`, `WST03`, `FBS03`, `JUD03`, `RCB03`, `TTE04`, `BS506`, `SWM03`, `RU703`, `VBV04`, `BDM04`, `TTE05`, `WST04`, `BS507`, `SWM04`, `FBS04`, `JUD04`, `BDM05`, `EQU01`, `VBV05`, `WST05`, `RU704`, `FBS05`, `JUD05`, `RCB04`, `TTE06`, `BS508`, `SWM05`, `RU705`, `TTE07`, `BDM06`, `WST06`, `BS509`, `SWM06`, `FBS06`, `JUD06`, `BDM07`, `FBS07`, `TTE08`, `SWM07`, `VBV06`, `SKB01`, `BDM08`, `SWM08`, `TTE09`, `FBS08`, `SKB02`, `EQU02`, `FBS09`, `GAR100`, `TTE10`, `GAR101`, `GAR102`, `GAR103`, `GAR104`
+`BS501`, `BS502`, `BS503`, `VBV01`, `RCB01`, `TTE01`, `VBV02`, `BDM01`, `TTE02`, `WST01`, `FBS01`, `JUD01`, `RCB02`, `BS504`, `RU701`, `SWM01`, `RU702`, `BDM02`, `TTE03`, `WST02`, `BS505`, `SWM02`, `FBS02`, `JUD02`, `BDM03`, `VBV03`, `WST03`, `FBS03`, `JUD03`, `RCB03`, `TTE04`, `BS506`, `SWM03`, `RU703`, `VBV04`, `BDM04`, `TTE05`, `WST04`, `BS507`, `SWM04`, `FBS04`, `JUD04`, `BDM05`, `EQU01`, `VBV05`, `WST05`, `RU704`, `FBS05`, `JUD05`, `RCB04`, `TTE06`, `BS508`, `SWM05`, `RU705`, `TTE07`, `BDM06`, `WST06`, `BS509`, `SWM06`, `FBS06`, `JUD06`, `BDM07`, `FBS07`, `TTE08`, `SWM07`, `VBV06`, `SKB01`, `BDM08`, `SWM08`, `TTE09`, `FBS08`, `SKB02`, `EQU02`, `TRI01`, `FBS09`, `GAR100`, `TTE10`, `SWM09`, `SKB03`, `GAR101`, `BDM09`, `SWM10`, `FBS10`, `SKB04`, `TTE11`, `EQU03`, `TRI02`, `ARC01`, `BK301`, `GAR102`, `SWM11`, `GAR103`, `GAR104`, `BK302`, `SWM12`, `FBS11`, `GAR01`, `BOX01`
 
 ## Billets groupés (jointure site + jour)
 
-- 2026-11-05 · saly-plage-ouest : TRI01
-- 2026-11-05 · tour-de-l-oeuf : SWM09
-- 2026-11-06 · saly-plage-ouest : TRI02
+- 2026-11-07 · stade-abdoulaye-wade : ARC02
+- 2026-11-07 · tour-de-l-oeuf : BK303
 - 2026-11-07 · saly-plage-ouest : WRB01, WRB02
 - 2026-11-08 · saly-plage-ouest : WRB03, SAL01, WRB04
 - 2026-11-09 · saly-plage-ouest : HBB01, SAL02, HBB02
@@ -89,17 +88,17 @@ Aucune.
 - Sans note d'accès (0) : —
 - Sans coordonnées GPS vérifiées (0) : —
 
-## Contrôle humain — 10 sessions tirées au hasard (graine 20261105)
+## Contrôle humain — 10 sessions tirées au hasard (graine 20261107)
 
 À comparer ligne à ligne avec le PDF (numéro de page indiqué).
 
-- [ ] **SWM03** — p. 2 — jour 2 11:00–13:00 — Complexe Tour de l'Oeuf — Women's 100m Freestyle - Heats / Men's 100m Freestyle - Heats / Women's 200m Breaststroke - Heats / Men's 200m Breaststroke - Heats
-- [ ] **TKW09** — p. 8 — jour 12 11:00–12:40 — Complexe Iba Mar Diop — Mixed Team - Quarterfinals
+- [ ] **CRD02** — p. 7 — jour 10 09:00–12:04 — Corniche West — Women's Individual Time Trial - Final / Men's Individual Time Trial - Final
+- [ ] **GAR09** — p. 8 — jour 11 17:00–19:05 — Dakar Expo Centre — Mixed Team - final
+- [ ] **FBS11** — p. 4 — jour 7 10:00–14:00 — Dakar Arena — Men's PAR vs POR / Men's MAR vs SOL
+- [ ] **TKW01** — p. 5 — jour 8 11:00–13:24 — Complexe Iba Mar Diop — Women -44kg - Elimination Round of 16, Quarterfinals / Men -48kg - Elimination Round of 16, Quarterfinals
+- [ ] **TTE02** — p. 1 — jour 1 09:30–13:00 — Dakar Expo Centre — Women's Single - Preliminary Stage / Men's Single - Preliminary Stage
 - [ ] **BS507** — p. 2 — jour 2 15:00–17:45 — Complexe Tour de l'Oeuf — Semifinals
-- [ ] **FEN06** — p. 7 — jour 10 14:00–16:05 — Dakar Expo Centre — Women's Épée Individual - Semifinals, Finals
-- [ ] **VBV03** — p. 2 — jour 2 09:00–11:00 — Saly Beach West — Women and Men - Lucky Loser Round
-- [ ] **FBS12** — p. 4 — jour 7 15:30–19:30 — Dakar Arena — Men's ARG vs PAN / Men's AFG vs SEN
-- [ ] **BOX08** — p. 7 — jour 10 17:00–20:00 — Dakar Expo Centre — Women's 48kg - Preliminaries / Women's 54kg - Preliminaries / Women's 60kg - Preliminaries
-- [ ] **BOX09** — p. 8 — jour 11 12:00–14:30 — Dakar Expo Centre — Women's 51kg - Semifinals / Women's 57kg - Semifinals / Men's 50kg - Semifinals / Men's 60kg - Semifinals / Men's 70kg - Semifinals
-- [ ] **EQU01** — p. 3 — jour 3 09:00–10:30 — Equestrian Centre — Jumping Individual - Qualifier Round A
-- [ ] **FEN01** — p. 5 — jour 8 09:00–12:35 — Dakar Expo Centre — Women's Foil Individual - Pool Round, Table of 16, Table of 8
+- [ ] **TKW06** — p. 7 — jour 10 16:00–18:34 — Complexe Iba Mar Diop — Women -55kg - Semifinals, Final / Men -63kg - Semifinals, Final / Women -63kg - Semifinals, Final
+- [ ] **GAR101** — p. 4 — jour 5 13:00–15:30 — Dakar Expo Centre — Men's Street - Finals
+- [ ] **FBS07** — p. 3 — jour 4 10:00–14:00 — Complexe Iba Mar Diop — Men's POR vs SOL / Men's PAR vs MAR
+- [ ] **BDM06** — p. 3 — jour 3 14:30–18:55 — Dakar Arena — Women's and Men's singles - group stage
