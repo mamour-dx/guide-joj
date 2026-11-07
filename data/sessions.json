@@ -3431,7 +3431,7 @@
     "freeSource": "https://tickets.dakar2026.org/fr",
     "ticketUrl": null,
     "ticketMatch": "code",
-    "ticketStatus": "limited",
+    "ticketStatus": "soldout",
     "sourceUrl": "https://tickets.dakar2026.org/fr/ticketing",
     "scheduleConflict": null
   },
