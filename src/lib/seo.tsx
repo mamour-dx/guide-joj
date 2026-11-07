@@ -4,10 +4,9 @@ import type { Metadata } from "next";
 import { CLUSTER_LABEL } from "./cards";
 import { officialLinks, sessionLabel } from "./data";
 import type { Session, Venue } from "./schema";
-import { officialBranding } from "./brand";
 import { absoluteUrl, site } from "./site";
 
-export const siteLabel = officialBranding ? site.name : `${site.name} (non officiel)`;
+export const siteLabel = `${site.name} (non officiel)`;
 
 /** Canonical, og:url et bloc openGraph complet d'une page. Le bloc openGraph d'une page
  *  remplace celui du layout : on y remet tout. Les filtres en ?query pointent vers la page nue.

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { TodayView } from "@/components/TodayView";
 import { buildDay, cardsForDay, days, homeDay, homeOgImage, sportChips } from "@/lib/data";
-import { officialBranding } from "@/lib/brand";
 import { JsonLd, pageSeo, siteLabel, websiteJsonLd } from "@/lib/seo";
 import { longDay } from "@/lib/time";
 
@@ -20,7 +19,7 @@ function summary(): { title: string; description: string } {
   const when = homeDay.isToday ? `Aujourd'hui, ${day}` : `Prochaine journée : ${day}`;
   return {
     title: `${when} aux JOJ Dakar 2026`,
-    description: `${when} : ${homeCards.length} sessions à Dakar, Diamniadio et Saly (${sportsList}…). Horaires, lieux, gratuité et accès.${officialBranding ? "" : " Guide non officiel."}`,
+    description: `${when} : ${homeCards.length} sessions à Dakar, Diamniadio et Saly (${sportsList}…). Horaires, lieux, gratuité et accès. Guide non officiel.`,
   };
 }
 

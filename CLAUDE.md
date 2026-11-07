@@ -26,15 +26,11 @@ On fusionne tout ça en une seule interface rapide, lisible sur un téléphone.
 
 ## Règles non négociables
 
-1. **Marques officielles, sous autorisation du COJOJ (depuis le 02/11/2026).** Le site porte
-   l'identité Dakar 2026 à la demande du COJOJ (responsable design et charte). Les marques
-   (emblème, pictogrammes, mascotte Ayo, motif) viennent **uniquement** du guide médias officiel
-   et sont rangées dans `public/brand/`, utilisées telles quelles : jamais redessinées,
-   recolorées, recadrées ni déformées (charte olympique). On n'ajoute aucune autre marque
-   (anneaux seuls, photos officielles…) sans les fichiers et l'accord du COJOJ. Un seul
-   interrupteur, `officialBranding` dans `src/lib/brand.ts` : `false` retire toutes les marques
-   et rétablit la mention « Site non officiel, sans affiliation avec le COJOJ Dakar 2026 ni le
-   CIO ». Dans tous les cas : « Horaires à vérifier sur la billetterie officielle ».
+1. **Site non officiel, aucune marque officielle.** Pas d'emblème Dakar 2026, pas d'anneaux
+   olympiques, pas de pictogrammes officiels, pas de mascotte (Ayo), pas de slogan ni de photo
+   officielle. Les icônes de sport sont des emoji. Footer et page « À propos » : « Site non
+   officiel, sans affiliation avec le COJOJ Dakar 2026 ni le CIO. Horaires à vérifier sur les
+   sources officielles. » Les couleurs peuvent évoquer l'ambiance des Jeux.
 2. **Aucun paiement, aucune collecte de données.** Les billets = lien sortant vers la
    billetterie officielle. Pas de formulaire, pas de compte, pas de cookie de tracking
    (analytics sans cookie type Vercel Analytics OK).
@@ -107,8 +103,7 @@ dans les sources (je les montre en vidéo).
 - [ ] Page d'accueil < 150 KB de JS. Lisible en plein soleil (contrastes AA).
 - [ ] Chaque session : horaire, site, sport, épreuves, badge Gratuit/Payant/Inconnu,
       lien billetterie ou « voir la billetterie officielle », bouton agenda, itinéraire.
-- [ ] Footer de toutes les pages : « DAKAR 2026 » en grand (sans emblème), mention « non officiel » si
-      `officialBranding = false`, et « horaires à vérifier ».
+- [ ] Footer de toutes les pages : mention « non officiel » et « horaires à vérifier ».
 - [ ] `meta.json.generatedAt` affiché discrètement : « Données mises à jour le … ».
 
 ## Ton et langue

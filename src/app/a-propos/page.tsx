@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { meta, sourceList, homeOgImage } from "@/lib/data";
-import { Mascot } from "@/components/Brand";
 import { PageHero } from "@/components/PageHero";
-import { officialBranding } from "@/lib/brand";
 import { site } from "@/lib/site";
 import { updatedAt } from "@/lib/time";
 import { pageSeo } from "@/lib/seo";
@@ -20,19 +18,6 @@ export default function AboutPage() {
         <p className="mt-4 border-l-4 border-o-yellow pl-3 font-medium">{site.disclaimer}</p>
       </PageHero>
 
-      {officialBranding && (
-        <section className="card mt-6 flex items-end gap-4 !border-black !bg-white p-4 text-black">
-          <Mascot height={170} />
-          <div className="pb-1">
-            <p className="display text-5xl">Ayo.</p>
-            <p className="mt-1 text-sm">
-              La mascotte officielle des JOJ Dakar 2026. Un lion à casquette qui symbolise la force, la fierté et
-              l&apos;unité africaine. « Ayo » veut dire « joie » en yoruba.
-            </p>
-            <p className="display mt-3 text-2xl">{site.slogan}</p>
-          </div>
-        </section>
-      )}
 
       <section className="mt-8 space-y-3">
         <h2 className="display border-b-2 border-line pb-2 text-4xl">C&apos;est quoi ?</h2>

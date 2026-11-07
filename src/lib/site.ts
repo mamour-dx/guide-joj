@@ -1,14 +1,11 @@
 // Réglages éditoriaux du site. null = non affiché (rien n'est inventé).
-import { officialBranding } from "./brand";
 
 export const site = {
-  name: officialBranding ? "Dakar 2026 · Guide des sessions" : "JOJ Guide",
-  shortName: officialBranding ? "Guide des sessions" : "JOJ Guide",
-  tagline: officialBranding ? "Le guide des sessions des JOJ Dakar 2026" : "Le guide non officiel des JOJ Dakar 2026",
-  slogan: "L'Afrique accueille, Dakar célèbre.",
-  disclaimer: officialBranding
-    ? "Horaires issus du programme officiel, à vérifier sur la billetterie officielle."
-    : "Site non officiel, sans affiliation avec le COJOJ Dakar 2026 ni le CIO. Horaires à vérifier sur les sources officielles.",
+  name: "JOJ Guide",
+  shortName: "JOJ Guide",
+  tagline: "Le guide non officiel des JOJ Dakar 2026",
+  disclaimer:
+    "Site non officiel, sans affiliation avec le COJOJ Dakar 2026 ni le CIO. Horaires à vérifier sur les sources officielles.",
   channelUrl: "https://www.youtube.com/@mxr_codes" as string | null,
   contact: "mxrcodes@gmail.com" as string | null,
   /** Chaînes YouTube dont on signale le direct (bandeau « En direct »), par ordre de priorité :

@@ -12,7 +12,6 @@ import type { CardData } from "@/lib/cards";
 import { applyFilters, EMPTY_FILTERS, type Filters } from "@/lib/filters";
 import { addDays, ASSUMED_DURATION_MS, dayKey, endMs, longDay } from "@/lib/time";
 import { useNow } from "@/lib/useNow";
-import { Mascot } from "./Brand";
 import { PageHero } from "./PageHero";
 import { FilterChips } from "./FilterChips";
 import { SessionCard } from "./SessionCard";
@@ -128,7 +127,6 @@ var st=document.createElement("style");st.id="today-initial";st.textContent=c;do
 function Ended() {
   return (
     <div className="card mt-6 flex items-end gap-4 p-4">
-      <Mascot height={150} />
       <div>
         <h1 className="display text-5xl">Les Jeux sont terminés.</h1>
         <p className="mt-2 text-muted">Les JOJ Dakar 2026 se sont déroulés du 30 octobre au 13 novembre 2026.</p>

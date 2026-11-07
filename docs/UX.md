@@ -62,7 +62,7 @@
 
 ### 5. `/a-propos`
 - Ce qu'est le site, d'où viennent les données (liste des sources avec liens), date de
-  mise à jour, Ayo (si `officialBranding`), contact. Lien vers la chaîne MXR CODES.
+  mise à jour, mention « non officiel », contact. Lien vers la chaîne MXR CODES.
 
 ### Bandeau « En direct » (toutes les pages)
 - Quand une chaîne suivie est en direct sur YouTube, un bandeau noir descend sous l'en-tête :
@@ -102,22 +102,19 @@ droits, filets noirs de 2 px, grands aplats de couleur pleine largeur. Valeurs e
 - Sur un aplat de couleur, le texte est toujours noir (rouge 5,0:1, vert 6,6:1, jaune 11:1).
 - Typo : titres en **Big Shoulders** 800, texte en **Geist**, horaires, codes et sur-titres en
   **Geist Mono**.
-- **Marques** (`src/components/Brand.tsx`, fichiers dans `public/brand/`) : aucun emblème à
-  l'écran (en-tête : nom en texte ; pied de page : « DAKAR 2026 » en très grand, chiffres de 2026
-  en jaune, blanc, vert, rouge),
-  25 pictogrammes officiels sur les cartes, Ayo sur « À propos » et « Jeux terminés », motif
-  du « look des Jeux » réservé à l'image de partage. Jamais modifiés. Emblème couleurs = fond blanc.
+- **Aucune marque officielle** : en-tête « JOJ Guide · Non officiel » en texte ; pied de page
+  « DAKAR 2026 » en très grand en texte (chiffres de 2026 en jaune, blanc, vert, rouge) ;
+  icônes de sport = emoji dans un carré bordé (`src/components/Brand.tsx`).
 - La couleur n'est jamais celle du texte courant. Le jaune ne sert jamais de texte.
 - Angles droits partout (pas de coins arrondis), pas d'ombres, pointillés pour les séparations fines.
-- Mode sombre : fond noir (recommandé par la charte en numérique), emblème et pictogrammes
-  restent sur blanc.
+- Mode sombre : fond noir, icônes de sport sur blanc.
 
 ## Performance
 
 - Pages statiques, une page par session (`generateStaticParams`), une par site.
 - `sessions.json` découpé par jour pour le client (`/data/day-2026-11-09.json`) afin de ne
   pas charger les ~250 sessions sur l'accueil.
-- Images : aucune image lourde. OG image générée (`next/og`) avec titre + date, emblème et motif.
+- Images : aucune image lourde. OG image générée (`next/og`) avec titre + date, sans emblème ni motif (aucune marque officielle).
 
 ## Accessibilité
 

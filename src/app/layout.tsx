@@ -7,7 +7,6 @@ import { BottomNav } from "@/components/BottomNav";
 import { ClickBurst } from "@/components/ClickBurst";
 import { LiveBanner } from "@/components/LiveBanner";
 import { THEME_SCRIPT, ThemeToggle } from "@/components/ThemeToggle";
-import { officialBranding } from "@/lib/brand";
 import { homeOgImage, meta, officialLinks } from "@/lib/data";
 import { siteLabel as label } from "@/lib/seo";
 import { indexable, site, siteUrl } from "@/lib/site";
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
   robots: indexable ? undefined : { index: false, follow: false },
   formatDetection: { telephone: false },
-  title: { default: officialBranding ? site.name : `${site.name} — JOJ Dakar 2026 (non officiel)`, template: `%s · ${site.name}` },
+  title: { default: `${site.name} — JOJ Dakar 2026 (non officiel)`, template: `%s · ${site.name}` },
   description: `Qu'est-ce que je peux voir aux JOJ Dakar 2026 aujourd'hui, où, à quelle heure, et comment y aller ? ${site.tagline}.`,
 };
 
@@ -48,8 +47,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <div className="mx-auto flex w-full max-w-2xl items-center justify-between gap-3 px-4 py-3">
             <Link href="/" aria-label={`${site.name} — accueil`} className="flex min-w-0 items-center">
               <span className="leading-none">
-                <span className="display block whitespace-nowrap text-[1.75rem]">{officialBranding ? "Dakar 2026" : "JOJ Guide"}</span>
-                <span className="eyebrow block whitespace-nowrap text-xs text-muted">{officialBranding ? "Guide des sessions" : "Non officiel"}</span>
+                <span className="display block whitespace-nowrap text-[1.75rem]">JOJ Guide</span>
+                <span className="eyebrow block whitespace-nowrap text-xs text-muted">Non officiel</span>
               </span>
             </Link>
             <div className="flex items-center gap-2">
