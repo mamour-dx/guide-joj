@@ -48,7 +48,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/" aria-label={`${site.name} — accueil`} className="flex min-w-0 items-center">
               <span className="leading-none">
                 <span className="display block whitespace-nowrap text-[1.75rem]">JOJ Guide</span>
-                <span className="eyebrow block whitespace-nowrap text-xs text-muted">Non officiel</span>
               </span>
             </Link>
             <div className="flex items-center gap-2">

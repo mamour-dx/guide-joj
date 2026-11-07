@@ -49,6 +49,19 @@ export default function AboutPage() {
         <p className="eyebrow text-muted">Données mises à jour le {updatedAt(meta.generatedAt)} (heure de Dakar).</p>
       </section>
 
+      {site.repoUrl && (
+        <section className="mt-8 space-y-3">
+          <h2 className="display border-b-2 border-line pb-2 text-4xl">Open source.</h2>
+          <p>
+            Le code du site est public : tu peux le lire, le réutiliser pour ton propre projet ou proposer une
+            amélioration.{" "}
+            <a href={site.repoUrl} target="_blank" rel="noopener" className="font-semibold underline">
+              Voir le code sur GitHub
+            </a>
+          </p>
+        </section>
+      )}
+
       {(site.contact || site.channelUrl) && (
         <section className="mt-8 space-y-3">
           <h2 className="display border-b-2 border-line pb-2 text-4xl">Contact.</h2>
