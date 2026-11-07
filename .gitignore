@@ -19,3 +19,6 @@ next-env.d.ts
 .DS_Store
 # découpage par jour généré au build (scripts/split_days.mjs)
 /public/data/
+
+# Réglages locaux de Claude Code
+.claude/
