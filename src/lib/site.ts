@@ -5,7 +5,7 @@ export const site = {
   shortName: "JOJ Guide",
   tagline: "Le guide non officiel des JOJ Dakar 2026",
   disclaimer:
-    "Site non officiel, sans affiliation avec le COJOJ Dakar 2026 ni le CIO. Horaires à vérifier sur les sources officielles.",
+    "Site non officiel, sans affiliation avec le COJOJ Dakar 2026 ni le CIO.",
   channelUrl: "https://www.youtube.com/@mxr_codes" as string | null,
   contact: "hi@mxr.codes" as string | null,
   /** Code source public (open source). */
