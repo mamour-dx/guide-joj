@@ -5,7 +5,7 @@
     "path": "data/raw/programmePdf.pdf",
     "sha256": "9ee4505bd979f0eba8504ba1913552a9f4cfa5015ba9defabdb8f7419defce59",
     "bytes": 177866,
-    "fetchedAt": "2026-11-08T11:55:56+00:00"
+    "fetchedAt": "2026-11-09T13:54:14+00:00"
   },
   "S3": {
     "key": "mobilityGuide",
@@ -13,14 +13,14 @@
     "path": "data/raw/mobilityGuide.pdf",
     "sha256": "bb06a3cd4755e025ec70fb3e05d08d2e9a22a40cdcb3a6f3ce343a9407195729",
     "bytes": 15795398,
-    "fetchedAt": "2026-11-08T11:55:59+00:00"
+    "fetchedAt": "2026-11-09T13:54:17+00:00"
   },
   "S2": {
     "key": "tickets",
     "url": "https://tickets.dakar2026.org/api/ticketing",
     "path": "data/raw/tickets.json",
-    "sha256": "df2f605614da5be7bf38b59ef2ec00aac9b8cb7f5532c45f8140d59e479cbc67",
-    "bytes": 110196,
-    "fetchedAt": "2026-11-08T11:55:58+00:00"
+    "sha256": "6fa847a0755e6707e187798605715713893b38b91423a967e9b067ec065787aa",
+    "bytes": 78508,
+    "fetchedAt": "2026-11-09T13:54:15+00:00"
   }
 }
