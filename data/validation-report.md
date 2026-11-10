@@ -1,12 +1,12 @@
-# Rapport de validation — 2026-11-09T13:54+00:00
+# Rapport de validation — 2026-11-10T13:28+00:00
 
-**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-09T13:54:19+00:00.
+**✅ OK** — 0 erreur(s), 5 avertissement(s). Données générées le 2026-11-10T13:28:07+00:00.
 
 ## Compteurs
 
-- Sessions : 196 (185 sportives, 11 Fan)
-- Billetterie : code 51 · site+jour 14 · aucun 131
-- Gratuites : 12 · Finales : 56
+- Sessions : 193 (185 sportives, 8 Fan)
+- Billetterie : code 34 · site+jour 10 · aucun 149
+- Gratuites : 10 · Finales : 56
 
 | Jour | PDF (texte brut) | sessions.json |
 |---|---|---|
@@ -34,7 +34,7 @@ Aucune.
 
 - GAR : deux séries de numérotation 2 chiffres (dès le 2026-11-07), 3 chiffres (dès le 2026-11-05)
 - GAR101 : Épreuve 'Men's Street - Finals' sous Gymnastique artistique (copier-coller probable dans la source) (non corrigé, à vérifier)
-- 3 horaire(s) de la billetterie affiché(s) à la place du PDF (fin inconnue, mention dans l'UI) : ATH02 : 10:00 dans le PDF, 14:00 sur la billetterie ; ATH03 : 10:00 dans le PDF, 14:00 sur la billetterie ; BOX12 : 17:00 dans le PDF, 18:20 sur la billetterie
+- 2 horaire(s) de la billetterie affiché(s) à la place du PDF (fin inconnue, mention dans l'UI) : ATH03 : 10:00 dans le PDF, 14:00 sur la billetterie ; BOX12 : 17:00 dans le PDF, 18:20 sur la billetterie
 - billets sans session dans le PDF : FEN11 (Escrime (Fencing), 2026-11-13 09:00, Centre des Expositions de Dakar(Pavillon A))
 - billetterie : aucun lien d'achat profond (connexion obligatoire sur la billetterie, voir tickets._purchaseUrlTemplate) — l'UI renvoie vers la page programme avec le code
 
@@ -67,15 +67,13 @@ Texte source gardé tel quel dans `eventsRaw` ; corrections éventuelles dans `d
 
 Aucune.
 
-## Sessions sans lien billetterie (131)
+## Sessions sans lien billetterie (149)
 
-`BS501`, `BS502`, `BS503`, `VBV01`, `RCB01`, `TTE01`, `VBV02`, `BDM01`, `TTE02`, `WST01`, `FBS01`, `JUD01`, `RCB02`, `BS504`, `RU701`, `SWM01`, `RU702`, `BDM02`, `TTE03`, `WST02`, `BS505`, `SWM02`, `FBS02`, `JUD02`, `BDM03`, `VBV03`, `WST03`, `FBS03`, `JUD03`, `RCB03`, `TTE04`, `BS506`, `SWM03`, `RU703`, `VBV04`, `BDM04`, `TTE05`, `WST04`, `BS507`, `SWM04`, `FBS04`, `JUD04`, `BDM05`, `EQU01`, `VBV05`, `WST05`, `RU704`, `FBS05`, `JUD05`, `RCB04`, `TTE06`, `BS508`, `SWM05`, `RU705`, `TTE07`, `BDM06`, `WST06`, `BS509`, `SWM06`, `FBS06`, `JUD06`, `BDM07`, `FBS07`, `TTE08`, `SWM07`, `VBV06`, `SKB01`, `BDM08`, `SWM08`, `TTE09`, `FBS08`, `SKB02`, `EQU02`, `TRI01`, `FBS09`, `GAR100`, `TTE10`, `SWM09`, `SKB03`, `GAR101`, `BDM09`, `SWM10`, `FBS10`, `SKB04`, `TTE11`, `EQU03`, `TRI02`, `ARC01`, `BK301`, `GAR102`, `SWM11`, `GAR103`, `GAR104`, `BK302`, `SWM12`, `ARC02`, `BK303`, `FBS11`, `GAR01`, `WRB01`, `BOX01`, `ARC03`, `GAR02`, `BK304`, `WRB02`, `FBS12`, `BOX02`, `CRD01`, `FEN01`, `ARC04`, `GAR03`, `WRB03`, `FBS13`, `TKW01`, `BK305`, `BOX03`, `SAL01`, `ARC05`, `FEN02`, `ATH01`, `BK306`, `FBS14`, `WRB04`, `GAR04`, `TKW02`, `BOX04`, `FEN03`, `GAR05`, `FBS15`, `TKW03`, `BOX05`
+`BS501`, `BS502`, `BS503`, `VBV01`, `RCB01`, `TTE01`, `VBV02`, `BDM01`, `TTE02`, `WST01`, `FBS01`, `JUD01`, `RCB02`, `BS504`, `RU701`, `SWM01`, `RU702`, `BDM02`, `TTE03`, `WST02`, `BS505`, `SWM02`, `FBS02`, `JUD02`, `BDM03`, `VBV03`, `WST03`, `FBS03`, `JUD03`, `RCB03`, `TTE04`, `BS506`, `SWM03`, `RU703`, `VBV04`, `BDM04`, `TTE05`, `WST04`, `BS507`, `SWM04`, `FBS04`, `JUD04`, `BDM05`, `EQU01`, `VBV05`, `WST05`, `RU704`, `FBS05`, `JUD05`, `RCB04`, `TTE06`, `BS508`, `SWM05`, `RU705`, `TTE07`, `BDM06`, `WST06`, `BS509`, `SWM06`, `FBS06`, `JUD06`, `BDM07`, `FBS07`, `TTE08`, `SWM07`, `VBV06`, `SKB01`, `BDM08`, `SWM08`, `TTE09`, `FBS08`, `SKB02`, `EQU02`, `TRI01`, `FBS09`, `GAR100`, `TTE10`, `SWM09`, `SKB03`, `GAR101`, `BDM09`, `SWM10`, `FBS10`, `SKB04`, `TTE11`, `EQU03`, `TRI02`, `ARC01`, `BK301`, `GAR102`, `SWM11`, `GAR103`, `GAR104`, `BK302`, `SWM12`, `ARC02`, `BK303`, `FBS11`, `GAR01`, `WRB01`, `BOX01`, `ARC03`, `GAR02`, `BK304`, `WRB02`, `FBS12`, `BOX02`, `CRD01`, `FEN01`, `ARC04`, `GAR03`, `WRB03`, `FBS13`, `TKW01`, `BK305`, `BOX03`, `SAL01`, `ARC05`, `FEN02`, `ATH01`, `BK306`, `FBS14`, `WRB04`, `GAR04`, `TKW02`, `BOX04`, `FEN03`, `HBB01`, `ARC06`, `ATH02`, `GAR05`, `FBS15`, `TKW03`, `BK307`, `BOX05`, `SAL02`, `ARC07`, `FEN04`, `BK308`, `FBS16`, `HBB02`, `TKW04`, `BOX06`, `GAR06`, `CRD02`, `FEN05`, `TKW05`, `GAR07`, `BOX07`
 
 ## Billets groupés (jointure site + jour)
 
-- 2026-11-09 · saly-plage-ouest : HBB01, SAL02, HBB02
-- 2026-11-09 · stade-abdoulaye-wade : ARC06
-- 2026-11-09 · tour-de-l-oeuf : BK307
+- 2026-11-10 · stade-abdoulaye-wade : ARC08
 - 2026-11-10 · saly-plage-ouest : HBB03, SAL03
 - 2026-11-11 · saly-plage-ouest : HBB04, SAL04, HBB05
 - 2026-11-12 · saly-plage-ouest : HBB06, SAL05, HBB07
@@ -86,17 +84,17 @@ Aucune.
 - Sans note d'accès (0) : —
 - Sans coordonnées GPS vérifiées (0) : —
 
-## Contrôle humain — 10 sessions tirées au hasard (graine 20261109)
+## Contrôle humain — 10 sessions tirées au hasard (graine 20261110)
 
 À comparer ligne à ligne avec le PDF (numéro de page indiqué).
 
-- [ ] **FBS05** — p. 3 — jour 3 10:00–14:00 — Complexe Iba Mar Diop — Women's ITA vs CRC / Women's IRN vs CMR
-- [ ] **RCB02** — p. 1 — jour 1 10:00–13:30 — Saly Beach West — Mixed Double Sculls - Time Trial 2 / Men's Solo - Time Trial 2 / Women's Solo - Time Trial 2 / Mixed Double Sculls - Last 16
-- [ ] **BOX04** — p. 5 — jour 8 17:00–19:30 — Dakar Expo Centre — Women's 48kg - Preliminaries / Women's 54kg - Preliminaries / Women's 60kg - Preliminaries / Men's 50kg - Preliminaries / Men's 60kg - Preliminaries
-- [ ] **FBS09** — p. 4 — jour 5 10:00–14:00 — Complexe Iba Mar Diop — Women's IRN vs ITA / Women's CMR vs CRC
-- [ ] **FEN07** — p. 8 — jour 11 09:00–12:35 — Dakar Expo Centre — Men's Épée Individual - Pool Round, Table of 16, Table of 8
-- [ ] **BDM04** — p. 2 — jour 2 14:30–18:55 — Dakar Arena — Women's and Men's singles - group stage
-- [ ] **FEN01** — p. 5 — jour 8 09:00–12:35 — Dakar Expo Centre — Women's Foil Individual - Pool Round, Table of 16, Table of 8
+- [ ] **TTE10** — p. 4 — jour 5 10:00–13:00 — Dakar Expo Centre — Women's Single - Semifinals / Men's Single - Semifinals
+- [ ] **FBS18** — p. 8 — jour 11 15:00–17:50 — Dakar Arena — Women's Final
+- [ ] **VBV05** — p. 3 — jour 3 09:00–17:00 — Saly Beach West — Women and Men - Quarter and Semifinals
+- [ ] **CRD02** — p. 7 — jour 10 09:00–12:04 — Corniche West — Women's Individual Time Trial - Final / Men's Individual Time Trial - Final
+- [ ] **HBB08** — p. 8 — jour 13 09:30–13:51 — Saly Beach West — Women's and Men's singles - Finals (Bronze and Gold
+- [ ] **BK306** — p. 5 — jour 8 15:00–16:40 — Complexe Tour de l'Oeuf — Women's and Men's singles - Quarterfinals
+- [ ] **GAR09** — p. 8 — jour 11 17:00–19:05 — Dakar Expo Centre — Mixed Team - final
 - [ ] **ARC02** — p. 4 — jour 7 09:00–12:44 — Stade Abdoulaye Wade — Women's and Men's singles - 1/16 Elimination Round
+- [ ] **SWM10** — p. 4 — jour 5 15:00–17:00 — Complexe Tour de l'Oeuf — Women's 50m Backstroke - Final / Men's 50m Backstroke - Final / Women's 50m Breaststroke - Final / Men's 50m Breaststroke - Final
 - [ ] **RU704** — p. 3 — jour 3 09:40–11:08 — Complexe Iba Mar Diop — Women - Pool Round
-- [ ] **BS503** — p. 1 — jour 0 08:30–14:15 — Complexe Tour de l'Oeuf — TPE vs TUR / SYR vs FRA / MEX vs KEN / SEN vs CUB
